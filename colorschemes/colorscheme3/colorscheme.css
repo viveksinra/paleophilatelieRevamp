@@ -1,0 +1,208 @@
+/*----------------------------------------------------------------------------
+	colorscheme.css for colorscheme 1
+
+	this css-file contains all definitions, that depend on the colorscheme.
+
+	(c) Schlund + Partner AG
+----------------------------------------------------------------------------*/
+
+/*-- main container --------------------------------------------------------*/
+
+#container {
+
+}
+.top_content {
+	background: url(images/static/contentbg_top.png) top center no-repeat;
+}
+.bottom_content {
+	background : url(images/static/contentbg_bottom.png) bottom center no-repeat;
+}
+/*--- header ---------------------------------------------------------------*/
+#header	{
+	background : url(images/static/contentbg.png);
+}
+
+
+/*--- key visiual ----------------------------------------------------------*/
+
+#key_visual {
+	background: url(../../images/dynamic/key_visual12.jpg);
+    border-color: #dedede;
+}
+
+/*--- logo -----------------------------------------------------------------*/
+
+/*--- caption --------------------------------------------------------------*/
+
+#slogan {
+	color: #ffffff;
+}
+/*--- main navigation ------------------------------------------------------*/
+#main_nav_container {
+
+}
+
+#main_nav_list	{
+
+}
+
+/*--- main navigation items ------------------------------------------------*/
+
+a.main_nav_item {
+	color: #000000;
+	background: url(../../images/dynamic/buttonset3/n1.gif) no-repeat;
+	background-position: top left;
+}
+
+a.main_nav_item:hover {
+	color: #920965;
+	background: url(../../images/dynamic/buttonset3/n1hover.gif) no-repeat;
+	background-position: top left;
+}
+
+a.main_nav_active_item {
+	color: #920965;
+	background: url(../../images/dynamic/buttonset3/n1active.gif) no-repeat;
+	background-position: top left;
+}
+
+/*--- subnavigation items --------------------------------------------------*/
+.sub_nav_container {
+	background : url(images/static/submenubg.gif) top center no-repeat;
+}
+
+a.sub_nav_item {
+	color: #585858;
+}
+
+a.sub_nav_item:hover {
+	color: #a12a7a;
+}
+
+a.sub_nav_active_item {
+	color: #a12a7a;
+}
+
+/*--- footer ---------------------------------------------------------------*/
+
+#footer {
+	background: url(images/static/footer_top.gif) top center no-repeat;
+}
+
+#footer_text, #footer_text a {
+	color: #a6a6a6;
+}
+
+/*----------------------------------------------------------------------------
+  default-styles for html-elements
+----------------------------------------------------------------------------*/
+
+/*--- body -----------------------------------------------------------------*/
+
+body#main_body {
+	background : url(images/static/pagebg.gif);
+}
+
+/*--- paragraph ------------------------------------------------------------*/
+
+.content, .content p, .content table, .content select, .content input, .content textarea {	
+	color: #262626;
+}
+
+/*--- headings -------------------------------------------------------------*/
+
+.content h1 {
+	color: #262626;
+}
+
+.content h2 {
+	color: #67445c;
+}
+
+.content h3 {
+	color: #920965;
+}
+
+/*--- links ----------------------------------------------------------------*/
+
+.content a:link{
+	color: #920965;
+}
+
+.content a:visited {
+	color: #920965;
+}
+
+.content a:hover {
+	color: #919191;
+}
+
+.content a:active {
+	color: #919191;
+}
+
+/*--- tables ---------------------------------------------------------------*/
+
+.content table {
+	border-color: #920965;
+}
+.content th {
+	color: #67445c;
+	background-color:#e7e7e7;
+	border-color: #920965;
+}
+.content td {
+	border-color: #920965;
+}
+.content tr.odd {
+	color: #6e6e6e;
+	background-color:#ffffff;
+}
+.content tr.even {
+	color: #6e6e6e;
+	background-color:#e7e7e7;
+}
+
+/*--- forms ----------------------------------------------------------------*/
+
+.content fieldset {
+	border-color: #920965;
+}
+
+.content legend{
+	color: #74777a;
+}
+
+.content label {
+	color: #74777a;
+}
+
+.content input {
+	border-color: #b4b8bb;
+	background-color: #ffffff;
+	color:#74777a;
+}
+.content #submit {
+    background-color: #ffffff;
+	border-color: #b4b8bb;
+	color:#74777a;
+}
+.content textarea {
+	border-color: #b4b8bb;
+	color: #74777a;
+}
+.content select {
+	color: #74777a;
+	border-color: #b4b8bb;
+}
+
+/*--------------------------------------------------------------------------*/
+#main_container {
+	background: url(images/static/contentbg.png);
+}
+#sub_container2 {
+	/*background: url(images/static/footer_top.gif) top center no-repeat;*/
+}
+ #layout_table {
+	background: url(images/static/footer_top.gif) top center no-repeat;
+}

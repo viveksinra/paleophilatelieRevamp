@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for dir in \"D:/Projects/Paleophilatelie/paleophilatelieNewSite/images\"/*)",
+      "Skill(frontend-design)",
+      "WebFetch(domain:www.paleophilatelie.eu)",
+      "Bash(dir:*)",
+      "Bash(xcopy:*)",
+      "Bash(powershell -Command \"Copy-Item -Path ''D:\\\\Projects\\\\Paleophilatelie\\\\paleophilatelieNewSite\\\\images'' -Destination ''D:\\\\Projects\\\\Paleophilatelie\\\\paleophilatelie-redesign\\\\'' -Recurse -Force\")",
+      "WebFetch(domain:www.nationalgeographic.com)",
+      "WebFetch(domain:www.2-clicks-stamps.com)",
+      "Bash(powershell -Command \"Get-Content ''D:\\\\Projects\\\\Paleophilatelie\\\\paleophilatelie-redesign\\\\css\\\\styles.css'' | Measure-Object -Line; Get-Content ''D:\\\\Projects\\\\Paleophilatelie\\\\paleophilatelie-redesign\\\\js\\\\scripts.js'' | Measure-Object -Line\")"
+    ]
+  }
+}
