@@ -1,0 +1,4997 @@
+{
+  "htmlFiles": [
+    {
+      "path": "404page.html",
+      "size": 12809,
+      "folder": "root"
+    },
+    {
+      "path": "about.html",
+      "size": 20853,
+      "folder": "root"
+    },
+    {
+      "path": "about_how-to-help.html",
+      "size": 15854,
+      "folder": "root"
+    },
+    {
+      "path": "about_website.html",
+      "size": 27903,
+      "folder": "root"
+    },
+    {
+      "path": "awards.html",
+      "size": 71082,
+      "folder": "root"
+    },
+    {
+      "path": "check_list.html",
+      "size": 108,
+      "folder": "root"
+    },
+    {
+      "path": "contact.html",
+      "size": 11847,
+      "folder": "root"
+    },
+    {
+      "path": "country\\abkhazia.html",
+      "size": 25008,
+      "folder": "country"
+    },
+    {
+      "path": "country\\afghanistan.html",
+      "size": 21354,
+      "folder": "country"
+    },
+    {
+      "path": "country\\aland.html",
+      "size": 21490,
+      "folder": "country"
+    },
+    {
+      "path": "country\\albania.html",
+      "size": 16564,
+      "folder": "country"
+    },
+    {
+      "path": "country\\algeria.html",
+      "size": 21207,
+      "folder": "country"
+    },
+    {
+      "path": "country\\andorra.html",
+      "size": 21192,
+      "folder": "country"
+    },
+    {
+      "path": "country\\angola.html",
+      "size": 27363,
+      "folder": "country"
+    },
+    {
+      "path": "country\\antigua.html",
+      "size": 26083,
+      "folder": "country"
+    },
+    {
+      "path": "country\\argentina.html",
+      "size": 72319,
+      "folder": "country"
+    },
+    {
+      "path": "country\\armenia.html",
+      "size": 25276,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ascension.html",
+      "size": 27811,
+      "folder": "country"
+    },
+    {
+      "path": "country\\australia.html",
+      "size": 77374,
+      "folder": "country"
+    },
+    {
+      "path": "country\\austria.html",
+      "size": 65194,
+      "folder": "country"
+    },
+    {
+      "path": "country\\azerbaijan.html",
+      "size": 21019,
+      "folder": "country"
+    },
+    {
+      "path": "country\\barbados.html",
+      "size": 19456,
+      "folder": "country"
+    },
+    {
+      "path": "country\\bat.html",
+      "size": 32082,
+      "folder": "country"
+    },
+    {
+      "path": "country\\belarus.html",
+      "size": 23901,
+      "folder": "country"
+    },
+    {
+      "path": "country\\belgium.html",
+      "size": 46157,
+      "folder": "country"
+    },
+    {
+      "path": "country\\benin.html",
+      "size": 30281,
+      "folder": "country"
+    },
+    {
+      "path": "country\\bhutan.html",
+      "size": 19750,
+      "folder": "country"
+    },
+    {
+      "path": "country\\biot.html",
+      "size": 22903,
+      "folder": "country"
+    },
+    {
+      "path": "country\\bolivia.html",
+      "size": 28663,
+      "folder": "country"
+    },
+    {
+      "path": "country\\bophuthatswana.html",
+      "size": 19033,
+      "folder": "country"
+    },
+    {
+      "path": "country\\bosnia_herzegovina.html",
+      "size": 32487,
+      "folder": "country"
+    },
+    {
+      "path": "country\\brazil.html",
+      "size": 36104,
+      "folder": "country"
+    },
+    {
+      "path": "country\\bulgaria.html",
+      "size": 36074,
+      "folder": "country"
+    },
+    {
+      "path": "country\\burundi.html",
+      "size": 22894,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cambodia.html",
+      "size": 27603,
+      "folder": "country"
+    },
+    {
+      "path": "country\\canada.html",
+      "size": 56242,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cape_verde.html",
+      "size": 19732,
+      "folder": "country"
+    },
+    {
+      "path": "country\\car.html",
+      "size": 39263,
+      "folder": "country"
+    },
+    {
+      "path": "country\\chad.html",
+      "size": 31496,
+      "folder": "country"
+    },
+    {
+      "path": "country\\chile.html",
+      "size": 25333,
+      "folder": "country"
+    },
+    {
+      "path": "country\\china.html",
+      "size": 143851,
+      "folder": "country"
+    },
+    {
+      "path": "country\\christmas_isl.html",
+      "size": 20270,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cocos_isl.html",
+      "size": 25478,
+      "folder": "country"
+    },
+    {
+      "path": "country\\colombia.html",
+      "size": 25499,
+      "folder": "country"
+    },
+    {
+      "path": "country\\comoros_isl.html",
+      "size": 27426,
+      "folder": "country"
+    },
+    {
+      "path": "country\\congo_b.html",
+      "size": 26390,
+      "folder": "country"
+    },
+    {
+      "path": "country\\congo_k.html",
+      "size": 28340,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cook_isl.html",
+      "size": 20455,
+      "folder": "country"
+    },
+    {
+      "path": "country\\costa_rica.html",
+      "size": 20322,
+      "folder": "country"
+    },
+    {
+      "path": "country\\croatia.html",
+      "size": 59472,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cuba.html",
+      "size": 46223,
+      "folder": "country"
+    },
+    {
+      "path": "country\\curacao.html",
+      "size": 20076,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cyprus.html",
+      "size": 17276,
+      "folder": "country"
+    },
+    {
+      "path": "country\\cyprus_north.html",
+      "size": 19165,
+      "folder": "country"
+    },
+    {
+      "path": "country\\czech.html",
+      "size": 84129,
+      "folder": "country"
+    },
+    {
+      "path": "country\\czechoslovakia.html",
+      "size": 25319,
+      "folder": "country"
+    },
+    {
+      "path": "country\\denmark.html",
+      "size": 28343,
+      "folder": "country"
+    },
+    {
+      "path": "country\\djibouti.html",
+      "size": 28637,
+      "folder": "country"
+    },
+    {
+      "path": "country\\dominica.html",
+      "size": 24278,
+      "folder": "country"
+    },
+    {
+      "path": "country\\dominicana.html",
+      "size": 19711,
+      "folder": "country"
+    },
+    {
+      "path": "country\\dpr.html",
+      "size": 19808,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ecuador.html",
+      "size": 25693,
+      "folder": "country"
+    },
+    {
+      "path": "country\\egypt.html",
+      "size": 23003,
+      "folder": "country"
+    },
+    {
+      "path": "country\\el_salvador.html",
+      "size": 21699,
+      "folder": "country"
+    },
+    {
+      "path": "country\\eq_guinea.html",
+      "size": 17302,
+      "folder": "country"
+    },
+    {
+      "path": "country\\estonia.html",
+      "size": 35256,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ethiopia.html",
+      "size": 22894,
+      "folder": "country"
+    },
+    {
+      "path": "country\\falkland_islands.html",
+      "size": 29536,
+      "folder": "country"
+    },
+    {
+      "path": "country\\faroe_islands.html",
+      "size": 18158,
+      "folder": "country"
+    },
+    {
+      "path": "country\\finland.html",
+      "size": 27861,
+      "folder": "country"
+    },
+    {
+      "path": "country\\france.html",
+      "size": 127617,
+      "folder": "country"
+    },
+    {
+      "path": "country\\french_polynesia.html",
+      "size": 19898,
+      "folder": "country"
+    },
+    {
+      "path": "country\\fujeira.html",
+      "size": 19737,
+      "folder": "country"
+    },
+    {
+      "path": "country\\gabon.html",
+      "size": 19419,
+      "folder": "country"
+    },
+    {
+      "path": "country\\gambia.html",
+      "size": 25900,
+      "folder": "country"
+    },
+    {
+      "path": "country\\georgia.html",
+      "size": 19428,
+      "folder": "country"
+    },
+    {
+      "path": "country\\germany.html",
+      "size": 290160,
+      "folder": "country"
+    },
+    {
+      "path": "country\\germany_gdr.html",
+      "size": 37201,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ghana.html",
+      "size": 24066,
+      "folder": "country"
+    },
+    {
+      "path": "country\\gibraltar.html",
+      "size": 44686,
+      "folder": "country"
+    },
+    {
+      "path": "country\\greece.html",
+      "size": 26304,
+      "folder": "country"
+    },
+    {
+      "path": "country\\greenland.html",
+      "size": 27931,
+      "folder": "country"
+    },
+    {
+      "path": "country\\grenada.html",
+      "size": 31185,
+      "folder": "country"
+    },
+    {
+      "path": "country\\guernsey.html",
+      "size": 20217,
+      "folder": "country"
+    },
+    {
+      "path": "country\\guinea.html",
+      "size": 50542,
+      "folder": "country"
+    },
+    {
+      "path": "country\\guinea_b.html",
+      "size": 39233,
+      "folder": "country"
+    },
+    {
+      "path": "country\\guyana.html",
+      "size": 27922,
+      "folder": "country"
+    },
+    {
+      "path": "country\\hong_kong.html",
+      "size": 34304,
+      "folder": "country"
+    },
+    {
+      "path": "country\\hungary.html",
+      "size": 43441,
+      "folder": "country"
+    },
+    {
+      "path": "country\\iceland.html",
+      "size": 22646,
+      "folder": "country"
+    },
+    {
+      "path": "country\\index.html",
+      "size": 181654,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexA.html",
+      "size": 4500,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexB.html",
+      "size": 4596,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexC.html",
+      "size": 4965,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexD.html",
+      "size": 3949,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexE.html",
+      "size": 3915,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexF.html",
+      "size": 4054,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexG.html",
+      "size": 4635,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexH.html",
+      "size": 3666,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexI.html",
+      "size": 4142,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexJ.html",
+      "size": 3796,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexK.html",
+      "size": 4208,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexL.html",
+      "size": 4091,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexM.html",
+      "size": 4887,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexN.html",
+      "size": 4297,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexO.html",
+      "size": 3597,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexP.html",
+      "size": 4073,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexQ.html",
+      "size": 3619,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexR.html",
+      "size": 3740,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexS.html",
+      "size": 5169,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexT.html",
+      "size": 4715,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexU.html",
+      "size": 4133,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexV.html",
+      "size": 3661,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexW.html",
+      "size": 3611,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexY.html",
+      "size": 3676,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indexZ.html",
+      "size": 3745,
+      "folder": "country"
+    },
+    {
+      "path": "country\\india.html",
+      "size": 52195,
+      "folder": "country"
+    },
+    {
+      "path": "country\\indonesia.html",
+      "size": 33762,
+      "folder": "country"
+    },
+    {
+      "path": "country\\iran.html",
+      "size": 31886,
+      "folder": "country"
+    },
+    {
+      "path": "country\\iraq.html",
+      "size": 19924,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ireland.html",
+      "size": 25199,
+      "folder": "country"
+    },
+    {
+      "path": "country\\isle_of_man.html",
+      "size": 32245,
+      "folder": "country"
+    },
+    {
+      "path": "country\\israel.html",
+      "size": 36986,
+      "folder": "country"
+    },
+    {
+      "path": "country\\italy.html",
+      "size": 67923,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ivory_coast.html",
+      "size": 31047,
+      "folder": "country"
+    },
+    {
+      "path": "country\\japan.html",
+      "size": 83844,
+      "folder": "country"
+    },
+    {
+      "path": "country\\jersey.html",
+      "size": 32718,
+      "folder": "country"
+    },
+    {
+      "path": "country\\jordan.html",
+      "size": 19910,
+      "folder": "country"
+    },
+    {
+      "path": "country\\kazakhstan.html",
+      "size": 24883,
+      "folder": "country"
+    },
+    {
+      "path": "country\\kenya.html",
+      "size": 32153,
+      "folder": "country"
+    },
+    {
+      "path": "country\\kiribati.html",
+      "size": 24922,
+      "folder": "country"
+    },
+    {
+      "path": "country\\korea_north.html",
+      "size": 44198,
+      "folder": "country"
+    },
+    {
+      "path": "country\\korea_south.html",
+      "size": 55574,
+      "folder": "country"
+    },
+    {
+      "path": "country\\kuwait.html",
+      "size": 18703,
+      "folder": "country"
+    },
+    {
+      "path": "country\\kyrgyzstan.html",
+      "size": 27443,
+      "folder": "country"
+    },
+    {
+      "path": "country\\laos.html",
+      "size": 25527,
+      "folder": "country"
+    },
+    {
+      "path": "country\\latvia.html",
+      "size": 25858,
+      "folder": "country"
+    },
+    {
+      "path": "country\\lebanon.html",
+      "size": 25226,
+      "folder": "country"
+    },
+    {
+      "path": "country\\lesotho.html",
+      "size": 20623,
+      "folder": "country"
+    },
+    {
+      "path": "country\\liberia.html",
+      "size": 24369,
+      "folder": "country"
+    },
+    {
+      "path": "country\\libya.html",
+      "size": 22848,
+      "folder": "country"
+    },
+    {
+      "path": "country\\liechtenstein.html",
+      "size": 23278,
+      "folder": "country"
+    },
+    {
+      "path": "country\\lithuania.html",
+      "size": 22971,
+      "folder": "country"
+    },
+    {
+      "path": "country\\luxembourg.html",
+      "size": 19030,
+      "folder": "country"
+    },
+    {
+      "path": "country\\macau.html",
+      "size": 19427,
+      "folder": "country"
+    },
+    {
+      "path": "country\\macedonia.html",
+      "size": 25216,
+      "folder": "country"
+    },
+    {
+      "path": "country\\madagascar.html",
+      "size": 29315,
+      "folder": "country"
+    },
+    {
+      "path": "country\\malawi.html",
+      "size": 17975,
+      "folder": "country"
+    },
+    {
+      "path": "country\\malaysia.html",
+      "size": 26312,
+      "folder": "country"
+    },
+    {
+      "path": "country\\maldives.html",
+      "size": 30785,
+      "folder": "country"
+    },
+    {
+      "path": "country\\mali.html",
+      "size": 19867,
+      "folder": "country"
+    },
+    {
+      "path": "country\\malta.html",
+      "size": 25255,
+      "folder": "country"
+    },
+    {
+      "path": "country\\manama.html",
+      "size": 19812,
+      "folder": "country"
+    },
+    {
+      "path": "country\\marshall_islands.html",
+      "size": 36191,
+      "folder": "country"
+    },
+    {
+      "path": "country\\mauritania.html",
+      "size": 21022,
+      "folder": "country"
+    },
+    {
+      "path": "country\\mauritius.html",
+      "size": 23178,
+      "folder": "country"
+    },
+    {
+      "path": "country\\mexico.html",
+      "size": 30277,
+      "folder": "country"
+    },
+    {
+      "path": "country\\micronesia.html",
+      "size": 19723,
+      "folder": "country"
+    },
+    {
+      "path": "country\\moldova.html",
+      "size": 33303,
+      "folder": "country"
+    },
+    {
+      "path": "country\\monaco.html",
+      "size": 44740,
+      "folder": "country"
+    },
+    {
+      "path": "country\\mongolia.html",
+      "size": 44310,
+      "folder": "country"
+    },
+    {
+      "path": "country\\montserrat.html",
+      "size": 24514,
+      "folder": "country"
+    },
+    {
+      "path": "country\\morocco.html",
+      "size": 18734,
+      "folder": "country"
+    },
+    {
+      "path": "country\\mozambique.html",
+      "size": 33528,
+      "folder": "country"
+    },
+    {
+      "path": "country\\namibia.html",
+      "size": 24443,
+      "folder": "country"
+    },
+    {
+      "path": "country\\nauru.html",
+      "size": 22997,
+      "folder": "country"
+    },
+    {
+      "path": "country\\nepal.html",
+      "size": 23850,
+      "folder": "country"
+    },
+    {
+      "path": "country\\netherlands.html",
+      "size": 47211,
+      "folder": "country"
+    },
+    {
+      "path": "country\\nevis.html",
+      "size": 20204,
+      "folder": "country"
+    },
+    {
+      "path": "country\\new_caledonia.html",
+      "size": 20461,
+      "folder": "country"
+    },
+    {
+      "path": "country\\new_zealand.html",
+      "size": 37520,
+      "folder": "country"
+    },
+    {
+      "path": "country\\nicaragua.html",
+      "size": 19910,
+      "folder": "country"
+    },
+    {
+      "path": "country\\niger.html",
+      "size": 30868,
+      "folder": "country"
+    },
+    {
+      "path": "country\\niuafoou.html",
+      "size": 39705,
+      "folder": "country"
+    },
+    {
+      "path": "country\\norway.html",
+      "size": 26260,
+      "folder": "country"
+    },
+    {
+      "path": "country\\oman.html",
+      "size": 18053,
+      "folder": "country"
+    },
+    {
+      "path": "country\\pabay_isl.html",
+      "size": 25864,
+      "folder": "country"
+    },
+    {
+      "path": "country\\palau.html",
+      "size": 26778,
+      "folder": "country"
+    },
+    {
+      "path": "country\\papua_new_guinea.html",
+      "size": 17603,
+      "folder": "country"
+    },
+    {
+      "path": "country\\paraguay.html",
+      "size": 19227,
+      "folder": "country"
+    },
+    {
+      "path": "country\\peru.html",
+      "size": 41818,
+      "folder": "country"
+    },
+    {
+      "path": "country\\pitcairn_islands.html",
+      "size": 21705,
+      "folder": "country"
+    },
+    {
+      "path": "country\\poland.html",
+      "size": 53102,
+      "folder": "country"
+    },
+    {
+      "path": "country\\portugal.html",
+      "size": 40650,
+      "folder": "country"
+    },
+    {
+      "path": "country\\quaiti.html",
+      "size": 21351,
+      "folder": "country"
+    },
+    {
+      "path": "country\\romania.html",
+      "size": 122912,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ross.html",
+      "size": 22751,
+      "folder": "country"
+    },
+    {
+      "path": "country\\russia.html",
+      "size": 107822,
+      "folder": "country"
+    },
+    {
+      "path": "country\\san_marino.html",
+      "size": 30691,
+      "folder": "country"
+    },
+    {
+      "path": "country\\sao_tome.html",
+      "size": 41187,
+      "folder": "country"
+    },
+    {
+      "path": "country\\senegal.html",
+      "size": 19497,
+      "folder": "country"
+    },
+    {
+      "path": "country\\serbia.html",
+      "size": 36906,
+      "folder": "country"
+    },
+    {
+      "path": "country\\seychelles.html",
+      "size": 21690,
+      "folder": "country"
+    },
+    {
+      "path": "country\\sierra_leone.html",
+      "size": 44712,
+      "folder": "country"
+    },
+    {
+      "path": "country\\singapore.html",
+      "size": 24970,
+      "folder": "country"
+    },
+    {
+      "path": "country\\slovakia.html",
+      "size": 24605,
+      "folder": "country"
+    },
+    {
+      "path": "country\\slovenia.html",
+      "size": 63561,
+      "folder": "country"
+    },
+    {
+      "path": "country\\solomon_isl.html",
+      "size": 27261,
+      "folder": "country"
+    },
+    {
+      "path": "country\\somalia.html",
+      "size": 23889,
+      "folder": "country"
+    },
+    {
+      "path": "country\\south_africa.html",
+      "size": 60761,
+      "folder": "country"
+    },
+    {
+      "path": "country\\south_georgia.html",
+      "size": 29179,
+      "folder": "country"
+    },
+    {
+      "path": "country\\spain.html",
+      "size": 86163,
+      "folder": "country"
+    },
+    {
+      "path": "country\\sri_lanka.html",
+      "size": 16605,
+      "folder": "country"
+    },
+    {
+      "path": "country\\st_helena.html",
+      "size": 26664,
+      "folder": "country"
+    },
+    {
+      "path": "country\\st_kitts.html",
+      "size": 18669,
+      "folder": "country"
+    },
+    {
+      "path": "country\\st_vincent.html",
+      "size": 25076,
+      "folder": "country"
+    },
+    {
+      "path": "country\\suriname.html",
+      "size": 18700,
+      "folder": "country"
+    },
+    {
+      "path": "country\\sweden.html",
+      "size": 29491,
+      "folder": "country"
+    },
+    {
+      "path": "country\\switzerland.html",
+      "size": 41466,
+      "folder": "country"
+    },
+    {
+      "path": "country\\taaf.html",
+      "size": 22971,
+      "folder": "country"
+    },
+    {
+      "path": "country\\taiwan.html",
+      "size": 23493,
+      "folder": "country"
+    },
+    {
+      "path": "country\\tajikistan.html",
+      "size": 21925,
+      "folder": "country"
+    },
+    {
+      "path": "country\\tanzania.html",
+      "size": 35838,
+      "folder": "country"
+    },
+    {
+      "path": "country\\thailand.html",
+      "size": 32398,
+      "folder": "country"
+    },
+    {
+      "path": "country\\togo.html",
+      "size": 31144,
+      "folder": "country"
+    },
+    {
+      "path": "country\\tonga.html",
+      "size": 19629,
+      "folder": "country"
+    },
+    {
+      "path": "country\\transkei.html",
+      "size": 21005,
+      "folder": "country"
+    },
+    {
+      "path": "country\\transnistria.html",
+      "size": 27803,
+      "folder": "country"
+    },
+    {
+      "path": "country\\tristan_da_cunha.html",
+      "size": 17097,
+      "folder": "country"
+    },
+    {
+      "path": "country\\tunisia.html",
+      "size": 21096,
+      "folder": "country"
+    },
+    {
+      "path": "country\\turkey.html",
+      "size": 22694,
+      "folder": "country"
+    },
+    {
+      "path": "country\\turkmenistan.html",
+      "size": 16310,
+      "folder": "country"
+    },
+    {
+      "path": "country\\turks_and_caicos.html",
+      "size": 22457,
+      "folder": "country"
+    },
+    {
+      "path": "country\\tuvalu.html",
+      "size": 19978,
+      "folder": "country"
+    },
+    {
+      "path": "country\\uganda.html",
+      "size": 27024,
+      "folder": "country"
+    },
+    {
+      "path": "country\\uk.html",
+      "size": 100122,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ukraine.html",
+      "size": 36716,
+      "folder": "country"
+    },
+    {
+      "path": "country\\un.html",
+      "size": 23152,
+      "folder": "country"
+    },
+    {
+      "path": "country\\uruguay.html",
+      "size": 28123,
+      "folder": "country"
+    },
+    {
+      "path": "country\\usa.html",
+      "size": 212833,
+      "folder": "country"
+    },
+    {
+      "path": "country\\ussr.html",
+      "size": 80764,
+      "folder": "country"
+    },
+    {
+      "path": "country\\uzbekistan.html",
+      "size": 22001,
+      "folder": "country"
+    },
+    {
+      "path": "country\\vanuatu.html",
+      "size": 21426,
+      "folder": "country"
+    },
+    {
+      "path": "country\\vietnam.html",
+      "size": 22685,
+      "folder": "country"
+    },
+    {
+      "path": "country\\wallis.html",
+      "size": 16486,
+      "folder": "country"
+    },
+    {
+      "path": "country\\yemen.html",
+      "size": 18954,
+      "folder": "country"
+    },
+    {
+      "path": "country\\yugoslavia.html",
+      "size": 33340,
+      "folder": "country"
+    },
+    {
+      "path": "country\\zambia.html",
+      "size": 17266,
+      "folder": "country"
+    },
+    {
+      "path": "country\\zimbabwe.html",
+      "size": 18934,
+      "folder": "country"
+    },
+    {
+      "path": "description\\covers\\index.html",
+      "size": 16796,
+      "folder": "description\\covers"
+    },
+    {
+      "path": "description\\covers\\india_2009_cov.html",
+      "size": 18636,
+      "folder": "description\\covers"
+    },
+    {
+      "path": "description\\covers\\ukraine_2009_cov.html",
+      "size": 16900,
+      "folder": "description\\covers"
+    },
+    {
+      "path": "description\\covers\\ukraine_2011_cov.html",
+      "size": 18962,
+      "folder": "description\\covers"
+    },
+    {
+      "path": "description\\covers\\ukraine_2012_cov.html",
+      "size": 14791,
+      "folder": "description\\covers"
+    },
+    {
+      "path": "description\\letters\\alexander_nasmyth_to_william_buckland_1838.html",
+      "size": 33276,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\baas_glasgow_1876.html",
+      "size": 40277,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\index.html",
+      "size": 20489,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\nhm_berlin_1912.html",
+      "size": 44142,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\owen_ransome_1849.html",
+      "size": 44138,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\peter_brandt_1842.html",
+      "size": 26971,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\richard_owen_to_henry_barkly_1876.html",
+      "size": 70245,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\letters\\telegram_to_owen_1889.html",
+      "size": 35178,
+      "folder": "description\\letters"
+    },
+    {
+      "path": "description\\pm\\index.html",
+      "size": 100,
+      "folder": "description\\pm"
+    },
+    {
+      "path": "description\\pm\\uk_1988_whitby.html",
+      "size": 29787,
+      "folder": "description\\pm"
+    },
+    {
+      "path": "description\\ps\\others\\ussr_1991_ps.html",
+      "size": 35563,
+      "folder": "description\\ps\\others"
+    },
+    {
+      "path": "description\\stamps\\aland_1996.html",
+      "size": 26527,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\algeria_2020.html",
+      "size": 24770,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\argentina_2012.html",
+      "size": 34272,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\argentina_2014.html",
+      "size": 28457,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\argentina_2015.html",
+      "size": 30621,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\armenia_2017.html",
+      "size": 22747,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\armenia_2018.html",
+      "size": 22003,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\armenia_2019.html",
+      "size": 45089,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\armenia_2020.html",
+      "size": 25360,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\armenia_2021.html",
+      "size": 30196,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\armenia_2022.html",
+      "size": 20917,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\ascension_isl_2009.html",
+      "size": 34340,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\australia_1993.html",
+      "size": 40785,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\australia_2008.html",
+      "size": 55235,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\australia_2013.html",
+      "size": 64888,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\australia_2020.html",
+      "size": 55975,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\australia_2022.html",
+      "size": 49486,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\austria_1976.html",
+      "size": 39070,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\austria_1999.html",
+      "size": 21842,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\austria_2009.html",
+      "size": 19814,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\azerbaijan_1994.html",
+      "size": 20751,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bat_2008.html",
+      "size": 18641,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\belgium_2015.html",
+      "size": 63452,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\belgium_2018.html",
+      "size": 63308,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\benin_1984.html",
+      "size": 21990,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bolivia_2012.html",
+      "size": 24719,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bosnia_herzegovina_2007.html",
+      "size": 19162,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bosnia_herzegovina_2008.html",
+      "size": 21918,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bosnia_herzegovina_2009.html",
+      "size": 24820,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bosnia_herzegovina_2009_darwin.html",
+      "size": 23714,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\brazil_1995.html",
+      "size": 23549,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\brazil_2010.html",
+      "size": 21868,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\brazil_2014.html",
+      "size": 41745,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\brazil_2016.html",
+      "size": 26883,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\bulgaria_2023.html",
+      "size": 58737,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\burundi_2012.html",
+      "size": 18547,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1986.html",
+      "size": 22798,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1989.html",
+      "size": 24114,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1990.html",
+      "size": 26339,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1991.html",
+      "size": 24212,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1993.html",
+      "size": 27197,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1994.html",
+      "size": 25961,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_1998.html",
+      "size": 21056,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_2014.html",
+      "size": 34241,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_2015.html",
+      "size": 61817,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\canada_2016.html",
+      "size": 47576,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\car_2012.html",
+      "size": 14960,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\china_1958.html",
+      "size": 41600,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\china_2017.html",
+      "size": 68717,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\congo_2012.html",
+      "size": 16447,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_1994.html",
+      "size": 25816,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_1995.html",
+      "size": 20710,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_1996.html",
+      "size": 24221,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_1997.html",
+      "size": 24699,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_1999.html",
+      "size": 24132,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_2012.html",
+      "size": 24770,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\croatia_2016.html",
+      "size": 24294,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\cuba_2013.html",
+      "size": 37507,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\cuba_2015.html",
+      "size": 18297,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\curacao_2011.html",
+      "size": 19008,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\czech_1994.html",
+      "size": 22601,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\czech_1999.html",
+      "size": 20384,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\czech_2005.html",
+      "size": 24408,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\czech_2008.html",
+      "size": 20107,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\czech_2009.html",
+      "size": 28794,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\czech_2011.html",
+      "size": 22865,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\denmark_1998.html",
+      "size": 27728,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\denmark_2009.html",
+      "size": 31149,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\ecuador_1936.html",
+      "size": 39820,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\egypt_2008.html",
+      "size": 22064,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\el_slavador_1979.html",
+      "size": 40937,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\falklands_isl_2009.html",
+      "size": 34461,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\france_2008.html",
+      "size": 34896,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\france_2010.html",
+      "size": 20750,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\france_2014.html",
+      "size": 16867,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\france_2024.html",
+      "size": 22589,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\french_polynesia_2022.html",
+      "size": 19356,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\germany_2003.html",
+      "size": 27739,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\germany_2006.html",
+      "size": 25398,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\germany_2008.html",
+      "size": 100182,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\germany_2010.html",
+      "size": 67095,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\germany_2011.html",
+      "size": 30593,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\gibraltar_2000.html",
+      "size": 19701,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\gibraltar_2005.html",
+      "size": 26857,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\gibraltar_2009.html",
+      "size": 23051,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\gibraltar_2016.html",
+      "size": 20415,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\gibraltar_2025.html",
+      "size": 23538,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\gibraltar_2025_2.html",
+      "size": 19758,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\greece_2022.html",
+      "size": 23557,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\greenland_2008.html",
+      "size": 23177,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\greenland_2009.html",
+      "size": 22636,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\guinea_bissau_2012.html",
+      "size": 16084,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hong_kong_2014.html",
+      "size": 43845,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hong_kong_2022.html",
+      "size": 29143,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hungary_1993.html",
+      "size": 20452,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hungary_2002.html",
+      "size": 21032,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hungary_2016.html",
+      "size": 21446,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hungary_2018.html",
+      "size": 21812,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\hungary_2020.html",
+      "size": 19624,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\index.html",
+      "size": 127253,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\india_1951.html",
+      "size": 31281,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\india_1997.html",
+      "size": 30074,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\indonesia_2004.html",
+      "size": 18863,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\indonesia_2014.html",
+      "size": 26187,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\iraq_2010.html",
+      "size": 21456,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\ireland_1999.html",
+      "size": 37438,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\ireland_2007.html",
+      "size": 32673,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\isle_of_man_1986.html",
+      "size": 31872,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\isle_of_man_2023.html",
+      "size": 32346,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\israel_2000.html",
+      "size": 21938,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\israel_2002.html",
+      "size": 20051,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\israel_2018.html",
+      "size": 20820,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\italy_2021.html",
+      "size": 28450,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\japan_2022.html",
+      "size": 36695,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\jersey_2010.html",
+      "size": 21376,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\jersey_2017.html",
+      "size": 19880,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\jersey_2025.html",
+      "size": 45605,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\jordan_2013.html",
+      "size": 25982,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\kazakhstan_1994.html",
+      "size": 19082,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\korea_north_2011.html",
+      "size": 19352,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\korea_north_2013.html",
+      "size": 25988,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\korea_south_2006.html",
+      "size": 24932,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\korea_south_2010.html",
+      "size": 25023,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\korea_south_2011.html",
+      "size": 25529,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\korea_south_2012.html",
+      "size": 25288,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\kyrgyzstan_2012.html",
+      "size": 27392,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\kyrgyzstan_2024.html",
+      "size": 54558,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\kyrgyzstan_2025.html",
+      "size": 46553,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\laos_1994.html",
+      "size": 32577,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\latvia_2015.html",
+      "size": 23373,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\lebanon_2002.html",
+      "size": 18704,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\lebanon_2003.html",
+      "size": 16930,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\liberia_2012.html",
+      "size": 13637,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\luxembourg_1984.html",
+      "size": 23156,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\luxembourg_2024.html",
+      "size": 53935,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\malaysia_2025.html",
+      "size": 51688,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\malta_2009.html",
+      "size": 26158,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\malta_2011.html",
+      "size": 21011,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\malta_2011_ms.html",
+      "size": 17527,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\malta_2015.html",
+      "size": 18262,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\Marshall_Islands_2008.html",
+      "size": 52754,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\Marshall_Islands_2009.html",
+      "size": 35611,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\marshall_islands_2012.html",
+      "size": 23386,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\marshall_islands_2015.html",
+      "size": 31348,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mexico_2006.html",
+      "size": 26630,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mexico_2011.html",
+      "size": 25380,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mexico_2023.html",
+      "size": 59436,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\moldova_1995.html",
+      "size": 23989,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\moldova_2009.html",
+      "size": 23024,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\moldova_2010.html",
+      "size": 18545,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\moldova_2014.html",
+      "size": 28302,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\monaco_2010.html",
+      "size": 21603,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mongolia_2014.html",
+      "size": 36539,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mongolia_2021.html",
+      "size": 22416,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mongolia_2022.html",
+      "size": 55363,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mongolia_2023.html",
+      "size": 48469,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\morocco_1988.html",
+      "size": 19672,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\morocco_2004.html",
+      "size": 19385,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\morocco_2015.html",
+      "size": 28021,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\mozambique_2012.html",
+      "size": 16087,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\namibia_1995.html",
+      "size": 26109,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\namibia_2008.html",
+      "size": 27858,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\nepal_2013.html",
+      "size": 42329,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\nepal_2015.html",
+      "size": 36034,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\nepal_2017.html",
+      "size": 29377,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\new_zealand_1984.html",
+      "size": 32499,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\new_zealand_1993.html",
+      "size": 51345,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\new_zealand_2010.html",
+      "size": 68539,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\new_zealand_2022.html",
+      "size": 35830,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1989_1.html",
+      "size": 21293,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1989_2.html",
+      "size": 20589,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1989_3.html",
+      "size": 21832,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1993_1.html",
+      "size": 23986,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1993_2.html",
+      "size": 21141,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1993_3.html",
+      "size": 20201,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1995.html",
+      "size": 31819,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\niuafoou_1996.html",
+      "size": 22201,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\norway_2005.html",
+      "size": 24595,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\others\\aland_2011.html",
+      "size": 15838,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\australia_2022.html",
+      "size": 25934,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\austria_1989.html",
+      "size": 23851,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\bosnia_herzegovina_2010.html",
+      "size": 17742,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\canada_2014_unesco.html",
+      "size": 24146,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\canada_2015_unesco.html",
+      "size": 20536,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\canada_2015_unesco2.html",
+      "size": 24027,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\canada_2015_unesco2_sa.html",
+      "size": 16427,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\canada_2015_unesco_sa.html",
+      "size": 17484,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\china_1932.html",
+      "size": 34204,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\china_2002.html",
+      "size": 23565,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\croatia_2020.html",
+      "size": 23229,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\czech_2013.html",
+      "size": 18650,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\czech_2018.html",
+      "size": 19427,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\faroe_2009.html",
+      "size": 27229,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\france_2023.html",
+      "size": 25425,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\germany_2007.html",
+      "size": 17803,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\germany_2025.html",
+      "size": 56316,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\hong_kong_2014_2.html",
+      "size": 32644,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\hong_kong_2014_3.html",
+      "size": 18796,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\index.html",
+      "size": 42623,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\israel_2014.html",
+      "size": 20803,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\israel_2017.html",
+      "size": 20725,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\italy_2015.html",
+      "size": 17646,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\liechtenstein_2016.html",
+      "size": 20745,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\lithuania_2009.html",
+      "size": 19906,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\monaco_2016.html",
+      "size": 16301,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\monaco_2022_3.html",
+      "size": 19064,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\monaco_2025.html",
+      "size": 22881,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\nepal_2014.html",
+      "size": 19054,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\romania_2008.html",
+      "size": 21773,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\romania_2011.html",
+      "size": 23052,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\russia_2012.html",
+      "size": 20222,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\russia_2015.html",
+      "size": 18595,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\san_marino_2012.html",
+      "size": 20958,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\serbia_2023.html",
+      "size": 20279,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\south_africa_1989.html",
+      "size": 19594,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\sweden_1973.html",
+      "size": 19610,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\tunisia_2024.html",
+      "size": 17566,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\ukraine_2011.html",
+      "size": 21956,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\ukraine_2021.html",
+      "size": 25141,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\uk_2021.html",
+      "size": 23562,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\un_2023.html",
+      "size": 37247,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\usa_1946.html",
+      "size": 19114,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\usa_1980.html",
+      "size": 22581,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\usa_1982.html",
+      "size": 16477,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\usa_1996_2.html",
+      "size": 22642,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\usa_2022.html",
+      "size": 22637,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\others\\vietnam_2021.html",
+      "size": 29567,
+      "folder": "description\\stamps\\others"
+    },
+    {
+      "path": "description\\stamps\\personalized\\brazil_2013.html",
+      "size": 18719,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\brazil_2019.html",
+      "size": 20731,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\germany_2010.html",
+      "size": 52722,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\index.html",
+      "size": 19321,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\netherlands_2016.html",
+      "size": 27594,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\netherlands_2023_1.html",
+      "size": 74511,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\netherlands_2023_2.html",
+      "size": 69463,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\netherlands_2023_3.html",
+      "size": 37115,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\preview\\slovenia_2015_fdc.html",
+      "size": 13039,
+      "folder": "description\\stamps\\personalized\\preview"
+    },
+    {
+      "path": "description\\stamps\\personalized\\slovenia_2013_1.html",
+      "size": 29382,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\slovenia_2013_2.html",
+      "size": 28832,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\slovenia_2014.html",
+      "size": 22413,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\personalized\\slovenia_2015.html",
+      "size": 20126,
+      "folder": "description\\stamps\\personalized"
+    },
+    {
+      "path": "description\\stamps\\peru_1999.html",
+      "size": 22081,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\peru_2010.html",
+      "size": 26558,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\peru_2011.html",
+      "size": 25516,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\peru_2017.html",
+      "size": 23998,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\peru_2022.html",
+      "size": 24406,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\peru_2024.html",
+      "size": 34804,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\pitcairn_isl_2009.html",
+      "size": 32207,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_1965.html",
+      "size": 37578,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_1966.html",
+      "size": 31128,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_1993.html",
+      "size": 19223,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_2000.html",
+      "size": 27474,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_2002.html",
+      "size": 26468,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_2004.html",
+      "size": 18044,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_2020.html",
+      "size": 48464,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_2022.html",
+      "size": 19388,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\poland_2025.html",
+      "size": 34980,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_1999.html",
+      "size": 52212,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2000.html",
+      "size": 45295,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2002.html",
+      "size": 35174,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2009_darwin.html",
+      "size": 23300,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2015.html",
+      "size": 40135,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2019.html",
+      "size": 34312,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2022.html",
+      "size": 26394,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\portugal_2025.html",
+      "size": 24652,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\romania_2005.html",
+      "size": 25680,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\romania_2007.html",
+      "size": 25594,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\romania_2016.html",
+      "size": 27496,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\romania_2020.html",
+      "size": 23513,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\russia_2020.html",
+      "size": 97703,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\san_marino_2025.html",
+      "size": 22943,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\serbia_2009.html",
+      "size": 40285,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\serbia_2009_darwin.html",
+      "size": 27094,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\serbia_2014.html",
+      "size": 31464,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\serbia_2016.html",
+      "size": 23033,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\serbia_2018.html",
+      "size": 25359,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\serbia_2020.html",
+      "size": 32255,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\singapore_1998.html",
+      "size": 24006,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\singapore_2015.html",
+      "size": 33800,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovakia_2006.html",
+      "size": 24073,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovakia_2022.html",
+      "size": 47020,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_1993.html",
+      "size": 18156,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_1995.html",
+      "size": 17085,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2000.html",
+      "size": 20011,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2001.html",
+      "size": 16604,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2002.html",
+      "size": 17269,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2004.html",
+      "size": 17844,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2006.html",
+      "size": 19017,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2016.html",
+      "size": 22244,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2017.html",
+      "size": 21531,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2018.html",
+      "size": 20353,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2019.html",
+      "size": 20710,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\slovenia_2020.html",
+      "size": 23984,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\solomon_isl_2012.html",
+      "size": 14276,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\south_africa_1982.html",
+      "size": 23721,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\south_africa_1991.html",
+      "size": 22242,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\south_africa_2009.html",
+      "size": 24875,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\south_africa_2016.html",
+      "size": 30885,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\south_africa_2017.html",
+      "size": 23358,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2009.html",
+      "size": 19979,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2012.html",
+      "size": 17809,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2015.html",
+      "size": 22673,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2016.html",
+      "size": 21144,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2017.html",
+      "size": 18083,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2019.html",
+      "size": 19267,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2023_atm.html",
+      "size": 58393,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\spain_2023_dino.html",
+      "size": 40606,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\suriname_2022.html",
+      "size": 15534,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\sweden_2011.html",
+      "size": 19390,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\sweden_2016.html",
+      "size": 23601,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\switzerland_2004.html",
+      "size": 16989,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\switzerland_2010.html",
+      "size": 18223,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\switzerland_2015.html",
+      "size": 21682,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\switzerland_2024.html",
+      "size": 52857,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\taiwan_2025.html",
+      "size": 21992,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\tajikistan_2020.html",
+      "size": 42015,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\thailand_1997.html",
+      "size": 21332,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\thailand_2008.html",
+      "size": 15283,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\togo_2010.html",
+      "size": 13441,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\transkei_1990.html",
+      "size": 20311,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\transkei_1992.html",
+      "size": 18937,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\transkei_1993.html",
+      "size": 18764,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\transnistria_2015.html",
+      "size": 14295,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\transnistria_2015_1.html",
+      "size": 16674,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\turkey_2012.html",
+      "size": 19417,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\turkey_2012_hologram.html",
+      "size": 15876,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\ukraine_2017.html",
+      "size": 26878,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_1982.html",
+      "size": 24646,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_1991.html",
+      "size": 34569,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_1999.html",
+      "size": 27513,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2006.html",
+      "size": 32378,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2006_darwin.html",
+      "size": 34597,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2009.html",
+      "size": 38393,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2010.html",
+      "size": 39740,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2013.html",
+      "size": 53045,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2013_leakey.html",
+      "size": 26261,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2024_1.html",
+      "size": 152645,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\uk_2024_2.html",
+      "size": 188635,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1954.html",
+      "size": 20231,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1955.html",
+      "size": 27412,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1968.html",
+      "size": 22344,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1970.html",
+      "size": 24474,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1974.html",
+      "size": 21029,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1989.html",
+      "size": 23078,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1996.html",
+      "size": 24414,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_1997.html",
+      "size": 55036,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\usa_2019.html",
+      "size": 27925,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\ussr_1990.html",
+      "size": 27939,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\vanuatu_2009.html",
+      "size": 15748,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\yugoslavia_1985.html",
+      "size": 16300,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "description\\stamps\\_template.html",
+      "size": 16679,
+      "folder": "description\\stamps"
+    },
+    {
+      "path": "exhibitions\\Ammoniten.html",
+      "size": 13893,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Archaeopteryx.html",
+      "size": 12430,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\ArGe_Bergbau.html",
+      "size": 12625,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Beak_evolution.html",
+      "size": 14295,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\biophilately_2015.html",
+      "size": 13800,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Brachiopods_poster.html",
+      "size": 12070,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\CatchThemIfYouCan.html",
+      "size": 14019,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Cephalopods_poster.html",
+      "size": 15762,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Chocolate_Dinosaurs.html",
+      "size": 12733,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Coelacanths.html",
+      "size": 15903,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dark_Caves.html",
+      "size": 13577,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Darwin_and_evolution.html",
+      "size": 13986,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Die_Evolution_des_Menschen.html",
+      "size": 12640,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_back_to_life.html",
+      "size": 13560,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_collectors.html",
+      "size": 12553,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_en.html",
+      "size": 15259,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_es.html",
+      "size": 15871,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_general.html",
+      "size": 12576,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_in_China_and_Mongolia.html",
+      "size": 12779,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaurs_in_EU.html",
+      "size": 12715,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaur_album.html",
+      "size": 14083,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Dinosaur_Discoveries.html",
+      "size": 22689,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Diverse_live_in_middle_age.html",
+      "size": 13771,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Fossils.html",
+      "size": 15135,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Fossils_of_Peru_album.html",
+      "size": 15200,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Herpetofauna.html",
+      "size": 15616,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Homo_evolution_en.html",
+      "size": 15402,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Homo_evolution_fr.html",
+      "size": 15847,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Human_evolution.html",
+      "size": 12505,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\index.html",
+      "size": 59575,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Marine_reptiles.html",
+      "size": 12732,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Neandertal.html",
+      "size": 13505,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Oil_and_Dinosaurs_en.html",
+      "size": 15411,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Oil_and_Dinosaurs_fr.html",
+      "size": 15873,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\One_Page_A3.html",
+      "size": 12118,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\One_Page_A4.html",
+      "size": 12115,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\PaleoInvertebrados_poster.html",
+      "size": 13603,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Paleontology.html",
+      "size": 13027,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Posters.html",
+      "size": 12117,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Pterosaurs.html",
+      "size": 14920,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Sinclair_postmarks.html",
+      "size": 15283,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\The_Human_Adventure_of_Prehistory.html",
+      "size": 12588,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Trex.html",
+      "size": 13056,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Wallace_poster.html",
+      "size": 12875,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\Wollhaarmammut.html",
+      "size": 12438,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\World_of_Dinosaurs.html",
+      "size": 13176,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "exhibitions\\X_Brazilian_Symposium_of_Paleontology_of_Vertebrates.html",
+      "size": 14568,
+      "folder": "exhibitions"
+    },
+    {
+      "path": "images\\ads\\michel\\dino1\\default.html",
+      "size": 109,
+      "folder": "images\\ads\\michel\\dino1"
+    },
+    {
+      "path": "images\\ads\\michel\\dogs1\\default.html",
+      "size": 109,
+      "folder": "images\\ads\\michel\\dogs1"
+    },
+    {
+      "path": "images\\ads\\michel\\wwf2\\default.html",
+      "size": 109,
+      "folder": "images\\ads\\michel\\wwf2"
+    },
+    {
+      "path": "images\\awards\\belphila2019\\default.html",
+      "size": 121,
+      "folder": "images\\awards\\belphila2019"
+    },
+    {
+      "path": "images\\awards\\chicagopex2019\\default.html",
+      "size": 121,
+      "folder": "images\\awards\\chicagopex2019"
+    },
+    {
+      "path": "images\\awards\\default.html",
+      "size": 121,
+      "folder": "images\\awards"
+    },
+    {
+      "path": "images\\awards\\filananias2021\\default.html",
+      "size": 121,
+      "folder": "images\\awards\\filananias2021"
+    },
+    {
+      "path": "images\\awards\\italia2018\\default.html",
+      "size": 121,
+      "folder": "images\\awards\\italia2018"
+    },
+    {
+      "path": "images\\awards\\naposta2020\\default.html",
+      "size": 121,
+      "folder": "images\\awards\\naposta2020"
+    },
+    {
+      "path": "images\\awards\\omaha2019\\default.html",
+      "size": 121,
+      "folder": "images\\awards\\omaha2019"
+    },
+    {
+      "path": "images\\checklist_pm.html",
+      "size": 162879,
+      "folder": "images"
+    },
+    {
+      "path": "images\\checklist_stamps.html",
+      "size": 1759154,
+      "folder": "images"
+    },
+    {
+      "path": "images\\checklist_stamps_example.html",
+      "size": 326659,
+      "folder": "images"
+    },
+    {
+      "path": "images\\country\\aden\\default.html",
+      "size": 128,
+      "folder": "images\\country\\aden"
+    },
+    {
+      "path": "images\\country\\afars\\default.html",
+      "size": 128,
+      "folder": "images\\country\\afars"
+    },
+    {
+      "path": "images\\country\\angola\\default.html",
+      "size": 129,
+      "folder": "images\\country\\angola"
+    },
+    {
+      "path": "images\\country\\argentina\\default.html",
+      "size": 132,
+      "folder": "images\\country\\argentina"
+    },
+    {
+      "path": "images\\country\\australia\\default.html",
+      "size": 132,
+      "folder": "images\\country\\australia"
+    },
+    {
+      "path": "images\\country\\austria\\default.html",
+      "size": 130,
+      "folder": "images\\country\\austria"
+    },
+    {
+      "path": "images\\country\\default.html",
+      "size": 128,
+      "folder": "images\\country"
+    },
+    {
+      "path": "images\\fdc.html",
+      "size": 15589,
+      "folder": "images"
+    },
+    {
+      "path": "images\\fdc_others.html",
+      "size": 15527,
+      "folder": "images"
+    },
+    {
+      "path": "images\\fdc_others_used.html",
+      "size": 15200,
+      "folder": "images"
+    },
+    {
+      "path": "images\\fdc_used.html",
+      "size": 15200,
+      "folder": "images"
+    },
+    {
+      "path": "images\\index.html",
+      "size": 25923,
+      "folder": "images"
+    },
+    {
+      "path": "images\\index1.html",
+      "size": 22696,
+      "folder": "images"
+    },
+    {
+      "path": "images\\others\\amazon\\default.html",
+      "size": 127,
+      "folder": "images\\others\\amazon"
+    },
+    {
+      "path": "images\\others\\default.html",
+      "size": 127,
+      "folder": "images\\others"
+    },
+    {
+      "path": "images\\others\\icons\\default.html",
+      "size": 127,
+      "folder": "images\\others\\icons"
+    },
+    {
+      "path": "images\\others\\icons\\others\\uii\\preview.html",
+      "size": 21981,
+      "folder": "images\\others\\icons\\others\\uii"
+    },
+    {
+      "path": "images\\others\\visitCards\\default.html",
+      "size": 127,
+      "folder": "images\\others\\visitCards"
+    },
+    {
+      "path": "images\\pm.html",
+      "size": 18662,
+      "folder": "images"
+    },
+    {
+      "path": "images\\pm_others.html",
+      "size": 21251,
+      "folder": "images"
+    },
+    {
+      "path": "images\\pm_others_used.html",
+      "size": 18945,
+      "folder": "images"
+    },
+    {
+      "path": "images\\pm_used.html",
+      "size": 18650,
+      "folder": "images"
+    },
+    {
+      "path": "images\\preview\\covers\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\covers"
+    },
+    {
+      "path": "images\\preview\\default.html",
+      "size": 127,
+      "folder": "images\\preview"
+    },
+    {
+      "path": "images\\preview\\fdc\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\fdc"
+    },
+    {
+      "path": "images\\preview\\fdc\\Thumbnails.html",
+      "size": 17784,
+      "folder": "images\\preview\\fdc"
+    },
+    {
+      "path": "images\\preview\\fdc\\used\\index.html",
+      "size": 5075,
+      "folder": "images\\preview\\fdc\\used"
+    },
+    {
+      "path": "images\\preview\\pc\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\pc"
+    },
+    {
+      "path": "images\\preview\\pm\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\pm"
+    },
+    {
+      "path": "images\\preview\\pm\\others\\Thumbnails.html",
+      "size": 131027,
+      "folder": "images\\preview\\pm\\others"
+    },
+    {
+      "path": "images\\preview\\pm\\others\\used\\Thumbnails.html",
+      "size": 58224,
+      "folder": "images\\preview\\pm\\others\\used"
+    },
+    {
+      "path": "images\\preview\\ps\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\ps"
+    },
+    {
+      "path": "images\\preview\\ps\\others\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\ps\\others"
+    },
+    {
+      "path": "images\\preview\\souvenirs\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\souvenirs"
+    },
+    {
+      "path": "images\\preview\\stamps\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps"
+    },
+    {
+      "path": "images\\preview\\stamps\\fake\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\fake"
+    },
+    {
+      "path": "images\\preview\\stamps\\fake\\not_paleo\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\fake\\not_paleo"
+    },
+    {
+      "path": "images\\preview\\stamps\\illegal\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\illegal"
+    },
+    {
+      "path": "images\\preview\\stamps\\local\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\local"
+    },
+    {
+      "path": "images\\preview\\stamps\\not_paleo\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\not_paleo"
+    },
+    {
+      "path": "images\\preview\\stamps\\others\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\others"
+    },
+    {
+      "path": "images\\preview\\stamps\\others\\fake\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\others\\fake"
+    },
+    {
+      "path": "images\\preview\\stamps\\others\\variations\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\others\\variations"
+    },
+    {
+      "path": "images\\preview\\stamps\\personalized\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\personalized"
+    },
+    {
+      "path": "images\\preview\\stamps\\personalized\\others\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\personalized\\others"
+    },
+    {
+      "path": "images\\preview\\stamps\\private_post\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\private_post"
+    },
+    {
+      "path": "images\\preview\\stamps\\unwanted\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\unwanted"
+    },
+    {
+      "path": "images\\preview\\stamps\\variations\\default.html",
+      "size": 127,
+      "folder": "images\\preview\\stamps\\variations"
+    },
+    {
+      "path": "images\\ps.html",
+      "size": 14457,
+      "folder": "images"
+    },
+    {
+      "path": "images\\ps_others.html",
+      "size": 14419,
+      "folder": "images"
+    },
+    {
+      "path": "images\\ps_others_used.html",
+      "size": 14468,
+      "folder": "images"
+    },
+    {
+      "path": "images\\ps_used.html",
+      "size": 14461,
+      "folder": "images"
+    },
+    {
+      "path": "images\\stamps.html",
+      "size": 14981,
+      "folder": "images"
+    },
+    {
+      "path": "images\\stamps_others.html",
+      "size": 15238,
+      "folder": "images"
+    },
+    {
+      "path": "images\\stamps_others_used.html",
+      "size": 14950,
+      "folder": "images"
+    },
+    {
+      "path": "images\\stamps_used.html",
+      "size": 14898,
+      "folder": "images"
+    },
+    {
+      "path": "index.html",
+      "size": 17801,
+      "folder": "root"
+    },
+    {
+      "path": "legend.html",
+      "size": 16600,
+      "folder": "root"
+    },
+    {
+      "path": "links.html",
+      "size": 32879,
+      "folder": "root"
+    },
+    {
+      "path": "links_forums.html",
+      "size": 20381,
+      "folder": "root"
+    },
+    {
+      "path": "links_paleo.html",
+      "size": 30642,
+      "folder": "root"
+    },
+    {
+      "path": "links_postal_resources.html",
+      "size": 209669,
+      "folder": "root"
+    },
+    {
+      "path": "logo.html",
+      "size": 12024,
+      "folder": "root"
+    },
+    {
+      "path": "media\\books\\default.html",
+      "size": 93,
+      "folder": "media\\books"
+    },
+    {
+      "path": "media\\books\\indica\\default.html",
+      "size": 96,
+      "folder": "media\\books\\indica"
+    },
+    {
+      "path": "media\\books\\indica.html",
+      "size": 15651,
+      "folder": "media\\books"
+    },
+    {
+      "path": "media\\books.html",
+      "size": 100043,
+      "folder": "media"
+    },
+    {
+      "path": "media\\index.html",
+      "size": 90,
+      "folder": "media"
+    },
+    {
+      "path": "media\\paleoart.html",
+      "size": 30919,
+      "folder": "media"
+    },
+    {
+      "path": "media\\videos.html",
+      "size": 20354,
+      "folder": "media"
+    },
+    {
+      "path": "milestones.html",
+      "size": 93385,
+      "folder": "root"
+    },
+    {
+      "path": "news.html",
+      "size": 50864,
+      "folder": "root"
+    },
+    {
+      "path": "news_archive.html",
+      "size": 56054,
+      "folder": "root"
+    },
+    {
+      "path": "paleophilatelie_site_map.html",
+      "size": 84313,
+      "folder": "root"
+    },
+    {
+      "path": "phil_catalogue.html",
+      "size": 1523,
+      "folder": "root"
+    },
+    {
+      "path": "phil_catalogue_chronlogy_bar.html",
+      "size": 4202,
+      "folder": "root"
+    },
+    {
+      "path": "phil_catalogue_country_bar.html",
+      "size": 2781,
+      "folder": "root"
+    },
+    {
+      "path": "phil_catalogue_main.html",
+      "size": 40027,
+      "folder": "root"
+    },
+    {
+      "path": "phil_catalogue_species.html",
+      "size": 14750,
+      "folder": "root"
+    },
+    {
+      "path": "phil_catalogue_trends.html",
+      "size": 21652,
+      "folder": "root"
+    },
+    {
+      "path": "phil_glossary.html",
+      "size": 29927,
+      "folder": "root"
+    },
+    {
+      "path": "resources.html",
+      "size": 99,
+      "folder": "root"
+    },
+    {
+      "path": "sitemap.html",
+      "size": 111590,
+      "folder": "root"
+    },
+    {
+      "path": "topics\\anthro\\antropologist.html",
+      "size": 30461,
+      "folder": "topics\\anthro"
+    },
+    {
+      "path": "topics\\anthro\\contributors.html",
+      "size": 16273,
+      "folder": "topics\\anthro"
+    },
+    {
+      "path": "topics\\anthro\\index.html",
+      "size": 45546,
+      "folder": "topics\\anthro"
+    },
+    {
+      "path": "topics\\anthro\\museums.html",
+      "size": 47766,
+      "folder": "topics\\anthro"
+    },
+    {
+      "path": "topics\\anthro\\sites.html",
+      "size": 49948,
+      "folder": "topics\\anthro"
+    },
+    {
+      "path": "topics\\index.html",
+      "size": 12538,
+      "folder": "topics"
+    },
+    {
+      "path": "topics\\paleo\\contributors.html",
+      "size": 108972,
+      "folder": "topics\\paleo"
+    },
+    {
+      "path": "topics\\paleo\\index.html",
+      "size": 93633,
+      "folder": "topics\\paleo"
+    },
+    {
+      "path": "topics\\paleo\\museums.html",
+      "size": 201462,
+      "folder": "topics\\paleo"
+    },
+    {
+      "path": "topics\\paleo\\paleontologist.html",
+      "size": 128791,
+      "folder": "topics\\paleo"
+    },
+    {
+      "path": "topics\\paleo\\personalities\\charles_darwin.html",
+      "size": 262906,
+      "folder": "topics\\paleo\\personalities"
+    },
+    {
+      "path": "topics\\paleo\\personalities\\default.html",
+      "size": 93,
+      "folder": "topics\\paleo\\personalities"
+    },
+    {
+      "path": "topics\\paleo\\sites.html",
+      "size": 122868,
+      "folder": "topics\\paleo"
+    },
+    {
+      "path": "topics\\paleo\\vertebrate\\ichthyosaur.html",
+      "size": 182662,
+      "folder": "topics\\paleo\\vertebrate"
+    },
+    {
+      "path": "topics\\paleo\\vertebrate\\index.html",
+      "size": 51166,
+      "folder": "topics\\paleo\\vertebrate"
+    },
+    {
+      "path": "topics\\paleo\\vertebrate\\mammoth.html",
+      "size": 140664,
+      "folder": "topics\\paleo\\vertebrate"
+    },
+    {
+      "path": "topics\\paleo\\vertebrate\\megaloceros.html",
+      "size": 97857,
+      "folder": "topics\\paleo\\vertebrate"
+    },
+    {
+      "path": "year\\194x-18xx.html",
+      "size": 84346,
+      "folder": "year"
+    },
+    {
+      "path": "year\\195x.html",
+      "size": 27794,
+      "folder": "year"
+    },
+    {
+      "path": "year\\196x.html",
+      "size": 29044,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1970-1974.html",
+      "size": 25460,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1975.html",
+      "size": 18085,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1976.html",
+      "size": 18080,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1977.html",
+      "size": 20379,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1978.html",
+      "size": 19220,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1979.html",
+      "size": 17599,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1980.html",
+      "size": 18057,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1981.html",
+      "size": 16943,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1982.html",
+      "size": 22568,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1983.html",
+      "size": 16439,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1984.html",
+      "size": 18889,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1985.html",
+      "size": 17628,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1986.html",
+      "size": 18877,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1987.html",
+      "size": 18177,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1988.html",
+      "size": 18599,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1989.html",
+      "size": 20676,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1990.html",
+      "size": 21557,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1991.html",
+      "size": 20490,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1992.html",
+      "size": 23689,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1993.html",
+      "size": 26247,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1994.html",
+      "size": 27308,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1995.html",
+      "size": 23728,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1996.html",
+      "size": 23106,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1997.html",
+      "size": 24581,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1998.html",
+      "size": 24899,
+      "folder": "year"
+    },
+    {
+      "path": "year\\1999.html",
+      "size": 29462,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2000.html",
+      "size": 25262,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2001.html",
+      "size": 22272,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2002.html",
+      "size": 22288,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2003.html",
+      "size": 20688,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2004.html",
+      "size": 21093,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2005.html",
+      "size": 24774,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2006.html",
+      "size": 24498,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2007.html",
+      "size": 21889,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2008.html",
+      "size": 24581,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2009.html",
+      "size": 23059,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2010.html",
+      "size": 27256,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2011.html",
+      "size": 26600,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2012.html",
+      "size": 28724,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2013.html",
+      "size": 31938,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2014.html",
+      "size": 41422,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2015.html",
+      "size": 57415,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2016.html",
+      "size": 60869,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2017.html",
+      "size": 88986,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2018.html",
+      "size": 67498,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2019.html",
+      "size": 89285,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2020.html",
+      "size": 70277,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2021.html",
+      "size": 59245,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2022.html",
+      "size": 84662,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2023.html",
+      "size": 99586,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2024.html",
+      "size": 77247,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2025.html",
+      "size": 51036,
+      "folder": "year"
+    },
+    {
+      "path": "year\\2026.html",
+      "size": 93,
+      "folder": "year"
+    },
+    {
+      "path": "year\\current.html",
+      "size": 20670,
+      "folder": "year"
+    },
+    {
+      "path": "year\\darwin_200.html",
+      "size": 38527,
+      "folder": "year"
+    },
+    {
+      "path": "year\\empty.html",
+      "size": 24371,
+      "folder": "year"
+    },
+    {
+      "path": "year\\index.html",
+      "size": 14697,
+      "folder": "year"
+    }
+  ],
+  "folders": [
+    "colorschemes",
+    "colorschemes\\colorscheme3",
+    "colorschemes\\colorscheme3\\images",
+    "colorschemes\\colorscheme3\\images\\static",
+    "country",
+    "description",
+    "description\\covers",
+    "description\\letters",
+    "description\\pm",
+    "description\\ps",
+    "description\\ps\\others",
+    "description\\stamps",
+    "description\\stamps\\others",
+    "description\\stamps\\personalized",
+    "description\\stamps\\personalized\\preview",
+    "exhibitions",
+    "exhibitions\\style",
+    "images",
+    "images\\about",
+    "images\\ads",
+    "images\\ads\\books",
+    "images\\ads\\books\\new",
+    "images\\ads\\books\\temp",
+    "images\\ads\\facebook",
+    "images\\ads\\michel",
+    "images\\ads\\michel\\dino1",
+    "images\\ads\\michel\\dogs1",
+    "images\\ads\\michel\\wwf2",
+    "images\\awards",
+    "images\\awards\\ausvipex2025",
+    "images\\awards\\belphila2019",
+    "images\\awards\\capex2022",
+    "images\\awards\\cape_town2022",
+    "images\\awards\\chicagopex2019",
+    "images\\awards\\dinosaurs",
+    "images\\awards\\dinosaurs\\eggs",
+    "images\\awards\\dinosaurs\\iguanodon",
+    "images\\awards\\dinosaurs\\iguanodon\\preview",
+    "images\\awards\\europhilex2025",
+    "images\\awards\\filabras2024",
+    "images\\awards\\filananias2021",
+    "images\\awards\\gass2023",
+    "images\\awards\\gass2024",
+    "images\\awards\\ibra2023",
+    "images\\awards\\italia2018",
+    "images\\awards\\london2022",
+    "images\\awards\\naposta2020",
+    "images\\awards\\nzple2023",
+    "images\\awards\\nzple2025",
+    "images\\awards\\omaha2019",
+    "images\\awards\\pwo2022",
+    "images\\country",
+    "images\\country\\abkhazia",
+    "images\\country\\aden",
+    "images\\country\\afars",
+    "images\\country\\afghanistan",
+    "images\\country\\algeria",
+    "images\\country\\angola",
+    "images\\country\\antigua",
+    "images\\country\\argentina",
+    "images\\country\\argentina\\1",
+    "images\\country\\armenia",
+    "images\\country\\ascension_isl",
+    "images\\country\\australia",
+    "images\\country\\austria",
+    "images\\country\\azerbaijan",
+    "images\\country\\barbados",
+    "images\\country\\bat",
+    "images\\country\\belgium",
+    "images\\country\\benin",
+    "images\\country\\bhutan",
+    "images\\country\\biot",
+    "images\\country\\bolivia",
+    "images\\country\\bolivia\\preview",
+    "images\\country\\bophuthatswana",
+    "images\\country\\bosnia",
+    "images\\country\\brazil",
+    "images\\country\\bulgaria",
+    "images\\country\\burundi",
+    "images\\country\\canada",
+    "images\\country\\cape_verde",
+    "images\\country\\car",
+    "images\\country\\chad",
+    "images\\country\\chile",
+    "images\\country\\china",
+    "images\\country\\china\\temp",
+    "images\\country\\christmas_isl",
+    "images\\country\\cocos_isl",
+    "images\\country\\colombia",
+    "images\\country\\common_images",
+    "images\\country\\common_images\\preview",
+    "images\\country\\comoros_isl",
+    "images\\country\\congo_k",
+    "images\\country\\croatia",
+    "images\\country\\cuba",
+    "images\\country\\cyprus_north",
+    "images\\country\\czech",
+    "images\\country\\denmark",
+    "images\\country\\dnr",
+    "images\\country\\dnr\\2019",
+    "images\\country\\dominica",
+    "images\\country\\dominicana",
+    "images\\country\\ecuador",
+    "images\\country\\ecuador\\preview",
+    "images\\country\\egypt",
+    "images\\country\\el_salvador",
+    "images\\country\\estonia",
+    "images\\country\\ethiopia",
+    "images\\country\\falkland",
+    "images\\country\\france",
+    "images\\country\\fujeira",
+    "images\\country\\gambia",
+    "images\\country\\georgia",
+    "images\\country\\germany",
+    "images\\country\\germany\\brief_und_mehr",
+    "images\\country\\germany\\eichstaett",
+    "images\\country\\germany\\preview",
+    "images\\country\\germany_gdr",
+    "images\\country\\ghana",
+    "images\\country\\gibraltar",
+    "images\\country\\greece",
+    "images\\country\\greenland",
+    "images\\country\\grenada",
+    "images\\country\\guernsey",
+    "images\\country\\guinea",
+    "images\\country\\guinea_b",
+    "images\\country\\guyana",
+    "images\\country\\hong_kong",
+    "images\\country\\hungary",
+    "images\\country\\images",
+    "images\\country\\india",
+    "images\\country\\indonesia",
+    "images\\country\\iran",
+    "images\\country\\isle_of_man",
+    "images\\country\\israel",
+    "images\\country\\italy",
+    "images\\country\\ivory_coast",
+    "images\\country\\japan",
+    "images\\country\\jersey",
+    "images\\country\\kenya",
+    "images\\country\\kenya_tanzania_uganda",
+    "images\\country\\kiribati",
+    "images\\country\\korea_north",
+    "images\\country\\korea_south",
+    "images\\country\\kyrgyzstan",
+    "images\\country\\kyrgyzstan\\old",
+    "images\\country\\laos",
+    "images\\country\\lebanon",
+    "images\\country\\libya",
+    "images\\country\\madagascar",
+    "images\\country\\malaysia",
+    "images\\country\\maldives",
+    "images\\country\\malta",
+    "images\\country\\manama",
+    "images\\country\\marshall_isl",
+    "images\\country\\mauritania",
+    "images\\country\\mauritius",
+    "images\\country\\mexico",
+    "images\\country\\micronesia",
+    "images\\country\\monaco",
+    "images\\country\\mongolia",
+    "images\\country\\montserrat",
+    "images\\country\\mozambique",
+    "images\\country\\nauru",
+    "images\\country\\netherlands",
+    "images\\country\\nevis",
+    "images\\country\\new_zealand",
+    "images\\country\\niger",
+    "images\\country\\niuafoou",
+    "images\\country\\norway",
+    "images\\country\\oman",
+    "images\\country\\pabay_isl",
+    "images\\country\\palau",
+    "images\\country\\peru",
+    "images\\country\\poland",
+    "images\\country\\portugal",
+    "images\\country\\quaiti",
+    "images\\country\\romania",
+    "images\\country\\ross",
+    "images\\country\\russia",
+    "images\\country\\russia\\preview",
+    "images\\country\\russia\\temp",
+    "images\\country\\san_marino",
+    "images\\country\\sao_tome",
+    "images\\country\\senegal",
+    "images\\country\\serbia",
+    "images\\country\\seychelles",
+    "images\\country\\sierra_leone",
+    "images\\country\\singapore",
+    "images\\country\\slovakia",
+    "images\\country\\slovenia",
+    "images\\country\\solomon_isl",
+    "images\\country\\somalia",
+    "images\\country\\south_africa",
+    "images\\country\\south_georgia",
+    "images\\country\\south_west_africa",
+    "images\\country\\spain",
+    "images\\country\\st_helena",
+    "images\\country\\st_kitts",
+    "images\\country\\st_vincent",
+    "images\\country\\sweden",
+    "images\\country\\switzerland",
+    "images\\country\\taaf",
+    "images\\country\\taiwan",
+    "images\\country\\tajikistan",
+    "images\\country\\tanzania",
+    "images\\country\\thailand",
+    "images\\country\\togo",
+    "images\\country\\transkei",
+    "images\\country\\transnistria",
+    "images\\country\\tristan_da_cunha",
+    "images\\country\\tukmenistan",
+    "images\\country\\turkey",
+    "images\\country\\turks_and_caicos",
+    "images\\country\\tuvalu",
+    "images\\country\\uganda",
+    "images\\country\\uganda\\1992",
+    "images\\country\\uk",
+    "images\\country\\uk\\queen_victoria",
+    "images\\country\\uk\\queen_victoria\\preview",
+    "images\\country\\ukraine",
+    "images\\country\\ukraine\\preview",
+    "images\\country\\un",
+    "images\\country\\uruguay",
+    "images\\country\\usa",
+    "images\\country\\ussr",
+    "images\\country\\vanuatu",
+    "images\\country\\wallis",
+    "images\\country\\yugoslavia",
+    "images\\country\\zaire",
+    "images\\details",
+    "images\\details\\stamps",
+    "images\\details\\stamps\\official",
+    "images\\details\\stamps\\official\\india",
+    "images\\details\\stamps\\official\\india\\1951",
+    "images\\details\\stamps\\official\\india\\1951\\preview",
+    "images\\details\\stamps\\official\\india\\1983",
+    "images\\details\\stamps\\official\\india\\1997",
+    "images\\details\\stamps\\official\\india\\1997\\preview",
+    "images\\details\\stamps\\official\\kyrgyzstan",
+    "images\\details\\stamps\\official\\kyrgyzstan\\1998",
+    "images\\details\\stamps\\official\\kyrgyzstan\\2012",
+    "images\\details\\stamps\\official\\kyrgyzstan\\2012\\preview",
+    "images\\details\\stamps\\official\\kyrgyzstan\\2024",
+    "images\\details\\stamps\\official\\kyrgyzstan\\2024\\preview",
+    "images\\details\\stamps\\official\\kyrgyzstan\\2025",
+    "images\\details\\stamps\\official\\kyrgyzstan\\2025\\preview",
+    "images\\details\\stamps\\official\\nepal",
+    "images\\details\\stamps\\official\\nepal\\2013",
+    "images\\details\\stamps\\official\\nepal\\2013\\preview",
+    "images\\details\\stamps\\official\\nepal\\2015",
+    "images\\details\\stamps\\official\\nepal\\2015\\presentation",
+    "images\\details\\stamps\\official\\nepal\\2015\\preview",
+    "images\\details\\stamps\\official\\nepal\\2017",
+    "images\\details\\stamps\\official\\nepal\\2017\\preview",
+    "images\\details\\stamps\\official_others",
+    "images\\details\\stamps\\official_others\\aland",
+    "images\\details\\stamps\\official_others\\aland\\2011",
+    "images\\details\\stamps\\official_others\\aland\\2011\\preview",
+    "images\\details\\stamps\\official_others\\argentina",
+    "images\\details\\stamps\\official_others\\argentina\\1933",
+    "images\\details\\stamps\\official_others\\argentina\\1958",
+    "images\\details\\stamps\\official_others\\argentina\\1976",
+    "images\\details\\stamps\\official_others\\argentina\\1977",
+    "images\\details\\stamps\\official_others\\argentina\\1978",
+    "images\\details\\stamps\\official_others\\argentina\\1982",
+    "images\\details\\stamps\\official_others\\argentina\\1996",
+    "images\\details\\stamps\\official_others\\argentina\\1999",
+    "images\\details\\stamps\\official_others\\argentina\\2002",
+    "images\\details\\stamps\\official_others\\argentina\\2003",
+    "images\\details\\stamps\\official_others\\argentina\\2007",
+    "images\\details\\stamps\\official_others\\argentina\\2023",
+    "images\\details\\stamps\\official_others\\australia",
+    "images\\details\\stamps\\official_others\\australia\\1993",
+    "images\\details\\stamps\\official_others\\australia\\1996",
+    "images\\details\\stamps\\official_others\\australia\\2007",
+    "images\\details\\stamps\\official_others\\australia\\2013",
+    "images\\details\\stamps\\official_others\\australia\\2017",
+    "images\\details\\stamps\\official_others\\australia\\2018",
+    "images\\details\\stamps\\official_others\\australia\\2022",
+    "images\\details\\stamps\\official_others\\australia\\2022\\preview",
+    "images\\details\\stamps\\official_others\\australia\\2022\\temp",
+    "images\\details\\stamps\\official_others\\austria",
+    "images\\details\\stamps\\official_others\\austria\\1968",
+    "images\\details\\stamps\\official_others\\austria\\1989",
+    "images\\details\\stamps\\official_others\\austria\\1989\\preview",
+    "images\\details\\stamps\\official_others\\austria\\2015",
+    "images\\details\\stamps\\official_others\\bat",
+    "images\\details\\stamps\\official_others\\bat\\1987",
+    "images\\details\\stamps\\official_others\\bat\\2008",
+    "images\\details\\stamps\\official_others\\belarus",
+    "images\\details\\stamps\\official_others\\belgium",
+    "images\\details\\stamps\\official_others\\belgium\\1968",
+    "images\\details\\stamps\\official_others\\belgium\\1979",
+    "images\\details\\stamps\\official_others\\belgium\\1997",
+    "images\\details\\stamps\\official_others\\belgium\\2000",
+    "images\\details\\stamps\\official_others\\biot",
+    "images\\details\\stamps\\official_others\\biot\\2009",
+    "images\\details\\stamps\\official_others\\biot\\2009\\preview",
+    "images\\details\\stamps\\official_others\\bolivia",
+    "images\\details\\stamps\\official_others\\bolivia\\2013",
+    "images\\details\\stamps\\official_others\\bosnia_herzegovina",
+    "images\\details\\stamps\\official_others\\bosnia_herzegovina\\2005",
+    "images\\details\\stamps\\official_others\\bosnia_herzegovina\\2010",
+    "images\\details\\stamps\\official_others\\bosnia_herzegovina\\2010\\preview",
+    "images\\details\\stamps\\official_others\\bulgaria",
+    "images\\details\\stamps\\official_others\\bulgaria\\1958",
+    "images\\details\\stamps\\official_others\\bulgaria\\1964",
+    "images\\details\\stamps\\official_others\\bulgaria\\2018",
+    "images\\details\\stamps\\official_others\\canada",
+    "images\\details\\stamps\\official_others\\canada\\1999",
+    "images\\details\\stamps\\official_others\\canada\\2014",
+    "images\\details\\stamps\\official_others\\canada\\2014\\preview",
+    "images\\details\\stamps\\official_others\\canada\\2015_1",
+    "images\\details\\stamps\\official_others\\canada\\2015_1\\preview",
+    "images\\details\\stamps\\official_others\\canada\\2015_2",
+    "images\\details\\stamps\\official_others\\canada\\2015_2\\preview",
+    "images\\details\\stamps\\official_others\\car",
+    "images\\details\\stamps\\official_others\\car\\2020",
+    "images\\details\\stamps\\official_others\\chad",
+    "images\\details\\stamps\\official_others\\chad\\1962",
+    "images\\details\\stamps\\official_others\\china",
+    "images\\details\\stamps\\official_others\\china\\1932",
+    "images\\details\\stamps\\official_others\\china\\1932\\preview",
+    "images\\details\\stamps\\official_others\\china\\1959",
+    "images\\details\\stamps\\official_others\\china\\1959\\preview",
+    "images\\details\\stamps\\official_others\\china\\1962",
+    "images\\details\\stamps\\official_others\\china\\1962\\preview",
+    "images\\details\\stamps\\official_others\\china\\2002",
+    "images\\details\\stamps\\official_others\\china\\2002\\preview",
+    "images\\details\\stamps\\official_others\\china\\2021",
+    "images\\details\\stamps\\official_others\\cocos_isl",
+    "images\\details\\stamps\\official_others\\cocos_isl\\1976",
+    "images\\details\\stamps\\official_others\\cocos_isl\\1990",
+    "images\\details\\stamps\\official_others\\cocos_isl\\1990\\preview",
+    "images\\details\\stamps\\official_others\\cocos_isl\\1998",
+    "images\\details\\stamps\\official_others\\colombia",
+    "images\\details\\stamps\\official_others\\colombia\\2003",
+    "images\\details\\stamps\\official_others\\comoros",
+    "images\\details\\stamps\\official_others\\comoros\\1998",
+    "images\\details\\stamps\\official_others\\comoros\\1998\\preview",
+    "images\\details\\stamps\\official_others\\comoros\\2006",
+    "images\\details\\stamps\\official_others\\costa_rica",
+    "images\\details\\stamps\\official_others\\costa_rica\\2012",
+    "images\\details\\stamps\\official_others\\croatia",
+    "images\\details\\stamps\\official_others\\croatia\\2020",
+    "images\\details\\stamps\\official_others\\croatia\\2020\\preview",
+    "images\\details\\stamps\\official_others\\czech",
+    "images\\details\\stamps\\official_others\\czech\\1991",
+    "images\\details\\stamps\\official_others\\czech\\1994",
+    "images\\details\\stamps\\official_others\\czech\\2013",
+    "images\\details\\stamps\\official_others\\czech\\2013\\preview",
+    "images\\details\\stamps\\official_others\\czech\\2017",
+    "images\\details\\stamps\\official_others\\czech\\2018",
+    "images\\details\\stamps\\official_others\\czech\\2018\\2",
+    "images\\details\\stamps\\official_others\\denmark",
+    "images\\details\\stamps\\official_others\\denmark\\1988",
+    "images\\details\\stamps\\official_others\\djibouti",
+    "images\\details\\stamps\\official_others\\djibouti\\2020",
+    "images\\details\\stamps\\official_others\\ecuador",
+    "images\\details\\stamps\\official_others\\el_salvador",
+    "images\\details\\stamps\\official_others\\el_salvador\\1983",
+    "images\\details\\stamps\\official_others\\france",
+    "images\\details\\stamps\\official_others\\france\\1949",
+    "images\\details\\stamps\\official_others\\france\\1949\\preview",
+    "images\\details\\stamps\\official_others\\france\\1957",
+    "images\\details\\stamps\\official_others\\france\\1969",
+    "images\\details\\stamps\\official_others\\france\\1978",
+    "images\\details\\stamps\\official_others\\france\\1981",
+    "images\\details\\stamps\\official_others\\france\\2019",
+    "images\\details\\stamps\\official_others\\france\\2023",
+    "images\\details\\stamps\\official_others\\france\\2023\\preview",
+    "images\\details\\stamps\\official_others\\france\\2024",
+    "images\\details\\stamps\\official_others\\france\\2024\\preview",
+    "images\\details\\stamps\\official_others\\germany",
+    "images\\details\\stamps\\official_others\\germany\\1977",
+    "images\\details\\stamps\\official_others\\germany\\1980",
+    "images\\details\\stamps\\official_others\\germany\\1980\\polymaths",
+    "images\\details\\stamps\\official_others\\germany\\1980\\polymaths\\preview",
+    "images\\details\\stamps\\official_others\\germany\\1980\\wegener",
+    "images\\details\\stamps\\official_others\\germany\\2007",
+    "images\\details\\stamps\\official_others\\germany\\2007\\preview",
+    "images\\details\\stamps\\official_others\\germany\\2013",
+    "images\\details\\stamps\\official_others\\germany\\2013\\preview",
+    "images\\details\\stamps\\official_others\\germany\\2019",
+    "images\\details\\stamps\\official_others\\germany\\2025",
+    "images\\details\\stamps\\official_others\\germany\\2025\\pc",
+    "images\\details\\stamps\\official_others\\germany\\2025\\pc\\orig",
+    "images\\details\\stamps\\official_others\\germany\\2025\\pc\\preview",
+    "images\\details\\stamps\\official_others\\germany\\2025\\photos_2025-10",
+    "images\\details\\stamps\\official_others\\germany\\2025\\preview",
+    "images\\details\\stamps\\official_others\\gibraltar",
+    "images\\details\\stamps\\official_others\\gibraltar\\2018",
+    "images\\details\\stamps\\official_others\\gibraltar\\2022",
+    "images\\details\\stamps\\official_others\\greece",
+    "images\\details\\stamps\\official_others\\greece\\1994",
+    "images\\details\\stamps\\official_others\\greece\\2019",
+    "images\\details\\stamps\\official_others\\greece\\2019\\preview",
+    "images\\details\\stamps\\official_others\\hong_kong",
+    "images\\details\\stamps\\official_others\\hong_kong\\1993",
+    "images\\details\\stamps\\official_others\\hong_kong\\2002",
+    "images\\details\\stamps\\official_others\\hong_kong\\2014_2",
+    "images\\details\\stamps\\official_others\\hong_kong\\2014_2\\preview",
+    "images\\details\\stamps\\official_others\\hong_kong\\2014_3",
+    "images\\details\\stamps\\official_others\\hong_kong\\2014_3\\preview",
+    "images\\details\\stamps\\official_others\\hong_kong\\2018",
+    "images\\details\\stamps\\official_others\\hungary",
+    "images\\details\\stamps\\official_others\\hungary\\1954",
+    "images\\details\\stamps\\official_others\\hungary\\1987",
+    "images\\details\\stamps\\official_others\\hungary\\2019",
+    "images\\details\\stamps\\official_others\\iceland",
+    "images\\details\\stamps\\official_others\\iceland\\2018",
+    "images\\details\\stamps\\official_others\\indonesia",
+    "images\\details\\stamps\\official_others\\indonesia\\2000",
+    "images\\details\\stamps\\official_others\\indonesia\\2000\\preview",
+    "images\\details\\stamps\\official_others\\iran",
+    "images\\details\\stamps\\official_others\\iran\\1954",
+    "images\\details\\stamps\\official_others\\iran\\1954\\preview",
+    "images\\details\\stamps\\official_others\\isle_of_man",
+    "images\\details\\stamps\\official_others\\isle_of_man\\1980",
+    "images\\details\\stamps\\official_others\\isle_of_man\\1980\\preview",
+    "images\\details\\stamps\\official_others\\israel",
+    "images\\details\\stamps\\official_others\\israel\\1998",
+    "images\\details\\stamps\\official_others\\israel\\1998\\preview",
+    "images\\details\\stamps\\official_others\\israel\\2014",
+    "images\\details\\stamps\\official_others\\israel\\2014\\preview",
+    "images\\details\\stamps\\official_others\\israel\\2017",
+    "images\\details\\stamps\\official_others\\israel\\2017\\preview",
+    "images\\details\\stamps\\official_others\\italy",
+    "images\\details\\stamps\\official_others\\italy\\1938",
+    "images\\details\\stamps\\official_others\\italy\\1938\\preview",
+    "images\\details\\stamps\\official_others\\italy\\2008",
+    "images\\details\\stamps\\official_others\\italy\\2015",
+    "images\\details\\stamps\\official_others\\italy\\2015\\preview",
+    "images\\details\\stamps\\official_others\\japan",
+    "images\\details\\stamps\\official_others\\japan\\1999",
+    "images\\details\\stamps\\official_others\\japan\\2012",
+    "images\\details\\stamps\\official_others\\jersey",
+    "images\\details\\stamps\\official_others\\jersey\\1976",
+    "images\\details\\stamps\\official_others\\jersey\\1976\\preview",
+    "images\\details\\stamps\\official_others\\jersey\\1982",
+    "images\\details\\stamps\\official_others\\jersey\\1982\\preview",
+    "images\\details\\stamps\\official_others\\jersey\\2023",
+    "images\\details\\stamps\\official_others\\kiribati",
+    "images\\details\\stamps\\official_others\\kiribati\\2009",
+    "images\\details\\stamps\\official_others\\kyrgyzstan",
+    "images\\details\\stamps\\official_others\\kyrgyzstan\\2021",
+    "images\\details\\stamps\\official_others\\latvia",
+    "images\\details\\stamps\\official_others\\latvia\\2020",
+    "images\\details\\stamps\\official_others\\liechtenstein",
+    "images\\details\\stamps\\official_others\\liechtenstein\\2016",
+    "images\\details\\stamps\\official_others\\liechtenstein\\2016\\preview",
+    "images\\details\\stamps\\official_others\\lithuania",
+    "images\\details\\stamps\\official_others\\lithuania\\1999",
+    "images\\details\\stamps\\official_others\\lithuania\\2009",
+    "images\\details\\stamps\\official_others\\lithuania\\2009\\preview",
+    "images\\details\\stamps\\official_others\\luxembourg",
+    "images\\details\\stamps\\official_others\\luxembourg\\2014",
+    "images\\details\\stamps\\official_others\\macedonia",
+    "images\\details\\stamps\\official_others\\macedonia\\2007",
+    "images\\details\\stamps\\official_others\\malaysia",
+    "images\\details\\stamps\\official_others\\malaysia\\2014",
+    "images\\details\\stamps\\official_others\\malaysia\\2014\\preview",
+    "images\\details\\stamps\\official_others\\malaysia\\2019",
+    "images\\details\\stamps\\official_others\\malaysia\\2019\\preview",
+    "images\\details\\stamps\\official_others\\malta",
+    "images\\details\\stamps\\official_others\\malta\\2009",
+    "images\\details\\stamps\\official_others\\mauritius",
+    "images\\details\\stamps\\official_others\\mauritius\\2007",
+    "images\\details\\stamps\\official_others\\mexico",
+    "images\\details\\stamps\\official_others\\mexico\\2010",
+    "images\\details\\stamps\\official_others\\moldova",
+    "images\\details\\stamps\\official_others\\moldova\\2017",
+    "images\\details\\stamps\\official_others\\monaco",
+    "images\\details\\stamps\\official_others\\monaco\\1922",
+    "images\\details\\stamps\\official_others\\monaco\\1942",
+    "images\\details\\stamps\\official_others\\monaco\\1949",
+    "images\\details\\stamps\\official_others\\monaco\\1970",
+    "images\\details\\stamps\\official_others\\monaco\\1983",
+    "images\\details\\stamps\\official_others\\monaco\\1983\\preview",
+    "images\\details\\stamps\\official_others\\monaco\\2016",
+    "images\\details\\stamps\\official_others\\monaco\\2016\\preview",
+    "images\\details\\stamps\\official_others\\monaco\\2022",
+    "images\\details\\stamps\\official_others\\monaco\\2022\\1",
+    "images\\details\\stamps\\official_others\\monaco\\2022\\2",
+    "images\\details\\stamps\\official_others\\monaco\\2022\\3",
+    "images\\details\\stamps\\official_others\\monaco\\2022\\3\\preview",
+    "images\\details\\stamps\\official_others\\monaco\\2022\\preview",
+    "images\\details\\stamps\\official_others\\monaco\\2025",
+    "images\\details\\stamps\\official_others\\monaco\\2025\\preview",
+    "images\\details\\stamps\\official_others\\nepal",
+    "images\\details\\stamps\\official_others\\nepal\\2014",
+    "images\\details\\stamps\\official_others\\nepal\\2014\\preview",
+    "images\\details\\stamps\\official_others\\new_zealand",
+    "images\\details\\stamps\\official_others\\new_zealand\\1967",
+    "images\\details\\stamps\\official_others\\new_zealand\\1967\\preview",
+    "images\\details\\stamps\\official_others\\new_zealand\\2025",
+    "images\\details\\stamps\\official_others\\palau",
+    "images\\details\\stamps\\official_others\\palau\\1993",
+    "images\\details\\stamps\\official_others\\pitcairn_isl",
+    "images\\details\\stamps\\official_others\\pitcairn_isl\\2006",
+    "images\\details\\stamps\\official_others\\pitcairn_isl\\2007",
+    "images\\details\\stamps\\official_others\\poland",
+    "images\\details\\stamps\\official_others\\poland\\1973",
+    "images\\details\\stamps\\official_others\\poland\\2002",
+    "images\\details\\stamps\\official_others\\portugal",
+    "images\\details\\stamps\\official_others\\portugal\\2021",
+    "images\\details\\stamps\\official_others\\portugal\\2021\\brochure.temp",
+    "images\\details\\stamps\\official_others\\romania",
+    "images\\details\\stamps\\official_others\\romania\\1958",
+    "images\\details\\stamps\\official_others\\romania\\2008",
+    "images\\details\\stamps\\official_others\\romania\\2008\\preview",
+    "images\\details\\stamps\\official_others\\romania\\2011",
+    "images\\details\\stamps\\official_others\\romania\\2011\\preview",
+    "images\\details\\stamps\\official_others\\ross",
+    "images\\details\\stamps\\official_others\\ross\\2011",
+    "images\\details\\stamps\\official_others\\russia",
+    "images\\details\\stamps\\official_others\\russia\\2012",
+    "images\\details\\stamps\\official_others\\russia\\2012\\preview",
+    "images\\details\\stamps\\official_others\\russia\\2015",
+    "images\\details\\stamps\\official_others\\russia\\2015\\preview",
+    "images\\details\\stamps\\official_others\\russia\\2023",
+    "images\\details\\stamps\\official_others\\san_marino",
+    "images\\details\\stamps\\official_others\\san_marino\\1983",
+    "images\\details\\stamps\\official_others\\san_marino\\1983\\preview",
+    "images\\details\\stamps\\official_others\\san_marino\\2008",
+    "images\\details\\stamps\\official_others\\san_marino\\2008\\preview",
+    "images\\details\\stamps\\official_others\\san_marino\\2012",
+    "images\\details\\stamps\\official_others\\san_marino\\2012\\preview",
+    "images\\details\\stamps\\official_others\\serbia",
+    "images\\details\\stamps\\official_others\\serbia\\2016",
+    "images\\details\\stamps\\official_others\\serbia\\2019",
+    "images\\details\\stamps\\official_others\\serbia\\2023",
+    "images\\details\\stamps\\official_others\\serbia\\2023\\preview",
+    "images\\details\\stamps\\official_others\\seychelles",
+    "images\\details\\stamps\\official_others\\seychelles\\1981",
+    "images\\details\\stamps\\official_others\\sierra_leone",
+    "images\\details\\stamps\\official_others\\sierra_leone\\2017",
+    "images\\details\\stamps\\official_others\\sierra_leone\\2020",
+    "images\\details\\stamps\\official_others\\slovenia",
+    "images\\details\\stamps\\official_others\\slovenia\\2007",
+    "images\\details\\stamps\\official_others\\slovenia\\2007\\preview",
+    "images\\details\\stamps\\official_others\\south_africa",
+    "images\\details\\stamps\\official_others\\south_africa\\1989",
+    "images\\details\\stamps\\official_others\\south_africa\\1989\\preview",
+    "images\\details\\stamps\\official_others\\south_africa\\2013",
+    "images\\details\\stamps\\official_others\\south_africa\\2014",
+    "images\\details\\stamps\\official_others\\south_africa\\2016",
+    "images\\details\\stamps\\official_others\\south_africa\\2017",
+    "images\\details\\stamps\\official_others\\south_georgia",
+    "images\\details\\stamps\\official_others\\south_georgia\\2001",
+    "images\\details\\stamps\\official_others\\spain",
+    "images\\details\\stamps\\official_others\\spain\\1967",
+    "images\\details\\stamps\\official_others\\spain\\1989",
+    "images\\details\\stamps\\official_others\\spain\\2016",
+    "images\\details\\stamps\\official_others\\spain\\2020",
+    "images\\details\\stamps\\official_others\\spain\\2025",
+    "images\\details\\stamps\\official_others\\spain\\2025\\joke",
+    "images\\details\\stamps\\official_others\\sweden",
+    "images\\details\\stamps\\official_others\\sweden\\1939",
+    "images\\details\\stamps\\official_others\\sweden\\1939\\preview",
+    "images\\details\\stamps\\official_others\\sweden\\1963",
+    "images\\details\\stamps\\official_others\\sweden\\1973",
+    "images\\details\\stamps\\official_others\\sweden\\1973\\preview",
+    "images\\details\\stamps\\official_others\\sweden\\1978",
+    "images\\details\\stamps\\official_others\\sweden\\2007",
+    "images\\details\\stamps\\official_others\\taaf",
+    "images\\details\\stamps\\official_others\\taaf\\1991",
+    "images\\details\\stamps\\official_others\\tunisia",
+    "images\\details\\stamps\\official_others\\tunisia\\2024",
+    "images\\details\\stamps\\official_others\\tunisia\\2024\\preview",
+    "images\\details\\stamps\\official_others\\turks_and_caicos_islands",
+    "images\\details\\stamps\\official_others\\turks_and_caicos_islands\\1997",
+    "images\\details\\stamps\\official_others\\uk",
+    "images\\details\\stamps\\official_others\\uk\\1981",
+    "images\\details\\stamps\\official_others\\uk\\1981\\preview",
+    "images\\details\\stamps\\official_others\\uk\\2002",
+    "images\\details\\stamps\\official_others\\uk\\2017",
+    "images\\details\\stamps\\official_others\\uk\\2019",
+    "images\\details\\stamps\\official_others\\uk\\2021",
+    "images\\details\\stamps\\official_others\\uk\\2021\\preview",
+    "images\\details\\stamps\\official_others\\ukraine",
+    "images\\details\\stamps\\official_others\\ukraine\\2011",
+    "images\\details\\stamps\\official_others\\ukraine\\2011\\preview",
+    "images\\details\\stamps\\official_others\\ukraine\\2019",
+    "images\\details\\stamps\\official_others\\ukraine\\2021",
+    "images\\details\\stamps\\official_others\\ukraine\\2021\\preview",
+    "images\\details\\stamps\\official_others\\un",
+    "images\\details\\stamps\\official_others\\un\\2023",
+    "images\\details\\stamps\\official_others\\un\\2023\\preview",
+    "images\\details\\stamps\\official_others\\usa",
+    "images\\details\\stamps\\official_others\\usa\\1946",
+    "images\\details\\stamps\\official_others\\usa\\1946\\preview",
+    "images\\details\\stamps\\official_others\\usa\\1960",
+    "images\\details\\stamps\\official_others\\usa\\1973",
+    "images\\details\\stamps\\official_others\\usa\\1980",
+    "images\\details\\stamps\\official_others\\usa\\1980\\preview",
+    "images\\details\\stamps\\official_others\\usa\\1982",
+    "images\\details\\stamps\\official_others\\usa\\1982\\preview",
+    "images\\details\\stamps\\official_others\\usa\\1996",
+    "images\\details\\stamps\\official_others\\usa\\1996\\preview",
+    "images\\details\\stamps\\official_others\\usa\\2003",
+    "images\\details\\stamps\\official_others\\usa\\2022",
+    "images\\details\\stamps\\official_others\\usa\\2022\\preview",
+    "images\\details\\stamps\\official_others\\ussr",
+    "images\\details\\stamps\\official_others\\ussr\\1949",
+    "images\\details\\stamps\\official_others\\ussr\\1949\\preview",
+    "images\\details\\stamps\\official_others\\ussr\\1957",
+    "images\\details\\stamps\\official_others\\ussr\\1980",
+    "images\\details\\stamps\\official_others\\ussr\\1991",
+    "images\\details\\stamps\\official_others\\ussr\\1991\\preview",
+    "images\\details\\stamps\\official_others\\vietnam",
+    "images\\details\\stamps\\official_others\\vietnam\\2021",
+    "images\\details\\stamps\\official_others\\vietnam\\2021\\preview",
+    "images\\details\\stamps\\official_others\\zimbabbwe",
+    "images\\details\\stamps\\official_others\\zimbabbwe\\1982",
+    "images\\dynamic",
+    "images\\dynamic\\buttonset3",
+    "images\\examples",
+    "images\\fdc",
+    "images\\flags",
+    "images\\flags\\big",
+    "images\\flags\\examples",
+    "images\\flags\\small",
+    "images\\flags\\small\\16",
+    "images\\flags\\small\\24",
+    "images\\flags\\small\\32",
+    "images\\flags\\small\\48",
+    "images\\flags\\small\\48_gif",
+    "images\\others",
+    "images\\others\\amazon",
+    "images\\others\\home_page",
+    "images\\others\\icons",
+    "images\\others\\icons\\flags",
+    "images\\others\\icons\\flags\\big",
+    "images\\others\\icons\\flags\\small",
+    "images\\others\\icons\\flags\\small\\16",
+    "images\\others\\icons\\flags\\small\\24",
+    "images\\others\\icons\\flags\\small\\32",
+    "images\\others\\icons\\flags\\small\\48",
+    "images\\others\\icons\\flags\\small\\48_gif",
+    "images\\others\\icons\\glossy_ecommerce_icons",
+    "images\\others\\icons\\others",
+    "images\\others\\icons\\others\\Add",
+    "images\\others\\icons\\others\\Archive",
+    "images\\others\\icons\\others\\Audio Disk",
+    "images\\others\\icons\\others\\Burn Disk",
+    "images\\others\\icons\\others\\Calendar",
+    "images\\others\\icons\\others\\Cancel",
+    "images\\others\\icons\\others\\Check",
+    "images\\others\\icons\\others\\Compact Disk",
+    "images\\others\\icons\\others\\Copy",
+    "images\\others\\icons\\others\\Copy v2",
+    "images\\others\\icons\\others\\Cut",
+    "images\\others\\icons\\others\\Delete",
+    "images\\others\\icons\\others\\Download",
+    "images\\others\\icons\\others\\DVD Disk",
+    "images\\others\\icons\\others\\Edit",
+    "images\\others\\icons\\others\\Favorites",
+    "images\\others\\icons\\others\\Find",
+    "images\\others\\icons\\others\\Flash Disk",
+    "images\\others\\icons\\others\\Folder",
+    "images\\others\\icons\\others\\Forward",
+    "images\\others\\icons\\others\\Globe",
+    "images\\others\\icons\\others\\Hard Disk",
+    "images\\others\\icons\\others\\Help",
+    "images\\others\\icons\\others\\Information",
+    "images\\others\\icons\\others\\Key",
+    "images\\others\\icons\\others\\Log Out",
+    "images\\others\\icons\\others\\Mail",
+    "images\\others\\icons\\others\\Negative",
+    "images\\others\\icons\\others\\New",
+    "images\\others\\icons\\others\\Next",
+    "images\\others\\icons\\others\\Open",
+    "images\\others\\icons\\others\\Paste",
+    "images\\others\\icons\\others\\Pause",
+    "images\\others\\icons\\others\\Picture",
+    "images\\others\\icons\\others\\Play",
+    "images\\others\\icons\\others\\Positive",
+    "images\\others\\icons\\others\\Presentation",
+    "images\\others\\icons\\others\\Preview",
+    "images\\others\\icons\\others\\Previous",
+    "images\\others\\icons\\others\\Print",
+    "images\\others\\icons\\others\\Properties",
+    "images\\others\\icons\\others\\Redo",
+    "images\\others\\icons\\others\\Refresh",
+    "images\\others\\icons\\others\\Remove",
+    "images\\others\\icons\\others\\Rename",
+    "images\\others\\icons\\others\\Save",
+    "images\\others\\icons\\others\\Search",
+    "images\\others\\icons\\others\\Send",
+    "images\\others\\icons\\others\\Settings",
+    "images\\others\\icons\\others\\Stock Index Down",
+    "images\\others\\icons\\others\\Stock Index Up",
+    "images\\others\\icons\\others\\Stop",
+    "images\\others\\icons\\others\\Synchronize",
+    "images\\others\\icons\\others\\Text Document",
+    "images\\others\\icons\\others\\uii",
+    "images\\others\\icons\\others\\uii\\24x24",
+    "images\\others\\icons\\others\\uii\\32x32",
+    "images\\others\\icons\\others\\uii\\48x48",
+    "images\\others\\icons\\others\\uii\\80x80",
+    "images\\others\\icons\\others\\uii\\even bigger sizes",
+    "images\\others\\icons\\others\\Undo",
+    "images\\others\\icons\\others\\Upload",
+    "images\\others\\icons\\others\\User",
+    "images\\others\\icons\\others\\vista_aero",
+    "images\\others\\icons\\others\\vista_aero\\ICO",
+    "images\\others\\icons\\others\\vista_aero\\ICO\\Archive",
+    "images\\others\\icons\\others\\vista_aero\\ICO\\Audio",
+    "images\\others\\icons\\others\\vista_aero\\ICO\\Docs",
+    "images\\others\\icons\\others\\vista_aero\\ICO\\Images",
+    "images\\others\\icons\\others\\vista_aero\\ICO\\Script",
+    "images\\others\\icons\\others\\vista_aero\\ICO\\Video",
+    "images\\others\\icons\\others\\vista_aero\\PNG",
+    "images\\others\\icons\\others\\vista_aero\\PNG\\Archive",
+    "images\\others\\icons\\others\\vista_aero\\PNG\\Audio",
+    "images\\others\\icons\\others\\vista_aero\\PNG\\Docs",
+    "images\\others\\icons\\others\\vista_aero\\PNG\\Images",
+    "images\\others\\icons\\others\\vista_aero\\PNG\\Script",
+    "images\\others\\icons\\others\\vista_aero\\PNG\\Video",
+    "images\\others\\icons\\others\\Zoom In",
+    "images\\others\\icons\\others\\Zoom Out",
+    "images\\others\\icons\\OxeSet",
+    "images\\others\\icons\\Philnutkniter.co.uk - Icon Pack",
+    "images\\others\\icons\\set1",
+    "images\\others\\icons\\set1\\32x32",
+    "images\\others\\icons\\set1\\48x48",
+    "images\\others\\icons\\set1\\64x64",
+    "images\\others\\news",
+    "images\\others\\presentation",
+    "images\\others\\presentation\\preview",
+    "images\\others\\preview",
+    "images\\others\\visitCards",
+    "images\\pm",
+    "images\\preview",
+    "images\\preview\\covers",
+    "images\\preview\\covers\\others",
+    "images\\preview\\fdc",
+    "images\\preview\\fdc\\others",
+    "images\\preview\\fdc\\others\\used",
+    "images\\preview\\fdc\\used",
+    "images\\preview\\letters",
+    "images\\preview\\mc",
+    "images\\preview\\mc\\others",
+    "images\\preview\\pc",
+    "images\\preview\\pm",
+    "images\\preview\\pm\\cancels",
+    "images\\preview\\pm\\local",
+    "images\\preview\\pm\\others",
+    "images\\preview\\pm\\others\\used",
+    "images\\preview\\pm\\used",
+    "images\\preview\\ps",
+    "images\\preview\\ps\\imprinted_stamps",
+    "images\\preview\\ps\\others",
+    "images\\preview\\ps\\others\\imprinted_stamps",
+    "images\\preview\\ps\\others\\used",
+    "images\\preview\\ps\\personalized",
+    "images\\preview\\ps\\personalized\\imprinted_stamps",
+    "images\\preview\\ps\\personalized\\others",
+    "images\\preview\\ps\\personalized\\others\\imprinted_stamps",
+    "images\\preview\\ps\\used",
+    "images\\preview\\souvenirs",
+    "images\\preview\\stamps",
+    "images\\preview\\stamps\\cinderella",
+    "images\\preview\\stamps\\fake",
+    "images\\preview\\stamps\\fake\\not_paleo",
+    "images\\preview\\stamps\\illegal",
+    "images\\preview\\stamps\\local",
+    "images\\preview\\stamps\\not_paleo",
+    "images\\preview\\stamps\\others",
+    "images\\preview\\stamps\\others\\fake",
+    "images\\preview\\stamps\\others\\variations",
+    "images\\preview\\stamps\\personalized",
+    "images\\preview\\stamps\\personalized\\others",
+    "images\\preview\\stamps\\personalized\\private_post",
+    "images\\preview\\stamps\\private_post",
+    "images\\preview\\stamps\\private_post\\others",
+    "images\\preview\\stamps\\unwanted",
+    "images\\preview\\stamps\\variations",
+    "images\\preview\\used",
+    "images\\preview\\used\\others",
+    "images\\preview\\used\\personalized",
+    "images\\sets",
+    "images\\sets\\others",
+    "images\\year",
+    "images\\year\\1959",
+    "images\\year\\1959\\preview",
+    "images\\year\\1978",
+    "images\\year\\1982",
+    "images\\year\\2002",
+    "images\\year\\2006",
+    "images\\year\\2014",
+    "images\\year\\2016",
+    "images\\year\\2016\\old",
+    "images\\year\\2017",
+    "images\\year\\2017\\old",
+    "images\\year\\2017\\old\\preview",
+    "images\\year\\2017\\plan",
+    "images\\year\\2017\\preview",
+    "images\\year\\2017\\strange",
+    "images\\year\\2018",
+    "images\\year\\2018\\plan",
+    "images\\year\\2018\\preview",
+    "images\\year\\2019",
+    "images\\year\\2019\\old",
+    "images\\year\\2019\\plan",
+    "images\\year\\2020",
+    "images\\year\\2021",
+    "images\\year\\2021\\preview",
+    "images\\year\\2022",
+    "images\\year\\2023",
+    "images\\year\\2024",
+    "images\\year\\2025",
+    "images\\year\\2025\\books",
+    "images\\year\\2025\\preview",
+    "images\\year\\2025\\programm",
+    "images\\year\\2026",
+    "images\\year\\2026\\plan",
+    "images\\year\\2026\\preview",
+    "media",
+    "media\\books",
+    "media\\books\\Den_Dinosauriern_auf_der_Spur",
+    "media\\books\\Dinosaurs_and_Other_Prehistoric_Animals_on_Stamps",
+    "media\\books\\indica",
+    "media\\books\\MICHEL",
+    "media\\books\\Nautilids_and_Ammonites_worldwide",
+    "media\\books\\Trilobites_worldwide",
+    "topics",
+    "topics\\anthro",
+    "topics\\paleo",
+    "topics\\paleo\\personalities",
+    "topics\\paleo\\vertebrate",
+    "year"
+  ],
+  "cssFiles": [
+    "colorschemes\\colorscheme3\\colorscheme.css",
+    "exhibitions\\style\\styleExponate.css",
+    "exhibitions\\style\\styleExponate_A3.css",
+    "exhibitions\\style\\styleExponate_large.css",
+    "images\\styleGallery.css",
+    "main.css",
+    "style.css"
+  ],
+  "jsFiles": [
+    "images\\fdc_others_preview_script.js",
+    "images\\fdc_others_used_preview_script.js",
+    "images\\fdc_preview_script.js",
+    "images\\fdc_used_preview_script.js",
+    "images\\pm_others_preview_script.js",
+    "images\\pm_others_used_preview_script.js",
+    "images\\pm_preview_script.js",
+    "images\\pm_used_preview_script.js",
+    "images\\ps_others_preview_script.js",
+    "images\\ps_others_used_preview_script.js",
+    "images\\ps_preview_script.js",
+    "images\\ps_used_preview_script.js",
+    "images\\stamps_others_preview_script.js",
+    "images\\stamps_others_used_preview_script.js",
+    "images\\stamps_preview_script.js",
+    "images\\stamps_used_preview_script.js",
+    "live_tinc.js",
+    "runActiveContent.js",
+    "script.js"
+  ],
+  "imageCount": 17602,
+  "totalFiles": 18747
+}

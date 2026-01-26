@@ -1,0 +1,135 @@
+<!-- Gallery Component -->
+<!--
+    Usage: Include this structure and customize with your images
+    Classes:
+    - .gallery - Main container
+    - .gallery--compact - Smaller grid items
+    - .gallery--masonry - Masonry-style layout
+    - .gallery__item - Individual gallery item
+    - .gallery__image - The image element
+    - .gallery__caption - Optional caption
+-->
+
+<div class="gallery" id="stamp-gallery">
+    <!-- Gallery Controls -->
+    <div class="gallery__controls">
+        <div class="gallery__filter">
+            <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all">All</button>
+            <button class="gallery__filter-btn" data-filter="stamps">Stamps</button>
+            <button class="gallery__filter-btn" data-filter="fdc">FDC</button>
+            <button class="gallery__filter-btn" data-filter="postmarks">Postmarks</button>
+        </div>
+        <div class="gallery__view-toggle">
+            <button class="gallery__view-btn gallery__view-btn--active" data-view="grid" aria-label="Grid view">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+                    <rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/>
+                </svg>
+            </button>
+            <button class="gallery__view-btn" data-view="list" aria-label="List view">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <rect x="3" y="4" width="18" height="4"/><rect x="3" y="10" width="18" height="4"/>
+                    <rect x="3" y="16" width="18" height="4"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery__grid">
+        <!-- Example Gallery Items - Replace with actual content -->
+        <figure class="gallery__item" data-category="stamps">
+            <a href="images/stamps/example-large.jpg" class="gallery__link" data-lightbox="gallery" data-title="Tyrannosaurus Rex - USA 1989">
+                <!-- Category Label - National Geographic Style -->
+                <span class="gallery__category">Stamp</span>
+                <img src="images/stamps/example-thumb.jpg" alt="Tyrannosaurus Rex stamp" class="gallery__image" loading="lazy">
+                <div class="gallery__overlay">
+                    <span class="gallery__zoom-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/>
+                        </svg>
+                    </span>
+                    <span class="gallery__overlay-title">Tyrannosaurus Rex</span>
+                    <span class="gallery__overlay-meta">USA, 1989</span>
+                </div>
+            </a>
+            <figcaption class="gallery__caption">
+                <span class="gallery__title">Tyrannosaurus Rex</span>
+                <span class="gallery__meta">USA, 1989</span>
+            </figcaption>
+        </figure>
+
+        <!-- More items would be added dynamically or statically -->
+    </div>
+
+    <!-- Gallery Pagination -->
+    <nav class="gallery__pagination" aria-label="Gallery pagination">
+        <button class="gallery__page-btn gallery__page-btn--prev" disabled aria-label="Previous page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <div class="gallery__page-numbers">
+            <button class="gallery__page-num gallery__page-num--active">1</button>
+            <button class="gallery__page-num">2</button>
+            <button class="gallery__page-num">3</button>
+            <span class="gallery__page-ellipsis">...</span>
+            <button class="gallery__page-num">10</button>
+        </div>
+        <button class="gallery__page-btn gallery__page-btn--next" aria-label="Next page">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+    </nav>
+</div>
+
+<!-- Lightbox Component -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <div class="lightbox__backdrop"></div>
+    <div class="lightbox__container">
+        <!-- Close Button -->
+        <button class="lightbox__close" aria-label="Close lightbox">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+
+        <!-- Navigation -->
+        <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+
+        <!-- Main Content -->
+        <div class="lightbox__content">
+            <div class="lightbox__image-wrapper">
+                <img src="" alt="" class="lightbox__image">
+                <div class="lightbox__loader">
+                    <div class="lightbox__spinner"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Caption -->
+        <div class="lightbox__footer">
+            <div class="lightbox__caption"></div>
+            <div class="lightbox__counter">
+                <span class="lightbox__current">1</span> / <span class="lightbox__total">10</span>
+            </div>
+        </div>
+
+        <!-- Thumbnails Strip -->
+        <div class="lightbox__thumbnails">
+            <div class="lightbox__thumbs-track">
+                <!-- Thumbnails inserted by JS -->
+            </div>
+        </div>
+    </div>
+</div>

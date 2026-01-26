@@ -1,0 +1,43 @@
+{
+  "covers": {
+    "count": 5,
+    "sampleFiles": [
+      "index.html",
+      "india_2009_cov.html",
+      "ukraine_2009_cov.html",
+      "ukraine_2011_cov.html",
+      "ukraine_2012_cov.html"
+    ]
+  },
+  "letters": {
+    "count": 8,
+    "sampleFiles": [
+      "alexander_nasmyth_to_william_buckland_1838.html",
+      "baas_glasgow_1876.html",
+      "index.html",
+      "nhm_berlin_1912.html",
+      "owen_ransome_1849.html"
+    ]
+  },
+  "pm": {
+    "count": 2,
+    "sampleFiles": [
+      "index.html",
+      "uk_1988_whitby.html"
+    ]
+  },
+  "ps": {
+    "count": 0,
+    "sampleFiles": []
+  },
+  "stamps": {
+    "count": 288,
+    "sampleFiles": [
+      "aland_1996.html",
+      "algeria_2020.html",
+      "argentina_2012.html",
+      "argentina_2014.html",
+      "argentina_2015.html"
+    ]
+  }
+}

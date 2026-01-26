@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paleontology and paleoanthropology stamps of {{COUNTRY_NAME}} - Complete collection of prehistoric life themed postage stamps">
+    <meta name="keywords" content="{{COUNTRY_NAME}} stamps, paleontology stamps, dinosaur stamps, fossil stamps, prehistoric stamps, philately">
+    <meta name="author" content="Dr. Fedor Steeman, Paleophilatelie.eu">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Paleontology Stamps of {{COUNTRY_NAME}} - Paleophilatelie.eu">
+    <meta property="og:description" content="Complete collection of paleontology and paleoanthropology stamps from {{COUNTRY_NAME}}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.paleophilatelie.eu/country/{{COUNTRY_CODE}}.html">
+    <meta property="og:image" content="https://www.paleophilatelie.eu/images/og-image.jpg">
+
+    <title>Paleontology Stamps of {{COUNTRY_NAME}} - Paleophilatelie.eu</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages/country.css">
+    <link rel="stylesheet" href="../components/gallery/gallery.css">
+
+    <!-- Google Translate -->
+    <meta name="google-translate-customization" content=""/>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body class="country-page">
+    <!-- Header Component -->
+    <header class="site-header" data-component="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html" class="header__logo">
+                    <img src="../images/logo.png" alt="Paleophilatelie.eu" class="header__logo-img">
+                    <span class="header__logo-text">Paleophilatelie.eu</span>
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="../catalogue.html" class="nav__link nav__link--active">Catalogue</a></li>
+                        <li class="nav__item"><a href="../gallery.html" class="nav__link">Gallery</a></li>
+                        <li class="nav__item"><a href="../news.html" class="nav__link">News</a></li>
+                        <li class="nav__item"><a href="../about.html" class="nav__link">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <!-- FreeFind Search -->
+                    <form class="header__search" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8">
+                        <input type="hidden" name="si" value="XXXXXXXX">
+                        <input type="hidden" name="pid" value="r">
+                        <input type="hidden" name="n" value="0">
+                        <input type="hidden" name="_charset_" value="">
+                        <input type="hidden" name="bcd" value="÷">
+                        <input type="search" name="query" class="search__input" placeholder="Search stamps..." aria-label="Search">
+                        <button type="submit" class="search__btn" aria-label="Search">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="M21 21l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </form>
+                    <!-- Google Translate -->
+                    <div id="google_translate_element" class="header__translate"></div>
+                </div>
+                <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="../index.html" class="breadcrumb__link">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a href="../catalogue.html" class="breadcrumb__link">Catalogue</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__current">{{COUNTRY_NAME}}</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Country Navigation (Previous/Next) -->
+    <nav class="country-nav" aria-label="Country navigation">
+        <div class="container">
+            <ul class="country-nav__list">
+                <li class="country-nav__item country-nav__item--prev">
+                    <a href="{{PREV_COUNTRY_URL}}" class="country-nav__link country-nav__link--prev">
+                        {{PREV_COUNTRY_NAME}}
+                    </a>
+                </li>
+                <li class="country-nav__item country-nav__item--current">
+                    <span class="country-nav__current">{{COUNTRY_NAME}}</span>
+                </li>
+                <li class="country-nav__item country-nav__item--next">
+                    <a href="{{NEXT_COUNTRY_URL}}" class="country-nav__link country-nav__link--next">
+                        {{NEXT_COUNTRY_NAME}}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Country Hero Section -->
+    <section class="country-hero">
+        <div class="container">
+            <div class="country-hero__content">
+                <div class="country-hero__flag">
+                    <!-- Use flag emoji or image -->
+                    {{COUNTRY_FLAG}}
+                </div>
+                <div class="country-hero__text">
+                    <h1 class="country-hero__title">{{COUNTRY_NAME}}</h1>
+                    <p class="country-hero__subtitle">Paleontology & Paleoanthropology Stamps</p>
+                </div>
+                <div class="country-hero__stats">
+                    <div class="country-hero__stat">
+                        <div class="country-hero__stat-value">{{STAMP_COUNT}}</div>
+                        <div class="country-hero__stat-label">Stamps</div>
+                    </div>
+                    <div class="country-hero__stat">
+                        <div class="country-hero__stat-value">{{YEAR_RANGE}}</div>
+                        <div class="country-hero__stat-label">Years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="country-content">
+            <!-- Sidebar with Table of Contents -->
+            <aside class="country-sidebar">
+                <nav class="toc" aria-label="Table of contents">
+                    <h2 class="toc__title">Contents</h2>
+                    <ul class="toc__list">
+                        <li class="toc__item">
+                            <a href="#overview" class="toc__link">Overview</a>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#stamps" class="toc__link">Stamps</a>
+                            <ul class="toc__sublist">
+                                <!-- Year sub-items will be dynamically populated -->
+                                {{TOC_YEAR_ITEMS}}
+                            </ul>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#postal-stationery" class="toc__link">Postal Stationery</a>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#postmarks" class="toc__link">Postmarks</a>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#references" class="toc__link">References</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="country-main">
+                <!-- Overview Section -->
+                <section id="overview" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📋</div>
+                        <h2 class="country-section__title">Overview</h2>
+                    </header>
+                    <div class="country-section__content">
+                        {{COUNTRY_OVERVIEW}}
+                    </div>
+                </section>
+
+                <!-- Stamps Section -->
+                <section id="stamps" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📮</div>
+                        <h2 class="country-section__title">Stamps</h2>
+                    </header>
+                    <div class="country-section__content">
+                        {{STAMPS_CONTENT}}
+                    </div>
+                </section>
+
+                <!-- Postal Stationery Section -->
+                <section id="postal-stationery" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">✉️</div>
+                        <h2 class="country-section__title">Postal Stationery</h2>
+                    </header>
+                    <div class="country-section__content">
+                        {{POSTAL_STATIONERY_CONTENT}}
+                    </div>
+                </section>
+
+                <!-- Postmarks Section -->
+                <section id="postmarks" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📍</div>
+                        <h2 class="country-section__title">Postmarks</h2>
+                    </header>
+                    <div class="country-section__content">
+                        {{POSTMARKS_CONTENT}}
+                    </div>
+                </section>
+
+                <!-- Notes Section (if applicable) -->
+                {{#NOTES}}
+                <div class="notes-box">
+                    <h3 class="notes-box__title">Notes</h3>
+                    <div class="notes-box__content">
+                        {{NOTES_CONTENT}}
+                    </div>
+                </div>
+                {{/NOTES}}
+
+                <!-- References Section -->
+                <section id="references" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📚</div>
+                        <h2 class="country-section__title">References</h2>
+                    </header>
+                    <div class="country-section__content">
+                        <ol class="references-list">
+                            {{REFERENCES_CONTENT}}
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Acknowledgements Section (if applicable) -->
+                {{#ACKNOWLEDGEMENTS}}
+                <div class="acknowledgements">
+                    <h3 class="acknowledgements__title">Acknowledgements</h3>
+                    <div class="acknowledgements__content">
+                        {{ACKNOWLEDGEMENTS_CONTENT}}
+                    </div>
+                </div>
+                {{/ACKNOWLEDGEMENTS}}
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Countries -->
+    <section class="related-countries">
+        <div class="container">
+            <h2 class="related-countries__title">Explore More Countries</h2>
+            <div class="related-countries__grid">
+                {{RELATED_COUNTRIES}}
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="site-footer" data-component="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section footer__section--about">
+                    <h3 class="footer__title">Paleophilatelie.eu</h3>
+                    <p class="footer__text">The world's most comprehensive online catalog of paleontology and paleoanthropology stamps, featuring over 750 pages documenting prehistoric life on postage stamps from around the world.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="../catalogue.html">Catalogue</a></li>
+                        <li><a href="../gallery.html">Gallery</a></li>
+                        <li><a href="../news.html">News</a></li>
+                        <li><a href="../about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Resources</h3>
+                    <ul class="footer__links">
+                        <li><a href="../links.html">Links</a></li>
+                        <li><a href="../bibliography.html">Bibliography</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Connect</h3>
+                    <ul class="footer__links">
+                        <li><a href="https://www.facebook.com/paleophilately" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="../newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 Paleophilatelie.eu - Dr. Fedor Steeman. All rights reserved.</p>
+                <p class="footer__disclaimer">All stamp images are used for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top"></button>
+
+    <!-- Lightbox Container -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox__prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox__next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="">
+            <div class="lightbox__caption"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../components/gallery/gallery.js"></script>
+    <script src="../scripts/country.js"></script>
+
+    <!-- Google Translate Script -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

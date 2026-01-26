@@ -1,0 +1,634 @@
+
+div#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#footer_text a {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+  color: #6b6c6b;
+  text-decoration: underline; white-space: nowrap;
+}
+
+    
+#logo {
+   background: url(images/dynamic/logo.jpg) no-repeat;
+}
+#key_visual {
+   background: url(images/dynamic/key_visual.jpg) no-repeat;
+}
+#slogan {
+  margin-bottom: 10px;
+  font-family: Arial, Verdana, sans-serif;
+  font-style: bold;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  text-align: center;
+  color: #525252;
+}
+
+a.main_nav_active_item {
+  background: url(images/dynamic/buttonset3/n1active.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: bold;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.main_nav_item {
+  background: url(images/dynamic/buttonset3/n1.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #391904 ;
+}
+
+a.main_nav_item2 {
+  background: url(images/dynamic/buttonset3/n1activeitem.gif) ;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+a.main_nav_item:hover {
+  background: url(images/dynamic/buttonset3/n1active.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+a.main_nav_item2:hover {
+  background: url(images/dynamic/buttonset3/n1active.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+a.sub_nav_active_item {
+  background: url(images/dynamic/buttonset3/sn1active.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: bold;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+a.sub_nav_item {
+  background: url(images/dynamic/buttonset3/sn1.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #f9efc3;
+}
+
+
+a.sub_nav_active_item2 {
+  background: url(images/dynamic/buttonset3/sn1active.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: bold;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+a.sub_nav_item2 {
+  background: url(images/dynamic/buttonset3/sn1.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #f9efc3;
+}
+
+
+
+a.sub_nav_item:hover {
+  background: url(images/dynamic/buttonset3/sn1active.gif) no-repeat;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #ffffff;
+}
+.content h1 {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #5a5959;
+}
+.content h2 {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a50000;
+}
+.content h3 {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #c95c0c;
+}
+.content, .content p {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #333333;
+}
+.content a:link {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #db1414;
+}
+.content a:visited {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #db1414;
+}
+.content a:hover {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: none;
+  color: #343947;
+}
+.content a:active {
+  font-family: Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #343947;
+}
+#footer_text {
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #6b6c6b;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Added  */
+/* START                   */
+
+
+
+
+#design2 {
+  font-family: Century Gothic, sans-serif;
+  background-color: #39393c;
+  color: #00a58f;
+}
+#design2 h1 {
+  font-weight: 400;
+  font-size: 2.3em;
+  color: #A239CA;
+  font-style: italic;
+}
+#design2 p {
+  color: #E7DFDD;
+}
+
+
+table.techd {
+  border: 1 black solid;
+  width: 50% ;
+ 
+}
+
+h1 { 
+      font-size:  2.1rem; 
+      font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial; 
+      font-style: italic;
+      display: block; 
+      color: #a50000;
+      margin-top: 40px;  
+      margin-bottom: 40px;  
+      text-align: center;
+
+      
+/*
+      height: 60px; 
+      background-color: burlywood;
+*/	 
+	}
+	
+
+  
+h1.main { 
+  font-size:  2.5rem; 
+  font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial; 
+  font-style: italic;
+  font-weight: bold;
+  display: block; 
+  color: #a50000;
+  margin-top: 40px;  
+  margin-bottom: 60px; 
+  box-shadow: 0 10px ;
+
+  /*
+  text-decoration: dashed;
+  height: 60px; 
+  background-color: burlywood;
+*/	 
+}
+
+
+
+h2 { 
+      font-size:  1.7rem; 
+      font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial; 
+      display: block; 
+      margin-top: 10px;  
+      margin-bottom: 15px;   
+	 
+	}
+
+
+h3 { 
+    font-size:  1.4rem; 
+	  font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial; 
+    display: block; 
+	  margin-top: 10px;  
+	  margin-bottom: 10px;   
+	 
+	}
+	
+	
+h4 { font-size:  0.9rem; }
+
+li { font-size: 0.9rem; 
+     margin-top: 8px;
+  }
+
+
+
+li.toc { 
+    font-size: 1.2rem; 
+    font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial; 
+    margin-top: 20px;
+ }
+
+li.subtoc { 
+  font-size: 1.1rem; 
+  font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial; 
+  margin-top: 10px;
+}
+
+
+ p {
+    margin-left:   15px; 
+    margin-right:  1px;   
+    margin-top:    10px;   
+    margin-bottom: 10px; 
+  } 
+ 
+  
+p.important {
+  margin-left:   15px; 
+  margin-right:  1px;   
+  margin-top:    10px;   
+  margin-bottom: 10px; 
+
+  font-style: italic;
+  font-weight: bold;
+  font-size:  1.5rem;
+  color: #656569;
+}   
+
+p.notes {
+    color: #656569;
+    font-style:    italic;
+    margin-left:   25px; 
+    margin-right:  1px;   
+    margin-top:    10px;   
+    margin-bottom: 10px; 
+    /*
+    border: 3px solid;
+    background-color: #336600;
+    width: 500px
+    */
+  }  
+
+/*  
+  a:visited {
+    color: gray;
+    font-style: italic;
+ }
+ */
+
+table.TD {
+  border: 1px  ;
+  background-color: gray;
+  margin: 10px; 
+ 
+} 
+
+/*
+	     color: red;
+		 background-color: blue;
+*/
+
+ td.status { 
+   border: 1px solid rgb(190, 190, 190); 
+}
+
+
+td.statusOK { 
+  border: 1px solid rgb(190, 190, 190); 
+  background-color: rgb(76, 153, 76);
+}
+
+td.statusMissing { 
+  border: 1px solid rgb(190, 190, 190); 
+  background-color: rgb(242, 81, 6);
+}
+
+td.statusPartial { 
+  border: 1px solid rgb(190, 190, 190); 
+  background-color: yellow;
+}
+
+td.statusNI { 
+  border: 1px solid rgb(190, 190, 190); 
+  background-color: rgb(27, 26, 25);
+  color: white ;
+  text-align: center;
+}
+
+td.sub-separator { 
+  background-color: #f2edd5
+}
+
+tr.separator { 
+  background-color: #f9efc3;
+}
+
+tr.statusMissing { 
+  background-color: rgb(240, 136, 87);
+}
+
+tr.statusPartial { 
+  background-color: rgb(240, 136, 87);
+}
+
+
+#images3 {
+  background-image: url('https://wallpapercave.com/wp/wp2357867.jpg');
+  background-repeat: no-repeat; 
+  height: 1400px;
+  width: 1000px;
+}
+
+/*  
+
+ li:hover {
+  background-color: antiquewhite;
+}
+
+p:hover {
+  background-color: antiquewhite;
+}
+body {
+  background-color: #336600;
+  color: #ccffcc;
+}  
+
+*/
+
+
+
+
+.odd {
+  background-color: antiquewhite; 
+}
+.even {
+  background-color: #888888;
+}
+
+/*
+<p class="even">  </p>
+
+<p class="odd">  </p>
+
+*/
+
+
+  table.slist td:hover { 
+    background-color: antiquewhite; 
+    border-radius: 30px ;
+  }
+
+  img {
+    border-radius: 10px;
+  }
+
+  img.slist {
+    border-radius: 40px;
+    box-shadow: 20px 20px 10px #888888;
+  }
+
+.rel1 {margin-top: 10px}
+  
+  /*     box-shadow: 20px 20px 10px #888888;
+*/
+
+  iframe {
+    box-shadow: 20px 20px 10px #888888;
+  }
+
+/* added on Nov. 14 2021 */ 
+div {
+  font-family: Estonia, Belgium, Garamond, US, Tahoma, Calibri, "Times New Roman", Arial;
+/*
+  font-family: Garamond, Belgium, US, Calibri, "Times New Roman", Arial;
+  font-family: Calibri, "Times New Roman", Belgium, Garamond, US, Arial;
+  font-family: US, Belgium, Garamond, Calibri, "Times New Roman", Arial;
+*/
+  
+  
+  
+  font-stretch: expanded;
+}
+
+
+/* =========================================================
+   Landscape Suggestion Styling (Centered Overlay)
+   ========================================================= */
+        
+/* Centered Overlay Styling */
+#landscape-suggestion {
+  display: none; /* Controlled by JS */
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  
+  background-color: rgba(20, 30, 48, 0.98); /* Deep Navy */
+  
+  color: #ffffff !important;
+  z-index: 9999999;
+  display: flex;
+  flex-direction: column; /* Stack text and button */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#landscape-suggestion p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Close Button Styling */
+#close-suggestion {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: rgba(20, 30, 48, 0.98);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*================================== */
+
+
+/*============================ */
+/* --- MOBILE OPTIMIZATION --- */
+
+
+/* ============================================================
+   1. COMPUTER / DESKTOP (Narrow Window)
+   Targets screens up to 1000px that HAVE a mouse
+   ============================================================ */
+@media screen and (max-width: 1000px) and (hover: hover) {
+ body, .content, td, div {
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    word-wrap: break-word !important; 
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 10px !important; 
+  }
+
+
+  /* 2. Force your Tables to stack vertically */
+  table, thead, tbody, th, td, tr {
+    display: block !important;
+    width: 100% !important;
+  }
+}
+
+/* ============================================================
+   2. SMARTPHONES / TABLETS (Touch Devices)
+   Targets screens up to 600px that DO NOT have a mouse
+   ============================================================ */
+@media screen and (max-width: 600px) and (hover: none) {
+  /* 1. Fix the text width everywhere (even outside <p> tags) */
+  body, .content, td, div {
+    width: 100% !important;
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+    word-wrap: break-word !important; 
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 10px !important; 
+  }
+
+
+  /* 2. Force your Tables to stack vertically */
+  table, thead, tbody, th, td, tr {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* 3. Ensure images don't "poke out" of the screen */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 4. Fix specific IDs in your CSS that have fixed widths */
+  #images3 {
+    width: 100% !important;
+    height: auto !important;
+    background-size: contain;
+  }
+  
+  table.techd {
+    width: 100% !important;
+  }
+
+  /* 5. Adjust Header Sizes for mobile so they aren't too huge */
+  h1.main, h1 {
+    font-size: 1.6rem !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Ensure text wraps even if not in <p> tags */
+div, td {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/*============================ */
+  
+   
+/* END                   */
+/* *** */

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paleontology and paleoanthropology stamps of United States (USA) - Complete collection of prehistoric life themed postage stamps">
+    <meta name="keywords" content="USA stamps, paleontology stamps, dinosaur stamps, fossil stamps, prehistoric stamps, philately">
+    <meta name="author" content="Dr. Fedor Steeman, Paleophilatelie.eu">
+
+    <title>Paleontology Stamps of United States (USA) - Paleophilatelie.eu [TEST]</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/country.css">
+    <link rel="stylesheet" href="components/gallery/gallery.css">
+
+    <style>
+        /* Test Page Indicator */
+        .test-banner {
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Placeholder images */
+        .placeholder-stamp {
+            background: linear-gradient(135deg, #e8e8e8 25%, #f5f5f5 50%, #e8e8e8 75%);
+            background-size: 200% 200%;
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+    </style>
+</head>
+<body class="country-page">
+    <!-- Test Banner -->
+    <div class="test-banner">
+        TEST PAGE - Country Template Preview (Sprint 7)
+    </div>
+
+    <!-- Header Component (Inline for testing) -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <span class="header__logo-text">Paleophilatelie.eu</span>
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="catalogue.html" class="nav__link nav__link--active">Catalogue</a></li>
+                        <li class="nav__item"><a href="gallery.html" class="nav__link">Gallery</a></li>
+                        <li class="nav__item"><a href="news.html" class="nav__link">News</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <form class="header__search" action="#" method="get">
+                        <input type="search" name="query" class="search__input" placeholder="Search stamps..." aria-label="Search">
+                        <button type="submit" class="search__btn" aria-label="Search">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="M21 21l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                <button class="header__menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <a href="catalogue.html" class="breadcrumb__link">Catalogue</a>
+                </li>
+                <li class="breadcrumb__item">
+                    <span class="breadcrumb__current">United States (USA)</span>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Country Navigation (Previous/Next) -->
+    <nav class="country-nav" aria-label="Country navigation">
+        <div class="container">
+            <ul class="country-nav__list">
+                <li class="country-nav__item country-nav__item--prev">
+                    <a href="#" class="country-nav__link country-nav__link--prev">
+                        United Kingdom
+                    </a>
+                </li>
+                <li class="country-nav__item country-nav__item--current">
+                    <span class="country-nav__current">United States (USA)</span>
+                </li>
+                <li class="country-nav__item country-nav__item--next">
+                    <a href="#" class="country-nav__link country-nav__link--next">
+                        Uruguay
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Country Hero Section -->
+    <section class="country-hero">
+        <div class="container">
+            <div class="country-hero__content">
+                <div class="country-hero__flag">
+                    <img src="https://flagcdn.com/w80/us.png" alt="USA Flag" style="height: 60px; border-radius: 4px;">
+                </div>
+                <div class="country-hero__text">
+                    <h1 class="country-hero__title">United States (USA)</h1>
+                    <p class="country-hero__subtitle">Paleontology & Paleoanthropology Stamps</p>
+                </div>
+                <div class="country-hero__stats">
+                    <div class="country-hero__stat">
+                        <div class="country-hero__stat-value">45+</div>
+                        <div class="country-hero__stat-label">Stamps</div>
+                    </div>
+                    <div class="country-hero__stat">
+                        <div class="country-hero__stat-value">1955-2019</div>
+                        <div class="country-hero__stat-label">Years</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="country-content">
+            <!-- Sidebar with Table of Contents -->
+            <aside class="country-sidebar">
+                <nav class="toc" aria-label="Table of contents">
+                    <h2 class="toc__title">Contents</h2>
+                    <ul class="toc__list">
+                        <li class="toc__item">
+                            <a href="#overview" class="toc__link">Overview</a>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#stamps" class="toc__link">Stamps</a>
+                            <ul class="toc__sublist">
+                                <li class="toc__item"><a href="#year-1955" class="toc__link">1955</a></li>
+                                <li class="toc__item"><a href="#year-1970" class="toc__link">1970</a></li>
+                                <li class="toc__item"><a href="#year-1989" class="toc__link">1989</a></li>
+                                <li class="toc__item"><a href="#year-1996" class="toc__link">1996</a></li>
+                                <li class="toc__item"><a href="#year-2019" class="toc__link">2019</a></li>
+                            </ul>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#postal-stationery" class="toc__link">Postal Stationery</a>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#postmarks" class="toc__link">Postmarks</a>
+                        </li>
+                        <li class="toc__item">
+                            <a href="#references" class="toc__link">References</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <div class="country-main">
+                <!-- Overview Section -->
+                <section id="overview" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📋</div>
+                        <h2 class="country-section__title">Overview</h2>
+                    </header>
+                    <div class="country-section__content">
+                        <p>The United States has a rich history of paleontological discoveries and has been at the forefront of dinosaur research since the 19th century. From the famous "Bone Wars" between Othniel Charles Marsh and Edward Drinker Cope to modern discoveries at sites like Hell Creek and the Morrison Formation, American paleontology has contributed enormously to our understanding of prehistoric life.</p>
+                        <p>The U.S. Postal Service has commemorated this heritage through various stamp issues, beginning with the 1955 issue honoring the American Association for the Advancement of Science, which featured images related to natural history.</p>
+                        <p>Major paleontological themes on US stamps include dinosaurs, prehistoric mammals, ancient marine life, and human evolution. The 1989 "Prehistoric Animals" series and the 2019 "T. Rex" stamps are particularly notable issues.</p>
+                    </div>
+                </section>
+
+                <!-- Stamps Section -->
+                <section id="stamps" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📮</div>
+                        <h2 class="country-section__title">Stamps</h2>
+                    </header>
+                    <div class="country-section__content">
+                        <!-- 1955 Year Section -->
+                        <div id="year-1955" class="year-section">
+                            <header class="year-section__header">
+                                <span class="year-section__badge">1955</span>
+                                <h3 class="year-section__title">American Museum of Natural History</h3>
+                                <span class="year-section__count">1 stamp</span>
+                            </header>
+                            <div class="stamp-gallery">
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=USA+1955" alt="USA 1955 - AMNH stamp" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">January 15, 1955</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">American Museum of Natural History Centennial</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1955</span>
+                                            <span class="stamp-item__tag">3¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1970 Year Section -->
+                        <div id="year-1970" class="year-section">
+                            <header class="year-section__header">
+                                <span class="year-section__badge">1970</span>
+                                <h3 class="year-section__title">Natural History Series</h3>
+                                <span class="year-section__count">4 stamps</span>
+                            </header>
+                            <div class="stamp-gallery">
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Elephant" alt="USA 1970 - American Bald Eagle" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">May 6, 1970</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">African Elephant Herd</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1970</span>
+                                            <span class="stamp-item__tag">6¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Haida" alt="USA 1970 - Haida Ceremonial Canoe" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">May 6, 1970</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">Haida Ceremonial Canoe</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1970</span>
+                                            <span class="stamp-item__tag">6¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Reptiles" alt="USA 1970 - The Age of Reptiles" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">May 6, 1970</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">The Age of Reptiles</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1970</span>
+                                            <span class="stamp-item__tag">6¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Brontosaurus" alt="USA 1970 - Brontosaurus" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">May 6, 1970</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">Brontosaurus</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1970</span>
+                                            <span class="stamp-item__tag">6¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1989 Year Section -->
+                        <div id="year-1989" class="year-section">
+                            <header class="year-section__header">
+                                <span class="year-section__badge">1989</span>
+                                <h3 class="year-section__title">Prehistoric Animals</h3>
+                                <span class="year-section__count">4 stamps</span>
+                            </header>
+                            <div class="stamp-gallery">
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=T-Rex" alt="USA 1989 - Tyrannosaurus" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">October 1, 1989</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">Tyrannosaurus Rex</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1989</span>
+                                            <span class="stamp-item__tag">25¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Pteranodon" alt="USA 1989 - Pteranodon" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">October 1, 1989</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">Pteranodon</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1989</span>
+                                            <span class="stamp-item__tag">25¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Stegosaurus" alt="USA 1989 - Stegosaurus" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">October 1, 1989</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">Stegosaurus</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1989</span>
+                                            <span class="stamp-item__tag">25¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/200x150/e8e8e8/666666?text=Brontosaurus" alt="USA 1989 - Brontosaurus" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">October 1, 1989</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">Brontosaurus (Apatosaurus)</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1989</span>
+                                            <span class="stamp-item__tag">25¢</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 1996 Year Section -->
+                        <div id="year-1996" class="year-section">
+                            <header class="year-section__header">
+                                <span class="year-section__badge">1996</span>
+                                <h3 class="year-section__title">Prehistoric Animals Souvenir Sheet</h3>
+                                <span class="year-section__count">15 stamps</span>
+                            </header>
+                            <div class="stamp-gallery stamp-gallery--compact">
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/150x120/e8e8e8/666666?text=Eohippus" alt="USA 1996 - Eohippus" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <h4 class="stamp-item__title"><a href="#">Eohippus</a></h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1996</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/150x120/e8e8e8/666666?text=Woolly+Mammoth" alt="USA 1996 - Woolly Mammoth" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <h4 class="stamp-item__title"><a href="#">Woolly Mammoth</a></h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1996</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/150x120/e8e8e8/666666?text=Mastodon" alt="USA 1996 - Mastodon" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <h4 class="stamp-item__title"><a href="#">Mastodon</a></h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1996</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/150x120/e8e8e8/666666?text=Saber-tooth" alt="USA 1996 - Saber-tooth Cat" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <h4 class="stamp-item__title"><a href="#">Saber-tooth Cat</a></h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">1996</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2019 Year Section -->
+                        <div id="year-2019" class="year-section">
+                            <header class="year-section__header">
+                                <span class="year-section__badge">2019</span>
+                                <h3 class="year-section__title">Tyrannosaurus Rex</h3>
+                                <span class="year-section__count">4 stamps</span>
+                            </header>
+                            <div class="stamp-gallery stamp-gallery--large">
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/250x200/e8e8e8/666666?text=T-Rex+Adult" alt="USA 2019 - T. Rex Adult" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">August 29, 2019</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">T. Rex - Adult</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">2019</span>
+                                            <span class="stamp-item__tag">Forever</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stamp-item">
+                                    <div class="stamp-item__image-wrapper">
+                                        <img src="https://via.placeholder.com/250x200/e8e8e8/666666?text=T-Rex+Skeleton" alt="USA 2019 - T. Rex Skeleton" class="stamp-item__image placeholder-stamp" loading="lazy">
+                                        <span class="stamp-item__zoom">🔍</span>
+                                    </div>
+                                    <div class="stamp-item__content">
+                                        <div class="stamp-item__date">August 29, 2019</div>
+                                        <h4 class="stamp-item__title">
+                                            <a href="#">T. Rex - Skeleton</a>
+                                        </h4>
+                                        <div class="stamp-item__meta">
+                                            <span class="stamp-item__tag stamp-item__tag--year">2019</span>
+                                            <span class="stamp-item__tag">Forever</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Postal Stationery Section -->
+                <section id="postal-stationery" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">✉️</div>
+                        <h2 class="country-section__title">Postal Stationery</h2>
+                    </header>
+                    <div class="country-section__content">
+                        <p>The United States has issued several postal stationery items featuring paleontological themes, including postal cards and stamped envelopes.</p>
+                        <div class="stationery-grid">
+                            <div class="stationery-item">
+                                <img src="https://via.placeholder.com/180x120/e8e8e8/666666?text=Postal+Card" alt="Dinosaur Postal Card" class="stationery-item__image placeholder-stamp">
+                                <p class="stationery-item__caption">Dinosaur Postal Card (1989)</p>
+                            </div>
+                            <div class="stationery-item">
+                                <img src="https://via.placeholder.com/180x120/e8e8e8/666666?text=Stamped+Envelope" alt="Prehistoric Stamped Envelope" class="stationery-item__image placeholder-stamp">
+                                <p class="stationery-item__caption">Prehistoric Animals Envelope (1996)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Postmarks Section -->
+                <section id="postmarks" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📍</div>
+                        <h2 class="country-section__title">Postmarks</h2>
+                    </header>
+                    <div class="country-section__content">
+                        <p>Special postmarks have been issued at first day ceremonies and at locations significant to paleontology in the United States.</p>
+                        <div class="postmarks-grid">
+                            <div class="postmark-item">
+                                <img src="https://via.placeholder.com/180x120/e8e8e8/666666?text=FDC+Postmark" alt="First Day Postmark" class="postmark-item__image placeholder-stamp">
+                                <p class="postmark-item__caption">Dinosaur, CO - First Day (1989)</p>
+                            </div>
+                            <div class="postmark-item">
+                                <img src="https://via.placeholder.com/180x120/e8e8e8/666666?text=T-Rex+Postmark" alt="T-Rex Postmark" class="postmark-item__image placeholder-stamp">
+                                <p class="postmark-item__caption">Washington, DC - T. Rex (2019)</p>
+                            </div>
+                            <div class="postmark-item">
+                                <img src="https://via.placeholder.com/180x120/e8e8e8/666666?text=AMNH+Postmark" alt="AMNH Postmark" class="postmark-item__image placeholder-stamp">
+                                <p class="postmark-item__caption">New York, NY - AMNH (1970)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Notes Box -->
+                <div class="notes-box">
+                    <h3 class="notes-box__title">Notes</h3>
+                    <div class="notes-box__content">
+                        <p>The 1989 "Prehistoric Animals" stamps were controversial because they depicted the Brontosaurus, a name that had been considered invalid since 1903 when the dinosaur was reclassified as Apatosaurus. However, in 2015, research suggested Brontosaurus might be a valid genus after all.</p>
+                        <p>The 2019 T. Rex stamps were issued to coincide with the Smithsonian National Museum of Natural History's renovation of their dinosaur hall.</p>
+                    </div>
+                </div>
+
+                <!-- References Section -->
+                <section id="references" class="country-section">
+                    <header class="country-section__header">
+                        <div class="country-section__icon">📚</div>
+                        <h2 class="country-section__title">References</h2>
+                    </header>
+                    <div class="country-section__content">
+                        <ol class="references-list">
+                            <li>Scott Specialized Catalogue of United States Stamps & Covers. Scott Publishing Co.</li>
+                            <li>United States Postal Service. "Stamps and Postal Stationery." <a href="https://www.usps.com" target="_blank" rel="noopener">https://www.usps.com</a></li>
+                            <li>Smithsonian Institution. "The Nation's T. Rex." National Museum of Natural History, 2019.</li>
+                            <li>American Museum of Natural History Archives. "Centennial Celebration Documents." 1955.</li>
+                            <li>Dinosaur stamp database. Paleophilatelie.eu, 2024.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <!-- Acknowledgements -->
+                <div class="acknowledgements">
+                    <h3 class="acknowledgements__title">Acknowledgements</h3>
+                    <div class="acknowledgements__content">
+                        <p>Special thanks to the American Philatelic Society, the United States Postal Service, and collectors worldwide who have contributed images and information to this page. Thanks also to Dr. Thomas Holtz Jr. for his expertise on theropod dinosaurs and stamp accuracy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Related Countries -->
+    <section class="related-countries">
+        <div class="container">
+            <h2 class="related-countries__title">Explore More Countries</h2>
+            <div class="related-countries__grid">
+                <a href="#" class="related-country-card">
+                    <span class="related-country-card__flag">🇨🇦</span>
+                    <span class="related-country-card__name">Canada</span>
+                </a>
+                <a href="#" class="related-country-card">
+                    <span class="related-country-card__flag">🇲🇽</span>
+                    <span class="related-country-card__name">Mexico</span>
+                </a>
+                <a href="#" class="related-country-card">
+                    <span class="related-country-card__flag">🇬🇧</span>
+                    <span class="related-country-card__name">United Kingdom</span>
+                </a>
+                <a href="#" class="related-country-card">
+                    <span class="related-country-card__flag">🇩🇪</span>
+                    <span class="related-country-card__name">Germany</span>
+                </a>
+                <a href="#" class="related-country-card">
+                    <span class="related-country-card__flag">🇦🇺</span>
+                    <span class="related-country-card__name">Australia</span>
+                </a>
+                <a href="#" class="related-country-card">
+                    <span class="related-country-card__flag">🇨🇳</span>
+                    <span class="related-country-card__name">China</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component (Inline for testing) -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section footer__section--about">
+                    <h3 class="footer__title">Paleophilatelie.eu</h3>
+                    <p class="footer__text">The world's most comprehensive online catalog of paleontology and paleoanthropology stamps.</p>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Quick Links</h3>
+                    <ul class="footer__links">
+                        <li><a href="catalogue.html">Catalogue</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h3 class="footer__title">Resources</h3>
+                    <ul class="footer__links">
+                        <li><a href="links.html">Links</a></li>
+                        <li><a href="bibliography.html">Bibliography</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2024 Paleophilatelie.eu - Dr. Fedor Steeman. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top" title="Back to top"></button>
+
+    <!-- Lightbox Container -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox__close" aria-label="Close lightbox">&times;</button>
+        <button class="lightbox__prev" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox__next" aria-label="Next image">&#10095;</button>
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="">
+            <div class="lightbox__caption"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="components/gallery/gallery.js"></script>
+    <script src="scripts/country.js"></script>
+</body>
+</html>

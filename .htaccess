@@ -1,0 +1,1098 @@
+
+ErrorDocument 404 https://paleophilatelie.eu/404page.html
+
+RedirectPermanent http://paleophilatelie.eu/index.html      https://www.paleophilatelie.eu/index.html
+RedirectPermanent http://www.paleophilatelie.de/index.html  https://www.paleophilatelie.eu/index.html
+
+# Links
+# paleophilatelie.de
+# paleophilately.eu
+
+
+ RewriteEngine On
+ RewriteCond %{HTTP_HOST} ^paleophilatelie.eu [NC]
+ RewriteRule ^(.*)$ https://www.paleophilatelie.eu/$1 [L,R=301]
+
+# https://www.ionos.de/hilfe/index.php?id=2884
+
+# ###########################################
+# Restructuring done on September  2021 #
+# ###########################################
+
+Redirect 301 /links_de.html               /links.html
+Redirect 301 /links_ru.html               /links.html
+Redirect 301 /links_inter.html            /links.html
+Redirect 301 /links_dealers.html          /links.html
+
+Redirect 301 /links_paleo_en.html         /links_paleo.html
+Redirect 301 /links_paleo_de.html         /links_paleo.html
+Redirect 301 /links_paleo_ru.html         /links_paleo.html
+
+
+
+# #####################################
+# Restructuring done on May 06, 2020 #
+# #####################################
+
+Redirect 301 /awards/index.html               /awards.html
+
+Redirect 301 /stamps_milestones.html          /milestones.html
+Redirect 301 /stamps_dealers.html             /links_dealers.html
+Redirect 301 /stamps_home.html                /phil_catalogue_main.html
+Redirect 301 /stamps_glossary.html            /phil_glossary.html
+Redirect 301 /stamps_legend.html              /legend.html
+
+Redirect 301 /stamps_overview.html            /images/index.html
+Redirect 301 /stamps_preview.html             /images/stamps.html
+Redirect 301 /stamps_preview_fdc.html         /images/fdc.html 
+Redirect 301 /stamps_preview_fdc_used.html    /images/fdc_used.html
+Redirect 301 /stamps_preview_pm.html          /images/pm.html
+Redirect 301 /stamps_preview_pm_used.html     /images/pm_used.html 
+Redirect 301 /stamps_preview_used.html        /images/stamps_used.html
+Redirect 301 /stamps_others_preview.html      /images/stamps_others.html
+
+Redirect 301 /paleo_links.html                 /links_paleo_en.html
+Redirect 301 /paleo_link_de.html               /links_paleo_de.html
+Redirect 301 /paleo_links_ru.html              /links_paleo_ru.html
+Redirect 301 /postal_resources.html            /links_postal_resources.html
+
+Redirect 301 /how-to-help.html                 /about_how-to-help.html
+
+Redirect 301 /stamps_paleontology_fellow.html  /topics/paleo/contributors.html
+Redirect 301 /stamps_paleo_museums.html        /topics/paleo/museums.html
+Redirect 301 /stamps_paleontologist.html       /topics/paleo/paleontologist.html
+Redirect 301 /stamps_paleo_sites.html          /topics/paleo/sites.html
+
+Redirect 301 /topics/paleo/paleontology.html              /topics/paleo/index.html
+Redirect 301 /topics/anthro/paleoanthropology.html        /topics/anthro/index.html
+
+Redirect 301 /stamps_antropoology_fellow.html  /topics/anthro/contributors.html
+Redirect 301 /stamps_antro_museums.html        /topics/anthro/museums.html
+Redirect 301 /stamps_antropologist.html        /topics/anthro/antropologist.html
+Redirect 301 /stamps_antro_sites.html          /topics/anthro/sites.html
+
+Redirect 301 /country/afars_and_issas.html    /country/djibouti.html
+
+# #####################################
+
+# Added on 08.08.2022
+Redirect 301 /description/letters/richard_owen_1876/henry_barkly_1876.html   /description/letters/richard_owen_to_henry_barkly_1876.html
+
+
+# #####################################
+# Exhibitions optimization Nov. 2021 #
+# #####################################
+Redirect 301 /exhibitions/Ammoniten/index.html  /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page01.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page02.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page03.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page04.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page05.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page06.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page07.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page08.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page09.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page10.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page11.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page12.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page13.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page14.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page15.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page16.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page17.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page18.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page19.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page20.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page21.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page22.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page23.html /exhibitions/Ammoniten.html
+Redirect 301 /exhibitions/Ammoniten/page24.html /exhibitions/Ammoniten.html
+
+Redirect 301 /exhibitions/ArGe_Bergbau/arge.html   /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/index.html  /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page01.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page02.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page03.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page04.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page05.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page06.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page07.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page08.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page09.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page10.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page11.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page12.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page13.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page14.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page15.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page16.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page17.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page18.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page19.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page20.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page21.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page22.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page23.html /exhibitions/ArGe_Bergbau.html
+Redirect 301 /exhibitions/ArGe_Bergbau/page24.html /exhibitions/ArGe_Bergbau.html
+
+Redirect 301 /exhibitions/Beak_evolution/index.html  /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page01.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page02.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page03.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page04.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page05.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page06.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page07.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page08.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page09.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page10.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page11.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page12.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page13.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page14.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page15.html /exhibitions/Beak_evolution.html
+Redirect 301 /exhibitions/Beak_evolution/page16.html /exhibitions/Beak_evolution.html
+
+Redirect 301 /exhibitions/biophilately_2015/index.html  /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page01.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page02.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page03.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page04.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page05.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page06.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page07.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page08.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page09.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page10.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page11.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page12.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page13.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page14.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page15.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/page16.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/paleo01.html /exhibitions/biophilately_2015.html
+Redirect 301 /exhibitions/biophilately_2015/paleo02.html /exhibitions/biophilately_2015.html
+
+Redirect 301 /exhibitions/Brachiopods/index.html         /exhibitions/Brachiopods_poster.html
+
+Redirect 301 /exhibitions/CatchThemIfYouCan/index.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page01.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page02.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page03.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page04.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page05.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page06.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page07.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page08.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page09.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page10.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page11.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page12.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page13.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page14.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page15.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page16.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page17.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page18.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page19.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page20.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page21.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page22.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page23.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page24.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page25.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page26.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page27.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page28.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page29.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page30.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page31.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page32.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page33.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page34.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page35.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page36.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page37.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page38.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page39.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page40.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page41.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page42.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page43.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page44.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page45.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page46.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page47.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page48.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page49.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page50.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page51.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page52.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page53.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page54.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page55.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page56.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page57.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page58.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page59.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page60.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page61.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page62.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page63.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page64.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page65.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page66.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page67.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page68.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page69.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page70.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page71.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page72.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page73.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page74.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page75.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page76.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page77.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page78.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page79.html /exhibitions/CatchThemIfYouCan.html
+Redirect 301 /exhibitions/CatchThemIfYouCan/page80.html /exhibitions/CatchThemIfYouCan.html
+ 
+ 
+Redirect 301 /exhibitions/Cephalopods/index.html       /exhibitions/Cephalopods_poster.html
+Redirect 301 /exhibitions/Cephalopods/index.old.html   /exhibitions/Cephalopods_poster.html
+
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/index.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page01.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page02.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page03.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page04.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page05.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page06.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page07.html /exhibitions/Chocolate_Dinosaurs.html
+Redirect 301 /exhibitions/Chocolate_Dinosaurs/page08.html /exhibitions/Chocolate_Dinosaurs.html
+
+Redirect 301 /exhibitions/Coelacanths/index.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page01.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page02.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page03.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page04.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page05.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page06.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page07.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page08.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page09.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page10.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page11.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page12.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page13.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page14.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page15.html /exhibitions/Coelacanths.html
+Redirect 301 /exhibitions/Coelacanths/page16.html /exhibitions/Coelacanths.html
+ 
+Redirect 301 /exhibitions/Dark_Caves/index.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page01.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page02.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page03.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page04.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page05.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page06.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page07.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page08.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page09.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page10.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page11.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page12.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page13.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page14.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page15.html /exhibitions/Dark_Caves.html
+Redirect 301 /exhibitions/Dark_Caves/page16.html /exhibitions/Dark_Caves.html
+
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_1.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_10.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_11.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_12.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_13.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_14.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_15.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_16.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_17.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_18.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_19.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_2.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_20.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_21.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_22.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_23.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_24.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_25.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_26.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_27.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_28.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_29.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_3.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_30.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_31.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_32.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_33.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_34.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_35.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_36.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_37.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_38.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_39.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_4.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_40.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_41.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_42.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_43.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_44.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_45.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_46.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_47.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_48.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_49.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_5.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_50.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_51.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_52.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_53.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_54.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_55.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_56.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_57.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_58.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_59.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_6.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_60.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_61.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_62.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_63.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_64.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_65.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_66.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_67.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_68.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_69.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_7.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_70.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_71.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_72.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_73.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_74.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_75.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_76.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_77.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_78.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_79.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_8.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_80.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_81.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_82.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_83.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_84.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_85.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_86.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_87.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_88.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_89.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_9.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_90.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_91.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_92.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_93.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_94.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_95.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_96.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_97.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_98.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/darwin_and_evolution_page_99.html /exhibitions/Darwin_and_evolution.html
+Redirect 301 /exhibitions/Darwin_and_evolution/index.html /exhibitions/Darwin_and_evolution.html
+
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/index.html    /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page001.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page002.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page003.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page004.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page005.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page006.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page007.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page008.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page009.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page010.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page011.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page012.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page013.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page014.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page015.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page016.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page017.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page018.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page019.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page020.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page021.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page022.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page023.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page024.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page025.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page026.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page027.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page028.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page029.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page030.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page031.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page032.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page033.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page034.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page035.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page036.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page037.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page038.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page039.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page040.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page041.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page042.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page043.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page044.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page045.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page046.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page047.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page048.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page049.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page050.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page051.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page052.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page053.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page054.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page055.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page056.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page057.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page058.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page059.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page060.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page061.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page062.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page063.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page064.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page065.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page066.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page067.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page068.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page069.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page070.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page071.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page072.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page073.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page074.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page075.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page076.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page077.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page078.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page079.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page080.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page081.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page082.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page083.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page084.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page085.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page086.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page087.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page088.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page089.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page090.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page091.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page092.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page093.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page094.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page095.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page096.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page097.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page098.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page099.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page100.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page101.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page102.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page103.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page104.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page105.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page106.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page107.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page108.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page109.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page110.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page111.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page112.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page113.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page114.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page115.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page116.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page117.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page118.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page119.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page120.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page121.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page122.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page123.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page124.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page125.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page126.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page127.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page128.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page129.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page130.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page131.html /exhibitions/Die_Evolution_des_Menschen.html
+Redirect 301 /exhibitions/Die_Evolution_des_Menschen/page132.html /exhibitions/Die_Evolution_des_Menschen.html
+
+Redirect 301 /exhibitions/Dinosaurs/default.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/index.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page01.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page02.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page03.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page04.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page05.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page06.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page07.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page08.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page09.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page10.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page11.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page12.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page13.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page14.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page15.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page16.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page17.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page18.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page19.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page20.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page21.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page22.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page23.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page24.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page25.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page26.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page27.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page28.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page29.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page30.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page31.html /exhibitions/Dinosaurs_en.html
+Redirect 301 /exhibitions/Dinosaurs/en/page32.html /exhibitions/Dinosaurs_en.html
+
+Redirect 301 /exhibitions/Dinosaurs/sp/index.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page01.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page02.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page03.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page04.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page05.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page06.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page07.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page08.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page09.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page10.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page11.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page12.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page13.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page14.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page15.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page16.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page17.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page18.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page19.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page20.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page21.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page22.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page23.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page24.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page25.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page26.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page27.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page28.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page29.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page30.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page31.html /exhibitions/Dinosaurs_es.html
+Redirect 301 /exhibitions/Dinosaurs/sp/page32.html /exhibitions/Dinosaurs_es.html
+ 
+ 
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/index.html  /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page01.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page02.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page03.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page04.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page05.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page06.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page07.html /exhibitions/Dinosaurs_back_to_life.html
+Redirect 301 /exhibitions/Dinosaurs_back_to_life/page08.html /exhibitions/Dinosaurs_back_to_life.html
+
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/index.html  /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page01.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page02.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page03.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page04.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page05.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page06.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page07.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page08.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page09.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page10.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page11.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaurs_in_China_and_Mongolia/page12.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+
+Redirect 301 /exhibitions/Dinosaurs_in_EU/index.html  /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page01.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page02.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page03.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page04.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page05.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page06.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page07.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page08.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page09.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page10.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page11.html /exhibitions/Dinosaurs_in_EU.html
+Redirect 301 /exhibitions/Dinosaurs_in_EU/page12.html /exhibitions/Dinosaurs_in_EU.html
+
+Redirect 301 /exhibitions/Dinosaur_Discoveries/index.html  /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page01.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page02.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page03.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page04.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page05.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page06.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page07.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page08.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page09.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page10.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page11.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page12.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page13.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page14.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page15.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+Redirect 301 /exhibitions/Dinosaur_Discoveries/page16.html /exhibitions/Dinosaurs_in_China_and_Mongolia.html
+
+Redirect 301 /exhibitions/Homo_evolution/en/index.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page01.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page02.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page03.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page04.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page05.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page06.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page07.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page08.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page09.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page10.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page11.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page12.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page13.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page14.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page15.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page16.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page17.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page18.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page19.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page20.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page21.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page22.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page23.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page24.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page25.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page26.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page27.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page28.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page29.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page30.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page31.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page32.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page33.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page34.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page35.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page36.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page37.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page38.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page39.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page40.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page41.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page42.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page43.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page44.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page45.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page46.html /exhibitions/Homo_evolution_en.html
+Redirect 301 /exhibitions/Homo_evolution/en/page47.html /exhibitions/Homo_evolution_en.html
+
+Redirect 301 /exhibitions/Homo_evolution/fr/index.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page01.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page02.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page03.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page04.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page05.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page06.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page07.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page08.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page09.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page10.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page11.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page12.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page13.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page14.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page15.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page16.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page17.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page18.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page19.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page20.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page21.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page22.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page23.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page24.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page25.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page26.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page27.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page28.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page29.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page30.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page31.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page32.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page33.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page34.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page35.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page36.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page37.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page38.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page39.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page40.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page41.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page42.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page43.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page44.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page45.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page46.html /exhibitions/Homo_evolution_fr.html
+Redirect 301 /exhibitions/Homo_evolution/fr/page47.html /exhibitions/Homo_evolution_fr.html
+
+Redirect 301 /exhibitions/human_evolution/index.html  /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page01.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page02.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page03.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page04.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page05.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page06.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page07.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page08.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page09.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page10.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page11.html /exhibitions/Human_evolution.html
+Redirect 301 /exhibitions/human_evolution/page12.html /exhibitions/Human_evolution.html
+
+
+Redirect 301 /exhibitions/Marine_reptiles/index.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page01.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page02.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page03.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page04.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page05.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page06.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page07.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page08.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page09.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page10.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page11.html /exhibitions/Marine_reptiles.html
+Redirect 301 /exhibitions/Marine_reptiles/page12.html /exhibitions/Marine_reptiles.html
+
+Redirect 301 /exhibitions/Mesozoic/page01.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page02.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page03.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page04.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page05.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page06.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page07.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page08.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page09.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page10.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page11.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page12.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page13.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page14.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page15.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page16.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page17.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page18.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page19.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page20.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page21.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page22.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page23.html /exhibitions/Diverse_live_in_middle_age.html
+Redirect 301 /exhibitions/Mesozoic/page24.html /exhibitions/Diverse_live_in_middle_age.html
+
+Redirect 301 /exhibitions/Neandertal/index.html  /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page01.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page02.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page03.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page04.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page05.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page06.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page07.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page08.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page09.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page10.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page11.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page12.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page13.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page14.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page15.html /exhibitions/Neandertal.html
+Redirect 301 /exhibitions/Neandertal/page16.html /exhibitions/Neandertal.html
+
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/index.html  /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page01.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page02.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page03.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page04.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page05.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page06.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page07.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page08.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page09.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page10.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page11.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page12.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page13.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page14.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page15.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page16.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page17.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page18.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page19.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page20.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page21.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page22.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page23.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page24.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page25.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page26.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page27.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page28.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page29.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page30.html /exhibitions/Oil_and_Dinosaurs_en.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/en/page31.html /exhibitions/Oil_and_Dinosaurs_en.html
+
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/index.html  /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page01.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page02.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page03.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page04.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page05.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page06.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page07.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page08.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page09.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page10.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page11.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page12.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page13.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page14.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page15.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page16.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page17.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page18.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page19.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page20.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page21.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page22.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page23.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page24.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page25.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page26.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page27.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page28.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page29.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page30.html /exhibitions/Oil_and_Dinosaurs_fr.html
+Redirect 301 /exhibitions/oil_and_dinosaurs/fr/page31.html /exhibitions/Oil_and_Dinosaurs_fr.html
+
+Redirect 301 /exhibitions/paleoinvertebrados_poster/index.html /exhibitions/PaleoInvertebrados_poster.html
+
+Redirect 301 /exhibitions/Pterosaurs/index.html  /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page01.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page02.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page03.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page04.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page05.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page06.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page07.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page08.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page09.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page10.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page11.html /exhibitions/Pterosaurs.html
+Redirect 301 /exhibitions/Pterosaurs/page12.html /exhibitions/Pterosaurs.html
+
+Redirect 301 /exhibitions/Sinclair_postmarks/index.html  /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page01.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page02.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page03.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page04.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page05.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page06.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page07.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page08.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page09.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page10.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page11.html /exhibitions/Sinclair_postmarks.html
+Redirect 301 /exhibitions/Sinclair_postmarks/page12.html /exhibitions/Sinclair_postmarks.html
+
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/index.html  /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page01.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page02.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page03.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page04.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page05.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page06.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page07.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page08.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page09.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page10.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page11.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page12.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page13.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page14.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page15.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page16.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page17.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page18.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page19.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page20.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page21.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page22.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page23.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page24.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page25.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page26.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page27.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page28.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page29.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page30.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page31.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page32.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page33.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page34.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page35.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page36.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page37.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page38.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page39.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page40.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page41.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page42.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page43.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page44.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page45.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page46.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page47.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page48.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+Redirect 301 /exhibitions/the_human_adventure_of_prehistory/page49.html /exhibitions/The_Human_Adventure_of_Prehistory.html
+
+Redirect 301 /exhibitions/World_of_Dinosaurs/index.html  /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page01.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page02.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page03.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page04.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page05.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page06.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page07.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page08.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page09.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page10.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page11.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page12.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page13.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page14.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page15.html /exhibitions/World_of_Dinosaurs.html
+Redirect 301 /exhibitions/World_of_Dinosaurs/page16.html /exhibitions/World_of_Dinosaurs.html
+
+Redirect 301 /exhibitions/X_Brazilian_Symposium_of_Paleontology_ofVvertebrates/index.html /exhibitions/X_Brazilian_Symposium_of_Paleontology_of_Vertebrates.html
+
+
+Redirect 301 /album_pages/dino/fixed_files/page01.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page02.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page03.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page04.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page05.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page06.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page07.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page08.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page09.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/fixed_files/page10.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page01.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page02.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page03.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page04.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page05.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page06.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page07.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page08.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page09.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/dino/page10.html /exhibitions/Dinosaur_album.html
+Redirect 301 /album_pages/index.html /exhibitions/Dinosaur_album.html
+
+Redirect 301 /album_pages/peru/page01.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page02.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page03.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page04.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page05.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page06.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page07.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page08.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page09.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page10.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page11.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page12.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/page13.html /exhibitions/Fossils_of_Peru_album.html
+Redirect 301 /album_pages/peru/index.html /exhibitions/Fossils_of_Peru_album.html
+ 
+ 
+# Added on February 2023
+
+Redirect 301  /description/stamps/details/argentina_2012_booklet.html   /description/stamps/argentina_2012.html#prod
+Redirect 301  /description/stamps/details/argentina_2015_booklet.html   /description/stamps/argentina_2015.html#prod
+Redirect 301  /description/stamps/details/argentina_2015_covers.html    /description/stamps/argentina_2015.html#prod
+Redirect 301  /description/stamps/details/argentina_2015_fdc.html       /description/stamps/argentina_2015.html#prod
+
+Redirect 301  /description/stamps/australia_1993_sa.html                   /description/stamps/australia_1993.html
+Redirect 301  /description/stamps/details/australia_1993_covers.html       /description/stamps/australia_1993.html#prod
+Redirect 301  /description/stamps/details/australia_1993_fdc.html          /description/stamps/australia_1993.html#prod
+Redirect 301  /description/stamps/details/australia_1993_fdc_sa.html       /description/stamps/australia_1993.html#prod
+Redirect 301  /description/stamps/details/australia_1993_stamps_sa.html    /description/stamps/australia_1993.html#prod
+
+Redirect 301  /description/stamps/details/australia_2013_covers.html       /description/stamps/australia_2013.html#prod
+Redirect 301  /description/stamps/details/australia_2013_ms_set.html       /description/stamps/australia_2013.html#prod
+Redirect 301  /description/stamps/australia_2013_sa.html                   /description/stamps/australia_2013.html
+
+
+Redirect 301  /description/stamps/details/belgium_2015_covers.html       /description/stamps/belgium_2015.html#prod
+Redirect 301  /description/stamps/details/brazil_2014_fdc.html          /description/stamps/brazil_2014.html#prod
+
+Redirect 301  /description/stamps/details/serbia_2014_covers.html          /description/stamps/serbia_2014.html#prod
+Redirect 301  /description/stamps/details/serbia_2016_covers.html          /description/stamps/serbia_2016.html#prod
+Redirect 301  /description/stamps/details/serbia_2018_covers.html          /description/stamps/serbia_2018.html#prod
+
+
+ 
+Redirect 301  /description/stamps/canada_1986_2.html          /description/stamps/canada_1986.html
+ 
+Redirect 301  /description/stamps/faroe_2009.html            /description/stamps/others/faroe_2009.html
+Redirect 301  /description/stamps/czech_2018.html            /description/stamps/others/czech_2018.html
+Redirect 301  /description/stamps/details/france_2008_covers.html       /description/stamps/france_2008.html#prod
+
+Redirect 301  /description/stamps/ireland_1999_sa.html            /description/stamps/ireland_1999.html
+
+ # Added on December 2024
+ 
+ Redirect 301 /articles/en/kogan/First_discoveries_Megaloceros.pdf                /topics/paleo/vertebrate/megaloceros.html
+ Redirect 301 /articles/en/kogan/First_discoveries_Megaloceros_in_Russia.en.pdf   /topics/paleo/vertebrate/megaloceros.html
+ Redirect 301 /year/1840s.html               /articles/1840s.html
+ Redirect 301 /year/darwin_200.html          /topics/paleo/personalities/charles_darwin.html#2009
+
+ Redirect 301 /paleophilatelie_website_presentation.pdf /articles_pdf/paleophilatelie_website_presentation.pdf
+
+# Renamed
+Redirect 301 /articles/en/kogan/First_discoveries%20Megaloceros.pdf /articles/en/kogan/First_discoveries_Megaloceros.pdf
+Redirect 301 /articles/en/kogan/First_discoveries%20Megaloceros_in_Russia.en.pdf /articles/en/kogan/First_discoveries_Megaloceros_in_Russia.en.pdf
+
+
+Redirect 301  /imges/pm_used_others.html            /imges/pm_others_used.html
+
+Redirect 301 /articles/publications.html           /articles/index.html

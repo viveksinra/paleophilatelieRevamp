@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: *_bar.html
+Disallow: logo.html
+Disallow: stat.html
+Disallow: 404page.html
+
+Disallow: default.html
+Disallow: */default.html
+Disallow: */*/default.html
+Disallow: */*/*/default.html
+Disallow: */*/*/*/default.html
+Disallow: */*/*/*/*/default.html
+
+Disallow: colorschemes/*
+Disallow: images/ads/*
+Disallow: images/dynamic/*
+Disallow: images/examples/*
+Disallow: images/flags/*
+Disallow: images/others/*
+Disallow: images/preview/*
+
+Disallow: webutatione045542e73eb0bf6acd01a2674583285.html
