@@ -82,7 +82,7 @@
 .footer-logo {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2);
+    gap: var(--space-3);
     text-decoration: none;
     margin-bottom: var(--space-4);
     transition: opacity var(--transition-fast);
@@ -91,6 +91,12 @@
 .footer-logo:hover {
     text-decoration: none;
     opacity: 0.9;
+}
+
+.footer-logo__image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .footer-logo__icon {

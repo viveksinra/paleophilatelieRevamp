@@ -13,7 +13,7 @@
 - **Goal:** Create a professional, modern website that rivals top philatelic and educational sites
 
 ### Key Constraints
-- Client is familiar with HTML - keep technology stack simple (HTML, CSS, vanilla JS)
+- use best of html css and JS 
 - Must preserve ALL existing content - no content deletion
 - Keep images in their exact current locations to preserve links
 - Maintain Google Translate and FreeFind search integration (improve if possible)

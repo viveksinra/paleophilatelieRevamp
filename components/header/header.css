@@ -6,21 +6,27 @@
 
 /* ===== HEADER CONTAINER ===== */
 .site-header {
+    position: -webkit-sticky; /* Safari support */
     position: sticky;
     top: 0;
-    z-index: var(--z-sticky);
-    background-color: var(--color-header-bg);
+    left: 0;
+    right: 0;
+    z-index: 200; /* Fallback */
+    z-index: var(--z-sticky, 200);
+    background-color: var(--color-header-bg, #fdfcfb);
     box-shadow: none;
-    transition: box-shadow var(--transition-normal), background-color var(--transition-normal);
+    transition: box-shadow var(--transition-normal, 0.3s), background-color var(--transition-normal, 0.3s), transform var(--transition-normal, 0.3s);
+    /* Ensure header is always visible */
+    visibility: visible !important;
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 .site-header--scrolled {
     background-color: var(--color-header-bg-solid);
-    box-shadow: 0 2px 20px rgba(28, 25, 23, 0.1);
-}
-
-.site-header--hidden {
-    transform: translateY(-100%);
+    box-shadow: 0 4px 30px rgba(28, 25, 23, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 /* ===== HEADER TOP BAR - Light Theme ===== */
@@ -428,7 +434,8 @@
         border-radius: 0;
     }
 
-    .main-nav.is-open {
+    .main-nav.is-open,
+    .main-nav.main-nav--open {
         display: block;
         right: 0;
     }
@@ -506,7 +513,8 @@
         z-index: -1;
     }
 
-    .main-nav.is-open::before {
+    .main-nav.is-open::before,
+    .main-nav.main-nav--open::before {
         opacity: 1;
         visibility: visible;
     }
