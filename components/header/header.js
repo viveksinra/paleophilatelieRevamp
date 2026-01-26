@@ -39,6 +39,12 @@
 
         menuToggle.addEventListener('click', toggleMenu);
 
+        // Close button inside drawer
+        const navClose = document.getElementById('nav-close');
+        if (navClose) {
+            navClose.addEventListener('click', closeMenu);
+        }
+
         // Close menu when clicking overlay
         mainNav.addEventListener('click', (e) => {
             if (e.target === mainNav) {
@@ -110,11 +116,26 @@
     }
 
     function toggleSearch() {
-        const isOpen = searchPanel.classList.toggle('header-search__panel--open');
-        searchToggle.setAttribute('aria-expanded', isOpen);
+        const isCurrentlyHidden = searchPanel.hasAttribute('hidden');
+
+        if (isCurrentlyHidden) {
+            searchPanel.removeAttribute('hidden');
+            searchPanel.classList.add('header-search__panel--open');
+            searchToggle.setAttribute('aria-expanded', 'true');
+            // Focus on input
+            const input = searchPanel.querySelector('.header-search__input');
+            if (input) {
+                setTimeout(() => input.focus(), 100);
+            }
+        } else {
+            searchPanel.setAttribute('hidden', '');
+            searchPanel.classList.remove('header-search__panel--open');
+            searchToggle.setAttribute('aria-expanded', 'false');
+        }
     }
 
     function closeSearch() {
+        searchPanel.setAttribute('hidden', '');
         searchPanel.classList.remove('header-search__panel--open');
         searchToggle.setAttribute('aria-expanded', 'false');
     }
