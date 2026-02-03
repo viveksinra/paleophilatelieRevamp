@@ -13,6 +13,7 @@
         initCounterAnimation();
         initSmoothScrollLinks();
         initCardHoverEffects();
+        initHeroSearchTrigger();
     }
 
     /**
@@ -119,7 +120,7 @@
      * Enhanced hover effects for cards
      */
     function initCardHoverEffects() {
-        const cards = document.querySelectorAll('.explore-card, .category-card');
+        const cards = document.querySelectorAll('.explore-card, .category-card, .hero-nav__item');
 
         cards.forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -130,6 +131,29 @@
                 this.style.willChange = 'auto';
             });
         });
+    }
+
+    /**
+     * Hero search button triggers header search
+     */
+    function initHeroSearchTrigger() {
+        const heroSearchBtn = document.getElementById('hero-search-trigger');
+        const headerSearchToggle = document.getElementById('search-toggle');
+
+        if (heroSearchBtn && headerSearchToggle) {
+            heroSearchBtn.addEventListener('click', function() {
+                // Trigger the header search toggle
+                headerSearchToggle.click();
+
+                // Focus on search input after panel opens
+                setTimeout(function() {
+                    const searchInput = document.querySelector('.header-search__input');
+                    if (searchInput) {
+                        searchInput.focus();
+                    }
+                }, 100);
+            });
+        }
     }
 
     /**

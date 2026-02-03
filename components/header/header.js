@@ -1,14 +1,13 @@
 /**
  * Header Component JavaScript
- * Handles mobile menu, search panel, dropdowns, and scroll behavior
+ * Smithsonian Magazine Style - Handles mobile menu, search overlay, and scroll behavior
  */
 
 (function() {
     'use strict';
 
     // DOM Elements
-    let header, menuToggle, mainNav, searchToggle, searchPanel;
-    let lastScrollY = 0;
+    let header, menuToggle, mainNav, navClose, searchToggle, searchOverlay, searchClose, searchInput;
     let isMenuOpen = false;
 
     /**
@@ -19,15 +18,17 @@
         header = document.querySelector('.site-header');
         menuToggle = document.getElementById('menu-toggle');
         mainNav = document.getElementById('main-nav');
+        navClose = document.getElementById('nav-close');
         searchToggle = document.getElementById('search-toggle');
-        searchPanel = document.getElementById('search-panel');
+        searchOverlay = document.getElementById('search-overlay');
+        searchClose = document.getElementById('search-close');
+        searchInput = searchOverlay ? searchOverlay.querySelector('.search-overlay-input') : null;
 
         if (!header) return;
 
         // Initialize features
         initMobileMenu();
-        initSearch();
-        initDropdowns();
+        initSearchOverlay();
         initStickyHeader();
     }
 
@@ -40,12 +41,11 @@
         menuToggle.addEventListener('click', toggleMenu);
 
         // Close button inside drawer
-        const navClose = document.getElementById('nav-close');
         if (navClose) {
             navClose.addEventListener('click', closeMenu);
         }
 
-        // Close menu when clicking overlay
+        // Close menu when clicking overlay (the ::before pseudo-element)
         mainNav.addEventListener('click', (e) => {
             if (e.target === mainNav) {
                 closeMenu();
@@ -70,100 +70,61 @@
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
 
-        menuToggle.classList.toggle('menu-toggle--active', isMenuOpen);
         menuToggle.setAttribute('aria-expanded', isMenuOpen);
-        mainNav.classList.toggle('main-nav--open', isMenuOpen);
+        mainNav.classList.toggle('is-open', isMenuOpen);
         document.body.classList.toggle('menu-open', isMenuOpen);
     }
 
     function closeMenu() {
         isMenuOpen = false;
-        menuToggle.classList.remove('menu-toggle--active');
         menuToggle.setAttribute('aria-expanded', 'false');
-        mainNav.classList.remove('main-nav--open');
+        mainNav.classList.remove('is-open');
         document.body.classList.remove('menu-open');
     }
 
     /**
-     * Search Panel Toggle
+     * Search Overlay Toggle
      */
-    function initSearch() {
-        if (!searchToggle || !searchPanel) return;
+    function initSearchOverlay() {
+        if (!searchToggle || !searchOverlay) return;
 
-        searchToggle.addEventListener('click', toggleSearch);
+        searchToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            openSearchOverlay();
+        });
 
-        // Close search when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!searchPanel.contains(e.target) && !searchToggle.contains(e.target)) {
-                closeSearch();
+        if (searchClose) {
+            searchClose.addEventListener('click', closeSearchOverlay);
+        }
+
+        // Close when clicking overlay background
+        searchOverlay.addEventListener('click', (e) => {
+            if (e.target === searchOverlay) {
+                closeSearchOverlay();
             }
         });
 
-        // Close on escape
+        // Close on escape key
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                closeSearch();
-            }
-        });
-
-        // Focus input when opening
-        searchPanel.addEventListener('transitionend', () => {
-            if (searchPanel.classList.contains('header-search__panel--open')) {
-                const input = searchPanel.querySelector('.header-search__input');
-                if (input) input.focus();
+            if (e.key === 'Escape' && searchOverlay.classList.contains('is-open')) {
+                closeSearchOverlay();
             }
         });
     }
 
-    function toggleSearch() {
-        const isCurrentlyHidden = searchPanel.hasAttribute('hidden');
+    function openSearchOverlay() {
+        searchOverlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
 
-        if (isCurrentlyHidden) {
-            searchPanel.removeAttribute('hidden');
-            searchPanel.classList.add('header-search__panel--open');
-            searchToggle.setAttribute('aria-expanded', 'true');
-            // Focus on input
-            const input = searchPanel.querySelector('.header-search__input');
-            if (input) {
-                setTimeout(() => input.focus(), 100);
-            }
-        } else {
-            searchPanel.setAttribute('hidden', '');
-            searchPanel.classList.remove('header-search__panel--open');
-            searchToggle.setAttribute('aria-expanded', 'false');
+        // Focus on input
+        if (searchInput) {
+            setTimeout(() => searchInput.focus(), 100);
         }
     }
 
-    function closeSearch() {
-        searchPanel.setAttribute('hidden', '');
-        searchPanel.classList.remove('header-search__panel--open');
-        searchToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    /**
-     * Dropdown handling for mobile
-     */
-    function initDropdowns() {
-        const dropdownItems = document.querySelectorAll('.main-nav__item--has-dropdown');
-
-        dropdownItems.forEach(item => {
-            const link = item.querySelector('.main-nav__link');
-
-            link.addEventListener('click', (e) => {
-                // Only handle on mobile
-                if (window.innerWidth < 992) {
-                    e.preventDefault();
-                    item.classList.toggle('is-open');
-
-                    // Close other dropdowns
-                    dropdownItems.forEach(other => {
-                        if (other !== item) {
-                            other.classList.remove('is-open');
-                        }
-                    });
-                }
-            });
-        });
+    function closeSearchOverlay() {
+        searchOverlay.classList.remove('is-open');
+        document.body.style.overflow = '';
     }
 
     /**
@@ -179,15 +140,6 @@
             } else {
                 header.classList.remove('site-header--scrolled');
             }
-
-            // Hide/show on scroll direction (optional - uncomment to enable)
-            // if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            //     header.classList.add('site-header--hidden');
-            // } else {
-            //     header.classList.remove('site-header--hidden');
-            // }
-
-            lastScrollY = currentScrollY;
         }, { passive: true });
     }
 

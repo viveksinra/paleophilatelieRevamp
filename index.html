@@ -30,182 +30,70 @@
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header Component - Light Theme with Dark Brown Navigation -->
-    <header class="site-header" id="site-header">
-        <!-- Top Bar -->
+    <!-- Header Component - Smithsonian Magazine Style (Black/White/Yellow) -->
+    <header class="site-header" id="site-header" role="banner">
+        <!-- Top Black Bar -->
         <div class="header-top">
             <div class="container">
                 <div class="header-top__content">
-                    <div class="header-top__tagline">
-                        The place where Paleontology and Paleoanthropology meets Philately
-                    </div>
-                    <div class="header-top__actions">
-                        <div id="google_translate_element" class="translate-widget"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Header Main - Light Background -->
-        <div class="header-main">
-            <div class="container">
-                <div class="header-main__content">
                     <!-- Logo -->
-                    <a href="index.html" class="site-logo">
-                        <img src="images/others/paleophilatelie.ico" alt="Paleophilatelie" class="site-logo__image">
-                        <span class="site-logo__name">Paleophilatelie<span class="site-logo__tld">.eu</span></span>
+                    <a href="index.html" class="site-logo" aria-label="Paleophilatelie Home">
+                        <img src="images/others/paleophilatelie.ico" alt="Paleophilatelie Logo" class="site-logo__image">
+                        <span class="site-logo__text">Paleophilatelie</span>
                     </a>
 
-                    <!-- Desktop Navigation - Dark Brown Bar -->
-                    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-                        <!-- Mobile Close Button -->
-                        <button class="main-nav__close" id="nav-close" aria-label="Close menu">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 6L6 18M6 6l12 12"/>
+                    <!-- Header Actions -->
+                    <div class="header-actions">
+                        <!-- Search Toggle -->
+                        <button class="header-link header-link--icon" id="search-toggle" aria-label="Search">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                             </svg>
                         </button>
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item main-nav__item--active">
-                                <a href="index.html" class="main-nav__link">Home</a>
-                            </li>
-                            <li class="main-nav__item main-nav__item--has-dropdown">
-                                <a href="phil_catalogue_main.html" class="main-nav__link">
-                                    Catalogue
-                                    <svg class="main-nav__arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
-                                        <path d="M1 1l4 4 4-4"/>
-                                    </svg>
-                                </a>
-                                <div class="dropdown">
-                                    <div class="dropdown__content">
-                                        <a href="country/index.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#127758;</span>
-                                            By Country
-                                        </a>
-                                        <a href="year/index.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#128197;</span>
-                                            By Year
-                                        </a>
-                                        <a href="phil_catalogue_species.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#129430;</span>
-                                            By Species
-                                        </a>
-                                        <a href="year/current.html" class="dropdown__link dropdown__link--highlight">
-                                            <span class="dropdown__icon">&#10024;</span>
-                                            New Issues
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main-nav__item main-nav__item--has-dropdown">
-                                <a href="images/index.html" class="main-nav__link">
-                                    Gallery
-                                    <svg class="main-nav__arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
-                                        <path d="M1 1l4 4 4-4"/>
-                                    </svg>
-                                </a>
-                                <div class="dropdown">
-                                    <div class="dropdown__content">
-                                        <a href="images/stamps.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#128238;</span>
-                                            Stamps
-                                        </a>
-                                        <a href="images/fdc.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#9993;</span>
-                                            First Day Covers
-                                        </a>
-                                        <a href="images/pm.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#128231;</span>
-                                            Postmarks
-                                        </a>
-                                        <a href="images/ps.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#128220;</span>
-                                            Postal Stationery
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main-nav__item main-nav__item--has-dropdown">
-                                <a href="topics/index.html" class="main-nav__link">
-                                    Topics
-                                    <svg class="main-nav__arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
-                                        <path d="M1 1l4 4 4-4"/>
-                                    </svg>
-                                </a>
-                                <div class="dropdown">
-                                    <div class="dropdown__content">
-                                        <a href="topics/paleo/index.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#129428;</span>
-                                            Paleontology
-                                        </a>
-                                        <a href="topics/anthro/index.html" class="dropdown__link">
-                                            <span class="dropdown__icon">&#129492;</span>
-                                            Paleoanthropology
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="main-nav__item">
-                                <a href="exhibitions/index.html" class="main-nav__link">Exhibitions</a>
-                            </li>
-                            <li class="main-nav__item main-nav__item--has-dropdown">
-                                <a href="about_website.html" class="main-nav__link">
-                                    About
-                                    <svg class="main-nav__arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
-                                        <path d="M1 1l4 4 4-4"/>
-                                    </svg>
-                                </a>
-                                <div class="dropdown">
-                                    <div class="dropdown__content">
-                                        <a href="about_website.html" class="dropdown__link">About the Website</a>
-                                        <a href="about.html" class="dropdown__link">About the Author</a>
-                                        <a href="news.html" class="dropdown__link">News</a>
-                                        <a href="awards.html" class="dropdown__link">Awards</a>
-                                        <a href="links.html" class="dropdown__link">Links</a>
-                                        <a href="contact.html" class="dropdown__link">Contact</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
 
-                    <!-- Search Toggle -->
-                    <div class="header-search">
-                        <button class="header-search__toggle" id="search-toggle" aria-label="Toggle search" aria-expanded="false">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"/>
-                                <path d="M21 21l-4.35-4.35"/>
-                            </svg>
+                        <!-- Mobile Menu Toggle -->
+                        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                            <span class="menu-toggle__bar"></span>
+                            <span class="menu-toggle__bar"></span>
+                            <span class="menu-toggle__bar"></span>
                         </button>
                     </div>
-
-                    <!-- Mobile Menu Toggle -->
-                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
-                        <span class="menu-toggle__bar"></span>
-                        <span class="menu-toggle__bar"></span>
-                        <span class="menu-toggle__bar"></span>
-                    </button>
                 </div>
             </div>
         </div>
 
-        <!-- Search Panel -->
-        <div class="header-search__panel" id="search-panel" hidden>
+        <!-- Main Navigation - White Bar -->
+        <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
             <div class="container">
-                <form action="https://search.freefind.com/find.html" method="get" class="header-search__form">
+                <!-- Mobile Close Button -->
+                <button class="main-nav__close" id="nav-close" aria-label="Close menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link nav-link--active">Home</a></li>
+                    <li class="nav-item"><a href="phil_catalogue_main.html" class="nav-link">Catalogue</a></li>
+                    <li class="nav-item"><a href="images/index.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="topics/index.html" class="nav-link">Topics</a></li>
+                    <li class="nav-item"><a href="articles/index.html" class="nav-link">Resources</a></li>
+                    <li class="nav-item"><a href="about_website.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="mk/index.html" class="nav-link">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="search-overlay">
+            <div class="search-overlay-content">
+                <form action="https://search.freefind.com/find.html" method="get" accept-charset="UTF-8">
                     <input type="hidden" name="si" value="14323397">
                     <input type="hidden" name="pid" value="r">
-                    <input type="hidden" name="n" value="0">
-                    <input type="hidden" name="_charset_" value="">
-                    <input type="hidden" name="bcd" value="÷">
-                    <input type="text" name="query" class="header-search__input" placeholder="Search stamps, countries, years..." aria-label="Search">
-                    <button type="submit" class="header-search__submit">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"/>
-                            <path d="M21 21l-4.35-4.35"/>
-                        </svg>
-                    </button>
+                    <input type="text" name="query" class="search-overlay-input" placeholder="Search stamps, countries, years..." aria-label="Search" autocomplete="off">
                 </form>
             </div>
+            <button class="search-overlay-close" id="search-close" aria-label="Close search">&times;</button>
         </div>
     </header>
 
@@ -223,602 +111,560 @@
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <main id="main-content">
-        <!-- Hero Section - Cinematic Full Screen with Gradient -->
-        <section class="hero hero--home">
-            <div class="hero__background">
-                <div class="hero__gradient"></div>
-                <div class="hero__pattern"></div>
-            </div>
-            <div class="container hero__content">
-                <span class="hero__badge">Est. 2002 &bull; Award Winning</span>
-                <h1 class="hero__title">Where Paleontology<br><span>Meets Philately</span></h1>
-                <p class="hero__subtitle">The world's most comprehensive online collection of paleontology and paleoanthropology stamps, featuring treasures from over 200 countries and territories worldwide.</p>
-                <div class="hero__actions">
-                    <a href="phil_catalogue_main.html" class="btn btn-primary btn--lg">Explore Catalogue</a>
-                    <a href="country/index.html" class="btn btn-outline-light btn--lg">Browse by Country</a>
-                </div>
-            </div>
-            <div class="hero__scroll">
-                <span>Scroll to Explore</span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-            </div>
-        </section>
-
-        <!-- Statistics Section -->
-        <section class="stats-section">
+        <!-- SECTION 1: Introduction -->
+        <section class="intro-section">
             <div class="container">
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <span class="stat-card__number">200+</span>
-                        <span class="stat-card__label">Countries & Territories</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-card__number">17,000+</span>
-                        <span class="stat-card__label">Images</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-card__number">750+</span>
-                        <span class="stat-card__label">Catalogue Pages</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-card__number">60+</span>
-                        <span class="stat-card__label">Years of Issues</span>
-                    </div>
-                </div>
+                <h1 class="intro-title">Paleophilatelie - Where Paleontology and Paleoanthropology Meet Philately</h1>
+                <p class="intro-text">
+                    Established in 2010, the website features images and information on postage stamps,
+                    postmarks, first day covers, and other philatelic materials related to its topic
+                    from over 200 countries and territories, as well as a wide range of
+                    <a href="articles/index.html">topical</a> and
+                    <a href="description/stamps/index.html">descriptive</a> articles.
+                </p>
             </div>
         </section>
 
-        <!-- Browse Collection Section -->
+        <!-- SECTION 2: Explore Catalogue -->
         <section class="explore-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Explore</span>
-                    <h2 class="section-title">Browse the Collection</h2>
-                    <p class="section-subtitle">Discover paleontology stamps organized by country, year, or topic</p>
+                <h2 class="section-title">Explore PaleoPhilatelie <a href="phil_catalogue_main.html">Catalogue</a> by Country and Date of Issue</h2>
+
+                <!-- Countries A-Z -->
+                <div class="catalogue-nav">
+                    <h3 class="catalogue-nav__label"><a href="country/index.html">Countries</a>:</h3>
+                    <nav class="az-nav" aria-label="Alphabetical navigation">
+                        <a href="country/index.html#A" class="az-nav__link">A</a>,
+                        <a href="country/index.html#B" class="az-nav__link">B</a>,
+                        <a href="country/index.html#C" class="az-nav__link">C</a>,
+                        <a href="country/index.html#D" class="az-nav__link">D</a>,
+                        <a href="country/index.html#E" class="az-nav__link">E</a>,
+                        <a href="country/index.html#F" class="az-nav__link">F</a>,
+                        <a href="country/index.html#G" class="az-nav__link">G</a>,
+                        <a href="country/index.html#H" class="az-nav__link">H</a>,
+                        <a href="country/index.html#I" class="az-nav__link">I</a>,
+                        <a href="country/index.html#J" class="az-nav__link">J</a>,
+                        <a href="country/index.html#K" class="az-nav__link">K</a>,
+                        <a href="country/index.html#L" class="az-nav__link">L</a>,
+                        <a href="country/index.html#M" class="az-nav__link">M</a>,
+                        <a href="country/index.html#N" class="az-nav__link">N</a>,
+                        <a href="country/index.html#O" class="az-nav__link">O</a>,
+                        <a href="country/index.html#P" class="az-nav__link">P</a>,
+                        <a href="country/index.html#Q" class="az-nav__link">Q</a>,
+                        <a href="country/index.html#R" class="az-nav__link">R</a>,
+                        <a href="country/index.html#S" class="az-nav__link">S</a>,
+                        <a href="country/index.html#T" class="az-nav__link">T</a>,
+                        <a href="country/index.html#U" class="az-nav__link">U</a>,
+                        <a href="country/index.html#V" class="az-nav__link">V</a>,
+                        <a href="country/index.html#W" class="az-nav__link">W</a>,
+                        <a href="country/index.html#Y" class="az-nav__link">Y</a>,
+                        <a href="country/index.html#Z" class="az-nav__link">Z</a>
+                    </nav>
                 </div>
 
-                <!-- Browse Cards with Gradients -->
-                <div class="browse-cards">
-                    <a href="country/index.html" class="browse-card browse-card--country">
-                        <div class="browse-card__bg"></div>
-                        <span class="browse-card__arrow">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                            </svg>
-                        </span>
-                        <div class="browse-card__content">
-                            <div class="browse-card__icon">
-                                <svg viewBox="0 0 24 24">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="browse-card__title">By Country</h3>
-                            <p class="browse-card__description">200+ countries from A to Z</p>
-                        </div>
-                    </a>
-
-                    <a href="year/index.html" class="browse-card browse-card--year">
-                        <div class="browse-card__bg"></div>
-                        <span class="browse-card__arrow">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                            </svg>
-                        </span>
-                        <div class="browse-card__content">
-                            <div class="browse-card__icon">
-                                <svg viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                            </div>
-                            <h3 class="browse-card__title">By Year</h3>
-                            <p class="browse-card__description">From 1950s to present day</p>
-                        </div>
-                    </a>
-
-                    <a href="topics/index.html" class="browse-card browse-card--topic">
-                        <div class="browse-card__bg"></div>
-                        <span class="browse-card__arrow">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M7 17L17 7M17 7H7M17 7V17"/>
-                            </svg>
-                        </span>
-                        <div class="browse-card__content">
-                            <div class="browse-card__icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                                    <path d="M2 17l10 5 10-5"></path>
-                                    <path d="M2 12l10 5 10-5"></path>
-                                </svg>
-                            </div>
-                            <h3 class="browse-card__title">By Topic</h3>
-                            <p class="browse-card__description">Dinosaurs, fossils, evolution & more</p>
-                        </div>
-                    </a>
+                <!-- Date of Issue -->
+                <div class="catalogue-nav catalogue-nav--years">
+                    <h3 class="catalogue-nav__label"><a href="year/index.html">Date of Issue</a>:</h3>
+                    <nav class="year-nav" aria-label="Year navigation">
+                        <a href="year/194x-18xx.html">pre-1950</a>,
+                        <a href="year/195x.html">1950s</a>,
+                        <a href="year/196x.html">1960s</a>,
+                        <a href="year/1970-1974.html">1970-1974</a>,
+                        <a href="year/1975.html">1975</a>,
+                        <a href="year/1976.html">1976</a>,
+                        <a href="year/1977.html">1977</a>,
+                        <a href="year/1978.html">1978</a>,
+                        <a href="year/1979.html">1979</a>,
+                        <a href="year/1980.html">1980</a>,
+                        <a href="year/1981.html">1981</a>,
+                        <a href="year/1982.html">1982</a>,
+                        <a href="year/1983.html">1983</a>,
+                        <a href="year/1984.html">1984</a>,
+                        <a href="year/1985.html">1985</a>,
+                        <a href="year/1986.html">1986</a>,
+                        <a href="year/1987.html">1987</a>,
+                        <a href="year/1988.html">1988</a>,
+                        <a href="year/1989.html">1989</a>,
+                        <a href="year/1990.html">1990</a>,
+                        <a href="year/1991.html">1991</a>,
+                        <a href="year/1992.html">1992</a>,
+                        <a href="year/1993.html">1993</a>,
+                        <a href="year/1994.html">1994</a>,
+                        <a href="year/1995.html">1995</a>,
+                        <a href="year/1996.html">1996</a>,
+                        <a href="year/1997.html">1997</a>,
+                        <a href="year/1998.html">1998</a>,
+                        <a href="year/1999.html">1999</a>,
+                        <a href="year/2000.html">2000</a>,
+                        <a href="year/2001.html">2001</a>,
+                        <a href="year/2002.html">2002</a>,
+                        <a href="year/2003.html">2003</a>,
+                        <a href="year/2004.html">2004</a>,
+                        <a href="year/2005.html">2005</a>,
+                        <a href="year/2006.html">2006</a>,
+                        <a href="year/2007.html">2007</a>,
+                        <a href="year/2008.html">2008</a>,
+                        <a href="year/2009.html">2009</a>,
+                        <a href="year/2010.html">2010</a>,
+                        <a href="year/2011.html">2011</a>,
+                        <a href="year/2012.html">2012</a>,
+                        <a href="year/2013.html">2013</a>,
+                        <a href="year/2014.html">2014</a>,
+                        <a href="year/2015.html">2015</a>,
+                        <a href="year/2016.html">2016</a>,
+                        <a href="year/2017.html">2017</a>,
+                        <a href="year/2018.html">2018</a>,
+                        <a href="year/2019.html">2019</a>,
+                        <a href="year/2020.html">2020</a>,
+                        <a href="year/2021.html">2021</a>,
+                        <a href="year/2022.html">2022</a>,
+                        <a href="year/2023.html">2023</a>,
+                        <a href="year/2024.html">2024</a>,
+                        <a href="year/2025.html">2025</a>,
+                        <a href="year/2026.html" class="year-nav__current">2026</a>
+                    </nav>
                 </div>
 
-                <!-- Featured Explore Cards -->
-                <div class="explore-grid">
-                    <a href="phil_catalogue_main.html" class="explore-card">
-                        <div class="explore-card__image">
-                            <img src="images/others/home_page/catalog2.jpg" alt="Philatelic Catalogue" loading="lazy">
-                        </div>
-                        <div class="explore-card__content">
-                            <h3 class="explore-card__title">Philatelic Catalogue</h3>
-                            <p class="explore-card__description">Complete catalogue of paleontology and paleoanthropology stamps organized by country and year of issue.</p>
-                            <span class="explore-card__link">Browse Catalogue</span>
-                        </div>
+                <!-- 5 Visual Cards Grid -->
+                <div class="visual-cards-grid">
+                    <a href="year/current.html" class="visual-card">
+                        <img src="images/others/home_page/t_philatelic_news2.jpg"
+                             alt="Philatelic News: list of brand new and coming items"
+                             loading="lazy">
+                        <span class="visual-card__label">New and Upcoming Issues</span>
                     </a>
-
-                    <a href="images/index.html" class="explore-card">
-                        <div class="explore-card__image">
-                            <img src="images/others/home_page/t_gallery.jpg" alt="Stamp Gallery" loading="lazy">
-                        </div>
-                        <div class="explore-card__content">
-                            <h3 class="explore-card__title">Image Gallery</h3>
-                            <p class="explore-card__description">Browse stamps, First Day Covers, postmarks, postal stationeries, and philatelic exhibits.</p>
-                            <span class="explore-card__link">View Gallery</span>
-                        </div>
+                    <a href="topics/paleo/index.html" class="visual-card">
+                        <img src="images/others/home_page/t_animals_evolution_stamps.jpg"
+                             alt="Paleontology in Philately"
+                             loading="lazy">
+                        <span class="visual-card__label">Paleontology</span>
                     </a>
-                </div>
-
-                <!-- Category Grid -->
-                <div class="category-grid">
-                    <a href="year/current.html" class="category-card">
-                        <div class="category-card__image">
-                            <img src="images/others/home_page/t_philatelic_news2.jpg" alt="New Issues" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3 class="category-card__title">New Issues</h3>
-                            <p class="category-card__description">Latest stamp releases</p>
-                        </div>
+                    <a href="topics/anthro/index.html" class="visual-card">
+                        <img src="images/others/home_page/t_human_skulls_on_stamps2.jpg"
+                             alt="Paleoanthropology in Philately"
+                             loading="lazy">
+                        <span class="visual-card__label">Paleoanthropology</span>
                     </a>
-
-                    <a href="topics/paleo/index.html" class="category-card">
-                        <div class="category-card__image">
-                            <img src="images/others/home_page/t_animals_evolution_stamps.jpg" alt="Paleontology" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3 class="category-card__title">Paleontology</h3>
-                            <p class="category-card__description">Prehistoric animals</p>
-                        </div>
+                    <a href="exhibitions/index.html" class="visual-card">
+                        <img src="images/others/home_page/t_Paleoinvertebrados2.jpg"
+                             alt="Philatelic exhibits about animals and human evolution"
+                             loading="lazy">
+                        <span class="visual-card__label">Philatelic Exhibits</span>
                     </a>
-
-                    <a href="topics/anthro/index.html" class="category-card">
-                        <div class="category-card__image">
-                            <img src="images/others/home_page/t_human_skulls_on_stamps2.jpg" alt="Paleoanthropology" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3 class="category-card__title">Paleoanthropology</h3>
-                            <p class="category-card__description">Human evolution</p>
-                        </div>
-                    </a>
-
-                    <a href="exhibitions/index.html" class="category-card">
-                        <div class="category-card__image">
-                            <img src="images/others/home_page/t_Paleoinvertebrados2.jpg" alt="Exhibitions" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3 class="category-card__title">Exhibitions</h3>
-                            <p class="category-card__description">Philatelic exhibits</p>
-                        </div>
-                    </a>
-
-                    <a href="resources.html" class="category-card">
-                        <div class="category-card__image">
-                            <img src="images/others/home_page/t_resources_icons2.jpg" alt="Resources" loading="lazy">
-                        </div>
-                        <div class="category-card__content">
-                            <h3 class="category-card__title">Resources</h3>
-                            <p class="category-card__description">Articles & links</p>
-                        </div>
+                    <a href="resources.html" class="visual-card">
+                        <img src="images/others/home_page/t_resources_icons2.jpg"
+                             alt="Resources: articles, videos, books, links"
+                             loading="lazy">
+                        <span class="visual-card__label">Resources</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Countries Section with Flag Grid -->
-        <section class="countries-section">
+        <!-- SECTION 3: Explore Gallery -->
+        <section class="gallery-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Countries</span>
-                    <h2 class="section-title">Browse by Country</h2>
-                    <p class="section-subtitle">Select a country to view its paleontology stamp collection</p>
-                </div>
+                <h2 class="section-title">Explore the <a href="images/index.html">Gallery</a> by the type of philatelic materials</h2>
 
-                <!-- A-Z Quick Navigation -->
-                <nav class="az-nav" aria-label="Alphabetical navigation">
-                    <a href="country/index.html#a" class="az-nav__link">A</a>
-                    <a href="country/index.html#b" class="az-nav__link">B</a>
-                    <a href="country/index.html#c" class="az-nav__link">C</a>
-                    <a href="country/index.html#d" class="az-nav__link">D</a>
-                    <a href="country/index.html#e" class="az-nav__link">E</a>
-                    <a href="country/index.html#f" class="az-nav__link">F</a>
-                    <a href="country/index.html#g" class="az-nav__link">G</a>
-                    <a href="country/index.html#h" class="az-nav__link">H</a>
-                    <a href="country/index.html#i" class="az-nav__link">I</a>
-                    <a href="country/index.html#j" class="az-nav__link">J</a>
-                    <a href="country/index.html#k" class="az-nav__link">K</a>
-                    <a href="country/index.html#l" class="az-nav__link">L</a>
-                    <a href="country/index.html#m" class="az-nav__link">M</a>
-                    <a href="country/index.html#n" class="az-nav__link">N</a>
-                    <a href="country/index.html#o" class="az-nav__link">O</a>
-                    <a href="country/index.html#p" class="az-nav__link">P</a>
-                    <a href="country/index.html#q" class="az-nav__link">Q</a>
-                    <a href="country/index.html#r" class="az-nav__link">R</a>
-                    <a href="country/index.html#s" class="az-nav__link">S</a>
-                    <a href="country/index.html#t" class="az-nav__link">T</a>
-                    <a href="country/index.html#u" class="az-nav__link">U</a>
-                    <a href="country/index.html#v" class="az-nav__link">V</a>
-                    <a href="country/index.html#w" class="az-nav__link">W</a>
-                    <a href="country/index.html#y" class="az-nav__link">Y</a>
-                    <a href="country/index.html#z" class="az-nav__link">Z</a>
-                </nav>
-
-                <!-- Featured Countries Flag Grid -->
-                <div class="flag-grid">
-                    <a href="country/germany.html" class="flag-grid__item">
-                        <img src="images/flags/Germany.jpg" alt="Germany" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Germany</span>
-                        <span class="flag-grid__count">156</span>
-                    </a>
-                    <a href="country/china.html" class="flag-grid__item">
-                        <img src="images/flags/China.jpg" alt="China" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">China</span>
-                        <span class="flag-grid__count">124</span>
-                    </a>
-                    <a href="country/russia.html" class="flag-grid__item">
-                        <img src="images/flags/Russian Federation.jpg" alt="Russia" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Russia</span>
-                        <span class="flag-grid__count">98</span>
-                    </a>
-                    <a href="country/france.html" class="flag-grid__item">
-                        <img src="images/flags/France.jpg" alt="France" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">France</span>
-                        <span class="flag-grid__count">89</span>
-                    </a>
-                    <a href="country/usa.html" class="flag-grid__item">
-                        <img src="images/flags/United States of America(USA).jpg" alt="USA" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">USA</span>
-                        <span class="flag-grid__count">72</span>
-                    </a>
-                    <a href="country/mongolia.html" class="flag-grid__item">
-                        <img src="images/flags/Mongolia.jpg" alt="Mongolia" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Mongolia</span>
-                        <span class="flag-grid__count">68</span>
-                    </a>
-                    <a href="country/poland.html" class="flag-grid__item">
-                        <img src="images/flags/Poland.jpg" alt="Poland" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Poland</span>
-                        <span class="flag-grid__count">54</span>
-                    </a>
-                    <a href="country/india.html" class="flag-grid__item">
-                        <img src="images/flags/India.jpg" alt="India" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">India</span>
-                        <span class="flag-grid__count">45</span>
-                    </a>
-                    <a href="country/australia.html" class="flag-grid__item">
-                        <img src="images/flags/Australia.jpg" alt="Australia" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Australia</span>
-                        <span class="flag-grid__count">42</span>
-                    </a>
-                    <a href="country/japan.html" class="flag-grid__item">
-                        <img src="images/flags/Japan.jpg" alt="Japan" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Japan</span>
-                        <span class="flag-grid__count">38</span>
-                    </a>
-                    <a href="country/canada.html" class="flag-grid__item">
-                        <img src="images/flags/Canada.jpg" alt="Canada" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Canada</span>
-                        <span class="flag-grid__count">35</span>
-                    </a>
-                    <a href="country/argentina.html" class="flag-grid__item">
-                        <img src="images/flags/Argentina.jpg" alt="Argentina" class="flag-grid__image" loading="lazy">
-                        <span class="flag-grid__name">Argentina</span>
-                        <span class="flag-grid__count">32</span>
-                    </a>
-                </div>
-
-                <div class="section-actions">
-                    <a href="country/index.html" class="btn btn-primary">View All 200+ Countries</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Decade Timeline Section -->
-        <section class="timeline-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Timeline</span>
-                    <h2 class="section-title">Browse by Decade</h2>
-                    <p class="section-subtitle">Explore stamps through the ages</p>
-                </div>
-
-                <div class="timeline-wrapper">
-                    <div class="timeline-track">
-                        <a href="year/index.html#pre1950" class="timeline__decade">Pre-1950</a>
-                        <a href="year/index.html#1950s" class="timeline__decade">1950s</a>
-                        <a href="year/index.html#1960s" class="timeline__decade">1960s</a>
-                        <a href="year/index.html#1970s" class="timeline__decade">1970s</a>
-                        <a href="year/index.html#1980s" class="timeline__decade">1980s</a>
-                        <a href="year/index.html#1990s" class="timeline__decade">1990s</a>
-                        <a href="year/index.html#2000s" class="timeline__decade">2000s</a>
-                        <a href="year/index.html#2010s" class="timeline__decade">2010s</a>
-                        <a href="year/current.html" class="timeline__decade is-active">2020s</a>
+                <!-- Postage Stamps -->
+                <div class="gallery-category">
+                    <h3 class="gallery-category__title">Postage stamps</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <a href="images/stamps.html">
+                                <img src="images/others/home_page/preview_stamps.jpg"
+                                     alt="Gallery of Paleontology and Paleoanthropology related stamps"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/stamps_used.html">
+                                <img src="images/fdc/india_1951_fdc3_calcutta.jpg"
+                                     alt="Circulated covers and cards related to Paleontology"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/stamps_others.html">
+                                <img src="images/details/stamps/official/india/1997/preview/t_india_1997.jpg"
+                                     alt="Gallery of stamps indirectly related to Paleontology"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/stamps_others_used.html">
+                                <img src="images/fdc/india_1983_fdc1.jpg"
+                                     alt="Circulated covers and cards"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-descriptions">
+                        <p><strong>Paleontology or Paleoanthropology related stamps:</strong> prehistoric animals and plants, their fossils, paleontologists, Charles Darwin, etc.</p>
+                        <p><strong>Stamps indirectly related to Paleontology or Paleoanthropology sciences:</strong> fossils locations, Natural History Museums, contributors to Paleontology or Paleoanthropology, etc.</p>
                     </div>
                 </div>
 
-                <div class="section-actions">
-                    <a href="year/index.html" class="btn btn-outline">Browse All Years</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Featured Topics Section -->
-        <section class="topics-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Topics</span>
-                    <h2 class="section-title">Explore by Topic</h2>
-                    <p class="section-subtitle">Dive into specialized collections by theme</p>
-                </div>
-
-                <div class="topics-grid">
-                    <a href="topics/paleo/dinosaurs.html" class="topic-card">
-                        <div class="topic-card__bg" style="background-image: url('images/others/home_page/preview_stamps.jpg');"></div>
-                        <div class="topic-card__overlay"></div>
-                        <div class="topic-card__content">
-                            <span class="topic-card__count">1,250+ stamps</span>
-                            <h3 class="topic-card__title">Dinosaurs</h3>
-                            <p class="topic-card__description">Mesozoic Era giants from T-Rex to Triceratops</p>
-                        </div>
-                    </a>
-
-                    <a href="topics/paleo/fossils.html" class="topic-card">
-                        <div class="topic-card__bg" style="background-image: url('images/others/home_page/t_Paleoinvertebrados.jpg');"></div>
-                        <div class="topic-card__overlay"></div>
-                        <div class="topic-card__content">
-                            <span class="topic-card__count">890+ stamps</span>
-                            <h3 class="topic-card__title">Fossils</h3>
-                            <p class="topic-card__description">Ancient life preserved in stone</p>
-                        </div>
-                    </a>
-
-                    <a href="topics/anthro/index.html" class="topic-card">
-                        <div class="topic-card__bg" style="background-image: url('images/others/home_page/t_human_skulls_on_stamps2.jpg');"></div>
-                        <div class="topic-card__overlay"></div>
-                        <div class="topic-card__content">
-                            <span class="topic-card__count">450+ stamps</span>
-                            <h3 class="topic-card__title">Human Evolution</h3>
-                            <p class="topic-card__description">Our ancestral journey through time</p>
-                        </div>
-                    </a>
-
-                    <a href="topics/paleo/prehistoric-mammals.html" class="topic-card">
-                        <div class="topic-card__bg" style="background-image: url('images/others/home_page/t_animals_evolution_stamps.jpg');"></div>
-                        <div class="topic-card__overlay"></div>
-                        <div class="topic-card__content">
-                            <span class="topic-card__count">680+ stamps</span>
-                            <h3 class="topic-card__title">Prehistoric Mammals</h3>
-                            <p class="topic-card__description">Mammoths, saber-tooths, and more</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="section-actions">
-                    <a href="topics/index.html" class="btn btn-primary">Explore All Topics</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Latest News Section -->
-        <section class="news-section">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-label">Updates</span>
-                    <h2 class="section-title">Latest News</h2>
-                    <p class="section-subtitle">Stay updated with new stamp releases and discoveries</p>
-                </div>
-
-                <div class="news-grid">
-                    <article class="news-card">
-                        <div class="news-card__image">
-                            <img src="images/others/home_page/t_philatelic_news2.jpg" alt="New Dinosaur Stamp Series" loading="lazy">
-                            <span class="news-card__date">January 2026</span>
-                        </div>
-                        <div class="news-card__content">
-                            <h3 class="news-card__title">New Dinosaur Stamp Series</h3>
-                            <p class="news-card__excerpt">Discover the latest paleontology stamp releases from around the world featuring newly discovered species.</p>
-                            <a href="year/current.html" class="news-card__link">
-                                View New Issues
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
+                <!-- First Day Covers -->
+                <div class="gallery-category">
+                    <h3 class="gallery-category__title">First Day Covers (FDC)</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <a href="images/fdc.html">
+                                <img src="images/others/home_page/preview_fdc.jpg"
+                                     alt="Gallery of Paleontology and Paleoanthropology related FDC covers"
+                                     loading="lazy">
                             </a>
                         </div>
-                    </article>
-
-                    <article class="news-card">
-                        <div class="news-card__image">
-                            <img src="images/others/home_page/preview_philatelic_news.jpg" alt="Website Redesign Launch" loading="lazy">
-                            <span class="news-card__date">December 2025</span>
-                        </div>
-                        <div class="news-card__content">
-                            <h3 class="news-card__title">Website Redesign Launch</h3>
-                            <p class="news-card__excerpt">Experience our completely redesigned website with improved navigation and modern design.</p>
-                            <a href="about_website.html" class="news-card__link">
-                                About Website
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
+                        <div class="gallery-item">
+                            <a href="images/fdc_used.html">
+                                <img src="images/fdc/india_1997_fdc.jpg"
+                                     alt="Circulated FDC covers"
+                                     loading="lazy">
                             </a>
                         </div>
-                    </article>
-
-                    <article class="news-card">
-                        <div class="news-card__image">
-                            <img src="images/others/home_page/preview_stamps.jpg" alt="Collection Milestone" loading="lazy">
-                            <span class="news-card__date">November 2025</span>
-                        </div>
-                        <div class="news-card__content">
-                            <h3 class="news-card__title">Collection Milestone</h3>
-                            <p class="news-card__excerpt">Our collection now features over 17,000 images from more than 200 countries and territories.</p>
-                            <a href="milestones.html" class="news-card__link">
-                                View Milestones
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                                </svg>
+                        <div class="gallery-item">
+                            <a href="images/fdc_others.html">
+                                <img src="images/fdc/kyrgyzstan_2012_fdc.jpg"
+                                     alt="FDC covers indirectly related to Paleontology"
+                                     loading="lazy">
                             </a>
                         </div>
-                    </article>
+                        <div class="gallery-item">
+                            <a href="images/fdc_others_used.html">
+                                <img src="images/fdc/kyrgyzstan_2024_fdc.jpg"
+                                     alt="Circulated FDC covers"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-descriptions">
+                        <p><strong>Clean and circulated Paleontology or Paleoanthropology related First Day Covers</strong></p>
+                        <p><strong>Clean and circulated First Day Covers indirectly related to Paleontology or Paleoanthropology</strong></p>
+                    </div>
                 </div>
 
-                <div class="section-actions">
-                    <a href="news.html" class="btn btn-outline">All News</a>
+                <!-- Postmarks and Meter Franking -->
+                <div class="gallery-category">
+                    <h3 class="gallery-category__title">Postmarks and meter franking</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <a href="images/pm.html">
+                                <img src="images/others/home_page/preview_pm.jpg"
+                                     alt="Gallery of Paleontology and Paleoanthropology related Postmarks"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/pm_used.html">
+                                <img src="images/pm/india_1983_pm1_fdc.jpg"
+                                     alt="Circulated postmarks"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/pm_others.html">
+                                <img src="images/pm/india_1997_pm_fdc.jpg"
+                                     alt="Postmarks indirectly related to Paleontology"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/pm_others_used.html">
+                                <img src="images/pm/kyrgyzstan_2024_pm_fdc.jpg"
+                                     alt="Circulated postmarks"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-descriptions">
+                        <p><strong>Paleontology or Paleoanthropology related Postmarks and Meter-frankings</strong></p>
+                        <p><strong>Postmarks and Meter-frankings indirectly related to Paleontology or Paleoanthropology</strong></p>
+                    </div>
+                </div>
+
+                <!-- Postal Stationeries -->
+                <div class="gallery-category">
+                    <h3 class="gallery-category__title">Postal Stationeries</h3>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <a href="images/ps.html">
+                                <img src="images/details/stamps/official/kyrgyzstan/2024/preview/kyrgyzstan_2024_1.jpg"
+                                     alt="Gallery of Paleontology and Paleoanthropology related Postal Stationeries"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/ps_used.html">
+                                <img src="images/details/stamps/official/kyrgyzstan/2024/preview/kyrgyzstan_2024_1a.jpg"
+                                     alt="Circulated Postal Stationeries"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/ps_others.html">
+                                <img src="images/details/stamps/official/india/1951/preview/india_1951.jpg"
+                                     alt="Postal Stationeries indirectly related to Paleontology"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="images/ps_others_used.html">
+                                <img src="images/details/stamps/official/india/1997/preview/india_1997_1.jpg"
+                                     alt="Circulated Postal Stationeries"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="gallery-descriptions">
+                        <p><strong>Clean and circulated Postal Stationeries with stamps or cachets related to Paleontology or Paleoanthropology</strong></p>
+                        <p><strong>Clean and circulated Postal Stationeries with stamps or cachets indirectly related to Paleontology or Paleoanthropology</strong></p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Awards Showcase Section -->
-        <section class="awards-showcase">
+        <!-- SECTION 4: New to Hobby -->
+        <section class="hobby-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-label" style="color: var(--color-accent);">Recognition</span>
-                    <h2 class="section-title">Awards & Recognition</h2>
-                    <p class="section-subtitle">Honored by philatelic organizations worldwide</p>
-                </div>
+                <h2 class="section-title">New to the hobby? The following articles will help you get started and provide a brief introduction to the world of philately.</h2>
 
-                <div class="awards-grid">
-                    <article class="award-card">
-                        <img src="images/others/medal_large_gold_v2.jpg" alt="Gold Medal" class="award-card__image" loading="lazy">
-                        <h3 class="award-card__title">Large Gold Medal</h3>
-                        <p class="award-card__year">2024</p>
-                        <p class="award-card__description">MULTILATERALE Philatelic Exhibition, Sindelfingen</p>
-                    </article>
-
-                    <article class="award-card">
-                        <img src="images/others/medal_gold_large.jpg" alt="Gold Medal" class="award-card__image" loading="lazy">
-                        <h3 class="award-card__title">Gold Medal</h3>
-                        <p class="award-card__year">2019</p>
-                        <p class="award-card__description">CHINA World Stamp Exhibition, Wuhan</p>
-                    </article>
-
-                    <article class="award-card">
-                        <img src="images/others/medal_vermeil_large.png" alt="Vermeil Medal" class="award-card__image" loading="lazy">
-                        <h3 class="award-card__title">Large Vermeil</h3>
-                        <p class="award-card__year">2018</p>
-                        <p class="award-card__description">PRAGA World Stamp Exhibition</p>
-                    </article>
-                </div>
-
-                <div class="section-actions">
-                    <a href="awards.html" class="btn btn-outline-light">View All Awards</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Gallery Types Section -->
-        <section class="gallery-types">
-            <div class="container">
-                <h2 class="section-title section-title--light">Browse Gallery By Type</h2>
-                <div class="gallery-types__grid">
-                    <a href="images/stamps.html" class="gallery-type-link">
-                        <span class="gallery-type-link__icon">&#128236;</span>
-                        <span class="gallery-type-link__text">Stamps</span>
+                <div class="article-cards">
+                    <a href="articles/how_to_start.html" class="article-card">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/preview_world.jpg"
+                                 alt="How to start collecting stamps"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">How to start collecting stamps and become a Paleophilatelist?</span>
                     </a>
-                    <a href="images/fdc.html" class="gallery-type-link">
-                        <span class="gallery-type-link__icon">&#9993;</span>
-                        <span class="gallery-type-link__text">First Day Covers</span>
+                    <a href="articles/how_to_collect.html" class="article-card">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/preview_catalog.jpg"
+                                 alt="How to collect stamps in XXI century"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">How to collect stamps in the XXI century</span>
                     </a>
-                    <a href="images/pm.html" class="gallery-type-link">
-                        <span class="gallery-type-link__icon">&#128392;</span>
-                        <span class="gallery-type-link__text">Postmarks</span>
+                    <a href="articles/faq.html" class="article-card">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/preview_exhibitions.jpg"
+                                 alt="Frequently Asked Questions"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">Frequently Asked Questions</span>
                     </a>
-                    <a href="images/ps.html" class="gallery-type-link">
-                        <span class="gallery-type-link__icon">&#128221;</span>
-                        <span class="gallery-type-link__text">Postal Stationeries</span>
+                    <a href="articles/philately_beginning.html" class="article-card">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/preview_milestones.jpg"
+                                 alt="Beginning of Philately"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">Beginning of Philately</span>
                     </a>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about-section">
+        <!-- SECTION 5: New to Paleophilatelie Topic -->
+        <section class="topic-section">
             <div class="container">
-                <div class="about-grid">
-                    <div class="about-content">
-                        <h2 class="section-title">About Paleophilatelie</h2>
-                        <p>Paleophilatelie.eu is an online resource combining Philately with Paleontology and Paleoanthropology. This website shows <strong>images</strong> and provides <strong>information</strong> about thousands of philatelic items related to <a href="topics/paleo/index.html">Paleontology</a> and <a href="topics/anthro/index.html">Paleoanthropology</a> from almost <strong>200 countries and territories</strong> sorted by <a href="country/index.html">country</a> and <a href="year/index.html">date of issue</a>.</p>
+                <h2 class="section-title">New to the Paleophilatelie topic? The following checklists, descriptive and topical articles can help you get started.</h2>
 
-                        <p>The website contains many hundreds of <a href="description/stamps/index.html">pages describing individual stamp issues</a> and <a href="articles/index.html">articles</a> related to the "Paleophilatelie" topics, as well as many examples of <a href="exhibitions/index.html">philatelic exhibits</a>.</p>
+                <div class="article-cards article-cards--large">
+                    <a href="articles/how_to_start.html" class="article-card article-card--large">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/t_gallery.jpg"
+                                 alt="Stamps Checklist"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">Stamps Checklist</span>
+                    </a>
+                    <a href="images/checklist_pm.html" class="article-card article-card--large">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/preview_pm.jpg"
+                                 alt="Postmarks Checklist"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">Postmarks Checklist</span>
+                    </a>
+                    <a href="description/stamps/index.html" class="article-card article-card--large">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/preview_catalog2.jpg"
+                                 alt="Descriptive Articles"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">Descriptive Articles</span>
+                    </a>
+                    <a href="articles/index.html" class="article-card article-card--large">
+                        <div class="article-card__image">
+                            <img src="images/others/home_page/t_topics.jpg"
+                                 alt="Topical Articles"
+                                 loading="lazy">
+                        </div>
+                        <span class="article-card__label">Topical Articles</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-                        <p><em>If you are visiting the website for the first time, please read the <a href="about_website.html">"About Paleophilatelie.eu website"</a> article to get an overview of the website.</em></p>
-
-                        <p>The Paleophilatelie website can be explored on all types of electronic devices, including desktop computers, laptops, tablets, and smartphones. However, <strong>the website is best viewed on a wide screen</strong>, where images, galleries, and text layouts can be displayed more clearly and comfortably.</p>
-
-                        <div class="about-links">
-                            <a href="about_website.html" class="btn btn-secondary">Learn More</a>
-                            <a href="news.html" class="btn btn-primary">Latest News</a>
+        <!-- SECTION 6: About + News -->
+        <section class="about-news-section">
+            <div class="container">
+                <div class="two-column-grid">
+                    <!-- About Column -->
+                    <div class="column-box">
+                        <h2 class="column-box__title">About the Website</h2>
+                        <p>
+                            Paleophilatelie.eu is an online resource combining Philately with Paleontology and Paleoanthropology.
+                        </p>
+                        <p>
+                            This website shows <strong>images</strong> and provides <strong>information</strong>
+                            about thousands of philatelic items related to
+                            <a href="topics/paleo/index.html">Paleontology</a> and
+                            <a href="topics/anthro/index.html">Paleoanthropology</a>
+                            from almost <strong>200 countries and territories</strong> sorted by
+                            <a href="country/index.html">country</a> and
+                            <a href="year/index.html">date of issue</a>.
+                        </p>
+                        <p>
+                            The website contains many hundreds of
+                            <a href="description/stamps/index.html">pages describing individual stamp issues</a> and
+                            <a href="articles/index.html">articles</a> related to the "Paleophilatelie" topics, as well as many examples of
+                            <a href="exhibitions/index.html">philatelic exhibits</a>.
+                        </p>
+                        <p>
+                            <em>If you are visiting the website for the first time, please read the
+                            <a href="about_website.html">"About Paleophilatelie.eu website"</a>
+                            article to get an overview of the website.</em>
+                        </p>
+                        <p>
+                            The Paleophilatelie website can be explored on all types of electronic devices, including desktop computers,
+                            laptops, tablets, and smartphones.
+                            However, <strong>the website is best viewed on a wide screen</strong>.
+                        </p>
+                        <div class="column-box__action">
+                            <a href="about_website.html" class="btn btn--primary">Read more</a>
                         </div>
                     </div>
 
-                    <div class="about-sidebar">
-                        <!-- Awards -->
-                        <div class="awards-card">
+                    <!-- News Column -->
+                    <div class="column-box">
+                        <h2 class="column-box__title">Website News</h2>
+                        <p class="news-date"><strong>08.01.2026</strong></p>
+                        <p>
+                            At the end of the last year, "Paleophilatelie" website participated in two International Stamps Exhibits, where it was awarded
+                            <strong>LARGE GOLD</strong> and Large Vermeil Medals at
+                            <a href="./awards.html#nznpl2025">the 19th New Zealand National Philatelic Literature Exhibition 2025</a> in Christchurch, New Zealand;
+                            <a href="./awards.html#ausvipex2025">AUSVIPEX 2025</a> (Virtual Philatelic Exhibition), organized by the Australian Philatelic Federation
+                            respectively.
+                        </p>
+                        <p><strong>New pages:</strong></p>
+                        <ul>
+                            <li>Article about <a href="description/letters/nhm_berlin_1912.html">"Reply card of Zoological Museum of Berlin from 1912"</a> - Tendaguru Expedition</li>
+                            <li>Article about <a href="description/letters/telegram_to_owen_1889.html">"The Telegram from Alphonse MILNE EDWARDS to Sir Richard Owen"</a>, posted in 1889</li>
+                            <li>Article about <a href="description/letters/owen_ransome_1849.html">"Letter from Professor Richard Owen to George Ransome"</a>, posted in 1849</li>
+                        </ul>
+                        <div class="column-box__action">
+                            <a href="news.html" class="btn btn--primary">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: Team + Awards -->
+        <section class="team-awards-section">
+            <div class="container">
+                <div class="two-column-grid">
+                    <!-- Team Column -->
+                    <div class="column-box">
+                        <h2 class="column-box__title">About the Team</h2>
+                        <p>
+                            The Paleophilatelie website is <strong>administered and owned</strong> solely by
+                            <a href="about.html">Mr. Michael Kogan</a> from Germany, a member
+                            of the International Association of Philatelic Journalists and several international philatelic clubs.
+                        </p>
+                        <p>
+                            Dr. Peter Voice of the Department of Geological and Environmental Sciences
+                            at Western Michigan University in the USA provides scientific advice and
+                            <strong>editorial support</strong> for the website, since 2019.
+                        </p>
+                    </div>
+
+                    <!-- Awards Column -->
+                    <div class="column-box column-box--awards">
+                        <h2 class="column-box__title">Awards</h2>
+                        <p>
+                            Since 2018, the "Paleophilatelie" website has regularly taken part in
+                            international competitions in the Electronic Literature category.
+                            The website has received numerous awards, including
+                            Large Gold Medals at the New Zealand National Philatelic Literature Exhibition
+                            in 2023 and 2025, and at the Great American Stamp Show in 2024.
+                        </p>
+                        <div class="awards-image">
                             <a href="awards.html">
-                                <img src="images/others/medal_large_gold_v2.jpg" alt="Awards of Paleophilatelie website" class="awards-card__image">
+                                <img src="images/others/medal_large_gold_v2.jpg"
+                                     alt="Awards of Paleophilatelie website"
+                                     loading="lazy">
                             </a>
-                            <h3 class="awards-card__title">Award Winning</h3>
-                            <p class="awards-card__text">Since 2018, Paleophilatelie.eu has successfully participated in international competitions of philatelic websites in the <strong>Electronic-Literature</strong> category.</p>
-                            <a href="awards.html" class="awards-card__link">View Awards</a>
-                        </div>
-
-                        <!-- Author Info -->
-                        <div class="author-card">
-                            <h3 class="author-card__title">About the Author</h3>
-                            <p class="author-card__text">The website is administered and owned solely by <a href="about.html">Mr. Michael Kogan</a> from Germany, a member of the International Association of Philatelic Journalists and several international philatelic clubs.</p>
-                            <p class="author-card__text"><strong>Editorial Support:</strong> Dr. Peter Voice, Department of Geological and Environmental Sciences, Western Michigan University, USA (since 2019).</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Stay Updated Section -->
-        <section class="cta-section">
+        <!-- SECTION 8: Quick Navigation -->
+        <section class="quick-nav-section">
             <div class="container">
-                <h2 class="cta-section__title">Stay Updated</h2>
-                <p class="cta-section__text">Keep informed about the latest modifications, new stamp issues, and announcements</p>
+                <h2 class="section-title">New to the Paleophilatelie website? The following articles will help you navigate the site.</h2>
 
-                <div class="cta-section__actions">
-                    <a href="news.html" class="btn btn-primary btn--lg">Latest News</a>
-                    <a href="year/current.html" class="btn btn-secondary btn--lg">Current Year Issues</a>
+                <div class="nav-buttons">
+                    <a href="phil_catalogue_main.html" class="nav-button">Introduction to the Catalogue</a>
+                    <a href="legend.html" class="nav-button">Legend of abbreviations</a>
+                    <a href="images/index.html" class="nav-button">Introduction to the Gallery</a>
+                    <a href="sitemap.html" class="nav-button">Sitemap</a>
                 </div>
+            </div>
+        </section>
 
-                <div class="social-links">
-                    <a href="https://www.facebook.com/groups/889825297731726/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Join us on Facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                        <span>Join Facebook Group</span>
-                    </a>
-                    <a href="https://www.pwmo.org/" target="_blank" rel="noopener noreferrer" class="social-link social-link--member" aria-label="Philatelic Webmasters Organization">
-                        <img src="images/others/pwo-logo.gif" alt="PWO Member" class="social-link__logo">
-                        <span>PWO Member</span>
-                    </a>
-                    <a href="mailto:admin@paleophilatelie.eu" class="social-link" aria-label="Contact Admin">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
-                        </svg>
-                        <span>Contact Admin</span>
-                    </a>
+        <!-- SECTION 9: Stay Updated -->
+        <section class="stay-updated-section">
+            <div class="container">
+                <h2 class="section-title">Stay Updated</h2>
+
+                <div class="stay-updated-content">
+                    <div class="stay-updated-logos">
+                        <a href="images/others/qrcode_www.paleophilatelie.eu.png">
+                            <img src="images/others/qrcode_www.paleophilatelie.eu.png"
+                                 alt="QR code of PaleoPhilatelie.eu website"
+                                 class="qr-code"
+                                 loading="lazy">
+                        </a>
+                        <a href="https://www.pwmo.org/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/others/pwo-logo.gif"
+                                 alt="Philatelic Webmasters Organization"
+                                 class="pwo-logo"
+                                 loading="lazy">
+                        </a>
+                    </div>
+                    <div class="stay-updated-text">
+                        <p>
+                            To <strong>keep updated</strong> about latest modifications of the website please look at the pages
+                            <a href="news.html">News</a> and
+                            <a href="year/current.html">Current Year</a>
+                            (announcements of new and upcoming issues are here) pages.
+                        </p>
+                        <p>
+                            Visitors are welcome to
+                            <a href="contact.html#follow">follow</a> the Author on "X" (formerly "Twitter") or join
+                            "<a href="https://www.facebook.com/groups/889825297731726/">Paleophilately</a>"
+                            group on Facebook, associated with this website to be able to chat with him and provide their feedback.
+                        </p>
+                        <p>
+                            For the <strong>updates about the website development</strong>, please click <a href="news.html">here</a>.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -914,10 +760,10 @@
             <div class="container">
                 <div class="footer-bottom__content">
                     <p class="footer-copyright">
-                        &copy; 2006&ndash;<span id="currentYear"></span> <a href="about.html">Michael Kogan</a>. All rights reserved.
+                        &copy; 2010&ndash;<span id="currentYear"></span> <a href="about.html">Michael Kogan</a>. All rights reserved.
                     </p>
                     <div class="footer-bottom__links">
-                        <a href="paleophilatelie_site_map.html">Sitemap</a>
+                        <a href="sitemap.html">Sitemap</a>
                         <span class="footer-bottom__divider">|</span>
                         <a href="about_how-to-help.html">How to Help</a>
                         <span class="footer-bottom__divider">|</span>

@@ -1,46 +1,46 @@
 /**
  * PALEOPHILATELIE DESIGN SYSTEM
- * Natural History Museum meets Vintage Philately
- * Deep Crimson primary, Rich Earth Brown navigation, Fossil Gold accents
+ * Smithsonian Magazine Style
+ * Black/White/Yellow color scheme
  */
 
 :root {
-    /* ===== PRIMARY COLORS - Deep Crimson Red ===== */
-    --color-primary: #a50000;
-    --color-primary-dark: #7a0000;
-    --color-primary-light: #c92a2a;
+    /* ===== PRIMARY COLORS - Pure Black ===== */
+    --color-primary: #000000;
+    --color-primary-dark: #000000;
+    --color-primary-light: #1a1a1a;
 
-    /* ===== SECONDARY COLORS - Rich Earth Brown ===== */
-    --color-secondary: #391904;
-    --color-secondary-light: #5c3d1e;
-    --color-secondary-dark: #2a1203;
+    /* ===== SECONDARY COLORS - Dark Gray ===== */
+    --color-secondary: #212529;
+    --color-secondary-light: #343a40;
+    --color-secondary-dark: #0d0d0d;
 
-    /* ===== ACCENT COLORS - Fossil Gold ===== */
-    --color-accent: #c9a227;
-    --color-accent-dark: #a68419;
-    --color-accent-light: #d4b54a;
-    --color-accent-hover: #a68419;
+    /* ===== ACCENT COLORS - Golden Yellow ===== */
+    --color-accent: #f4c542;
+    --color-accent-dark: #d4a72c;
+    --color-accent-light: #ffd666;
+    --color-accent-hover: #d4a72c;
 
-    /* ===== BACKGROUND COLORS - Warm Stone ===== */
-    --color-background: #fdfcfb;
-    --color-bg-secondary: #f8f5f0;
-    --color-bg-tertiary: #f0ebe3;
-    --color-background-alt: #f8f5f0;
+    /* ===== BACKGROUND COLORS - Clean White ===== */
+    --color-background: #ffffff;
+    --color-bg-secondary: #f8f8f8;
+    --color-bg-tertiary: #f0f0f0;
+    --color-background-alt: #f5f5f5;
 
-    /* ===== HEADER COLORS - LIGHT Theme ===== */
-    --color-header-bg: rgba(253, 252, 251, 0.95);
-    --color-header-bg-solid: #fdfcfb;
+    /* ===== HEADER COLORS - Black Top Bar ===== */
+    --color-header-bg: #000000;
+    --color-header-bg-solid: #000000;
 
-    /* ===== NAVIGATION BAR - Dark Brown ===== */
-    --color-nav-bg: #391904;
-    --color-navbar-bg: #391904;
-    --color-nav-text: #ffffff;
-    --color-nav-hover: #a50000;
+    /* ===== NAVIGATION BAR - White with Black Text ===== */
+    --color-nav-bg: #ffffff;
+    --color-navbar-bg: #ffffff;
+    --color-nav-text: #212529;
+    --color-nav-hover: #000000;
 
-    /* ===== FOOTER COLORS - Stone 950 ===== */
-    --color-footer-bg: #1c1917;
-    --color-footer-text: #a8a29e;
-    --color-footer-heading: #c9a227;
+    /* ===== FOOTER COLORS - Pure Black ===== */
+    --color-footer-bg: #000000;
+    --color-footer-text: #a3a3a3;
+    --color-footer-heading: #f4c542;
 
     /* ===== DARK SURFACE COLORS ===== */
     --color-dark-surface: #292524;
@@ -73,8 +73,8 @@
     --color-border: #e7e5e4;
 
     /* ===== LINK COLORS ===== */
-    --color-link: #a50000;
-    --color-link-hover: #7a0000;
+    --color-link: #000000;
+    --color-link-hover: #f4c542;
 
     /* ===== SEMANTIC STATUS COLORS ===== */
     --color-success: #16a34a;
@@ -179,7 +179,7 @@
     --dark-section-text: var(--color-text-on-dark);
 
     /* Browse card gradients */
-    --gradient-country: linear-gradient(135deg, #a50000 0%, #7a0000 100%);
-    --gradient-year: linear-gradient(135deg, #391904 0%, #5a3a1a 100%);
-    --gradient-topic: linear-gradient(135deg, #525252 0%, #1a1a1a 100%);
+    --gradient-country: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    --gradient-year: linear-gradient(135deg, #f4c542 0%, #d4a72c 100%);
+    --gradient-topic: linear-gradient(135deg, #212529 0%, #000000 100%);
 }
