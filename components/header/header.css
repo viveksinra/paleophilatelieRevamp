@@ -3,42 +3,41 @@
  * Smithsonian Magazine Style - Black/White/Yellow Theme
  */
 
-/* ===== ENSURE STICKY WORKS ===== */
+/* ===== HEADER CONTAINER ===== */
 html, body {
     overflow-x: clip;
 }
 
 #header-placeholder {
+    display: contents;
+}
+
+.site-header {
+    display: contents;
+}
+
+/* ===== TOP BLACK BAR (STICKY) ===== */
+.header-top {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-/* ===== HEADER CONTAINER ===== */
-.site-header {
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-    background-color: #000000;
-    box-shadow: none;
-    transition: box-shadow 0.3s ease;
-}
-
-.site-header--scrolled {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* ===== TOP BLACK BAR ===== */
-.header-top {
     background-color: #000000;
     padding: 12px 0;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.header-top.scrolled {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .header-top__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 /* ===== LOGO ===== */
@@ -131,25 +130,36 @@ html, body {
     transform: translateY(-1px);
 }
 
-/* ===== MAIN NAVIGATION - WHITE BAR ===== */
+/* ===== MAIN NAVIGATION - IN TOP BAR ===== */
 .main-nav {
-    background-color: #ffffff;
-    border-bottom: none;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
-/* ===== HEADER TOOLBAR (Google Translate) ===== */
+/* ===== HEADER TOOLBAR (Google Translate and Search - NOT STICKY) ===== */
 .header-toolbar {
+    position: relative;
     background-color: #f8f8f8;
     border-bottom: 1px solid #e5e5e5;
-    padding: 8px 0;
-    min-height: 40px;
+    padding: 10px 0;
+    min-height: 45px;
+    z-index: 100;
 }
 
 .header-toolbar .container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-toolbar__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
 }
 
 #google_translate_element {
@@ -230,16 +240,41 @@ html, body {
 
 @media (max-width: 768px) {
     .header-toolbar {
-        padding: 6px 0;
+        padding: 10px 0;
     }
     
-    .header-toolbar .container {
-        justify-content: center;
+    .header-toolbar__content {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .header-search-form {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    #google_translate_element {
+        text-align: center;
     }
     
     .goog-te-gadget {
         flex-wrap: wrap !important;
         justify-content: center !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .site-logo__text {
+        font-size: 1.2rem;
+    }
+    
+    .header-search-form {
+        max-width: 100%;
+    }
+    
+    .header-search-input {
+        min-width: 150px;
     }
 }
 
@@ -264,23 +299,24 @@ html, body {
 
 .nav-link {
     display: block;
-    padding: 16px 20px;
-    color: #212529;
-    font-size: 0.875rem;
+    padding: 10px 16px;
+    color: #ffffff;
+    font-size: 0.8rem;
     font-weight: 500;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.04em;
     transition: all 0.2s ease;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 20px;
-    right: 20px;
+    left: 16px;
+    right: 16px;
     height: 2px;
     background-color: var(--color-accent, #f4c542);
     transform: scaleX(0);
@@ -288,7 +324,7 @@ html, body {
 }
 
 .nav-link:hover {
-    color: #000000;
+    color: var(--color-accent, #f4c542);
     text-decoration: none;
 }
 
@@ -310,7 +346,12 @@ html, body {
     vertical-align: middle;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 4px solid currentColor;
+    border-top: 4px solid #ffffff;
+    transition: border-top-color 0.2s ease;
+}
+
+.nav-item.has-dropdown:hover > .nav-link::before {
+    border-top-color: var(--color-accent, #f4c542);
 }
 
 .nav-dropdown {
@@ -360,9 +401,51 @@ html, body {
     padding-left: 24px;
 }
 
-/* Dropdown arrow indicator on hover */
-.nav-item.has-dropdown:hover > .nav-link::before {
-    border-top-color: var(--color-accent, #f4c542);
+/* ===== HEADER SEARCH FORM ===== */
+.header-search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 6px 12px;
+    max-width: 400px;
+    flex: 1;
+}
+
+.header-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+    padding: 4px;
+    min-width: 200px;
+}
+
+.header-search-input::placeholder {
+    color: #999;
+}
+
+.header-search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.header-search-button:hover {
+    color: var(--color-accent, #f4c542);
+}
+
+.header-search-button svg {
+    width: 18px;
+    height: 18px;
 }
 
 /* ===== SEARCH OVERLAY ===== */
@@ -486,6 +569,10 @@ html, body {
 
 /* ===== MOBILE STYLES ===== */
 @media (max-width: 991px) {
+    .header-top__content {
+        gap: 12px;
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -510,17 +597,11 @@ html, body {
         padding: 80px 24px 24px;
         overflow-y: auto;
         transition: right 0.3s ease;
-        z-index: 1000;
-        border-bottom: none;
+        z-index: 2000;
     }
 
     .main-nav.is-open {
         right: 0;
-    }
-
-    .main-nav .container {
-        display: block;
-        padding: 0;
     }
 
     /* Mobile Close Button */

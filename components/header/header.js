@@ -165,14 +165,17 @@
      * Sticky header with scroll behavior
      */
     function initStickyHeader() {
+        const headerTop = document.querySelector('.header-top');
+        if (!headerTop) return;
+
         window.addEventListener('scroll', () => {
             const currentScrollY = window.pageYOffset;
 
             // Add shadow when scrolled
             if (currentScrollY > 10) {
-                header.classList.add('site-header--scrolled');
+                headerTop.classList.add('scrolled');
             } else {
-                header.classList.remove('site-header--scrolled');
+                headerTop.classList.remove('scrolled');
             }
         }, { passive: true });
     }

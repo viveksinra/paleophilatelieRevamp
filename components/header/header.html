@@ -1,6 +1,6 @@
 <!-- Header Component - Smithsonian Magazine Style (Black/White/Yellow) -->
 <header class="site-header" id="site-header" role="banner">
-    <!-- Top Black Bar -->
+    <!-- Top Black Bar with Logo and Navigation -->
     <div class="header-top">
         <div class="container">
             <div class="header-top__content">
@@ -10,37 +10,15 @@
                     <span class="site-logo__text">Paleophilatelie</span>
                 </a>
 
-                <!-- Header Actions -->
-                <div class="header-actions">
-                    <!-- Search Toggle -->
-                    <button class="header-link header-link--icon" id="search-toggle" aria-label="Search">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                <!-- Main Navigation -->
+                <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
+                    <!-- Mobile Close Button -->
+                    <button class="main-nav__close" id="nav-close" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 6L6 18M6 6l12 12"/>
                         </svg>
                     </button>
-
-                    <!-- Mobile Menu Toggle -->
-                    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                        <span class="menu-toggle__bar"></span>
-                        <span class="menu-toggle__bar"></span>
-                        <span class="menu-toggle__bar"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Navigation - White Bar -->
-    <nav class="main-nav" id="main-nav" role="navigation" aria-label="Main navigation">
-        <div class="container">
-            <!-- Mobile Close Button -->
-            <button class="main-nav__close" id="nav-close" aria-label="Close menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 6L6 18M6 6l12 12"/>
-                </svg>
-            </button>
-            <ul class="nav-list">
+                    <ul class="nav-list">
                 <!-- Home -->
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Home</a>
@@ -118,8 +96,40 @@
                     <a href="mk/index.html" class="nav-link">Login</a>
                 </li>
             </ul>
+        </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="menu-toggle__bar"></span>
+                    <span class="menu-toggle__bar"></span>
+                    <span class="menu-toggle__bar"></span>
+                </button>
+            </div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Second Bar: Google Translate and Search -->
+    <div class="header-toolbar">
+        <div class="container">
+            <div class="header-toolbar__content">
+                <!-- Google Translate -->
+                <div id="google_translate_element"></div>
+
+                <!-- Search Form -->
+                <form action="https://search.freefind.com/find.html" method="get" accept-charset="UTF-8" class="header-search-form">
+                    <input type="hidden" name="si" value="14323397">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="text" name="query" class="header-search-input" placeholder="Search stamps, countries, years..." aria-label="Search" autocomplete="off">
+                    <button type="submit" class="header-search-button" aria-label="Search">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Search Overlay -->
     <div class="search-overlay" id="search-overlay">
