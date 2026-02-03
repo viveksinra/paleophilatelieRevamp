@@ -145,38 +145,101 @@ html, body {
     min-height: 40px;
 }
 
-.header-toolbar__content {
+.header-toolbar .container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-height: 24px;
+    gap: 8px;
 }
 
 #google_translate_element {
-    font-size: 12px;
-    min-width: 150px;
+    display: inline-block;
 }
 
-/* Hide Google Translate branding */
+/* Style Google Translate dropdown - Horizontal Layout */
 .goog-te-gadget {
     font-family: Arial, sans-serif !important;
-    font-size: 11px !important;
+    font-size: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
+}
+
+.goog-te-gadget-simple {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-wrap: wrap !important;
 }
 
 .goog-te-gadget .goog-te-combo {
     padding: 4px 8px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #ddd;
     border-radius: 3px;
     font-size: 12px;
+    display: inline-block !important;
+}
+
+/* Make "Powered by" text inline */
+.goog-te-gadget span {
+    display: inline !important;
+    white-space: nowrap !important;
+}
+
+/* Style the text elements to be inline */
+.goog-te-gadget .goog-te-gadget-text {
+    display: inline !important;
+    white-space: nowrap !important;
+    margin-right: 4px !important;
+}
+
+/* Hide or style the Google branding to be inline */
+.goog-te-gadget .goog-te-gadget-icon {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Ensure all child elements are inline */
+.goog-te-gadget > * {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Force horizontal layout for Google Translate elements */
+.goog-te-banner-frame,
+.goog-te-menu-frame {
+    display: none !important;
+}
+
+/* Make sure the select dropdown and text are on same line */
+.goog-te-gadget-simple .goog-te-combo,
+.goog-te-gadget-simple span {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Additional rules for the simple layout */
+#google_translate_element .goog-te-gadget {
+    white-space: nowrap !important;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+    white-space: nowrap !important;
 }
 
 @media (max-width: 768px) {
     .header-toolbar {
         padding: 6px 0;
     }
-
-    .header-toolbar__content {
+    
+    .header-toolbar .container {
         justify-content: center;
+    }
+    
+    .goog-te-gadget {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
     }
 }
 

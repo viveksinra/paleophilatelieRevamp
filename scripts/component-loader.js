@@ -135,9 +135,7 @@
     <!-- Secondary Toolbar: Google Translate -->
     <div class="header-toolbar">
         <div class="container">
-            <div class="header-toolbar__content">
-                <div id="google_translate_element"></div>
-            </div>
+            <div id="google_translate_element"></div>
         </div>
     </div>
 
@@ -322,13 +320,13 @@
         window.googleTranslateElementInit = function() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
             }, 'google_translate_element');
         };
 
-        // Load the script
+        // Load the script (use https explicitly for file:// protocol compatibility)
         const script = document.createElement('script');
-        script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
         script.async = true;
         document.body.appendChild(script);
     }

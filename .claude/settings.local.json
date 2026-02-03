@@ -28,7 +28,12 @@
       "Bash(findstr:*)",
       "WebFetch(domain:www.nationalgeographic.com)",
       "WebFetch(domain:www.2-clicks-stamps.com)",
-      "mcp__ide__getDiagnostics"
+      "mcp__ide__getDiagnostics",
+      "Bash(for file in \"D:/Projects/Paleophilatelie/FinalOneToSubmit/description/stamps/index.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/description/letters/index.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/phil_catalogue_species.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/phil_glossary.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/images/fdc.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/images/pm.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/images/ps.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/images/checklist_stamps.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/images/checklist_pm.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/topics/anthro/index.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/links.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/about.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/news.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/exhibitions/index.html\" \"D:/Projects/Paleophilatelie/FinalOneToSubmit/sitemap.html\")",
+      "Bash(do if [ -f \"$file\" ])",
+      "Bash(else echo \"MISSING: $file\")",
+      "Bash(fi)",
+      "Bash(done)"
     ]
   }
 }
