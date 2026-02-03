@@ -27,7 +27,8 @@
       "Bash(node scripts/extract-old-content.js:*)",
       "Bash(findstr:*)",
       "WebFetch(domain:www.nationalgeographic.com)",
-      "WebFetch(domain:www.2-clicks-stamps.com)"
+      "WebFetch(domain:www.2-clicks-stamps.com)",
+      "mcp__ide__getDiagnostics"
     ]
   }
 }

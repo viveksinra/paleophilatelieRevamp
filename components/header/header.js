@@ -28,6 +28,7 @@
 
         // Initialize features
         initMobileMenu();
+        initMobileDropdowns();
         initSearchOverlay();
         initStickyHeader();
     }
@@ -80,6 +81,39 @@
         menuToggle.setAttribute('aria-expanded', 'false');
         mainNav.classList.remove('is-open');
         document.body.classList.remove('menu-open');
+
+        // Close all mobile dropdowns when menu closes
+        const openDropdowns = document.querySelectorAll('.nav-item.has-dropdown.is-open');
+        openDropdowns.forEach(item => item.classList.remove('is-open'));
+    }
+
+    /**
+     * Mobile Dropdown Toggle (for touch/click on mobile)
+     */
+    function initMobileDropdowns() {
+        const dropdownItems = document.querySelectorAll('.nav-item.has-dropdown');
+
+        dropdownItems.forEach(item => {
+            const link = item.querySelector('.nav-link');
+
+            // On mobile, clicking the nav link toggles dropdown instead of navigating
+            link.addEventListener('click', (e) => {
+                // Only intercept on mobile (when menu toggle is visible)
+                if (window.innerWidth < 992) {
+                    e.preventDefault();
+
+                    // Close other open dropdowns
+                    dropdownItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('is-open')) {
+                            otherItem.classList.remove('is-open');
+                        }
+                    });
+
+                    // Toggle current dropdown
+                    item.classList.toggle('is-open');
+                }
+            });
+        });
     }
 
     /**

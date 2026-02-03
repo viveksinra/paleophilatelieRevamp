@@ -52,12 +52,82 @@
                 </svg>
             </button>
             <ul class="nav-list">
-                <li class="nav-item"><a href="{{BASE}}index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="{{BASE}}phil_catalogue_main.html" class="nav-link">Catalogue</a></li>
-                <li class="nav-item"><a href="{{BASE}}images/index.html" class="nav-link">Gallery</a></li>
-                <li class="nav-item"><a href="{{BASE}}topics/index.html" class="nav-link">Topics</a></li>
-                <li class="nav-item"><a href="{{BASE}}articles/index.html" class="nav-link">Resources</a></li>
-                <li class="nav-item"><a href="{{BASE}}about_website.html" class="nav-link">About</a></li>
+                <!-- Home -->
+                <li class="nav-item">
+                    <a href="{{BASE}}index.html" class="nav-link">Home</a>
+                </li>
+
+                <!-- Catalogue with Dropdown -->
+                <li class="nav-item has-dropdown">
+                    <a href="{{BASE}}phil_catalogue_main.html" class="nav-link">Catalogue</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="{{BASE}}phil_catalogue_main.html#milestones" class="nav-dropdown__link">Milestones</a></li>
+                        <li><a href="{{BASE}}country/index.html" class="nav-dropdown__link">Country</a></li>
+                        <li><a href="{{BASE}}year/index.html" class="nav-dropdown__link">Year</a></li>
+                        <li><a href="{{BASE}}description/stamps/index.html" class="nav-dropdown__link">Descriptions</a></li>
+                        <li><a href="{{BASE}}description/letters/index.html" class="nav-dropdown__link">Letters</a></li>
+                        <li><a href="{{BASE}}images/checklist_stamps.html" class="nav-dropdown__link">Checklist</a></li>
+                        <li><a href="{{BASE}}phil_catalogue_species.html" class="nav-dropdown__link">Species</a></li>
+                        <li><a href="{{BASE}}legend.html" class="nav-dropdown__link">Legend</a></li>
+                        <li><a href="{{BASE}}phil_glossary.html" class="nav-dropdown__link">Glossary</a></li>
+                    </ul>
+                </li>
+
+                <!-- Gallery with Dropdown -->
+                <li class="nav-item has-dropdown">
+                    <a href="{{BASE}}images/index.html" class="nav-link">Gallery</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="{{BASE}}images/stamps.html" class="nav-dropdown__link">Stamps</a></li>
+                        <li><a href="{{BASE}}images/fdc.html" class="nav-dropdown__link">First Day Covers</a></li>
+                        <li><a href="{{BASE}}images/pm.html" class="nav-dropdown__link">Postmarks</a></li>
+                        <li><a href="{{BASE}}images/ps.html" class="nav-dropdown__link">Postal Stationery</a></li>
+                        <li><a href="{{BASE}}images/checklist_stamps.html" class="nav-dropdown__link">Stamps Checklist</a></li>
+                        <li><a href="{{BASE}}images/checklist_pm.html" class="nav-dropdown__link">Postmarks Checklist</a></li>
+                    </ul>
+                </li>
+
+                <!-- Topics with Dropdown -->
+                <li class="nav-item has-dropdown">
+                    <a href="{{BASE}}topics/index.html" class="nav-link">Topics</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="{{BASE}}topics/paleo/index.html" class="nav-dropdown__link">Paleontology</a></li>
+                        <li><a href="{{BASE}}topics/anthro/index.html" class="nav-dropdown__link">Paleoanthropology</a></li>
+                        <li><a href="{{BASE}}topics/darwin/index.html" class="nav-dropdown__link">Charles Darwin</a></li>
+                        <li><a href="{{BASE}}topics/scientists/index.html" class="nav-dropdown__link">Scientists</a></li>
+                        <li><a href="{{BASE}}topics/museums/index.html" class="nav-dropdown__link">Museums</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resources with Dropdown -->
+                <li class="nav-item has-dropdown">
+                    <a href="{{BASE}}articles/index.html" class="nav-link">Resources</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="{{BASE}}articles/index.html" class="nav-dropdown__link">Articles</a></li>
+                        <li><a href="{{BASE}}articles/how_to_start.html" class="nav-dropdown__link">How to Start</a></li>
+                        <li><a href="{{BASE}}articles/how_to_collect.html" class="nav-dropdown__link">How to Collect</a></li>
+                        <li><a href="{{BASE}}articles/faq.html" class="nav-dropdown__link">FAQ</a></li>
+                        <li><a href="{{BASE}}links.html" class="nav-dropdown__link">External Links</a></li>
+                    </ul>
+                </li>
+
+                <!-- About with Dropdown -->
+                <li class="nav-item has-dropdown">
+                    <a href="{{BASE}}about_website.html" class="nav-link">About</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="{{BASE}}about_website.html" class="nav-dropdown__link">About Website</a></li>
+                        <li><a href="{{BASE}}about.html" class="nav-dropdown__link">About Author</a></li>
+                        <li><a href="{{BASE}}news.html" class="nav-dropdown__link">News</a></li>
+                        <li><a href="{{BASE}}awards.html" class="nav-dropdown__link">Awards</a></li>
+                        <li><a href="{{BASE}}exhibitions/index.html" class="nav-dropdown__link">Exhibitions</a></li>
+                        <li><a href="{{BASE}}contact.html" class="nav-dropdown__link">Contact</a></li>
+                        <li><a href="{{BASE}}sitemap.html" class="nav-dropdown__link">Sitemap</a></li>
+                    </ul>
+                </li>
+
+                <!-- Login -->
+                <li class="nav-item">
+                    <a href="{{BASE}}mk/index.html" class="nav-link">Login</a>
+                </li>
             </ul>
         </div>
     </nav>
