@@ -134,7 +134,50 @@ html, body {
 /* ===== MAIN NAVIGATION - WHITE BAR ===== */
 .main-nav {
     background-color: #ffffff;
+    border-bottom: none;
+}
+
+/* ===== HEADER TOOLBAR (Google Translate) ===== */
+.header-toolbar {
+    background-color: #f8f8f8;
     border-bottom: 1px solid #e5e5e5;
+    padding: 8px 0;
+    min-height: 40px;
+}
+
+.header-toolbar__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 24px;
+}
+
+#google_translate_element {
+    font-size: 12px;
+    min-width: 150px;
+}
+
+/* Hide Google Translate branding */
+.goog-te-gadget {
+    font-family: Arial, sans-serif !important;
+    font-size: 11px !important;
+}
+
+.goog-te-gadget .goog-te-combo {
+    padding: 4px 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .header-toolbar {
+        padding: 6px 0;
+    }
+
+    .header-toolbar__content {
+        justify-content: center;
+    }
 }
 
 .main-nav .container {

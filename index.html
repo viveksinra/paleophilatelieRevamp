@@ -602,5 +602,16 @@
     <script src="scripts/homepage.js"></script>
     <script src="components/header/header.js"></script>
     <script src="components/footer/footer.js"></script>
+
+    <!-- Google Translate -->
+    <script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>

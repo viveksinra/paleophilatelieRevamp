@@ -132,6 +132,15 @@
         </div>
     </nav>
 
+    <!-- Secondary Toolbar: Google Translate -->
+    <div class="header-toolbar">
+        <div class="container">
+            <div class="header-toolbar__content">
+                <div id="google_translate_element"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Search Overlay -->
     <div class="search-overlay" id="search-overlay">
         <div class="search-overlay-content">
@@ -307,6 +316,23 @@
         element.innerHTML = applyBasePath(footerHTML, basePath);
     }
 
+    // Load Google Translate script
+    function loadGoogleTranslate() {
+        // Define the callback function globally
+        window.googleTranslateElementInit = function() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        };
+
+        // Load the script
+        const script = document.createElement('script');
+        script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        script.async = true;
+        document.body.appendChild(script);
+    }
+
     // Main initialization
     function init() {
         const basePath = getBasePath();
@@ -314,6 +340,9 @@
         // Load components
         loadHeader(basePath);
         loadFooter(basePath);
+
+        // Load Google Translate after header is loaded
+        loadGoogleTranslate();
 
         // Update copyright year
         const yearSpan = document.getElementById('currentYear');
