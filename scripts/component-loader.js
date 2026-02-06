@@ -68,8 +68,25 @@
                 <li class="nav-item has-dropdown">
                     <a href="{{BASE}}topics/index.html" class="nav-link">Topics</a>
                     <ul class="nav-dropdown">
-                        <li><a href="{{BASE}}topics/paleo/index.html" class="nav-dropdown__link">Paleontology</a></li>
-                        <li><a href="{{BASE}}topics/anthro/index.html" class="nav-dropdown__link">Paleoanthropology</a></li>
+                        <li class="has-subdropdown">
+                            <a href="{{BASE}}topics/paleo/index.html" class="nav-dropdown__link">Paleontology</a>
+                            <ul class="nav-subdropdown">
+                                <li><a href="{{BASE}}topics/paleo/paleontologist.html" class="nav-subdropdown__link">Paleontologists</a></li>
+                                <li><a href="{{BASE}}topics/paleo/contributors.html" class="nav-subdropdown__link">Contributors</a></li>
+                                <li><a href="{{BASE}}topics/paleo/museums.html" class="nav-subdropdown__link">Museums</a></li>
+                                <li><a href="{{BASE}}topics/paleo/sites.html" class="nav-subdropdown__link">Fossil Sites</a></li>
+                                <li><a href="{{BASE}}topics/paleo/vertebrate/index.html" class="nav-subdropdown__link">Vertebrate</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-subdropdown">
+                            <a href="{{BASE}}topics/anthro/index.html" class="nav-dropdown__link">Paleoanthropology</a>
+                            <ul class="nav-subdropdown">
+                                <li><a href="{{BASE}}topics/anthro/antropologist.html" class="nav-subdropdown__link">Paleoanthropologists</a></li>
+                                <li><a href="{{BASE}}topics/anthro/contributors.html" class="nav-subdropdown__link">Contributors</a></li>
+                                <li><a href="{{BASE}}topics/anthro/museums.html" class="nav-subdropdown__link">Museums</a></li>
+                                <li><a href="{{BASE}}topics/anthro/sites.html" class="nav-subdropdown__link">Fossil Sites</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
@@ -78,10 +95,13 @@
                     <a href="{{BASE}}articles/index.html" class="nav-link">Resources</a>
                     <ul class="nav-dropdown">
                         <li><a href="{{BASE}}articles/index.html" class="nav-dropdown__link">Articles</a></li>
-                        <li><a href="{{BASE}}articles/how_to_start.html" class="nav-dropdown__link">How to Start</a></li>
-                        <li><a href="{{BASE}}articles/how_to_collect.html" class="nav-dropdown__link">How to Collect</a></li>
-                        <li><a href="{{BASE}}articles/faq.html" class="nav-dropdown__link">FAQ</a></li>
-                        <li><a href="{{BASE}}links.html" class="nav-dropdown__link">External Links</a></li>
+                        <li><a href="{{BASE}}links.html#paleo" class="nav-dropdown__link">Links - Paleontology</a></li>
+                        <li><a href="{{BASE}}links.html#topics" class="nav-dropdown__link">Links - Philately</a></li>
+                        <li><a href="{{BASE}}links.html#org" class="nav-dropdown__link">Links - Postal Resources</a></li>
+                        <li><a href="{{BASE}}links.html#clubs" class="nav-dropdown__link">Links - Forums</a></li>
+                        <li><a href="{{BASE}}media/books.html" class="nav-dropdown__link">Books</a></li>
+                        <li><a href="{{BASE}}media/paleoart.html" class="nav-dropdown__link">Paleoart</a></li>
+                        <li><a href="{{BASE}}media/videos.html" class="nav-dropdown__link">Videos</a></li>
                     </ul>
                 </li>
 
@@ -124,17 +144,26 @@
                 <div id="google_translate_element"></div>
 
                 <!-- Search Form -->
-                <form action="https://search.freefind.com/find.html" method="get" accept-charset="UTF-8" class="header-search-form">
-                    <input type="hidden" name="si" value="14323397">
-                    <input type="hidden" name="pid" value="r">
-                    <input type="text" name="query" class="header-search-input" placeholder="Search stamps, countries, years..." aria-label="Search" autocomplete="off">
-                    <button type="submit" class="header-search-button" aria-label="Search">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                        </svg>
-                    </button>
-                </form>
+                <div class="header-search-wrapper">
+                    <form action="https://search.freefind.com/find.html" method="get" accept-charset="UTF-8" class="header-search-form">
+                        <input type="hidden" name="si" value="14323397">
+                        <input type="hidden" name="pid" value="r">
+                        <input type="text" name="query" class="header-search-input" placeholder="Search stamps, countries, years..." aria-label="Search" autocomplete="off">
+                        <button type="submit" class="header-search-button" aria-label="Search">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </form>
+                    <div class="header-search-links">
+                        <a href="https://www.freefind.com/searchtipspop.html" target="_blank" rel="noopener noreferrer" class="header-search-links__item">search tips</a>
+                        <a href="https://search.freefind.com/find.html?si=14323397&amp;pid=a" class="header-search-links__item">advanced search</a>
+                    </div>
+                    <div class="header-search-credit">
+                        <a href="https://www.freefind.com" target="_blank" rel="noopener noreferrer">search engine</a> by <a href="https://www.freefind.com" target="_blank" rel="noopener noreferrer">freefind</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -272,10 +301,13 @@
                     <h3 class="footer-col__title">Resources</h3>
                     <ul class="footer-links">
                         <li><a href="{{BASE}}articles/index.html">Articles</a></li>
-                        <li><a href="{{BASE}}articles/how_to_start.html">How to Start</a></li>
-                        <li><a href="{{BASE}}articles/how_to_collect.html">How to Collect</a></li>
-                        <li><a href="{{BASE}}articles/faq.html">FAQ</a></li>
-                        <li><a href="{{BASE}}links.html">External Links</a></li>
+                        <li><a href="{{BASE}}links.html#paleo">Links - Paleontology</a></li>
+                        <li><a href="{{BASE}}links.html#topics">Links - Philately</a></li>
+                        <li><a href="{{BASE}}links.html#org">Links - Postal Resources</a></li>
+                        <li><a href="{{BASE}}links.html#clubs">Links - Forums</a></li>
+                        <li><a href="{{BASE}}media/books.html">Books</a></li>
+                        <li><a href="{{BASE}}media/paleoart.html">Paleoart</a></li>
+                        <li><a href="{{BASE}}media/videos.html">Videos</a></li>
                     </ul>
                 </div>
 
@@ -301,7 +333,7 @@
         <div class="container">
             <div class="footer-bottom__content">
                 <p class="footer-copyright">
-                    &copy; 2006&ndash;<span id="currentYear"></span> <a href="{{BASE}}about.html">Michael Kogan</a>. All rights reserved.
+                    &copy; 2010&ndash;<span id="currentYear"></span> Paleophilatelie. All rights reserved. Contact for any issue: <a href="mailto:admin@paleophilatelie.eu">admin@paleophilatelie.eu</a>
                 </p>
                 <div class="footer-bottom__links">
                     <a href="{{BASE}}paleophilatelie_site_map.html">Sitemap</a>

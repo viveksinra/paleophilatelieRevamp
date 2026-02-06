@@ -31,6 +31,7 @@
         initMobileDropdowns();
         initSearchOverlay();
         initStickyHeader();
+        highlightActiveNavLink();
     }
 
     /**
@@ -114,6 +115,30 @@
                 }
             });
         });
+
+        // Nested sub-dropdowns
+        const subdropdownItems = document.querySelectorAll('.has-subdropdown');
+
+        subdropdownItems.forEach(item => {
+            const link = item.querySelector('.nav-dropdown__link');
+
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth < 992) {
+                    e.preventDefault();
+                    e.stopPropagation();
+
+                    // Close other open sub-dropdowns at the same level
+                    subdropdownItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('is-open')) {
+                            otherItem.classList.remove('is-open');
+                        }
+                    });
+
+                    // Toggle current sub-dropdown
+                    item.classList.toggle('is-open');
+                }
+            });
+        });
     }
 
     /**
@@ -178,6 +203,62 @@
                 headerTop.classList.remove('scrolled');
             }
         }, { passive: true });
+    }
+
+    /**
+     * Highlight active navigation link based on current page
+     */
+    function highlightActiveNavLink() {
+        const currentPath = window.location.pathname.replace(/\\/g, '/').toLowerCase();
+        const pathParts = currentPath.split('/');
+        const currentFile = pathParts[pathParts.length - 1] || 'index.html';
+
+        // Check dropdown links first
+        const dropdownLinks = document.querySelectorAll('.nav-dropdown__link');
+        let matchedParent = null;
+
+        dropdownLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (!href || href === '#') return;
+
+            const normalizedHref = href.replace(/\{\{BASE\}\}/g, '').replace(/\.\.\//g, '').toLowerCase();
+
+            if (currentPath.endsWith(normalizedHref)) {
+                link.classList.add('nav-dropdown__link--active');
+                // Also highlight the parent top-level nav link
+                const parentNavItem = link.closest('.nav-item.has-dropdown');
+                if (parentNavItem) {
+                    const parentLink = parentNavItem.querySelector(':scope > .nav-link');
+                    if (parentLink) {
+                        parentLink.classList.add('nav-link--active');
+                        matchedParent = parentLink;
+                    }
+                }
+            }
+        });
+
+        // Check top-level nav links only if no dropdown match found
+        if (!matchedParent) {
+            const navLinks = document.querySelectorAll('.nav-link');
+            let bestMatch = null;
+            let bestMatchLength = 0;
+
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (!href || href === '#') return;
+
+                const normalizedHref = href.replace(/\{\{BASE\}\}/g, '').replace(/\.\.\//g, '').toLowerCase();
+
+                if (currentPath.endsWith(normalizedHref) && normalizedHref.length > bestMatchLength) {
+                    bestMatch = link;
+                    bestMatchLength = normalizedHref.length;
+                }
+            });
+
+            if (bestMatch) {
+                bestMatch.classList.add('nav-link--active');
+            }
+        }
     }
 
     /**
