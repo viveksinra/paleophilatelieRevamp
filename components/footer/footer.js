@@ -81,6 +81,40 @@
     }
 
     /**
+     * Highlight current page link in footer
+     */
+    function highlightActiveLink() {
+        const footerLinks = document.querySelectorAll('.footer-links a');
+        if (!footerLinks.length) return;
+
+        const currentPath = window.location.pathname.replace(/\\/g, '/').toLowerCase();
+        const currentHash = window.location.hash.toLowerCase();
+        const currentHref = currentPath + currentHash;
+
+        // Extract just the filename or relative path portion
+        const pathParts = currentPath.split('/');
+        const currentFile = pathParts[pathParts.length - 1] || 'index.html';
+
+        footerLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (!href || href === '#') return;
+
+            // Normalize the href for comparison
+            const normalizedHref = href.replace(/\.\.\//g, '').toLowerCase();
+            const hrefParts = normalizedHref.split('/');
+            const hrefFile = hrefParts[hrefParts.length - 1] || 'index.html';
+
+            // Check if paths match (comparing end of current path with the link href)
+            const match = currentPath.endsWith(normalizedHref.split('#')[0]) ||
+                          (currentFile === hrefFile && currentPath.includes(normalizedHref.split('#')[0].split('/').slice(0, -1).join('/')));
+
+            if (match) {
+                link.classList.add('footer-link--active');
+            }
+        });
+    }
+
+    /**
      * Update copyright year automatically
      */
     function updateCopyrightYear() {
@@ -107,5 +141,6 @@
     document.addEventListener('componentsLoaded', () => {
         init();
         updateCopyrightYear();
+        highlightActiveLink();
     });
 })();

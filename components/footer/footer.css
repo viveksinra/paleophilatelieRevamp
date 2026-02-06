@@ -36,7 +36,7 @@
 
 @media (min-width: 992px) {
     .footer-grid {
-        grid-template-columns: 2fr repeat(4, 1fr);
+        grid-template-columns: 2fr repeat(5, 1fr);
         gap: var(--space-8);
     }
 }
@@ -76,6 +76,35 @@
     width: 24px;
     height: 2px;
     background-color: var(--color-primary);
+}
+
+/* ===== FOOTER COLUMN SUBTITLE ===== */
+.footer-col__subtitle {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    margin: var(--space-4) 0 var(--space-2) 0;
+}
+
+.footer-col__subtitle:first-of-type {
+    margin-top: 0;
+}
+
+.footer-col__subtitle a {
+    color: var(--color-footer-text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.footer-col__subtitle a:hover {
+    color: #f4c542;
+}
+
+.footer-links--nested {
+    padding-left: var(--space-4);
+}
+
+.footer-links--nested li {
+    margin-bottom: var(--space-2);
 }
 
 /* ===== FOOTER LOGO ===== */
@@ -153,7 +182,7 @@
 /* ===== FOOTER LINKS ===== */
 .footer-links {
     list-style: none;
-    padding: 0;
+    padding: 0 0 0 var(--space-4);
     margin: 0;
 }
 
@@ -189,12 +218,52 @@
 }
 
 .footer-links a:hover {
-    color: var(--color-primary-light);
+    color: #f4c542;
     text-decoration: none;
 }
 
 .footer-links a:hover::before {
     width: 100%;
+}
+
+/* ===== ACTIVE FOOTER LINK ===== */
+.footer-links a.footer-link--active {
+    color: #f4c542;
+    font-weight: var(--font-weight-medium);
+}
+
+.footer-links a.footer-link--active::before {
+    width: 100%;
+    background-color: #f4c542;
+}
+
+/* ===== FOOTER BADGES ===== */
+.footer-badges {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+}
+
+.footer-badges__img {
+    height: 80px;
+    width: auto;
+    border-radius: var(--border-radius-sm);
+    transition: transform var(--transition-fast);
+}
+
+.footer-badges__img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 576px) {
+    .footer-badges {
+        justify-content: center;
+    }
+
+    .footer-badges__img {
+        height: 65px;
+    }
 }
 
 /* ===== FOOTER BOTTOM ===== */
@@ -249,7 +318,7 @@
 }
 
 .footer-bottom__links a:hover {
-    color: var(--color-primary-light);
+    color: #f4c542;
 }
 
 .footer-bottom__divider {

@@ -33,7 +33,8 @@
       "Bash(do if [ -f \"$file\" ])",
       "Bash(else echo \"MISSING: $file\")",
       "Bash(fi)",
-      "Bash(done)"
+      "Bash(done)",
+      "Skill(ralph-loop:ralph-loop)"
     ]
   }
 }

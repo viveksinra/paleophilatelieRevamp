@@ -70,9 +70,6 @@
                     <ul class="nav-dropdown">
                         <li><a href="{{BASE}}topics/paleo/index.html" class="nav-dropdown__link">Paleontology</a></li>
                         <li><a href="{{BASE}}topics/anthro/index.html" class="nav-dropdown__link">Paleoanthropology</a></li>
-                        <li><a href="{{BASE}}topics/darwin/index.html" class="nav-dropdown__link">Charles Darwin</a></li>
-                        <li><a href="{{BASE}}topics/scientists/index.html" class="nav-dropdown__link">Scientists</a></li>
-                        <li><a href="{{BASE}}topics/museums/index.html" class="nav-dropdown__link">Museums</a></li>
                     </ul>
                 </li>
 
@@ -191,17 +188,49 @@
                             </svg>
                         </a>
                     </div>
+                    <div class="footer-badges footer-badges--homepage">
+                        <a href="https://www.pwmo.org/" target="_blank" rel="noopener noreferrer">
+                            <img src="{{BASE}}images/others/pwo-logo.gif"
+                                 alt="Philatelic Webmasters Organization"
+                                 class="footer-badges__img"
+                                 loading="lazy">
+                        </a>
+                        <a href="https://www.webwiki.com/paleophilatelie.eu" target="_blank" rel="noopener noreferrer">
+                            <img src="https://www.webwiki.com/etc/rating/widget/254787400/paleophilatelie-eu-rating-round-150.png"
+                                 alt="WebWiki Rating for paleophilatelie.eu"
+                                 class="footer-badges__img"
+                                 loading="lazy">
+                        </a>
+                    </div>
+                    <div class="footer-badges footer-badges--other">
+                        <a href="{{BASE}}images/others/qrcode_www.paleophilatelie.eu.png">
+                            <img src="{{BASE}}images/others/qrcode_www.paleophilatelie.eu.png"
+                                 alt="QR code of PaleoPhilatelie.eu website"
+                                 class="footer-badges__img"
+                                 loading="lazy">
+                        </a>
+                        <a href="https://www.facebook.com/groups/889825297731726/" target="_blank" rel="noopener noreferrer">
+                            <img src="{{BASE}}images/others/logo_qr_code_fb.png"
+                                 alt="QR code of Paleophilately Facebook group"
+                                 class="footer-badges__img"
+                                 loading="lazy">
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Catalogue Column -->
                 <div class="footer-col">
                     <h3 class="footer-col__title">Catalogue</h3>
                     <ul class="footer-links">
-                        <li><a href="{{BASE}}phil_catalogue_main.html">Browse Catalogue</a></li>
-                        <li><a href="{{BASE}}country/index.html">By Country</a></li>
-                        <li><a href="{{BASE}}year/index.html">By Year</a></li>
-                        <li><a href="{{BASE}}phil_catalogue_species.html">By Species</a></li>
-                        <li><a href="{{BASE}}year/current.html">New Issues</a></li>
+                        <li><a href="{{BASE}}phil_catalogue_main.html#milestones">Milestones</a></li>
+                        <li><a href="{{BASE}}country/index.html">Country</a></li>
+                        <li><a href="{{BASE}}year/index.html">Year</a></li>
+                        <li><a href="{{BASE}}description/stamps/index.html">Descriptions</a></li>
+                        <li><a href="{{BASE}}description/letters/index.html">Letters</a></li>
+                        <li><a href="{{BASE}}images/checklist_stamps.html">Checklist</a></li>
+                        <li><a href="{{BASE}}phil_catalogue_species.html">Species</a></li>
+                        <li><a href="{{BASE}}legend.html">Legend</a></li>
+                        <li><a href="{{BASE}}phil_glossary.html">Glossary</a></li>
                     </ul>
                 </div>
 
@@ -209,22 +238,43 @@
                 <div class="footer-col">
                     <h3 class="footer-col__title">Gallery</h3>
                     <ul class="footer-links">
-                        <li><a href="{{BASE}}images/index.html">All Images</a></li>
                         <li><a href="{{BASE}}images/stamps.html">Stamps</a></li>
                         <li><a href="{{BASE}}images/fdc.html">First Day Covers</a></li>
                         <li><a href="{{BASE}}images/pm.html">Postmarks</a></li>
                         <li><a href="{{BASE}}images/ps.html">Postal Stationery</a></li>
+                        <li><a href="{{BASE}}images/checklist_stamps.html">Stamps Checklist</a></li>
+                        <li><a href="{{BASE}}images/checklist_pm.html">Postmarks Checklist</a></li>
                     </ul>
                 </div>
 
-                <!-- Explore Column -->
+                <!-- Topics Column -->
                 <div class="footer-col">
-                    <h3 class="footer-col__title">Explore</h3>
+                    <h3 class="footer-col__title">Topics</h3>
+                    <h4 class="footer-col__subtitle"><a href="{{BASE}}topics/paleo/index.html">Paleontology</a></h4>
+                    <ul class="footer-links footer-links--nested">
+                        <li><a href="{{BASE}}topics/paleo/paleontologist.html">Paleontologists</a></li>
+                        <li><a href="{{BASE}}topics/paleo/contributors.html">Contributors</a></li>
+                        <li><a href="{{BASE}}topics/paleo/museums.html">Museums</a></li>
+                        <li><a href="{{BASE}}topics/paleo/sites.html">Fossil Sites</a></li>
+                        <li><a href="{{BASE}}topics/paleo/vertebrate/index.html">Vertebrate</a></li>
+                    </ul>
+                    <h4 class="footer-col__subtitle"><a href="{{BASE}}topics/anthro/index.html">Paleoanthropology</a></h4>
+                    <ul class="footer-links footer-links--nested">
+                        <li><a href="{{BASE}}topics/anthro/antropologist.html">Paleoanthropologists</a></li>
+                        <li><a href="{{BASE}}topics/anthro/contributors.html">Contributors</a></li>
+                        <li><a href="{{BASE}}topics/anthro/museums.html">Museums</a></li>
+                        <li><a href="{{BASE}}topics/anthro/sites.html">Fossil Sites</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="footer-col">
+                    <h3 class="footer-col__title">Resources</h3>
                     <ul class="footer-links">
-                        <li><a href="{{BASE}}topics/paleo/index.html">Paleontology</a></li>
-                        <li><a href="{{BASE}}topics/anthro/index.html">Paleoanthropology</a></li>
-                        <li><a href="{{BASE}}exhibitions/index.html">Exhibitions</a></li>
-                        <li><a href="{{BASE}}phil_glossary.html">Glossary</a></li>
+                        <li><a href="{{BASE}}articles/index.html">Articles</a></li>
+                        <li><a href="{{BASE}}articles/how_to_start.html">How to Start</a></li>
+                        <li><a href="{{BASE}}articles/how_to_collect.html">How to Collect</a></li>
+                        <li><a href="{{BASE}}articles/faq.html">FAQ</a></li>
                         <li><a href="{{BASE}}links.html">External Links</a></li>
                     </ul>
                 </div>
@@ -237,7 +287,9 @@
                         <li><a href="{{BASE}}about.html">About Author</a></li>
                         <li><a href="{{BASE}}news.html">News</a></li>
                         <li><a href="{{BASE}}awards.html">Awards</a></li>
+                        <li><a href="{{BASE}}exhibitions/index.html">Exhibitions</a></li>
                         <li><a href="{{BASE}}contact.html">Contact</a></li>
+                        <li><a href="{{BASE}}sitemap.html">Sitemap</a></li>
                     </ul>
                 </div>
             </div>
@@ -257,6 +309,8 @@
                     <a href="{{BASE}}about_how-to-help.html">How to Help</a>
                     <span class="footer-bottom__divider">|</span>
                     <a href="{{BASE}}legend.html">Legend</a>
+                    <span class="footer-bottom__divider">|</span>
+                    <a href="{{BASE}}mk/index.html">Login</a>
                 </div>
             </div>
             <p class="footer-developer">
@@ -315,6 +369,20 @@
         if (!element) return;
 
         element.innerHTML = applyBasePath(footerHTML, basePath);
+
+        // Detect homepage and show the appropriate footer badges
+        const path = window.location.pathname;
+        const isHomepage = path === '/' || path.endsWith('/index.html') || path.endsWith('/index.htm') || path === '';
+        const homepageBadges = element.querySelector('.footer-badges--homepage');
+        const otherBadges = element.querySelector('.footer-badges--other');
+
+        if (homepageBadges && otherBadges) {
+            if (isHomepage) {
+                otherBadges.style.display = 'none';
+            } else {
+                homepageBadges.style.display = 'none';
+            }
+        }
     }
 
     // Load Google Translate script

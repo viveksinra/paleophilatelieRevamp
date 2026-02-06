@@ -595,6 +595,15 @@ body {
     color: var(--hp-yellow-dark);
 }
 
+.column-box a.btn--primary {
+    color: var(--hp-white);
+    text-decoration: none;
+}
+
+.column-box a.btn--primary:hover {
+    color: var(--hp-black);
+}
+
 .column-box ul {
     margin: 1rem 0;
     padding-left: 1.5rem;
@@ -627,8 +636,6 @@ body {
 .awards-image img {
     max-width: 140px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -781,16 +788,6 @@ body {
 }
 
 .qr-code:hover {
-    transform: scale(1.05);
-}
-
-.pwo-logo {
-    height: 100px;
-    width: auto;
-    transition: transform 0.3s ease;
-}
-
-.pwo-logo:hover {
     transform: scale(1.05);
 }
 
