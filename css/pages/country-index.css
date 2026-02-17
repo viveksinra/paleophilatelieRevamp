@@ -106,7 +106,7 @@
     font-weight: var(--font-weight-bold);
     font-family: var(--font-family-heading);
     color: var(--color-primary);
-    margin: var(--space-6) 0 var(--space-4);
+    margin: var(--space-2) 0 var(--space-3);
     padding: var(--space-3) var(--space-4);
     background: var(--color-gray-100);
     border-left: 4px solid var(--color-accent);
@@ -114,20 +114,16 @@
     scroll-margin-top: 80px;
 }
 
-/* Floating sidebar tables (preview images) - HIDDEN because images don't exist */
-/* To show these sidebars, change display:none to the commented styles below */
+/* Floating sidebar tables (preview images) */
 .country-index-content table[align="right"] {
-    display: none;
-    /* Uncomment below when images are available:
     float: right;
-    width: 280px !important;
-    margin: 0 0 var(--space-4) var(--space-5) !important;
+    width: 300px !important;
+    margin: 10px !important;
     background: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-md);
     padding: var(--space-3);
     box-shadow: var(--shadow-sm);
-    */
 }
 
 .country-index-content table[align="right"] img {
@@ -168,15 +164,17 @@
 }
 
 /* Main country table (uses width="600px" attribute) */
+/* width: 600px matches original so it sits beside the 300px floated right images */
 .country-index-content table[width="600px"],
 .country-index-content table.country-list {
-    width: 100% !important;
+    width: 600px;
+    max-width: 100%;
     border-collapse: collapse;
     background: var(--color-white);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius-md);
     overflow: hidden;
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-3);
 }
 
 .country-index-content table[width="600px"] td {
@@ -242,10 +240,57 @@
     text-decoration: underline;
 }
 
-/* Clear floats after each letter section - not needed when sidebar is hidden */
-/* .country-index-content table[width="600px"] {
-    clear: right;
-} */
+/* Ensure "back to Countries index" button clears floats */
+.country-index-content p[align="center"],
+.country-index-content p[align="right"] {
+    clear: both;
+    margin-top: var(--space-2);
+    margin-bottom: var(--space-2);
+}
+
+/* Bottom navigation bar (legacy inline nav at end of page) */
+.country-index-content #main_nav_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-4) 0;
+    margin: var(--space-4) 0 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.country-index-content #main_nav_list li {
+    margin: 0;
+}
+
+.country-index-content .main_nav_item,
+.country-index-content .main_nav_active_item {
+    display: inline-block;
+    padding: var(--space-2) var(--space-3);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    background: var(--color-white);
+    transition: all var(--transition-fast);
+}
+
+.country-index-content .main_nav_item:hover,
+.country-index-content .main_nav_active_item:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.country-index-content .main_nav_active_item {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+}
 
 /* Anchor links for letter navigation */
 .country-index-content a[name] {
@@ -256,9 +301,9 @@
     height: 0;
 }
 
-/* Hide old navigation elements */
-.country-index-content center:first-of-type {
-    display: none;
+/* Center elements (panoramic images, promotional links between sections) */
+.country-index-content center {
+    clear: both;
 }
 
 /* ===== LETTER SECTION ===== */
@@ -541,6 +586,13 @@
         padding: var(--space-2) var(--space-3);
     }
 
+    /* Hide sidebar images on mobile to avoid layout issues */
+    .country-index-content table[align="right"] {
+        float: none !important;
+        width: 100% !important;
+        margin: var(--space-3) 0 !important;
+    }
+
     /* Letter headers on mobile */
     .country-index-content > .container > a[name] + big,
     .country-index-content > .container > br + big {
@@ -550,6 +602,7 @@
 
     /* Country table on mobile */
     .country-index-content table[width="600px"] {
+        width: 100% !important;
         display: block;
         overflow-x: auto;
     }

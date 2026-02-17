@@ -434,19 +434,24 @@
 
     // Main initialization
     function init() {
+        // Skip header/footer when loaded inside an iframe (e.g. 3-panel navigator)
+        const isInIframe = window !== window.top;
+
         const basePath = getBasePath();
 
-        // Load components
-        loadHeader(basePath);
-        loadFooter(basePath);
+        // Load components (skip if inside iframe to avoid double header/footer)
+        if (!isInIframe) {
+            loadHeader(basePath);
+            loadFooter(basePath);
 
-        // Load Google Translate after header is loaded
-        loadGoogleTranslate();
+            // Load Google Translate after header is loaded
+            loadGoogleTranslate();
 
-        // Update copyright year
-        const yearSpan = document.getElementById('currentYear');
-        if (yearSpan) {
-            yearSpan.textContent = new Date().getFullYear();
+            // Update copyright year
+            const yearSpan = document.getElementById('currentYear');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
         }
 
         // Dispatch event to notify other scripts that components are loaded
