@@ -1,125 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="virtual philatelic exhibitions related to Paleontology thematic">
+    <meta name="keywords" content="Paleontology, philately, exhibition, stamp ">
+    <meta name="author" content="Michael Kogan">
 
-<title>Online Philatelic Exhibits of Paleontology and Paleoanthropology thematic on Paleophilatelie website</title>
-<meta name="keywords" content="Paleontology, philately, exhibition, stamp ">
-<meta name="description" content="virtual philatelic exhibitions related to Paleontology thematic">
-<meta name="author" content="Michael Kogan">
+    <title>Online Philatelic Exhibits of Paleontology and Paleoanthropology thematic on Paleophilatelie website</title>
 
-<!-- Component CSS -->
-<link rel="stylesheet" type="text/css" href="../css/main.css" media="all">
-<link rel="stylesheet" type="text/css" href="../components/header/header.css" media="all">
-<link rel="stylesheet" type="text/css" href="../components/footer/footer.css" media="all">
+    <link rel="shortcut icon" href="../images/others/paleophilatelie.ico">
 
-<!-- Legacy CSS -->
-<link rel="stylesheet" type="text/css" href="../main.css" media="all">
-<link rel="stylesheet" type="text/css" href="../colorschemes/colorscheme3/colorscheme.css" media="all">
-<link rel="stylesheet" type="text/css" href="../style.css" media="all">
-<script type="text/javascript" src="../live_tinc.js"></script>
-<link rel="shortcut icon" href="../images/others/paleophilatelie.ico">
+    <!-- Google Fonts - Museum Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-<script src="../script.js" defer></script> 
- 
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages/homepage.css">
+    <link rel="stylesheet" href="../css/pages/content.css">
+    <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/footer/footer.css">
 
-<!-- Global site tag (gtag.js) - Google Analytics START -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38036920-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38036920-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-38036920-2');
+    </script>
 
-  gtag('config', 'UA-38036920-2');
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics END -->
-<!-- Google Ads Activation Start-->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4596122187608197"
-crossorigin="anonymous">
-</script>
-
-<amp-ad width="100vw" height="320"
-type="adsense"
-data-ad-client="ca-pub-4596122187608197"
-data-ad-slot="7675243523"
-data-auto-format="mcrspv"
-data-full-width="">
-<div overflow=""></div>
-</amp-ad>
-
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>	
-
-<!-- Google Ads Activation END-->
-
-
-<style>
-  .button {
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 15px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none ;
-    outline: none;
-    color: white;
-    background-color:#525252 ;
-    border: none;
-    border-radius: 20px;
-    box-shadow:none;
-  }
-  
-  .button:hover {background-color:#a50000}	
-  
-</style>
-
-<script>
-  function myFunction() {	window.location = "#top"; }
-</script>
-
-
-
+    <!-- Google Ads -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4596122187608197" crossorigin="anonymous"></script>
 </head>
-<body id="main_div">
-<div id="header-placeholder"></div>
 
-<!----- landscape display suggestion START  --------> 
-<div id="landscape-suggestion" style="display:none;"> 
-  <div class="suggestion-content"> 
-     <p> 
-	    <u>WARNING - Narrow Screen!</u> <br> 
-		<br> 
-		If you are using a <u>smartphone or tablet</u>, <br> 
-		please rotate your device to <u>landscape mode</u>.<br> 
-		<br> 
-		If you are on <u>computer</u>, <br> 
-		try widening your browser window  
-		to at least <u>1.000px</u>. <br> 
-		<br> 
-		<u>This website looks best on a wide screen</u>, <br> 
-		so images, galleries, and text  <br> 
-		can be enjoyed more clearly and comfortably.<br> 
-	 </p>  
-	 <br> 
-	 <center> 
-		<img width="400px" 
-		     alt="This website looks best on a wide screen"  
-             src="../images/others/home_page/display.gif"> 
-	</center>	  
-    <br> 
-	<br> 
-	<br> 
-    <span id="close-suggestion" onclick="closeSuggestion()">&times; Close</span> 
-  </div> 
-</div> 
-<!----- landscape display suggestion END  --------> 
- 
-<main>
-<div class="container">
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Component (loaded dynamically) -->
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <section class="intro-section">
+            <div class="container content-page">
 
 <center>
-<a name="top"></a>
 <h1>Philatelic exhibits related to Animal and Human Evolution</h1>
 </center>
 
@@ -127,8 +55,8 @@ data-full-width="">
 This area of the Paleophilatelie website allows stamp collectors
 to share their philatelic exhibits, related to the topics of this website. <br>
 This allows viewers to view exhibits that they might not be able to see otherwise. <br>
-Visitors are able to see these exhibits and be able to examine and learn from them 
-and hopefully get energized and exhibit themselves. 
+Visitors are able to see these exhibits and be able to examine and learn from them
+and hopefully get energized and exhibit themselves.
 </h2>
 
 <p>
@@ -142,25 +70,25 @@ and hopefully get energized and exhibit themselves.
 <br>
 <a name="boycott_russia"></a>
 
-On February 24<sup>th</sup>, 2022 Russian army, with support of Belarus, invaded 
-<a href="../country/ukraine.html">Ukraine</a> territory and currently bombing peaceful cities and 
+On February 24<sup>th</sup>, 2022 Russian army, with support of Belarus, invaded
+<a href="../country/ukraine.html">Ukraine</a> territory and currently bombing peaceful cities and
 killing civilians all over the territory of Ukraine. <br>
 On March 3<sup>rd</sup>, 2022 <strong>the Federation of European Philatelic Associations (FEPA)
-and the International Philatelic Federation (Fédération Internationale de Philatélie - FIP) 
+and the International Philatelic Federation (Fédération Internationale de Philatélie - FIP)
 banned Russian and Belarussian philatelists from their stamp shows.</strong><br>
 The <a target="_blank" href="https://fepanews.com/">FEPA</a> statement is:
-"The Board’s recommendation to its Members is that they should not permit participation 
+"The Board's recommendation to its Members is that they should not permit participation
 from Russia and Belarus of any kind in their philatelic events for the foreseeable future." <br>
 The <a target="_blank" href="https://www.f-i-p.ch/">FIP</a> statement is:
-"The FIP Board ... recommend that the Organismg Commlttees of the 
-FIP World Exhibitions in 2022, to seek the withdrawal of the participation of Russian and 
+"The FIP Board ... recommend that the Organismg Commlttees of the
+FIP World Exhibitions in 2022, to seek the withdrawal of the participation of Russian and
 Belarusian exhibits ..." <br>
 <div align="right">
-For the full statements, please click here: 
- <a href="../images/exhibitions/FEPA_2022_war.jpg">FEPA</a>, 
+For the full statements, please click here:
+ <a href="../images/exhibitions/FEPA_2022_war.jpg">FEPA</a>,
  <a href="../images/exhibitions/FIP_2022_war.jpg">FIP</a>.
 </div>
-<br>  
+<br>
 <br>
 
 <br>
@@ -196,25 +124,25 @@ For the full statements, please click here:
       <td width="20%"><a href="Dinosaurs_in_China_and_Mongolia.html">Dinosaurs  in China and Mongolia </a><br> (Dinosaurier Funde in China und Mongolei)</td>
     </tr>
     <tr>
-      <td><a href="Ammoniten.html"><img 
-            src="../images/exhibitions/Ammoniten/preview/title.jpg" 
+      <td><a href="Ammoniten.html"><img
+            src="../images/exhibitions/Ammoniten/preview/title.jpg"
             alt="Ammoniten philatelic exhibit"
             title="Ammoniten philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Marine_reptiles.html"><img 
-            src="../images/exhibitions/Marine_reptiles/title_preview.jpg" 
+      <td><a href="Marine_reptiles.html"><img
+            src="../images/exhibitions/Marine_reptiles/title_preview.jpg"
             alt="Marine Reptilie philatelic exhibit"
             title="Marine Reptilie philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Pterosaurs.html"><img 
-            src="../images/exhibitions/Pterosaurs/title_preview.jpg" 
+      <td><a href="Pterosaurs.html"><img
+            src="../images/exhibitions/Pterosaurs/title_preview.jpg"
             alt="Pterosaurs philatelic exhibit"
             title="Pterosaurs philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Dinosaurs_in_EU.html"><img 
-            src="../images/exhibitions/Dinosaurs_in_EU/title_preview.jpg" 
+      <td><a href="Dinosaurs_in_EU.html"><img
+            src="../images/exhibitions/Dinosaurs_in_EU/title_preview.jpg"
             alt="Dinosaurs in Europe philatelic exhibit"
             title="Dinosaurs in Europe philatelic exhibit, Click to see the presentation"></a></td>
       <td><a href="Dinosaurs_in_China_and_Mongolia.html"><img
             src="../images/exhibitions/Dinosaurs_in_China_and_Mongolia/preview/titel.jpg"
-            alt="Dinosaurs in China and Mongolia philatelic exhibit" 
+            alt="Dinosaurs in China and Mongolia philatelic exhibit"
             title="Dinosaurs in China and Mongolia philatelic exhibit, Click to see the presentation" ></a></td>
 
     </tr>
@@ -230,24 +158,24 @@ For the full statements, please click here:
       <td><a href="Fossils.html">Fossils</a></td>
     </tr>
     <tr>
-      <td><a href="Dinosaurs_general.html"><img 
-            src="../images/exhibitions/Dinosaurs_general/preview/title.jpg" 
+      <td><a href="Dinosaurs_general.html"><img
+            src="../images/exhibitions/Dinosaurs_general/preview/title.jpg"
             alt="Dinosaurs philatelic exhibit"
             title="Dinosaurs philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Dinosaurs_collectors.html"><img 
-            src="../images/exhibitions/Dinosaurs_collectors/preview/title.jpg" 
+      <td><a href="Dinosaurs_collectors.html"><img
+            src="../images/exhibitions/Dinosaurs_collectors/preview/title.jpg"
             alt="Dinosaurs philatelic exhibit"
             title="Dinosaurs philatelic exhibit, Click to see the presentation"></a></td>
       <td><a href="Archaeopteryx.html"><img
             src="../images/exhibitions/Archaeopteryx/preview/title_preview.jpg"
-            alt="Archaeopteryxphilatelic exhibit" 
+            alt="Archaeopteryxphilatelic exhibit"
             title="Archaeopteryx philatelic exhibit, Click to see the presentation" ></a></td>
      <td><a href="Wollhaarmammut.html"><img
               src="../images/exhibitions/Wollhaarmammut/preview/title_preview.jpg"
-              alt="Wollhaarmammut philatelic exhibit" 
+              alt="Wollhaarmammut philatelic exhibit"
               title="Wollhaarmammut philatelic exhibit, Click to see the presentation" ></a></td>
-      <td><a href="Fossils.html"><img 
-              src="../images/exhibitions/Fossils/preview/title.jpg" 
+      <td><a href="Fossils.html"><img
+              src="../images/exhibitions/Fossils/preview/title.jpg"
               alt="Fossils philatelic exhibit"
               title="Fossils philatelic exhibit, Click to see the presentation"></a></td>    </tr>
 
@@ -256,7 +184,7 @@ For the full statements, please click here:
         Presentations provided by Mr. <a href="mailto:rhofer.paleo@bluewin.ch">Rudolf Hofer</a>,
             Switzerland, who is the technical editor of Paleontology section of "<a target="_blank"
             href="http://bb-geo.de/">Arbeitsgemeinschaft Bergbau und Geowissenschaften e. V." community</a>
-            (Mining and Geosciences Working Group).      
+            (Mining and Geosciences Working Group).
           <br>
           Language: German
       </td>
@@ -266,7 +194,7 @@ For the full statements, please click here:
   </tbody>
 </table>
 <br>
-    
+
 <br>
 <!-- row Nr. 2-->
 <table>
@@ -277,39 +205,39 @@ For the full statements, please click here:
       <td colspan="2" rowspan="1"><a href="Dinosaur_Discoveries.html">Landmark Dinosaur Discoveries</a></td>
       <td><a href="Dinosaurs_en.html">A Journey to the Time of Dinosaurs</a></td>
       <td><a href="Trex.html">The Complete T rex</a></td>
-<!--       
+<!--
       <td><a rel="nofollow" target="_blank" href="http://www.museodeitasso.com/it/Strumenti/Materiali/collezione-filatelica-levoluzione-animale/">Animal Evolution</a></td>
--->      
+-->
     </tr>
     <tr>
-      <td><a href="Paleontology.html"><img 
+      <td><a href="Paleontology.html"><img
             src="../images/exhibitions/biophilately_2015/preview/paleo_title.jpg"
             alt="Paleontology, part of promotional presentation of Biophilately unit of ATA"
             title="Click to see the presentation"></a></td>
-      <td><a href="Dinosaurs_back_to_life.html"><img 
+      <td><a href="Dinosaurs_back_to_life.html"><img
             src="../images/exhibitions/Dinosaurs_back_to_life/preview/title.jpg"
-            alt="Dinosaurs back to Life philatelic exhibition" 
+            alt="Dinosaurs back to Life philatelic exhibition"
             title="Dinosaurs back to Life philatelic exhibition, Click to see the presentation"></a></td>
       <td colspan="2" rowspan="1">
-          <a href="Dinosaur_Discoveries.html"><img 
-             title="Landmark Dinosaur Discoveries by Jon Noad, Click to see the presentation" 
+          <a href="Dinosaur_Discoveries.html"><img
+             title="Landmark Dinosaur Discoveries by Jon Noad, Click to see the presentation"
              alt="Landmark Dinosaur Discoveries by Jon Noad"
              src="../images/exhibitions/Dinosaur_Discoveries/preview/title.jpg"></a></td>
-      <td><a href="Dinosaurs_en.html"><img 
+      <td><a href="Dinosaurs_en.html"><img
             title="A Journey to the Time of Dinosaurs, Click to see the presentation"
             alt="A Journey to the Time of Dinosaurs"
             src="../images/exhibitions/Dinosaurs/title_preview.jpg"></a></td>
-      <td><a href="Trex.html"><img 
-              src="../images/exhibitions/trex.jpg" 
-              alt="The Complete Trex philatelic exhibit" 
+      <td><a href="Trex.html"><img
+              src="../images/exhibitions/trex.jpg"
+              alt="The Complete Trex philatelic exhibit"
               title="The Complete Trex philatelic exhibit, Click to see the presentation"></a></td>
-<!-- 
-              <td><a rel="nofollow"  target="_blank" 
+<!--
+              <td><a rel="nofollow"  target="_blank"
             href="http://www.museodeitasso.com/it/Strumenti/Materiali/collezione-filatelica-levoluzione-animale/"><img
             title="&quot;Animal evolution&quot; is a philatelic thematic collection composed and organized by Giuseppe Morabito and donated to the Tasso and Postal History Museum"
             alt="&quot;Animal evolution&quot; is a philatelic thematic collection composed and organized by Giuseppe Morabito and donated to the Tasso and Postal History Museum"
             src="../images/exhibitions/preview/l_evoluzione_animale.jpg"></a></td>
--->            
+-->
     </tr>
     <tr style="text-align: left;">
       <td>Presentation created  by <a href="mailto:admin@paleophilatelie.eu">Michael Kogan</a>
@@ -318,18 +246,18 @@ For the full statements, please click here:
       <td>Presentations provided by Mrs. <a href="mailto:romiaimar76@yahoo.com.ar">Romina Aimar</a>,
         Argentina<br> Languages: <a href="Dinosaurs_en.html">English</a> and <a href="Dinosaurs_es.html">Spanish</a></td>
       <td style="text-align: left;">Author: Fran Adam, USA<br> Language: English</td>
-<!--       
+<!--
       <td>External exhibit (website)<br> Author: Giuseppe Morabito, Italy<br> Language: Italian<br> Honored by Vermeil medal on Italia-98 stamp show</td>
--->      
+-->
     </tr>
   </tbody>
 </table>
 <br>
-    
+
 <br>
 <!-- row Nr. 4-->
 <table>
-  <tbody> 
+  <tbody>
     <tr>
       <td><a href="Darwin_and_evolution.html">Darwin and Evolution</a></td>
       <td colspan="2" rowspan="1"><a href="Sinclair_postmarks.html">Sinclair postmarks</a></td>
@@ -339,18 +267,18 @@ For the full statements, please click here:
     <tr>
       <td><a href="Darwin_and_evolution.html"><img
         src="../images/exhibitions/Darwin_and_evolution/title.jpg"
-        alt="Darwin and Evolution  philatelic exhibit" 
+        alt="Darwin and Evolution  philatelic exhibit"
         title="Darwin and Evolution  philatelic exhibit, Click to see the presentation"></a></td>
       <td colspan="2" rowspan="1"><a href="Sinclair_postmarks.html"><img
             alt="Sinclair postmarks" title="Sinclair postmarks"
             src="../images/exhibitions/Sinclair_postmarks/preview/title.jpg"></a></td>
-      <td colspan="2" rowspan="1"><a href="Oil_and_Dinosaurs_en.html"><img 
+      <td colspan="2" rowspan="1"><a href="Oil_and_Dinosaurs_en.html"><img
             title="Oil and Dinosaurs philatelic exhibit, Click to see the presentation"
-            alt="Oil and Dinosaurs philatelic exhibit" 
+            alt="Oil and Dinosaurs philatelic exhibit"
             src="../images/exhibitions/oil_and_dinosaurs/en/preview/title.jpg"></a></td>
       <td colspan="2" rowspan="1"><a href="Chocolate_Dinosaurs.html"><img
            src="../images/exhibitions/Chocolate_Dinosaurs/title_preview.jpg"
-            alt="Chocolate Dinosaurs and Meaty Mammals philatelic exhibit" 
+            alt="Chocolate Dinosaurs and Meaty Mammals philatelic exhibit"
             title="Chocolate Dinosaurs and Meaty Mammals philatelic exhibit, Click to see the presentation"></a></td>
       </tr>
     <tr style="text-align: left;">
@@ -360,7 +288,7 @@ For the full statements, please click here:
       <td colspan="2" rowspan="1">
          <a href="Chocolate_Dinosaurs.html">Presentation provided by </a>
          <a href="mailto:dm.robillard@free.fr">Dominique Robillard</a>, France,<br>
-          Language: <a href="Oil_and_Dinosaurs_en.html">English</a> &amp; 
+          Language: <a href="Oil_and_Dinosaurs_en.html">English</a> &amp;
          <a href="Oil_and_Dinosaurs_fr.html">French</a></td>
       <td colspan="2" rowspan="1">Presentation provided by <a href="mailto:sjones1665@comcast.net">Susan Jones</a>,
         USA<br> Language: English Format: A3</td>
@@ -380,7 +308,7 @@ For the full statements, please click here:
           <img
             title="Michel &quot;Dinos - whole world&quot; catalog 2019, with Novelties up to MICHEL Rundschau 1/2019 have been catalogued in this edition"
             alt="Michel &quot;Dinos - whole world&quot; catalog 2019, with Novelties up to MICHEL Rundschau 1/2019 have been catalogued in this edition"
-            style="border: 0px solid ; width: 167px; height: 251px;" 
+            style="border: 0px solid ; width: 167px; height: 251px;"
             src="../media/books/michel_Dinos.jpg"></td>
 
       <td>
@@ -414,27 +342,27 @@ For the full statements, please click here:
       <td><small><em>
           "The World of <strong>Prehistoric Fishes</strong> and their Reflection in Philately", by Hans Ulrich Ernst, Oliver Hampe. Published in 2018.<br>
           Preview of some pages is <a rel="nofollow" target="_blank" href="https://pfeil-verlag.de/publikationen/fossile-fische-weltweit/">here</a>.
-          <br>Amazon:  
+          <br>Amazon:
           <a rel="nofollow" target="_blank" href="https://www.amazon.com/gp/product/3899372417/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=paleophilat08-20&creative=9325&linkCode=as2&creativeASIN=3899372417&linkId=1a406b8bc405c2b48bf6f9263dd5cfa3">USA</a>,
-          <a rel="nofollow" target="_blank" href="https://www.amazon.co.uk/gp/product/3899372417/ref=as_li_tl?ie=UTF8&tag=paleoph0f-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=3899372417&linkId=39689ba0dd8749f57f29b5b02305e41d">UK</a>,   
+          <a rel="nofollow" target="_blank" href="https://www.amazon.co.uk/gp/product/3899372417/ref=as_li_tl?ie=UTF8&tag=paleoph0f-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=3899372417&linkId=39689ba0dd8749f57f29b5b02305e41d">UK</a>,
           <a rel="nofollow" target="_blank" href="https://www.amazon.de/gp/product/3899372417/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=paleoph-21&creative=6742&linkCode=as2&creativeASIN=3899372417&linkId=54c5fb72cbbfa7801019c1ffac0484fd">DE</a>
-      </em></small></td>  
+      </em></small></td>
       <td><small><em>
-        "<strong>Nautilids and Ammonites</strong> worldwide - the world of Cephalopods and their reflection in Philately", by Hans Ulrich Ernst, Christian Klug. Published in 2011.<br> 
+        "<strong>Nautilids and Ammonites</strong> worldwide - the world of Cephalopods and their reflection in Philately", by Hans Ulrich Ernst, Christian Klug. Published in 2011.<br>
         Preview of some pages is <a rel="nofollow" target="_blank" href="https://pfeil-verlag.de/publikationen/perlboote-und-ammonshoerner-weltweit-nautilids-and-ammonites-worldwide/">here</a>
-        <br>Amazon:  
-        <a rel="nofollow" target="_blank" href="https://www.amazon.co.uk/gp/product/3899371291/ref=as_li_tl?ie=UTF8&tag=paleoph0f-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=3899371291&linkId=988c49530a31b93c52bc2ce8444e7966">UK</a>,   
+        <br>Amazon:
+        <a rel="nofollow" target="_blank" href="https://www.amazon.co.uk/gp/product/3899371291/ref=as_li_tl?ie=UTF8&tag=paleoph0f-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=3899371291&linkId=988c49530a31b93c52bc2ce8444e7966">UK</a>,
         <a rel="nofollow" target="_blank" href="https://www.amazon.de/gp/product/3899371291/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=paleoph-21&creative=6742&linkCode=as2&creativeASIN=3899371291&linkId=0d5ada982160ae90efc85602097f1573">DE</a>
-      </em></small></td>  
+      </em></small></td>
       <td><small><em>
         "<strong>Trilobites worldwide</strong> - the world of trilobites and their reflection in Philately", by Hans Ulrich Ernst, Frank Rudolph. Published in 2002.<br>
         Preview of some pages is <a  rel="nofollow" target="_blank" href="https://pfeil-verlag.de/publikationen/trilobiten-weltweit-trilobites-worldwide/">
         here</a><br>
         Amazon:
-        <a rel="nofollow" target="_blank" href="https://www.amazon.com/gp/product/3899370031/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=paleophilat08-20&creative=9325&linkCode=as2&creativeASIN=3899370031&linkId=8b2d6a04054c328ae75753cf7fefc6d6">USA</a>, 
-        <a rel="nofollow" target="_blank" href="https://www.amazon.co.uk/gp/product/3899370031/ref=as_li_tl?ie=UTF8&tag=paleoph0f-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=3899370031&linkId=7ed75d3217a766afdb9626271a8b324b">UK</a>, 
+        <a rel="nofollow" target="_blank" href="https://www.amazon.com/gp/product/3899370031/ref=as_li_qf_asin_il_tl?ie=UTF8&tag=paleophilat08-20&creative=9325&linkCode=as2&creativeASIN=3899370031&linkId=8b2d6a04054c328ae75753cf7fefc6d6">USA</a>,
+        <a rel="nofollow" target="_blank" href="https://www.amazon.co.uk/gp/product/3899370031/ref=as_li_tl?ie=UTF8&tag=paleoph0f-21&camp=1634&creative=6738&linkCode=as2&creativeASIN=3899370031&linkId=7ed75d3217a766afdb9626271a8b324b">UK</a>,
         <a rel="nofollow" target="_blank" href="https://www.amazon.de/gp/product/3899370031/ref=as_li_tl?ie=UTF8&tag=paleoph-21&camp=1638&creative=6742&linkCode=as2&creativeASIN=3899370031&linkId=646fa4ae293219a566d453ad3d112937">DE</a>
-      </em></small></td>  
+      </em></small></td>
     </tr>
     <tr>
       <td><small><em>
@@ -442,18 +370,18 @@ For the full statements, please click here:
         (an introduction to English speaking reader is <a
         href="../media/books/MICHEL/Introduction_Englisch.v1.pdf">here</a>, symbols translation to Russian is <a
         href="../media/books/MICHEL/michel_legend_ru.png">here</a>)
-      </em></small></td>  
+      </em></small></td>
       <td colspan="3" rowspan="1"><small><em>
-        Dr. med. Hans Ulrich Ernst, coauthor of all 3 book, is an active member of German Mining and <a href="ArGe_Bergbau.html">Geosciences philatelic club</a> 
+        Dr. med. Hans Ulrich Ernst, coauthor of all 3 book, is an active member of German Mining and <a href="ArGe_Bergbau.html">Geosciences philatelic club</a>
         (<a rel="nofollow" target="_blank" href="https://bb-geo.de">Arbeitsgemeinschaft Bergbau und Geowissenschaften</a>),
         where he published many "Paleophilately" related articles, include updates to his books. <br>
-        To date (2021), there are 9 updates of the <strong>Trilobites</strong> and 10 updates of <strong>Nautilids and Ammonites</strong> book. 
-        Members of <strong><a rel="nofollow" target="_blank" href="https://bb-geo.de">the club</a></strong>, can get it for free as they get access to many old magazines where these list, 
-        as well as many other "Paleophilately" related articles were published. 
-        Most of it in German, but some are in English. 
+        To date (2021), there are 9 updates of the <strong>Trilobites</strong> and 10 updates of <strong>Nautilids and Ammonites</strong> book.
+        Members of <strong><a rel="nofollow" target="_blank" href="https://bb-geo.de">the club</a></strong>, can get it for free as they get access to many old magazines where these list,
+        as well as many other "Paleophilately" related articles were published.
+        Most of it in German, but some are in English.
         </em></small></td>
     </tr>
-  
+
   </tbody>
 </table>
 <br>
@@ -462,7 +390,7 @@ For the full statements, please click here:
 <br>
 <h2>Philatelic Exhibits about Human Evolution</h2>
 <table>
-  <tbody> 
+  <tbody>
     <tr>
       <td><a href="Die_Evolution_des_Menschen.html">Die Evolution des Menschen</a></td>
       <td><a href="Neandertal.html">Neandertal</a></td>
@@ -473,39 +401,39 @@ For the full statements, please click here:
     </tr>
     <tr>
       <td><a href="Die_Evolution_des_Menschen.html"><img height="200px"
-        src="../images/exhibitions/Die_Evolution_des_Menschen/preview/title.jpg" 
+        src="../images/exhibitions/Die_Evolution_des_Menschen/preview/title.jpg"
         alt="Die Evolution des Menschen"
         title="Die Evolution des Menschen"></a></td>
 
       <td><a href="Neandertal.html"><img  height="200px"
-            src="../images/exhibitions/Neandertal/preview/title.jpg" 
+            src="../images/exhibitions/Neandertal/preview/title.jpg"
             alt="Neandertal philatelic exhibit"
             title="Neandertal philatelic exhibit, Click to see the presentation"></a></td>
       <td><a href="Human_evolution.html"><img  height="200px"
-            src="../images/exhibitions/human_evolution/preview/title_preview.jpg" 
+            src="../images/exhibitions/human_evolution/preview/title_preview.jpg"
             alt="Human Evolution"
             title="Human Evolution, Click to see the presentation"></a></td>
 
       <td><a href="Dark_Caves.html"><img height="200px"
             src="../images/exhibitions/Dark_Caves/preview/title.jpg"
-            alt="Dark Caves - Bright Visions philatelic exhibit" 
+            alt="Dark Caves - Bright Visions philatelic exhibit"
             title="Dark Caves - Bright Visions  philatelic exhibit, Click to see the presentation"></a></td>
 
       <td colspan="2" rowspan="1"><a href="The_Human_Adventure_of_Prehistory.html"><img height="200px"
             src="../images/exhibitions/the_human_adventure_of_prehistory/preview/titel.jpg"
-            alt="The Human Adventure in Prehistory philatelic exhibition" 
+            alt="The Human Adventure in Prehistory philatelic exhibition"
             title="Click to see the presentation"></a></td>
       <td colspan="2" rowspan="1"><a href="Homo_evolution_en.html"><img height="200px"
             src="../images/exhibitions/Homo_evolution/en/preview/title.jpg"
-            alt="Homo Evolution philatelic exhibition" 
+            alt="Homo Evolution philatelic exhibition"
             title="Homo Evolution philatelic exhibition, Click to see the presentation"></a></td>
     </tr>
     <tr style="text-align: left;">
       <td>Author: <a href="mailto:PBrandhuber@t-online.de">Peter Brandhuber</a>, Germany Language: German</td>
       <td>Author: <a href="mailto:fran.adams@gmail.com">Fran Adams</a>, USA Language: English</td>
-      <td>Presentation provided by <a href="mailto:arqueosellos@gmail.com">Fernando Muoz</a>, Spain 
+      <td>Presentation provided by <a href="mailto:arqueosellos@gmail.com">Fernando Muoz</a>, Spain
         <br> Language: English</td>
-      <td>Presentation provided by <a href="mailto:fran.adams@gmail.com"> Fran Adams</a>, USA,<br> Language: English</td> 
+      <td>Presentation provided by <a href="mailto:fran.adams@gmail.com"> Fran Adams</a>, USA,<br> Language: English</td>
       <td colspan="2" rowspan="1">Presentation provided by Vincent Davis, France,<br>
         Language: <a href="The_Human_Adventure_of_Prehistory.html">French</a></td>
       <td colspan="2" rowspan="1">Presentation provided by <a href="mailto:dm.robillard@free.fr">Dominique Robillard</a>,
@@ -513,7 +441,6 @@ For the full statements, please click here:
     </tr>
   </tbody>
 </table>
-
 
 
 
@@ -532,11 +459,11 @@ For the full statements, please click here:
       <td></td>
     </tr>
     <tr>
-      <td><a href="Diverse_live_in_middle_age.html"><img 
-            src="../images/exhibitions/Diverse_live_in_middle_age/preview/titel.jpg" 
+      <td><a href="Diverse_live_in_middle_age.html"><img
+            src="../images/exhibitions/Diverse_live_in_middle_age/preview/titel.jpg"
             alt="Diverse live in middle age of the Earth philatelic exhibit"
             title="Diverse live in middle age of the Earth philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a rel="nofollow" href="World_of_Dinosaurs.html"><img 
+      <td><a rel="nofollow" href="World_of_Dinosaurs.html"><img
             title="The World of Dinosaurs  philatelic exhibit, Click too see the presentation"
             alt="The World of Dinosaurs  philatelic exhibit"
             src="../images/exhibitions/World_of_Dinosaurs/preview/title.jpg"></a></td>
@@ -559,7 +486,7 @@ For the full statements, please click here:
 <br>
 <h2>Philatelic Exhibits about "living-fossils" or modern animals with some slides about Prehistoric Animals</h2>
 <table width="100%" style="text-align: center;" cellpadding="5">
-  <tbody> 
+  <tbody>
     <tr>
       <td><a href="CatchThemIfYouCan.html">Catch them if you can</a></td>
       <td><a href="Beak_evolution.html">Evolve - A Beak at Evolution</a></td>
@@ -570,19 +497,19 @@ For the full statements, please click here:
     <tr>
       <td><a href="CatchThemIfYouCan.html"><img
             src="../images/exhibitions/CatchThemIfYouCan/preview/title.jpg"
-            alt="Catch them if you can philatelic exhibit" 
+            alt="Catch them if you can philatelic exhibit"
             title="Catch them if you can philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Beak_evolution.html"><img 
-            src="../images/exhibitions/Beak_evolution/preview/title.jpg" 
+      <td><a href="Beak_evolution.html"><img
+            src="../images/exhibitions/Beak_evolution/preview/title.jpg"
             alt="Evolve - A Beak at Evolution  philatelic exhibit"
             title="Evolve - A Beak at Evolution philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Coelacanths.html"><img 
+      <td><a href="Coelacanths.html"><img
               src="../images/exhibitions/Coelacanths/title_preview.jpg"
-              alt="The African Coelacanth Latimeria chalumnae philatelic exhibit" 
+              alt="The African Coelacanth Latimeria chalumnae philatelic exhibit"
               title="The African Coelacanth Latimeria chalumnae philatelic exhibit, Click to see the presentation"></a></td>
-      <td><a href="Herpetofauna.html"><img 
+      <td><a href="Herpetofauna.html"><img
               src="../images/exhibitions/Herpetofauna/preview/title.jpg"
-              alt="Herpetofauna philatelic exhibit" 
+              alt="Herpetofauna philatelic exhibit"
               title="Herpetofauna philatelic exhibit, Click to see the presentation"></a></td>
       <td width="20%"></td>
     </tr>
@@ -616,31 +543,31 @@ For the full statements, please click here:
 <br>
 <br>
 <br>
-<a name="presentations"></a> 
+<a name="presentations"></a>
 <h2>Presentations about Animals and Human Evolution, illustrated by Philatelic items (PDF files)</h2>
 <table>
   <tbody>
     <tr>
-      <td><a href="../presentations/Catalogue_of_artworks.pdf">Catalogue with philatelic artworks about the topic „Evolution of mankind and philately“</a>, by Peter Brandhuber</td>
+      <td><a href="../presentations/Catalogue_of_artworks.pdf">Catalogue with philatelic artworks about the topic „Evolution of mankind and philately"</a>, by Peter Brandhuber</td>
       <td><a href="../presentations/Der_Neandertaler_im_Wandel_der_Zeit.pdf">Der Neandertaler im Wandel der Zeit</a>, by Mr. Peter Brandhuber</td>
       <td><a href="../presentations/John_Hawks_vs_philately.pdf">Evolution of mankind and Philately</a>, by Dr. John Hawks and Peter Brandhuber</td>
       <td><a href="../presentations/Fossile_Menschen.pdf">Fossile Menschen</a>, by Mr. Rudolf Hofer</td>
     </tr>
     <tr style="text-align: center;">
-      <td><a href="../presentations/Catalogue_of_artworks.pdf"><img 
-            src="../images/exhibitions/presentation/t_Catalogue_of_artworks.jpg" 
+      <td><a href="../presentations/Catalogue_of_artworks.pdf"><img
+            src="../images/exhibitions/presentation/t_Catalogue_of_artworks.jpg"
             alt="Catalogue with philatelic artworks about the topic Evolution of mankind and philately"
             title="Catalogue with philatelic artworks about the topic Evolution of mankind and philately"></a>
       </td>
      </td>
          <td><a href="../presentations/Der_Neandertaler_im_Wandel_der_Zeit.pdf"><img title="Der Neandertaler im Wandel der Zeit" alt="Der Neandertaler im Wandel der Zeit"
       src="../images/exhibitions/presentation/t_Der_Neandertaler_im_Wandel_der_Zeit.jpg"></a></td>
-      <td><a href="../presentations/John_Hawks_vs_philately.pdf"><img 
+      <td><a href="../presentations/John_Hawks_vs_philately.pdf"><img
             title="Evolution of mankind and Philately"
             alt="Evolution of mankind and Philately"
             src="../images/exhibitions/presentation/t_John_Hawks_vs_philately.jpg"></a>
       </td>
-      <td><a href="../presentations/Fossile_Menschen.pdf"><img 
+      <td><a href="../presentations/Fossile_Menschen.pdf"><img
         title="Fossile Menschen"
         alt="Fossile Menschen"
         src="../images/exhibitions/presentation/t_fossile_Menschen.jpg"></a>
@@ -648,18 +575,18 @@ For the full statements, please click here:
   </tr>
 <tr>
   <td colspan="2" rowspan="1" >
-    Mr. Peter Brandhuber collects stamps and philatelic material related to the topics „Paleoanthropology“, 
-    „Evolution of mankind“, „Stone tools“, „Cave and rock paintings“, „Charles Darwin“ and „Evolution“ for 30 years now. 
-    Meanwhile, he owns a very large collection covering these topics including a lot of artwork. 
+    Mr. Peter Brandhuber collects stamps and philatelic material related to the topics „Paleoanthropology",
+    „Evolution of mankind", „Stone tools", „Cave and rock paintings", „Charles Darwin" and „Evolution" for 30 years now.
+    Meanwhile, he owns a very large collection covering these topics including a lot of artwork.
     The catalogue covers all artwork known that covers these topics.
     If you know another one feel free to <a href="mailto: pbrandhuber@t-online.de">contact Peter Brandhuber</a>.
     <br><br><br><br><br><br><br>
   </td>
   <td>
     Dr. John Hawk is an associate professor of anthropology at the University of Wisconsin-Madison.<br>
-    On January 1<sup>st</sup> 2021 John Hawks began to publish every day a picture of famous human fossils 
+    On January 1<sup>st</sup> 2021 John Hawks began to publish every day a picture of famous human fossils
     illustrated by himself on his <a target="_blank" href="https://johnhawks.net/">blog</a> and <a target="_blank" href="https://twitter.com/johnhawks">twitter</a> account.
-    Peter Brandhuber discovered these absolute stunning and beautiful illustrations 
+    Peter Brandhuber discovered these absolute stunning and beautiful illustrations
     and had the idea to combine the beautiful images with philatelic materials like stamps or postal cancellations.
   </td>
   <td>The presentation, in German, was created by Mr. Rudolf Hofer. It is about the Human Evolution and its representation in philately.
@@ -671,7 +598,7 @@ For the full statements, please click here:
 
 <br>
 <br>
-<table width="100%" cellpadding="5">  
+<table width="100%" cellpadding="5">
   <tbody>
   <tr>
     <td><a href="../presentations/Eiszeiten.pdf">Die Eiszeiten/the Ice Ages</a>, by Mr. Rudolf Hofer</td>
@@ -684,12 +611,12 @@ For the full statements, please click here:
           src="../images/exhibitions/presentation/Die_Eiszeiten.jpg"></a></td>
     <td><a href="../presentations/Bernstein.pdf"><img title="Bernstein, Amber" alt="Bernstein, Amber"
           src="../images/exhibitions/presentation/Bernstein.jpg"></a></td>
-         <td><a href="../presentations/Ammoniten.pdf"><img 
+         <td><a href="../presentations/Ammoniten.pdf"><img
       title="Ammonites"
       alt="Ammonites"
       src="../images/exhibitions/presentation/t_Ammoniten.jpg"></a>
    </td>
-      
+
     <td><a href="../presentations/Dinosaurier.pdf"><img title="Dinosaurier, Dinosaurs" alt="Dinosaurier, Dinosaurs"
             src="../images/exhibitions/presentation/t_Dinosaurier.jpg"></a></td>
       </tr>
@@ -706,7 +633,7 @@ For the full statements, please click here:
 
 <br>
 <br>
-<table width="100%" cellpadding="5">  
+<table width="100%" cellpadding="5">
   <tr>
     <td width="25%"><a href="../presentations/paleophilatelie_vstampex_2025.pdf">
       Paleophilately - the place where Paleontology meets philately</a>, by Michael Kogan
@@ -719,8 +646,8 @@ For the full statements, please click here:
           DINO-Philately, a new look at our old friends</a>, by Vikram Vakil, PhD Student of The University of Queensland, Australia</td>
   </tr>
   <tr style="text-align: center;">
-    <td  width="25%"><a href="../presentations/paleophilatelie_vstampex_2025.pdf"><img 
-        title="Presentation of Paleophilately at Virtual Stampex 2025" 
+    <td  width="25%"><a href="../presentations/paleophilatelie_vstampex_2025.pdf"><img
+        title="Presentation of Paleophilately at Virtual Stampex 2025"
         alt="Presentation of Paleophilately at Virtual Stampex 2025"
         src="../images/exhibitions/presentation/t_paleophilatelie_vstampex_2025.jpg"></a></td>
       <td width="25%"><a href="../presentations/Noad_APS_Dino_stamps.pdf"><img width="300px"
@@ -737,12 +664,12 @@ For the full statements, please click here:
             src="../images/exhibitions/presentation/dino_philately.jpg"></a></td>
    </tr>
   <tr>
-    <td>These slides were presented by Michael Kogan, <a href="../about.html">author of this website</a>, 
-        during Virtual Stampex 2025 show on March 8<sup>th</sup>, 2025.  
-        The presentation (1h about), available on <a href="https://www.youtube.com/watch?v=AoghXZ1Q4s4">YouTube</a>.</td>          
-      <td>These slides were presented by Dr. Jon Noad, Senior Palaeontologist, Stantec Consulting; University of Adelaide 
+    <td>These slides were presented by Michael Kogan, <a href="../about.html">author of this website</a>,
+        during Virtual Stampex 2025 show on March 8<sup>th</sup>, 2025.
+        The presentation (1h about), available on <a href="https://www.youtube.com/watch?v=AoghXZ1Q4s4">YouTube</a>.</td>
+      <td>These slides were presented by Dr. Jon Noad, Senior Palaeontologist, Stantec Consulting; University of Adelaide
         for the Alberta Palaeontological Society in Canada in January 2025.
-        The presentation (1h about), available on <a href="https://www.youtube.com/watch?v=zkiARmh5PEA">YouTube</a>.</td>          
+        The presentation (1h about), available on <a href="https://www.youtube.com/watch?v=zkiARmh5PEA">YouTube</a>.</td>
        </td>
      <td>These slides were presented by Dr. Ajit Vartak during "Earth Science Week 2023" on October 11<sup>th</sup>, 2023.
           The presentation (1h about), available on <a href="https://www.youtube.com/watch?v=eDIm19BL7vA">YouTube</a>.
@@ -761,8 +688,8 @@ For the full statements, please click here:
       <td>  </td>
   </tr>
   <tr style="text-align: center;">
-    <td  width="25%"><a href="../presentations/Charles_Darwin_in_Philately.pdf"><img 
-        title="Presentation of Charles Darwin in Phiately" 
+    <td  width="25%"><a href="../presentations/Charles_Darwin_in_Philately.pdf"><img
+        title="Presentation of Charles Darwin in Phiately"
         alt="Presentation of Charles Darwin in Phiately"
         src="../images/exhibitions/presentation/t_Charles_Darwin_in_Philately.jpg"></a></td>
       <td>  </td>
@@ -770,8 +697,8 @@ For the full statements, please click here:
       <td>  </td>
    </tr>
   <tr>
-    <td>These slides were presented by Michael Kogan, <a href="../about.html">author of this website</a>, 
-      during Late Dr. V. D. Vartak Birth Centenary Year Lecture Series, 
+    <td>These slides were presented by Michael Kogan, <a href="../about.html">author of this website</a>,
+      during Late Dr. V. D. Vartak Birth Centenary Year Lecture Series,
       on June 16<sup>th</sup>, 2025.  </td>
       <td>  </td>
       <td>  </td>
@@ -783,7 +710,7 @@ For the full statements, please click here:
 <br>
 
 
-<!-- Google Ads START: in-text 
+<!-- Google Ads START: in-text
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4596122187608197"
 	crossorigin="anonymous"></script>
 	<ins class="adsbygoogle"
@@ -805,15 +732,15 @@ Google Ads END-->
 <br>
 <a name="one_page"></a>
 <h2>One-page exhibits related to Paleontology and Paleoanthropology.</h2>
-The following pages were exhibited by the American Topical Association 
+The following pages were exhibited by the American Topical Association
 My One-Page Exhibit Program.
-The exhibit program is free to enter and open to all. ATA membership is not required to participate. 
-Rather than offering judging or popularity votes, the program focuses on expression, 
-storytelling and sharing. The program’s reward is an opportunity to share new philatelic ideas and view 
+The exhibit program is free to enter and open to all. ATA membership is not required to participate.
+Rather than offering judging or popularity votes, the program focuses on expression,
+storytelling and sharing. The program's reward is an opportunity to share new philatelic ideas and view
 a broad range of collecting interests. <br>
 
 <br>
-<big>A4 Pages</big>: 
+<big>A4 Pages</big>:
 For the slide-show, please click <a href="One_Page_A4.html">here</a> <br>
 <br>
 <table>
@@ -827,24 +754,24 @@ For the slide-show, please click <a href="One_Page_A4.html">here</a> <br>
   </tr>
   <tr>
         <td><a href="../images/exhibitions/One_Page/A4/Vertebrate_Paleontology_ATA_2022.jpg"><img height="200px"
-                src="../images/exhibitions/One_Page/A4/preview/t_Vertebrate_Paleontology_ATA_2022.jpg" 
-                alt="Vertebrate Paleontology, one page exhibity by Michael Kogan" 
+                src="../images/exhibitions/One_Page/A4/preview/t_Vertebrate_Paleontology_ATA_2022.jpg"
+                alt="Vertebrate Paleontology, one page exhibity by Michael Kogan"
                 title="Vertebrate Paleontology, one page exhibity by Michael Kogan"></a></td>
         <td><a href="../images/exhibitions/One_Page/A4/Dimorphodon-ATA_2022.jpg"><img  height="200px"
-                src="../images/exhibitions/One_Page/A4//preview/t_Dimorphodon-ATA_2022.jpg" 
-                alt="Dimorphodon, one page exhibity by Fran Adams" 
+                src="../images/exhibitions/One_Page/A4//preview/t_Dimorphodon-ATA_2022.jpg"
+                alt="Dimorphodon, one page exhibity by Fran Adams"
                 title="Dimorphodon, one page exhibity by Fran Adams"></a></td>
         <td><a href="../images/exhibitions/One_Page/A4/First_neanderthal_ATA_2022.jpg"><img  height="200px"
-                src="../images/exhibitions/One_Page/A4/preview/t_First_neanderthal_ATA_2022.jpg" 
-                alt="First Neanderthal, one page exhibity by Fran Adams" 
+                src="../images/exhibitions/One_Page/A4/preview/t_First_neanderthal_ATA_2022.jpg"
+                alt="First Neanderthal, one page exhibity by Fran Adams"
                 title="First Neanderthal, one page exhibity by Fran Adams"></a></td>
         <td><a href="../images/exhibitions/One_Page/A4/Ichtyosaurs_ATA_2025.jpg"><img  height="200px"
-                src="../images/exhibitions/One_Page/A4/preview/t_Ichtyosaurs_ATA_2025.jpg" 
-                alt="Ichthyosaurs - fish-lizard, one page exhibity by Michael Kogan " 
+                src="../images/exhibitions/One_Page/A4/preview/t_Ichtyosaurs_ATA_2025.jpg"
+                alt="Ichthyosaurs - fish-lizard, one page exhibity by Michael Kogan "
                 title="Ichthyosaurs - fish-lizard, one page exhibity by Michael Kogan "></a></td>
         <td><a href="../images/exhibitions/One_Page/A4/Megaloceros_ATA_2025.jpg"><img  height="200px"
-                src="../images/exhibitions/One_Page/A4/preview/t_Megaloceros_ATA_2025.jpg" 
-                alt="Megaloceros giganteus, one page exhibity by Michael Kogan " 
+                src="../images/exhibitions/One_Page/A4/preview/t_Megaloceros_ATA_2025.jpg"
+                alt="Megaloceros giganteus, one page exhibity by Michael Kogan "
                 title="Megaloceros giganteus, one page exhibity by Michael Kogan "></a></td>
     </tr>
   </tbody>
@@ -879,7 +806,7 @@ The following one-page exhibits were made by Mr. Fran Adams from USA <br>
             title="The Smithsonian Institution, one page exhibity by Fran Adams"></a></td>
     </tr>
 
-    
+
     <tr>
       <td style="height: 20px;"></td>
     </tr>
@@ -941,23 +868,23 @@ For the slide-show, please click <a href="Posters.html">here</a> <br>
   <tbody style="text-align: center;">
     <tr>
       <td><a href="Brachiopods_poster.html"><img height="250px"
-            src="../images/exhibitions/posters/preview/t_Brachiopods.jpg" 
-            alt="Brachiopods poster" 
+            src="../images/exhibitions/posters/preview/t_Brachiopods.jpg"
+            alt="Brachiopods poster"
             title="Brachiopods poster, Click to see the poster"></a></td>
       <td><a href="Cephalopods_poster.html"><img height="250px"
-            src="../images/exhibitions/posters/preview/t_Cephalopods.jpg" 
-            alt="Cephalopods poster" 
+            src="../images/exhibitions/posters/preview/t_Cephalopods.jpg"
+            alt="Cephalopods poster"
             title="Cephalopods poster, Click to see the poster"></a></td>
       <td><a href="Paleoinvertebrados_poster.html"><img height="250px"
-            alt="Philatelic posters for III Symposium on Brazilian Paleoinvertebrates" 
+            alt="Philatelic posters for III Symposium on Brazilian Paleoinvertebrates"
             title="Philatelic posters for III Symposium on Brazilian Paleoinvertebrates, Click for details"
             src="../images/exhibitions/posters/preview/t_Paleoinvertebrados.jpg"></a></td>
       <td><a href="X_Brazilian_Symposium_of_Paleontology_of_Vertebrates.html"><img  height="250px"
-            alt="Philatelic posters for X Brazilian Symposium of Vertebrates Paleontology" 
+            alt="Philatelic posters for X Brazilian Symposium of Vertebrates Paleontology"
             title="Philatelic posters for X Brazilian Symposium of Vertebrates Paleontology, Click for details"
             src="../images/exhibitions/posters/preview/t_Mesozoico_dinossauros.jpg"></a></td>
       <td><a href="Wallace_poster.html"><img  height="250px"
-            alt="Alfred Russel Wallace on Postage Stamps" 
+            alt="Alfred Russel Wallace on Postage Stamps"
             title="Alfred Russel Wallace on Postage Stamps, Click for details"
             src="../images/exhibitions/posters/preview/t_Wallace Stamps.jpg"></a></td>
     </tr>
@@ -973,7 +900,7 @@ For the slide-show, please click <a href="Posters.html">here</a> <br>
 
 
 <br>
-<!-- Google Ads START: in-text 
+<!-- Google Ads START: in-text
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4596122187608197"
 	crossorigin="anonymous"></script>
 	<ins class="adsbygoogle"
@@ -989,23 +916,28 @@ Google Ads END-->
 <br>
 
 
- 
+
 <br>
 <br>
 <br>
 <a name="ack"></a><big><strong>Acknowledgements:</strong></big><br>
- Many thanks to 
+ Many thanks to
   Dr. <em>Peter Voice</em> from Department of Geological and Environmental Sciences, Western Michigan University,
    for his help to find an information and share scans of postmarks from his collection for this article,
    the draft page review and his valuable comments.
-	  
 
-</div>
-</main>
-<div id="footer-placeholder"></div>
-<script src="../scripts/component-loader.js"></script>
-<script src="../components/header/header.js"></script>
-<script src="../components/footer/footer.js"></script>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component (loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="../scripts/component-loader.js"></script>
+    <script src="../scripts/main.js"></script>
+    <script src="../components/header/header.js"></script>
+    <script src="../components/footer/footer.js"></script>
 </body>
 </html>
-

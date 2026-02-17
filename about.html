@@ -1,220 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the Author of PaleoPhilatelie.eu web site">
+    <meta name="keywords" content="PaleoPhilatelie.eu, web site, author, about, description">
+    <meta name="author" content="Michael Kogan">
 
-<title>Paleophilatelie.eu - About the Author</title>
-<meta name="keywords" content="PaleoPhilatelie.eu, web site, author, about, description">
-<meta name="description" content="About the Author of PaleoPhilatelie.eu web site">
-<meta name="author" content="Michael Kogan">
+    <title>Paleophilatelie.eu - About the Author</title>
 
-<!-- Component CSS -->
-<link rel="stylesheet" type="text/css" href="css/main.css" media="all">
-<link rel="stylesheet" type="text/css" href="components/header/header.css" media="all">
-<link rel="stylesheet" type="text/css" href="components/footer/footer.css" media="all">
+    <link rel="shortcut icon" href="images/others/paleophilatelie.ico">
 
-<!-- Legacy CSS -->
-<link rel="stylesheet" type="text/css" href="main.css" media="all">
-<link rel="stylesheet" type="text/css" href="colorschemes/colorscheme3/colorscheme.css" media="all">
-<link rel="stylesheet" type="text/css" href="style.css" media="all">
-<script type="text/javascript" src="live_tinc.js"></script>
-<link rel="shortcut icon" href="images/others/paleophilatelie.ico">
+    <!-- Google Fonts - Museum Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-<script src="script.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/homepage.css">
+    <link rel="stylesheet" href="css/pages/content.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
 
-
-	<!-- Global site tag (gtag.js) - Google Analytics  START -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38036920-2"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-38036920-2');
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics  END -->
-	 
-	<style>
-		.button {
-		  display: inline-block;
-		  padding: 5px 10px;
-		  font-size: 15px;
-		  cursor: pointer;
-		  text-align: center;
-		  text-decoration: none ;
-		  outline: none;
-		  color: white;
-		  background-color:#525252 ;
-		  border: none;
-		  border-radius: 20px;
-		  box-shadow:none;
-		}
-		
-		.button:hover {background-color:#a50000}	
-		
-	</style>
-
-	<script>
-		function myFunction() {	window.location = "#top"; }
-	</script>
-
-
-
-<style>
-
-	.container {
-	position: relative;
-	height: 200px;
-	}
-
-	.image {
-	border-radius: 50%;
-	box-shadow: 20px 20px 10px #888888;
-	 opacity: 1;
-	display: block;
-	transition: .5s ease;
-	backface-visibility: hidden;
-	}
-
-	.middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top:  50%;
-	right: 10%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%)
-	}
-
-	.container:hover .image {
-	opacity: 0.3;
-	}
-
-	.container:hover .middle {
-	opacity: 1;
-	}
-
-	.text {
-	background-color: #4CAF50;
-	color: white;
-	font-size: 15px;
-	padding: 40px 80px;
-	}
-
-	
-	.overlay {
-	position: absolute;
-	bottom: 100%;
-	left: 0;
-	right: 0;
-	background-color: #008CBA;
-	overflow: hidden;
-	width: 50%;
-	height: 0;
-	transition: .5s ease;
-	}
-
-
-</style>
-
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38036920-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-38036920-2');
+    </script>
 
 </head>
-<body id="main_div">
-<div id="header-placeholder"></div>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!------------->
-<div id="landscape-suggestion" style="display:none;">
-  <div class="suggestion-content">
-     <p>
-	    <u>WARNING - Narrow Screen!</u> <br>
-		<br>
-		If you are using a <u>smartphone or tablet</u>, <br>
-		please rotate your device to <u>landscape mode</u>.<br>
-		<br>
-		If you are on <u>computer</u>, <br>
-		try widening your browser window 
-		to at least <u>1.000px</u>. <br>
-		<br>
-		<u>This website looks best on a wide screen</u>, <br>
-		so images, galleries, and text  <br>
-		can be enjoyed more clearly and comfortably.<br>
-	 </p>
-	<br>
-	<br>
-    <span id="close-suggestion" onclick="closeSuggestion()">&times; Close</span>
-	<br>
-	<br>
-  </div>
-</div>
-<!------------->
+    <!-- Header Component (loaded dynamically) -->
+    <div id="header-placeholder"></div>
 
-
-<main>
-<div class="container">
+    <main id="main-content">
+        <section class="intro-section">
+            <div class="container content-page">
 
 
 <center>
-<a name="top"></a>
 <h1>Short presentation about Mr. Michael Kogan, the Author and Admin of this website</h1>
 </center>
 
 
 <p>
-	I found my first fossil when I was 12-13 years old, in the mid-1980s. 
-	It was a tooth of a prehistoric fish in a piece of stone. 
-	I took it to the Natural History Museum where an employee explained to me what 
-	I had found. 
-	It was astonishing, because in Lviv, the Ukrainian city, where I grew up, 
-	there was no sea or even a river. 
-	Prehistoric creatures began to occupy my imagination. 
-	I began to study them, collecting fossils and stamps on the theme. 
-	After some time, I had quite a few fossils of ammonites, belemnites, petrified 
+	I found my first fossil when I was 12-13 years old, in the mid-1980s.
+	It was a tooth of a prehistoric fish in a piece of stone.
+	I took it to the Natural History Museum where an employee explained to me what
+	I had found.
+	It was astonishing, because in Lviv, the Ukrainian city, where I grew up,
+	there was no sea or even a river.
+	Prehistoric creatures began to occupy my imagination.
+	I began to study them, collecting fossils and stamps on the theme.
+	After some time, I had quite a few fossils of ammonites, belemnites, petrified
 	wood and teeth of prehistoric fishes and I dreamt of being a paleontologist.
 </p>
 
 <br>
 <a href="images/about/my_first_fossils.jpg"><img align="center"
-	src="images/about/t_my_first_fossils.jpg"                     
+	src="images/about/t_my_first_fossils.jpg"
 	title="The first fossils in collection of Michael Kogan, discovered in 1980s in Lviv, Ukraine"
 	alt="The first fossils in collection of Michael Kogan, discovered in 1980s in Lviv, Ukraine"></a>
 <center>
 	<em><small>The first fossils in collection of Michael Kogan, discovered in 1980s in Lviv, Ukraine:
 		tooth of prehistoric fish, ammonite, shell, belemnites.
 	</small></em>
-</center>	
+</center>
 <br>
 
 
 
 <p>
-	Shortly after finishing school, my family emigrated from Ukraine, and my life changed significantly. 
-	Adapting to a new country, learning a new language, and completing studies in electronics and computer 
-	science (rather than paleontology) took much of my time. 
-	Marriage and the start of my professional career left little room for hobbies, 
+	Shortly after finishing school, my family emigrated from Ukraine, and my life changed significantly.
+	Adapting to a new country, learning a new language, and completing studies in electronics and computer
+	science (rather than paleontology) took much of my time.
+	Marriage and the start of my professional career left little room for hobbies,
 	but my interest in <a href="links_paleo.html">paleontology</a> never disappeared, and I continued to follow the field whenever possible.
  </p>
- 
+
 
 
 	<table align="right" width="300px" style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px;" >
 		<tr>
-			<td><a href="articles_pdf/fossil_hunter_stamp_magazine_2014-04.pdf"><img  width="300px" 
-					src="images/about/t_michael_kogan_interview_2014.jpg"                     
+			<td><a href="articles_pdf/fossil_hunter_stamp_magazine_2014-04.pdf"><img  width="300px"
+					src="images/about/t_michael_kogan_interview_2014.jpg"
 					title="Mr. Kogan's interview for  STAMP magazine in April 2014"
 					alt="Mr. Kogan's interview for  STAMP magazine in April 2014"></a></td>
 		</tr>
 		<tr>
 			<td><small><em>
-				<a href="articles_pdf/fossil_hunter_stamp_magazine_2014-04.pdf">Mr. Kogan's 
+				<a href="articles_pdf/fossil_hunter_stamp_magazine_2014-04.pdf">Mr. Kogan's
 					interview for  "STAMP" magazine in April 2014</a>
 			</em></small></td>
 		</tr>
 
 		<tr><td style="height: 20px;"></td></tr>
 		<tr>
-			<td><a href="images/about/ata_prise_2016.jpg"><img  width="300px" 
-					src="images/about/ata_prise_2016.jpg"                     
+			<td><a href="images/about/ata_prise_2016.jpg"><img  width="300px"
+					src="images/about/ata_prise_2016.jpg"
 					title="Mr. Kogan (on the right side) receives a prise for Topical Times magazine
 					on behalf of American Topical Association (ATA), in  Sindelfingen, Germany in 2016"
 					alt="Mr. Kogan (on the right side) receives a prise for Topical Times magazine
@@ -223,7 +113,7 @@
 		<tr>
 			<td><small><em>
 				Mr. Kogan (on the right side) receives a prise for "Topical Times" magazine
-				on behalf of American Topical Association (ATA), in  Sindelfingen, Germany in 2016.	
+				on behalf of American Topical Association (ATA), in  Sindelfingen, Germany in 2016.
 			</em></small></td>
 		</tr>
 
@@ -231,8 +121,8 @@
 		<tr>
 		   <td>
 			<a href="images/others/overview_table1.jpg"><img  align="right" width="300px"
-				alt="The fisrt page of Paleophilatelie.eu website" 
-				title="The fisrt page of Paleophilatelie.eu website"  
+				alt="The fisrt page of Paleophilatelie.eu website"
+				title="The fisrt page of Paleophilatelie.eu website"
 				src="images/others/t_overview_table1.jpg"></a>
 			</td>
 		</tr>
@@ -245,93 +135,93 @@
 		<tr><td style="height: 40px;"></td></tr>
 		<tr>
 			<td><img  width="300px"
-					title="Michael Kogan, Admin of Paleophilatelie.eu website" 
+					title="Michael Kogan, Admin of Paleophilatelie.eu website"
 					alt="Michael Kogan, Admin of Paleophilatelie.eu website"
-					src="images/about/michael_kogan3.jpg">			
-			</td>		
+					src="images/about/michael_kogan3.jpg">
+			</td>
 		</tr>
 		<tr style="text-align: center;">
 			<td><small><em>Mr. Michael Kogan, November 16<sup>th</sup>, 2025</em></small></td>
 		</tr>
 
-	</table>	
+	</table>
 
 
  <p>
-	At the end of 2001, I accepted an offer from a German company and moved to Munich, where I still live today. 
-	In 2010, while sorting through old books and photographs, I rediscovered my stamp album. 
-	Leafing through its pages rekindled my enthusiasm. 
-	Searching online, I discovered a surprisingly large number 	of stamps depicting dinosaurs, other prehistoric animals, 
-	fossils, and <a href="topics/paleo/paleontologist.html">paleontologists</a>. 
-	I was astonished by how many such stamps had been issued since <a href="year/1990.html">1990</a>, the year I had stopped collecting. 
+	At the end of 2001, I accepted an offer from a German company and moved to Munich, where I still live today.
+	In 2010, while sorting through old books and photographs, I rediscovered my stamp album.
+	Leafing through its pages rekindled my enthusiasm.
+	Searching online, I discovered a surprisingly large number 	of stamps depicting dinosaurs, other prehistoric animals,
+	fossils, and <a href="topics/paleo/paleontologist.html">paleontologists</a>.
+	I was astonished by how many such stamps had been issued since <a href="year/1990.html">1990</a>, the year I had stopped collecting.
 	Nearly every <a href="country/index.html">country</a> had released at least a few issues, and some had produced extensive thematic sets.
  </p>
 
 
 
  <p>
-	This discovery prompted me to resume my collection. 
-	I collect all kinds of philatelic material related to paleontology, not only 
-	<a href="images/stamps.html">mint stamps</a> and <a href="images/fdc.html">First Day Covers</a> (FDCs), 
+	This discovery prompted me to resume my collection.
+	I collect all kinds of philatelic material related to paleontology, not only
+	<a href="images/stamps.html">mint stamps</a> and <a href="images/fdc.html">First Day Covers</a> (FDCs),
 	but also attractive <a href="images/stamps_used.html">postally used covers</a> featuring relevant stamps or postmarks. <br>
 	<br>
 	 <em><strong>
-		I treat my collection as a "Museum in an Album" and only add items 
-		with interesting background stories. 
-		I focus on those that genuinely interest me. 
-		I also avoid stamps issued by certain countries solely for commercial purposes, 
+		I treat my collection as a "Museum in an Album" and only add items
+		with interesting background stories.
+		I focus on those that genuinely interest me.
+		I also avoid stamps issued by certain countries solely for commercial purposes,
 		with no meaningful historical or scientific background.
 	 </strong></em><br>
 	<br>
 </p>
- 
+
 <p>
-	After restarting my collection, I searched for <a href="phil_catalogue_trends.html">atalogues</a>c or websites listing 
-	paleontology-related stamps and <a href="images/pm.html">postmarks</a>. 
-	The only printed catalogue I found was the Domphil catalogue from 2002. 
-	Although it was of good quality, many new issues had appeared since its publication. 
-	The few thematic websites I encountered offered only basic information, such as title, date of issue, and catalogue number. 
-	Some displayed only very small images, while others had none at all, making it difficult to identify specific items. 	
+	After restarting my collection, I searched for <a href="phil_catalogue_trends.html">atalogues</a>c or websites listing
+	paleontology-related stamps and <a href="images/pm.html">postmarks</a>.
+	The only printed catalogue I found was the Domphil catalogue from 2002.
+	Although it was of good quality, many new issues had appeared since its publication.
+	The few thematic websites I encountered offered only basic information, such as title, date of issue, and catalogue number.
+	Some displayed only very small images, while others had none at all, making it difficult to identify specific items.
 	Furthermore, none provided detailed information about the prehistoric animals depicted or the background of the stamp issues themselves.
 </p>
 
-<em>To fill out the gap and to be able to share the information with other collectors,  
+<em>To fill out the gap and to be able to share the information with other collectors,
 	 Paleophilatelie website was created in October 2010.
 	</em>
 <br>
 
 <br>
 The earliest version of the website consisted of two tables created in MS Word, offering an overview of prehistoric-themed stamps. <br>
-Simply filling albums with stamps and covers has never been satisfying to me; 
-I am far more interested in researching the stories behind each item and learning as much as possible about every new acquisition. 
-As information became available, I began creating detailed 
+Simply filling albums with stamps and covers has never been satisfying to me;
+I am far more interested in researching the stories behind each item and learning as much as possible about every new acquisition.
+As information became available, I began creating detailed
 <a href="description/stamps/index.html">description pages</a> and linking them within the tables. <br>
-Today, the website contains over <a href="sitemap.html">700 pages</a>  and more than 16,000 
+Today, the website contains over <a href="sitemap.html">700 pages</a>  and more than 16,000
 <a href="images/index.html">images</a>.
 <br>
 
 <br>
-The development history of the Paleophilatelie.eu website can be traced through the 
-<a rel="nofollow" target="_blank" href="https://web.archive.org/web/20110601000000*/http://www.paleophilatelie.eu/">Internet Archive of Wayback Machine</a>, 
+The development history of the Paleophilatelie.eu website can be traced through the
+<a rel="nofollow" target="_blank" href="https://web.archive.org/web/20110601000000*/http://www.paleophilatelie.eu/">Internet Archive of Wayback Machine</a>,
 where numerous snapshots have been preserved since June 2011. <br>
 
 <br>
-Since 2018, I have submitted this website to many international competitions for philatelic websites 
-in the "Electronic Literature" Category. 
-<a href="awards.html" title="awards of this website">The website has earned many medals</a> 
+Since 2018, I have submitted this website to many international competitions for philatelic websites
+in the "Electronic Literature" Category.
+<a href="awards.html" title="awards of this website">The website has earned many medals</a>
 including Large Gold Medals. <br>
 <br>
 
 
-	
+
 
 Today, I'm a member of:
 <ul>
-	<li>International Association of Philatelic Journalists</li>	
+	<li>International Association of Philatelic Journalists</li>
 	<li style="margin-top: 10px;">American Topical Association (ATA)</li>
 	<li style="margin-top: 10px;">American Philatelic Society (APS)</li>
-	<li style="margin-top: 10px;">Biophilately Study Unit of ATA, 
-		where I hold Associated Editor position for Paleontology division 
+	<li style="margin-top: 10px;">Biophilately Study Unit of ATA,
+		where I hold Associated Editor position for Paleontology division
 	(short presentation of the club is <a href="exhibitions/biophilately_2015.html">here</a>)</li>
 	<li style="margin-top: 10px;">German Philatelic Association - Bund Deutscher Philatelisten (BDPh)</li>
 	<li style="margin-top: 10px;">"Arbeitsgemeinschaft Bergbau und Geowissenschaften e. V" (in English: Mining and Geosciences Study Group,
@@ -341,23 +231,23 @@ Today, I'm a member of:
 
 
 <p>
-	<em><a name="follow"></a>Collectors who share the same interest are very welcome to join my Facebook-Group  
-		"<a target="_blank" rel="nofollow" href="https://www.facebook.com/groups/889825297731726/">Paleophilate<strong>ly</strong></a>", 
-		follow me on 
-		<a target="_blank"  rel="nofollow" href="https://twitter.com/PaleoPhilatelis">Twitter</a> or contact me by 
+	<em><a name="follow"></a>Collectors who share the same interest are very welcome to join my Facebook-Group
+		"<a target="_blank" rel="nofollow" href="https://www.facebook.com/groups/889825297731726/">Paleophilate<strong>ly</strong></a>",
+		follow me on
+		<a target="_blank"  rel="nofollow" href="https://twitter.com/PaleoPhilatelis">Twitter</a> or contact me by
 		<a href="mailto:admin@paleophilatelie.eu">email</a>.
 	</em>
 	<br>
 
 	<br>
-	You can find me under the nickname "PaleoPhilatelist" on the following philatelic sites: 
+	You can find me under the nickname "PaleoPhilatelist" on the following philatelic sites:
 	<a rel="nofollow" target="_blank" href="https://colnect.com/en/collectors/collector/Paleophilatelist">Colnet</a>,
-	 and many 
+	 and many
 	<a href="links_forums.html">international forums</a>.
 	<br>
 
-	I also have a small store on 
-	<a rel="nofollow"  target="_blank" href="https://www.delcampe.net/en_GB/collectables/store/paleophilatelist">Delcampe</a>, 
+	I also have a small store on
+	<a rel="nofollow"  target="_blank" href="https://www.delcampe.net/en_GB/collectables/store/paleophilatelist">Delcampe</a>,
 	where I sale some duplicates and outlets of my collection.
 </p>
 
@@ -371,17 +261,23 @@ Today, I'm a member of:
 <br>
 <br>
 <a name="ack"></a><big>Acknowledgements:</big><br><br>
-		Many thanks to Dr. <em>Peter Voice</em> from Department of Geological and Environmental Sciences, Western Michigan University, 
+		Many thanks to Dr. <em>Peter Voice</em> from Department of Geological and Environmental Sciences, Western Michigan University,
 	    for reviewing the draft page  and his valuable comments. 	<br>
 <br>
 
 
 
-</div>
-</main>
-<div id="footer-placeholder"></div>
-<script src="scripts/component-loader.js"></script>
-<script src="components/header/header.js"></script>
-<script src="components/footer/footer.js"></script>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component (loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="scripts/component-loader.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="components/header/header.js"></script>
+    <script src="components/footer/footer.js"></script>
 </body>
 </html>

@@ -34,7 +34,19 @@
       "Bash(else echo \"MISSING: $file\")",
       "Bash(fi)",
       "Bash(done)",
-      "Skill(ralph-loop:ralph-loop)"
+      "Skill(ralph-loop:ralph-loop)",
+      "Bash(for:*)",
+      "Bash(do)",
+      "Bash(if [ -f \"$f\" ])",
+      "Bash(then)",
+      "Bash(echo:*)",
+      "Bash(else)",
+      "Bash(python3:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(node:*)",
+      "Bash(node convert-stamps.js:*)",
+      "Bash(del \"D:\\\\Projects\\\\Paleophilatelie\\\\FinalOneToSubmit\\\\convert-stamps.js\")"
     ]
   }
 }

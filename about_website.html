@@ -11,14 +11,17 @@
 
     <link rel="shortcut icon" href="images/others/paleophilatelie.ico">
 
+    <!-- Google Fonts - Museum Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/homepage.css">
+    <link rel="stylesheet" href="css/pages/content.css">
     <link rel="stylesheet" href="components/header/header.css">
     <link rel="stylesheet" href="components/footer/footer.css">
-    <!-- Legacy CSS for page content -->
-    <link rel="stylesheet" type="text/css" href="main.css" media="all">
-    <link rel="stylesheet" type="text/css" href="colorschemes/colorscheme3/colorscheme.css" media="all">
-    <link rel="stylesheet" type="text/css" href="style.css" media="all">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38036920-2"></script>
@@ -28,83 +31,32 @@
         gtag('js', new Date());
         gtag('config', 'UA-38036920-2');
     </script>
-
-    <style>
-        .button {
-          display: inline-block;
-          padding: 5px 10px;
-          font-size: 15px;
-          cursor: pointer;
-          text-align: center;
-          text-decoration: none;
-          outline: none;
-          color: white;
-          background-color:#525252;
-          border: none;
-          border-radius: 20px;
-          box-shadow:none;
-        }
-        .button:hover {background-color:#a50000}
-    </style>
-
-    <script>
-        function myFunction() { window.location = "#top"; }
-    </script>
 </head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<body id="main_div">
-    <!-- Header Component -->
+    <!-- Header Component (loaded dynamically) -->
     <div id="header-placeholder"></div>
 
-<!----- landscape display suggestion START  --------> 
-<div id="landscape-suggestion" style="display:none;"> 
-  <div class="suggestion-content"> 
-     <p> 
-	    <u>WARNING - Narrow Screen!</u> <br> 
-		<br> 
-		If you are using a <u>smartphone or tablet</u>, <br> 
-		please rotate your device to <u>landscape mode</u>.<br> 
-		<br> 
-		If you are on <u>computer</u>, <br> 
-		try widening your browser window  
-		to at least <u>1.000px</u>. <br> 
-		<br> 
-		<u>This website looks best on a wide screen</u>, <br> 
-		so images, galleries, and text  <br> 
-		can be enjoyed more clearly and comfortably.<br> 
-	 </p>  
-	 <br> 
-	 <center> 
-		<img width="400px" 
-		     alt="This website looks best on a wide screen"  
-             src="images/others/home_page/display.gif"> 
-	</center>	  
-    <br> 
-	<br> 
-	<br> 
-    <span id="close-suggestion" onclick="closeSuggestion()">&times; Close</span> 
-  </div> 
-</div> 
-<!----- landscape display suggestion END  --------> 
- 
-<main>
-<div class="container">
+    <main id="main-content">
+        <section class="intro-section">
+            <div class="container content-page">
 
-<a name="top"></a>
 <center>
 	<h1>About Paleophilatelie.eu website</h1>
 </center>
 
 
-Welcome to Paleophilatelie.eu — an online resource where 
-<a href="topics/paleo/index.html"  title="Paleontology in Philately">Paleontology</a> and 
-<a href="topics/anthro/index.html" title="Paleoanthropology in Philately">Paleoanthropology</a>  and 
+Welcome to Paleophilatelie.eu — an online resource where
+<a href="topics/paleo/index.html"  title="Paleontology in Philately">Paleontology</a> and
+<a href="topics/anthro/index.html" title="Paleoanthropology in Philately">Paleoanthropology</a>  and
 <a href="articles/philately_beginning.html">Philately</a> come together. <br>
-Whether you are a collector, researcher, student, or simply curious, you are invited to explore, learn, 
-and enjoy this growing online resource. 
+Whether you are a collector, researcher, student, or simply curious, you are invited to explore, learn,
+and enjoy this growing online resource.
 
-The website regularly participates in international 
-<a href="awards.html">competitions of philatelic websites</a> in the Electronic Literature category, 
+The website regularly participates in international
+<a href="awards.html">competitions of philatelic websites</a> in the Electronic Literature category,
 with the aim of popularizing the topic and attracting new collectors, especially younger philatelists.<br>
 <br>
 <br>
@@ -116,7 +68,7 @@ with the aim of popularizing the topic and attracting new collectors, especially
       <td style="width: 350px;">
         <ul>
             <li style="margin-top: 10px"><big><a href="#purpose">The purpose of the website</a></big></li>
-            <li style="margin-top: 10px"><big><a href="#pages">The Main pages</a></li>
+            <li style="margin-top: 10px"><big><a href="#pages">The Main pages</a></big></li>
             <li style="margin-top: 10px"><big><a href="#aid">Aid in Philatelic Research</a></big></li>
             <li style="margin-top: 10px"><big><a href="#display">Display</a></big></li>
             <li style="margin-top: 10px"><big><a href="#search">Search through the website</a></big></li>
@@ -155,71 +107,71 @@ with the aim of popularizing the topic and attracting new collectors, especially
 			<td  width="20%" style="text-align: center;">
 				<a href="topics/anthro/index.html"><img  class="image" width="300px"
 					title="Paleoanthropology in Philately"
-					alt="Paleoanthropology in Philately" 
+					alt="Paleoanthropology in Philately"
 					src="images/topics/preview/human_skulls_on_stamps.jpg"></a></td>
-		</tr>	
+		</tr>
 	</table>
 
 
 
 
-The website explores how prehistoric life, early humans, fossils, and the scientists who studied them have 
+The website explores how prehistoric life, early humans, fossils, and the scientists who studied them have
 been represented through postage stamps and related postal materials issued around the world. <br>
 
-At its core, the website functions as an online reference and 
+At its core, the website functions as an online reference and
 <a href="phil_catalogue_main.html">thematic catalogue</a>. <br>
 
-It documents thousands of philatelic items, including 
-<a href="images/stamps.html">postage stamps</a>, 
-<a href="images/fdc.html">first day covers</a>, 
-<a href="images/pm.html">commemorative postmarks</a>, 
-<a href="images/ps.html">postal stationery</a>, — each linked to 
-<a href="topics/paleo/index.html">paleontological</a> or 
-<a href="topics/anthro/index.html">paleoanthropological</a> subjects. 
-The material is carefully organized by 
-<a href="country/index.html" title="Country Catalogue">country</a> and 
-<a href="year/index.html"    title="Date of Issue Catalogue">date of issue</a>, 
+It documents thousands of philatelic items, including
+<a href="images/stamps.html">postage stamps</a>,
+<a href="images/fdc.html">first day covers</a>,
+<a href="images/pm.html">commemorative postmarks</a>,
+<a href="images/ps.html">postal stationery</a>, — each linked to
+<a href="topics/paleo/index.html">paleontological</a> or
+<a href="topics/anthro/index.html">paleoanthropological</a> subjects.
+The material is carefully organized by
+<a href="country/index.html" title="Country Catalogue">country</a> and
+<a href="year/index.html"    title="Date of Issue Catalogue">date of issue</a>,
 allowing visitors to trace the global and historical development of these themes within postal history. <br>
 
 <br>
 Paleophilatelie.eu goes beyond simple cataloguing by providing contextual and educational content. <br>
-Many entries are accompanied by 
-<a href="description/stamps/index.html">background information</a> 
-on the depicted organisms, fossil sites, scientific discoveries, and prominent researchers, 
-helping bridge the gap between philately and the natural sciences. 
-In this way, the site serves not only collectors, but also educators, students, and anyone interested in the cultural representation 
+Many entries are accompanied by
+<a href="description/stamps/index.html">background information</a>
+on the depicted organisms, fossil sites, scientific discoveries, and prominent researchers,
+helping bridge the gap between philately and the natural sciences.
+In this way, the site serves not only collectors, but also educators, students, and anyone interested in the cultural representation
 of prehistoric life. <br>
 <br>
-The website also promotes <em>Paleophilately</em> as a distinct topical collecting field, encouraging deeper 
-appreciation of how stamps have been used to communicate scientific knowledge and national heritage. 
-By combining documentation, visual material, and accessible explanations, Paleophilatelie.eu helps preserve 
+The website also promotes <em>Paleophilately</em> as a distinct topical collecting field, encouraging deeper
+appreciation of how stamps have been used to communicate scientific knowledge and national heritage.
+By combining documentation, visual material, and accessible explanations, Paleophilatelie.eu helps preserve
 this niche area of collecting and makes it available to a broad international audience. <br>
 <br>
 
 
 
-<br>	
+<br>
 <a name="pages"></a>
 <h2>The Main pages of Paleophilatelie website</h2>
 <ul>
-	<li> 
-		<a href="phil_catalogue_main.html"><strong>Stamp Catalogue</strong></a> - 
-		available in two variants: by <a href="country/index.html">country  name</a> or by 
+	<li>
+		<a href="phil_catalogue_main.html"><strong>Stamp Catalogue</strong></a> -
+		available in two variants: by <a href="country/index.html">country  name</a> or by
 		<a href="year/index.html">chronology</a> (date of issue), as well as with two interfaces
-		 “<a href="phil_catalogue_main.html#flat">flat</a>” and 
-         “<a href="phil_catalogue.html">frames</a>”. 
+		 "<a href="phil_catalogue_main.html#flat">flat</a>" and
+         "<a href="phil_catalogue.html">frames</a>".
     </li>
 
-	<li style="margin-top: 20px;"> 
-		<a href="images/checklist_stamps.html"><strong>Illustrated Checklist</strong></a> of official, personalized and imprinted on postal stationaries stamps 
+	<li style="margin-top: 20px;">
+		<a href="images/checklist_stamps.html"><strong>Illustrated Checklist</strong></a> of official, personalized and imprinted on postal stationaries stamps
 		related to the topic of this website.
     </li>
 
-	<li style="margin-top: 20px;"> 
+	<li style="margin-top: 20px;">
 		<strong>Description pages</strong> of philatelic materials related to the topic of the website
 		<ul>
 			<li><a href="description/stamps/index.html">Official stamps</a> directly related to Paleontology or Paleoanthropology</li>
-			<li><a href="description/stamps/others/index.html">Other official stamps to consider</a> - stamps depicting fossil-found places, 
+			<li><a href="description/stamps/others/index.html">Other official stamps to consider</a> - stamps depicting fossil-found places,
 				Natural History Museums with significant collection of fossils, contributors to Paleontology or Paleoanthropology</li>
 			<li><a href="description/stamps/personalized/index.html">Personalized stamps</a> directly related to Paleontology or Paleoanthropology</li>
 			<li><a href="description/covers/index.html">Commemorative covers</a> directly related to Paleontology or Paleoanthropology</li>
@@ -229,39 +181,39 @@ this niche area of collecting and makes it available to a broad international au
 	</li>
 
 	<li style="margin-top: 20px;">
-		<a href="images/index.html"><strong>Image galleries</strong></a> 
+		<a href="images/index.html"><strong>Image galleries</strong></a>
 		contains scans of almost 7.500 philatelic items, mostly in high resolution, related to Paleontology or Paleoanthropology.
 		<ul>
 			<li><a href="images/stamps.html">Official stamps</a> directly related to Paleontology or Paleoanthropology</li>
-			<li><a href="images/stamps_others.html">Other official stamps to consider </a> - stamps depicting fossil-found places, 
+			<li><a href="images/stamps_others.html">Other official stamps to consider </a> - stamps depicting fossil-found places,
 				Natural History Museums with significant collection of fossils, contributors to Paleontology or Paleoanthropology</li>
 			<li><a href="images/fdc.html">First Day Covers</a> directly related to Paleontology or Paleoanthropology</li>
-			<li><a href="images/fdc_others.html">Other First Day Covers to consider </a> - stamps depicting fossil-found places, 
+			<li><a href="images/fdc_others.html">Other First Day Covers to consider </a> - stamps depicting fossil-found places,
 				Natural History Museums with significant collection of fossils, contributors to Paleontology or Paleoanthropology</li>
 			<li><a href="images/pm.html">Commemorative Postmarks</a> directly related to Paleontology or Paleoanthropology</li>
-			<li><a href="images/pm_others.html">Other Commemorative Postmarks to consider </a> - commemorative postmarks depicting fossil-found places, 
+			<li><a href="images/pm_others.html">Other Commemorative Postmarks to consider </a> - commemorative postmarks depicting fossil-found places,
 				Natural History Museums with significant collection of fossils, contributors to Paleontology or Paleoanthropology</li>
 			<li><a href="images/ps.html">Postal Stationeries</a> directly related to Paleontology or Paleoanthropology</li>
-			<li><a href="images/ps_others.html">Other Postal Stationeries to consider </a> - postal Spellling - stationeries depicting fossil-found places, 
+			<li><a href="images/ps_others.html">Other Postal Stationeries to consider </a> - postal Spellling - stationeries depicting fossil-found places,
 				Natural History Museums with significant collection of fossils, contributors to Paleontology or Paleoanthropology</li>
 		</ul>
-		
-	</li>	
-	<li style="margin-top: 20px;"> 
-		<a href="exhibitions/index.html"><strong>Exhibits Room</strong></a> - philatelic exhibitions of 
+
+	</li>
+	<li style="margin-top: 20px;">
+		<a href="exhibitions/index.html"><strong>Exhibits Room</strong></a> - philatelic exhibitions of
 		fellow collectors of topics related to Paleontology or Paleoanthropology.</li>
 
 	<li style="margin-top: 20px;">
-		<a href="articles/index.html"><strong>Topical Articles</strong></a> written by the author of this 
+		<a href="articles/index.html"><strong>Topical Articles</strong></a> written by the author of this
 		website or shared by the visitors.	<br>
-		Together, these articles explore a wide range of topics connected to the Paleophilatelie.eu website 
+		Together, these articles explore a wide range of topics connected to the Paleophilatelie.eu website
 		and invite readers to discover and share their interests in paleontology and philately. <br>
-		Many of these articles were published in full or short forms in the international philatelic magazines, 
-		such as Stamp Collector and Gibbons Stamp Monthly in Great Britain and Stamp News AUSTRALASIA in Australia. 
+		Many of these articles were published in full or short forms in the international philatelic magazines,
+		such as Stamp Collector and Gibbons Stamp Monthly in Great Britain and Stamp News AUSTRALASIA in Australia.
 	</li>
 </ul>
 
-Today,  Paleophilatelie website contains over 750 pages and over 16.000 images. 
+Today,  Paleophilatelie website contains over 750 pages and over 16.000 images.
 For the full list of the pages of this website, please refer to <a href="sitemap.html">the Sitemap</a>. <br>
 <br>
 
@@ -270,32 +222,32 @@ For the full list of the pages of this website, please refer to <a href="sitemap
 <a name="aid"></a>
 <h2>Aid in Philatelic Research</h2>
 
-The stamps checklist and the gallery pages of this website can be used to compile a 
+The stamps checklist and the gallery pages of this website can be used to compile a
 <strong>personal topical list</strong>.<br>
-By slowly scrolling through the <a href="images/stamps.html">"Postage Stamps" gallery</a> 
-or the 
-<a href="images/checklist_stamps.html">"Illustrated Checklist of Paleontology and Paleoanthropology related stamps"</a> 
-pages, visitors can easily identify and compile all stamps related to a specific subject, 
-such as carnivorous dinosaurs, mammoths or fossils of birds, etc. 
-In the same way, by scrolling through these galleries, visitors can locate and group together philatelic items related 
+By slowly scrolling through the <a href="images/stamps.html">"Postage Stamps" gallery</a>
+or the
+<a href="images/checklist_stamps.html">"Illustrated Checklist of Paleontology and Paleoanthropology related stamps"</a>
+pages, visitors can easily identify and compile all stamps related to a specific subject,
+such as carnivorous dinosaurs, mammoths or fossils of birds, etc.
+In the same way, by scrolling through these galleries, visitors can locate and group together philatelic items related
 to particular themes, species, or geological periods.
 <p>
-	The same exploratory approach can be applied to the 
-	<a href="images/fdc.html">first day cover (fdc)</a>, 
-	<a href="images/pm.html">postmarks</a> and 
+	The same exploratory approach can be applied to the
+	<a href="images/fdc.html">first day cover (fdc)</a>,
+	<a href="images/pm.html">postmarks</a> and
 	<a href="images/ps.html">postal stationeries</a> galleries.
-</p> 
- 
-In this way, 
-<a href="images/index.html">the galleries</a> and 
-<a href="images/checklist_stamps.html">the checklist</a> encourage active engagement with the material, 
+</p>
+
+In this way,
+<a href="images/index.html">the galleries</a> and
+<a href="images/checklist_stamps.html">the checklist</a> encourage active engagement with the material,
 allowing visitors to construct their own thematic collections according to their personal interests or research needs. <br>
 <br>
-The website also contains numerous <a href="articles/index.html">articles</a> about Postal History, such as 
-<a href="articles/1840s.html">The first stamps and postal stationery and the beginning of Philately</a> 
-as well as articles related to the website’s thematic focus, including 
-<a href="topics/paleo/vertebrate/mammoth.html">The Discovery of the Woolly Mammoth</a> and 
-<a href="topics/paleo/personalities/charles_darwin.html">Charles Darwin in Philately</a>. 
+The website also contains numerous <a href="articles/index.html">articles</a> about Postal History, such as
+<a href="articles/1840s.html">The first stamps and postal stationery and the beginning of Philately</a>
+as well as articles related to the website's thematic focus, including
+<a href="topics/paleo/vertebrate/mammoth.html">The Discovery of the Woolly Mammoth</a> and
+<a href="topics/paleo/personalities/charles_darwin.html">Charles Darwin in Philately</a>.
 Some of these articles include lists of philatelic items related to the subject discussed. <br>
 <br>
 
@@ -307,7 +259,7 @@ Some of these articles include lists of philatelic items related to the subject 
 <h2>Display</h2>
 	<table align="right" width="400px" style="margin-left: 20px; margin-bottom: 10px" >
 		<tr>
-			<td><img width="400px" 
+			<td><img width="400px"
 						src="images/others/home_page/display.gif"
 						title="The Paleophilatelie website on different devices"
 						alt="The Paleophilatelie website on different devices"></td>
@@ -319,16 +271,16 @@ Some of these articles include lists of philatelic items related to the subject 
 		</tr>
 	</table>
 
-The Paleophilatelie website can be explored on all types of electronic devices, including desktop computers, 
+The Paleophilatelie website can be explored on all types of electronic devices, including desktop computers,
 laptops, tablets, and smartphones. <br>
-However, <strong>the website is best viewed on a wide screen</strong>, where images, galleries, and text 
+However, <strong>the website is best viewed on a wide screen</strong>, where images, galleries, and text
 layouts can be displayed more clearly and comfortably. <br>
 <br>
-If a computer or laptop is not available, visitors can still enjoy the website on a tablet or smartphone. 
-For the best experience on smaller screens, it is recommend rotating your device to <strong>landscape mode</strong>. 
-This allows images to appear larger and helps prevent pages from looking crowded or difficult to navigate. 
+If a computer or laptop is not available, visitors can still enjoy the website on a tablet or smartphone.
+For the best experience on smaller screens, it is recommend rotating your device to <strong>landscape mode</strong>.
+This allows images to appear larger and helps prevent pages from looking crowded or difficult to navigate.
 
-Using landscape mode on mobile devices will make browsing galleries, reading articles, and viewing detailed 
+Using landscape mode on mobile devices will make browsing galleries, reading articles, and viewing detailed
 philatelic images easier and more enjoyable. <br>
 <br>
 
@@ -337,14 +289,14 @@ philatelic images easier and more enjoyable. <br>
 <a name="search"></a>
 <h2>Search through the website</h2>
 
-The integrated <strong>search bar</strong> can be used to find pages and articles on the website that 
+The integrated <strong>search bar</strong> can be used to find pages and articles on the website that
 contain the word or phrase a visitor is looking for.
 <br>
-<u>For example</u>, when the word <q><em>belemnites</em></q> is entered into the search bar, a list of 
-articles and pages on the website in which the word “belemnites” is mentioned will be displayed. 
-However, the search results will not include all images of postage stamps, and other philatelic materials, 
+<u>For example</u>, when the word <q><em>belemnites</em></q> is entered into the search bar, a list of
+articles and pages on the website in which the word "belemnites" is mentioned will be displayed.
+However, the search results will not include all images of postage stamps, and other philatelic materials,
 featuring belemnites.
-If the goal is to obtain a complete list of stamps depicting belemnites, it is recommended to browse the 
+If the goal is to obtain a complete list of stamps depicting belemnites, it is recommended to browse the
 postage stamp gallery, as described above in the <a href="#aid"><em>Aid in Philatelic Research</em></a>
 chapter .<br>
 <br>
@@ -355,13 +307,13 @@ chapter .<br>
 <a name="updates"></a>
 <h2>Updates</h2>
 
-To keep updated about latest modifications of the website please look at the pages 
-<a href="news.html">News</a> and <a href="year/current.html">Current Year</a> 
+To keep updated about latest modifications of the website please look at the pages
+<a href="news.html">News</a> and <a href="year/current.html">Current Year</a>
  (announcements of new and upcoming issues are here). <br>
 
- Visitors are welcome to 
-<a href="contact.html#follow">follow</a> the Author on X” formerly “Twitter” or join  
-"<a href="https://www.facebook.com/groups/paleophilately">Paleophilately</a>" 
+ Visitors are welcome to
+<a href="contact.html#follow">follow</a> the Author on X" formerly "Twitter" or join
+"<a href="https://www.facebook.com/groups/paleophilately">Paleophilately</a>"
 group on Facebook, associated with this website to be able to chat with him and provide their feedback. <br>
 <br>
 
@@ -372,19 +324,19 @@ group on Facebook, associated with this website to be able to chat with him and 
 
 	<table align="right" width="200px" style="margin-left: 20px; margin-bottom: 10px" >
 		<tr>
-			<td><img width="200px" 
+			<td><img width="200px"
 						src="images/about/language_bar.jpg"
 						title="The Paleophilatelie website on different devices"
 						alt="The Paleophilatelie website on different devices"></td>
 		</tr>
 	</table>
 
-If English is difficult to read, you can easily view the website in your own language using the built-in 
-Google Translator. 
+If English is difficult to read, you can easily view the website in your own language using the built-in
+Google Translator.
 Simply click <em>Select Language</em> at the top of any page and choose your preferred language. <br>
 <br>
 <center>
-<a target="_blank" href="images/about/language2.jpg"><img    
+<a target="_blank" href="images/about/language2.jpg"><img
         src="images/about/t_language2.jpg"
         alt="Integrated Google Translate"
         title="Integrated Google Translate"></a>
@@ -396,31 +348,31 @@ Simply click <em>Select Language</em> at the top of any page and choose your pre
 <h2>The Team</h2>
 <table cellpadding="10px">
 	<tr>
-		<td width="50%">This website is administered and owned solely by 
-			<a href="about.html">Mr. Michael Kogan</a> from Germany, 
-			a member of the International Association of Philatelic Journalists and 
+		<td width="50%">This website is administered and owned solely by
+			<a href="about.html">Mr. Michael Kogan</a> from Germany,
+			a member of the International Association of Philatelic Journalists and
 			several international philatelic clubs.
 		</td>
-		<td width="50%">Dr. Peter Voice of the Department of Geological and Environmental Sciences 
-			at Western Michigan University in the USA provides scientific advice and editorial support 
-			for the website, since 2019. 
+		<td width="50%">Dr. Peter Voice of the Department of Geological and Environmental Sciences
+			at Western Michigan University in the USA provides scientific advice and editorial support
+			for the website, since 2019.
 		</td>
 	</tr>
 	<tr style="text-align: center;">
 			<td><img  height="350px"
-					title="Michael Kogan, Admin of Paleophilatelie.eu website" 
+					title="Michael Kogan, Admin of Paleophilatelie.eu website"
 					alt="Michael Kogan, Admin of Paleophilatelie.eu website"
 					src="images/about/michael_kogan2.jpg">
 			<br>
 			<small><em>Mr. Michael Kogan, the Author and Admin of Paleophilatelie.eu website</em></small>
-			</td>		
+			</td>
 			<td><img  height="350px"
-					title="Dr. Peter Voice, the Editor of Paleophilatelie.eu website" 
+					title="Dr. Peter Voice, the Editor of Paleophilatelie.eu website"
 					alt="Dr. Peter Voice, the Editor of  Paleophilatelie.eu website"
 					src="images/about/peter_voice_2025_2b.jpg">
 			<br>
-			<small><em>Dr. Peter Voice, Scientific Advisor and  Editor of  Paleophilatelie.eu website</em></small>	
-			</td>		
+			<small><em>Dr. Peter Voice, Scientific Advisor and  Editor of  Paleophilatelie.eu website</em></small>
+			</td>
 	</tr>
 	<tr style="text-align: center;">
 		<td></td>
@@ -432,11 +384,11 @@ Simply click <em>Select Language</em> at the top of any page and choose your pre
 <a name="feedback"></a>
 <h2>Feedback</h2>
 
-If you spot any display or content issues on this website, or if you’d like to 
-add or correct something, feel free to email 
-<a href="mailto:admin@paleophilatelie.eu">the Author</a> in English, German, or Russian. 
-You can also join the 
-<a href="https://www.facebook.com/groups/paleophilately">Paleophilately group on Facebook</a> 
+If you spot any display or content issues on this website, or if you'd like to
+add or correct something, feel free to email
+<a href="mailto:admin@paleophilatelie.eu">the Author</a> in English, German, or Russian.
+You can also join the
+<a href="https://www.facebook.com/groups/paleophilately">Paleophilately group on Facebook</a>
 linked to this website to chat, share ideas, and connect with fellow enthusiasts. <br>
 <br>
 
@@ -446,12 +398,12 @@ linked to this website to chat, share ideas, and connect with fellow enthusiasts
 <a name="links"></a>
 <h2>Link exchange</h2>
 
-I’m open to exchanging links with other Philately or/and Paleontology related websites. <br>
-In case you like to add a link to Paleophilatelie website you might like to use one of the 
-<a href="logo.html">logo images</a> or 
+I'm open to exchanging links with other Philately or/and Paleontology related websites. <br>
+In case you like to add a link to Paleophilatelie website you might like to use one of the
+<a href="logo.html">logo images</a> or
 <a href="images/others/logo_qr_code.jpg">QR Codes</a>.<br>
 Preferred description text is: <br>
-	"Paleophilatelie is the most comprehensive resource about Paleontology and Paleoanthropology in Philately, 
+	"Paleophilatelie is the most comprehensive resource about Paleontology and Paleoanthropology in Philately,
 	the place where Paleontology and Paleoanthropology meets Philately".<br>
 <br>
 
@@ -461,22 +413,24 @@ Preferred description text is: <br>
 <br>
 <br>
 <a name="ack"></a><big>Acknowledgements:</big><br><br>
-		Many thanks to Dr. <em>Peter Voice</em> from Department of Geological and Environmental Sciences, Western Michigan University, 
+		Many thanks to Dr. <em>Peter Voice</em> from Department of Geological and Environmental Sciences, Western Michigan University,
 	    for reviewing the draft page  and his valuable comments. 	<br>
 <br>
 
 
 <br>
-</div>
-</main>
 
-    <!-- Footer Component -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component (loaded dynamically) -->
     <div id="footer-placeholder"></div>
 
     <!-- Scripts -->
     <script src="scripts/component-loader.js"></script>
+    <script src="scripts/main.js"></script>
     <script src="components/header/header.js"></script>
     <script src="components/footer/footer.js"></script>
 </body>
 </html>
-	

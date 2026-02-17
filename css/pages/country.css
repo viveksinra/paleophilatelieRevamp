@@ -741,6 +741,13 @@
     font-size: var(--font-size-xl);
 }
 
+/* ===== AD CONTAINER ===== */
+.ad-container {
+    margin: var(--space-6) 0;
+    text-align: center;
+    min-height: 100px;
+}
+
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1024px) {
     .country-content {

@@ -158,10 +158,8 @@
                     </form>
                     <div class="header-search-links">
                         <a href="https://www.freefind.com/searchtipspop.html" target="_blank" rel="noopener noreferrer" class="header-search-links__item">search tips</a>
+                        <span class="header-search-credit"><a href="https://www.freefind.com" target="_blank" rel="noopener noreferrer">search engine</a> by <a href="https://www.freefind.com" target="_blank" rel="noopener noreferrer">freefind</a></span>
                         <a href="https://search.freefind.com/find.html?si=14323397&amp;pid=a" class="header-search-links__item">advanced search</a>
-                    </div>
-                    <div class="header-search-credit">
-                        <a href="https://www.freefind.com" target="_blank" rel="noopener noreferrer">search engine</a> by <a href="https://www.freefind.com" target="_blank" rel="noopener noreferrer">freefind</a>
                     </div>
                 </div>
             </div>

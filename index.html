@@ -189,7 +189,35 @@
             </div>
         </section>
 
-        <!-- SECTION 3: Explore Gallery -->
+        <!-- SECTION 3: Search Section -->
+        <section class="search-section">
+            <div class="container">
+                <h2 class="search-section__title">Search Paleophilatelie website</h2>
+                <p class="search-section__description">
+                    Search stamps, covers, postmarks, articles, species names, countries, years, and more.<br>
+                    You can search by species, country, year, designer, or postal item type.
+                </p>
+                <form class="search-form" action="search.html" method="get" role="search">
+                    <div class="search-input-wrapper">
+                        <input 
+                            type="search" 
+                            name="q" 
+                            class="search-input" 
+                            placeholder="Try: ammonite, fossil, dinosaur, Charles Darwin, FDC, postmark..." 
+                            aria-label="Search Paleophilatelie website"
+                            required>
+                        <button type="submit" class="search-button">Search</button>
+                    </div>
+                    <div class="search-links">
+                        <span class="search-engine-note">search engine freefind</span>
+                        <a href="search_tips.html" class="search-link">search tips</a>
+                        <a href="search_advanced.html" class="search-link">advanced search</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- SECTION 4: Explore Gallery -->
         <section class="gallery-section">
             <div class="container">
                 <h2 class="section-title">Explore the <a href="images/index.html">Gallery</a> by the type of philatelic materials</h2>
@@ -197,162 +225,210 @@
                 <!-- Postage Stamps -->
                 <div class="gallery-category">
                     <h3 class="gallery-category__title">Postage stamps</h3>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <a href="images/stamps.html">
-                                <img src="images/others/home_page/preview_stamps.jpg"
-                                     alt="Gallery of Paleontology and Paleoanthropology related stamps"
-                                     loading="lazy">
-                            </a>
+                    <div class="gallery-category__panels">
+                        <div class="gallery-panel gallery-panel--direct">
+                            <h4 class="gallery-panel__heading">Directly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/stamps.html">
+                                        <img src="images/others/home_page/australia_2013_5.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related stamps"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/stamps_used.html">
+                                        <img src="images/others/home_page/australia_2013sa-2016_env_used.jpg"
+                                             alt="Circulated covers and cards related to Paleontology"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Paleontology or Paleoanthropology related stamps:</strong> prehistoric animals and plants, their fossils, paleontologists, Charles Darwin, etc.</p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/stamps_used.html">
-                                <img src="images/fdc/india_1951_fdc3_calcutta.jpg"
-                                     alt="Circulated covers and cards related to Paleontology"
-                                     loading="lazy">
-                            </a>
+                        <div class="gallery-panel gallery-panel--indirect">
+                            <h4 class="gallery-panel__heading">Indirectly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/stamps_others.html">
+                                        <img src="images/others/home_page/aland_2011_jomala.jpg"
+                                             alt="Gallery of stamps indirectly related Paleontology and Paleoanthropology sciences"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/stamps_others_used.html">
+                                        <img src="images/others/home_page/portugal_2021_env_used1.jpg"
+                                             alt="Circulated covers and cards related to Paleontology"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Stamps indirectly related to Paleontology or Paleoanthropology sciences:</strong> fossils locations, Natural History Museums, contributors to Paleontology or Paleoanthropology, etc.</p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/stamps_others.html">
-                                <img src="images/details/stamps/official/india/1997/preview/t_india_1997.jpg"
-                                     alt="Gallery of stamps indirectly related to Paleontology"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/stamps_others_used.html">
-                                <img src="images/fdc/india_1983_fdc1.jpg"
-                                     alt="Circulated covers and cards"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-descriptions">
-                        <p><strong>Paleontology or Paleoanthropology related stamps:</strong> prehistoric animals and plants, their fossils, paleontologists, Charles Darwin, etc.</p>
-                        <p><strong>Stamps indirectly related to Paleontology or Paleoanthropology sciences:</strong> fossils locations, Natural History Museums, contributors to Paleontology or Paleoanthropology, etc.</p>
                     </div>
                 </div>
 
                 <!-- First Day Covers -->
                 <div class="gallery-category">
                     <h3 class="gallery-category__title">First Day Covers (FDC)</h3>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <a href="images/fdc.html">
-                                <img src="images/others/home_page/preview_fdc.jpg"
-                                     alt="Gallery of Paleontology and Paleoanthropology related FDC covers"
-                                     loading="lazy">
-                            </a>
+                    <div class="gallery-category__panels">
+                        <div class="gallery-panel gallery-panel--direct">
+                            <h4 class="gallery-panel__heading">Directly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/fdc.html">
+                                        <img src="images/fdc/aland_1996_fdc.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related FDC covers"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/fdc_used.html">
+                                        <img src="images/others/home_page/aland_1996_fdc_used.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related FDC covers"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Clean and circulated Paleontology or Paleoanthropology related First Day Covers</strong></p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/fdc_used.html">
-                                <img src="images/fdc/india_1997_fdc.jpg"
-                                     alt="Circulated FDC covers"
-                                     loading="lazy">
-                            </a>
+                        <div class="gallery-panel gallery-panel--indirect">
+                            <h4 class="gallery-panel__heading">Indirectly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/fdc_others.html">
+                                        <img src="images/others/home_page/austria_1968_fdc.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related FDC covers"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/fdc_others_used.html">
+                                        <img src="images/others/home_page/austria_1968_fdc_used.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related FDC covers"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Clean and circulated First Day Covers indirectly related to Paleontology or Paleoanthropology</strong></p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/fdc_others.html">
-                                <img src="images/fdc/kyrgyzstan_2012_fdc.jpg"
-                                     alt="FDC covers indirectly related to Paleontology"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/fdc_others_used.html">
-                                <img src="images/fdc/kyrgyzstan_2024_fdc.jpg"
-                                     alt="Circulated FDC covers"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-descriptions">
-                        <p><strong>Clean and circulated Paleontology or Paleoanthropology related First Day Covers</strong></p>
-                        <p><strong>Clean and circulated First Day Covers indirectly related to Paleontology or Paleoanthropology</strong></p>
                     </div>
                 </div>
 
                 <!-- Postmarks and Meter Franking -->
                 <div class="gallery-category">
                     <h3 class="gallery-category__title">Postmarks and meter franking</h3>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <a href="images/pm.html">
-                                <img src="images/others/home_page/preview_pm.jpg"
-                                     alt="Gallery of Paleontology and Paleoanthropology related Postmarks"
-                                     loading="lazy">
-                            </a>
+                    <div class="gallery-category__panels">
+                        <div class="gallery-panel gallery-panel--direct">
+                            <h4 class="gallery-panel__heading">Directly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/pm.html">
+                                        <img src="images/others/home_page/germany_2007_pm1.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postmarks and Meter-frankings"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/pm_used.html">
+                                        <img src="images/others/home_page/germany_2006_pm03_fdc_used.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postmarks and Meter-frankings"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Paleontology or Paleoanthropology related Postmarks and Meter-frankings</strong></p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/pm_used.html">
-                                <img src="images/pm/india_1983_pm1_fdc.jpg"
-                                     alt="Circulated postmarks"
-                                     loading="lazy">
-                            </a>
+                        <div class="gallery-panel gallery-panel--indirect">
+                            <h4 class="gallery-panel__heading">Indirectly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/pm_others.html">
+                                        <img src="images/others/home_page/germany_2007_pm3.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postmarks and Meter-frankings"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/pm_others_used.html">
+                                        <img src="images/others/home_page/germany_2007_pm3_used.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postmarks and Meter-frankings"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Postmarks and Meter-frankings indirectly related to Paleontology or Paleoanthropology</strong></p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/pm_others.html">
-                                <img src="images/pm/india_1997_pm_fdc.jpg"
-                                     alt="Postmarks indirectly related to Paleontology"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/pm_others_used.html">
-                                <img src="images/pm/kyrgyzstan_2024_pm_fdc.jpg"
-                                     alt="Circulated postmarks"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-descriptions">
-                        <p><strong>Paleontology or Paleoanthropology related Postmarks and Meter-frankings</strong></p>
-                        <p><strong>Postmarks and Meter-frankings indirectly related to Paleontology or Paleoanthropology</strong></p>
                     </div>
                 </div>
 
                 <!-- Postal Stationeries -->
                 <div class="gallery-category">
                     <h3 class="gallery-category__title">Postal Stationeries</h3>
-                    <div class="gallery-grid">
-                        <div class="gallery-item">
-                            <a href="images/ps.html">
-                                <img src="images/details/stamps/official/kyrgyzstan/2024/preview/kyrgyzstan_2024_1.jpg"
-                                     alt="Gallery of Paleontology and Paleoanthropology related Postal Stationeries"
-                                     loading="lazy">
-                            </a>
+                    <div class="gallery-category__panels">
+                        <div class="gallery-panel gallery-panel--direct">
+                            <h4 class="gallery-panel__heading">Directly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/ps.html">
+                                        <img src="images/others/home_page/argentina_2001_ps.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postal Stationeries"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/ps_used.html">
+                                        <img src="images/others/home_page/argentina_2001_ps_used.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postal Stationeries"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Clean and circulated Postal Stationeries with stamps or cachets related to Paleontology or Paleoanthropology</strong></p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/ps_used.html">
-                                <img src="images/details/stamps/official/kyrgyzstan/2024/preview/kyrgyzstan_2024_1a.jpg"
-                                     alt="Circulated Postal Stationeries"
-                                     loading="lazy">
-                            </a>
+                        <div class="gallery-panel gallery-panel--indirect">
+                            <h4 class="gallery-panel__heading">Indirectly related</h4>
+                            <div class="gallery-panel__grid">
+                                <div class="gallery-item">
+                                    <a href="images/ps_others.html">
+                                        <img src="images/others/home_page/estonia_2003_ps1.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postal Stationeries"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Clean</span>
+                                </div>
+                                <div class="gallery-item">
+                                    <a href="images/ps_others_used.html">
+                                        <img src="images/others/home_page/estonia_2003_ps1_used.jpg"
+                                             alt="Gallery of Paleontology and Paleoanthropology related Postal Stationeries"
+                                             loading="lazy">
+                                    </a>
+                                    <span class="gallery-item__label">Used / Circulated</span>
+                                </div>
+                            </div>
+                            <p class="gallery-panel__description"><strong>Clean and circulated Postal Stationeries with stamps or cachets indirectly related to Paleontology or Paleoanthropology</strong></p>
                         </div>
-                        <div class="gallery-item">
-                            <a href="images/ps_others.html">
-                                <img src="images/details/stamps/official/india/1951/preview/india_1951.jpg"
-                                     alt="Postal Stationeries indirectly related to Paleontology"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                        <div class="gallery-item">
-                            <a href="images/ps_others_used.html">
-                                <img src="images/details/stamps/official/india/1997/preview/india_1997_1.jpg"
-                                     alt="Circulated Postal Stationeries"
-                                     loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="gallery-descriptions">
-                        <p><strong>Clean and circulated Postal Stationeries with stamps or cachets related to Paleontology or Paleoanthropology</strong></p>
-                        <p><strong>Clean and circulated Postal Stationeries with stamps or cachets indirectly related to Paleontology or Paleoanthropology</strong></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 4: New to Hobby -->
+        <!-- SECTION 5: New to Hobby -->
         <section class="hobby-section">
             <div class="container">
                 <h2 class="section-title">New to the hobby? The following articles will help you get started and provide a brief introduction to the world of philately.</h2>
@@ -360,7 +436,7 @@
                 <div class="article-cards">
                     <a href="articles/how_to_start.html" class="article-card">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/preview_world.jpg"
+                            <img src="images/how_to/start/t_stamp_under_mg.jpg"
                                  alt="How to start collecting stamps"
                                  loading="lazy">
                         </div>
@@ -368,7 +444,7 @@
                     </a>
                     <a href="articles/how_to_collect.html" class="article-card">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/preview_catalog.jpg"
+                            <img src="images/how_to/collect/t_cover_from_facebook10.jpg"
                                  alt="How to collect stamps in XXI century"
                                  loading="lazy">
                         </div>
@@ -376,7 +452,7 @@
                     </a>
                     <a href="articles/faq.html" class="article-card">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/preview_exhibitions.jpg"
+                            <img src="images/how_to/faq/stockbooks_on_shelve.jpg"
                                  alt="Frequently Asked Questions"
                                  loading="lazy">
                         </div>
@@ -384,7 +460,7 @@
                     </a>
                     <a href="articles/philately_beginning.html" class="article-card">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/preview_milestones.jpg"
+                            <img src="images/others/home_page/t_mulready_black_1840_redMX_front.jpg"
                                  alt="Beginning of Philately"
                                  loading="lazy">
                         </div>
@@ -394,7 +470,7 @@
             </div>
         </section>
 
-        <!-- SECTION 5: New to Paleophilatelie Topic -->
+        <!-- SECTION 6: New to Paleophilatelie Topic -->
         <section class="topic-section">
             <div class="container">
                 <h2 class="section-title">New to the Paleophilatelie topic? The following checklists, descriptive and topical articles can help you get started.</h2>
@@ -402,7 +478,7 @@
                 <div class="article-cards article-cards--large">
                     <a href="articles/how_to_start.html" class="article-card article-card--large">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/t_gallery.jpg"
+                            <img src="images/others/home_page/t_checklist_stamps.jpg"
                                  alt="Stamps Checklist"
                                  loading="lazy">
                         </div>
@@ -410,7 +486,7 @@
                     </a>
                     <a href="images/checklist_pm.html" class="article-card article-card--large">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/preview_pm.jpg"
+                            <img src="images/others/home_page/t_checklist_pm.jpg"
                                  alt="Postmarks Checklist"
                                  loading="lazy">
                         </div>
@@ -418,7 +494,7 @@
                     </a>
                     <a href="description/stamps/index.html" class="article-card article-card--large">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/preview_catalog2.jpg"
+                            <img src="images/others/home_page/t_descriptive_article.jpg"
                                  alt="Descriptive Articles"
                                  loading="lazy">
                         </div>
@@ -426,7 +502,7 @@
                     </a>
                     <a href="articles/index.html" class="article-card article-card--large">
                         <div class="article-card__image">
-                            <img src="images/others/home_page/t_topics.jpg"
+                            <img src="images/others/home_page/t_topical_article.jpg"
                                  alt="Topical Articles"
                                  loading="lazy">
                         </div>
@@ -436,7 +512,7 @@
             </div>
         </section>
 
-        <!-- SECTION 6: About + News -->
+        <!-- SECTION 7: About + News -->
         <section class="about-news-section">
             <div class="container">
                 <div class="two-column-grid">
@@ -501,13 +577,13 @@
             </div>
         </section>
 
-        <!-- SECTION 7: Team + Awards -->
+        <!-- SECTION 8: Team + Awards -->
         <section class="team-awards-section">
             <div class="container">
                 <div class="two-column-grid">
                     <!-- Team Column -->
                     <div class="column-box">
-                        <h2 class="column-box__title">About the Team</h2>
+                        <h2 class="column-box__title"><a href="about_website.html#team">About the Team</a></h2>
                         <p>
                             The Paleophilatelie website is <strong>administered and owned</strong> solely by
                             <a href="about.html">Mr. Michael Kogan</a> from Germany, a member
@@ -518,31 +594,73 @@
                             at Western Michigan University in the USA provides scientific advice and
                             <strong>editorial support</strong> for the website, since 2019.
                         </p>
+                        <p>
+                            Mr. Michael Kogan and Dr. Peter Voice publish articles in the international
+                            philatelic press, primarily in English, for both commercial and club magazines.
+                            Several of their articles have also been translated into other languages,
+                            including German, Portuguese, and Russian.
+                            A few examples are shown below.
+                        </p>
+                        <div class="team-publications-image">
+                            <a href="images/articles/publication_examples_short3.jpg">
+                                <img src="images/articles/t_publication_examples_short3.png"
+                                     alt="Example of publications"
+                                     loading="lazy">
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Awards Column -->
                     <div class="column-box column-box--awards">
-                        <h2 class="column-box__title">Awards</h2>
+                        <h2 class="column-box__title"><a href="awards.html">Awards</a></h2>
                         <p>
                             Since 2018, the "Paleophilatelie" website has regularly taken part in
                             international competitions in the Electronic Literature category.
                             The website has received numerous awards, including
-                            Large Gold Medals at the New Zealand National Philatelic Literature Exhibition
+                            <span class="large-gold-badge">Large Gold</span> Medals at the New Zealand National Philatelic Literature Exhibition
                             in 2023 and 2025, and at the Great American Stamp Show in 2024.
                         </p>
                         <div class="awards-image">
-                            <a href="awards.html">
-                                <img src="images/others/medal_large_gold_v2.png"
-                                     alt="Awards of Paleophilatelie website"
+                            <a href="awards.html#gass2024">
+                                <img src="images/awards/gass2024/t_gass2024_medal_front.jpg"
+                                     alt="Great American Stamp Show 2024 Medal"
                                      loading="lazy">
                             </a>
+                            <a href="awards.html#capex2022">
+                                <img src="images/awards/capex2022/t_medal.jpg"
+                                     alt="CAPEX 2022 Medal"
+                                     loading="lazy">
+                            </a>
+                            <a href="awards.html#europhilex2025">
+                                <img src="images/awards/europhilex2025/europhilex_2025_medal2.jpg"
+                                     alt="Europhilex 2025 Medal"
+                                     loading="lazy">
+                            </a>
+                        </div>
+                        <div class="jury-feedback">
+                            <h3 class="jury-feedback__title">Selected feedback from the jury</h3>
+                            <blockquote class="jury-quote">
+                                <p>"This is a comprehensive scholarly crafted site combining the "3 P's" -
+                                easy to navigate with excellent and wide-ranging information in easy to understand
+                                text with many thousands of images supporting the subject over about 700+ pages.
+                                It sets a Goal and achieves it while including additional resources of a general
+                                nature, philatelic, scientific and geographical as well as covering the subjects being
+                                studied ..."</p>
+                                <cite>Jeff Long, <a href="awards.html#nzple2025">NZPLE 2025</a>, New Zealand.</cite>
+                            </blockquote>
+                            <blockquote class="jury-quote">
+                                <p>"A benchmark website by which others are judged. This is THE reference
+                                site for the topical collector in this field.
+                                Content meets purpose 100%. Hard to find fault..."</p>
+                                <cite>Niall Murphy, <a href="awards.html#filabras2024">EXPOFILABRAS 2024</a>, Brazil.</cite>
+                            </blockquote>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 8: Quick Navigation -->
+        <!-- SECTION 9: Quick Navigation -->
         <section class="quick-nav-section">
             <div class="container">
                 <h2 class="section-title">New to the Paleophilatelie website? The following articles will help you navigate the site.</h2>
@@ -556,7 +674,7 @@
             </div>
         </section>
 
-        <!-- SECTION 9: Stay Updated -->
+        <!-- SECTION 10: Stay Updated -->
         <section class="stay-updated-section">
             <div class="container">
                 <h2 class="section-title">Stay Updated</h2>
