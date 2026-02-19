@@ -16,6 +16,47 @@ html, body {
     display: contents;
 }
 
+/* ===== SLOGAN STRIP ===== */
+.header-slogan {
+    background-color: #1a1a2e;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-slogan__text {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.02em;
+    font-family: var(--font-family-heading, Georgia, serif);
+    line-height: 1.4;
+}
+
+.header-slogan__separator {
+    color: var(--color-accent, #f4c542);
+    margin: 0 4px;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .header-slogan__text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-slogan {
+        padding: 8px 0;
+    }
+
+    .header-slogan__text {
+        font-size: 0.72rem;
+        letter-spacing: 0.01em;
+    }
+}
+
 /* ===== TOP BLACK BAR (STICKY) ===== */
 .header-top {
     position: -webkit-sticky;
@@ -137,7 +178,7 @@ html, body {
     justify-content: flex-end;
 }
 
-/* ===== HEADER TOOLBAR (Google Translate and Search - NOT STICKY) ===== */
+/* ===== HEADER TOOLBAR (Google Translate and Search) ===== */
 .header-toolbar {
     position: relative;
     background-color: #f8f8f8;
@@ -145,6 +186,16 @@ html, body {
     padding: 10px 0;
     min-height: 45px;
     z-index: 100;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Sticky state - toggled via JS */
+.header-toolbar--sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--header-top-height, 64px);
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header-toolbar .container {
@@ -157,9 +208,61 @@ html, body {
 .header-toolbar__content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
     width: 100%;
+}
+
+.header-toolbar__content #google_translate_element {
+    margin-right: auto;
+}
+
+/* ===== TOOLBAR STICKY TOGGLE (Pin Button) ===== */
+.toolbar-sticky-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.toolbar-sticky-toggle input {
+    display: none;
+}
+
+.toolbar-sticky-toggle__pin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #999;
+    background: transparent;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+    transform: rotate(30deg);
+    opacity: 0.4;
+}
+
+.toolbar-sticky-toggle__pin:hover {
+    opacity: 0.7;
+    border-color: #bbb;
+    background: #f0f0f0;
+}
+
+/* Active/pinned state */
+.toolbar-sticky-toggle input:checked + .toolbar-sticky-toggle__pin {
+    color: #ffffff;
+    background: #000000;
+    border-color: #000000;
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+@media (max-width: 576px) {
+    .toolbar-sticky-toggle {
+        display: none;
+    }
 }
 
 #google_translate_element {

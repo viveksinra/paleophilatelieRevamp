@@ -219,9 +219,9 @@
 
 .country-sidebar {
     position: sticky;
-    top: calc(var(--header-height, 70px) + var(--space-4));
+    top: calc(var(--header-height, 70px) + 60px + var(--space-4));
     height: fit-content;
-    max-height: calc(100vh - var(--header-height, 70px) - var(--space-8));
+    max-height: calc(100vh - var(--header-height, 70px) - 60px - var(--space-8));
     overflow-y: auto;
 }
 

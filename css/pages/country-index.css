@@ -46,7 +46,7 @@
     padding: var(--space-4) 0;
     border-bottom: 1px solid var(--color-border);
     position: sticky;
-    top: 0;
+    top: 64px;
     z-index: 100;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -111,7 +111,7 @@
     background: var(--color-gray-100);
     border-left: 4px solid var(--color-accent);
     border-radius: var(--border-radius-sm);
-    scroll-margin-top: 80px;
+    scroll-margin-top: 140px;
 }
 
 /* Floating sidebar tables (preview images) */
@@ -240,12 +240,14 @@
     text-decoration: underline;
 }
 
-/* Ensure "back to Countries index" button clears floats */
+/* Hide "back to Countries index" buttons — A-Z nav is now sticky */
 .country-index-content p[align="center"],
 .country-index-content p[align="right"] {
     clear: both;
-    margin-top: var(--space-2);
-    margin-bottom: var(--space-2);
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
 }
 
 /* Bottom navigation bar (legacy inline nav at end of page) */
@@ -296,7 +298,7 @@
 .country-index-content a[name] {
     display: block;
     position: relative;
-    top: -80px;
+    top: -140px;
     visibility: hidden;
     height: 0;
 }
@@ -309,7 +311,7 @@
 /* ===== LETTER SECTION ===== */
 .letter-section {
     margin-bottom: var(--space-7);
-    scroll-margin-top: 80px;
+    scroll-margin-top: 140px;
 }
 
 .letter-section__header {

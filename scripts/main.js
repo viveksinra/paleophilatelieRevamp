@@ -11,9 +11,11 @@
      */
     function init() {
         initStickyHeader();
+        initToolbarSticky();
         initSmoothScroll();
         initImageLazyLoad();
         initMobileMenu();
+        initYearAutoTOC();
     }
 
     /**
@@ -43,6 +45,45 @@
 
             lastScroll = currentScroll;
         }, { passive: true });
+    }
+
+    /**
+     * Toolbar sticky toggle - pin/unpin the search & translate bar
+     */
+    function initToolbarSticky() {
+        const toolbar = document.querySelector('.header-toolbar');
+        const checkbox = document.getElementById('toolbar-sticky-checkbox');
+        const headerTop = document.querySelector('.header-top');
+        if (!toolbar || !checkbox) return;
+
+        // Measure header-top height and set CSS variable
+        function updateHeaderHeight() {
+            if (headerTop) {
+                const h = headerTop.offsetHeight;
+                document.documentElement.style.setProperty('--header-top-height', h + 'px');
+            }
+        }
+        updateHeaderHeight();
+        window.addEventListener('resize', updateHeaderHeight, { passive: true });
+
+        // Apply saved preference
+        var saved = false;
+        try { saved = localStorage.getItem('toolbarSticky') === 'true'; } catch(e) {}
+        if (saved) {
+            toolbar.classList.add('header-toolbar--sticky');
+            checkbox.checked = true;
+        }
+
+        // Toggle handler
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                updateHeaderHeight();
+                toolbar.classList.add('header-toolbar--sticky');
+            } else {
+                toolbar.classList.remove('header-toolbar--sticky');
+            }
+            try { localStorage.setItem('toolbarSticky', this.checked); } catch(e) {}
+        });
     }
 
     /**
@@ -133,6 +174,40 @@
                 document.body.classList.remove('menu-open');
             }
         });
+    }
+
+    /**
+     * Auto-populate sidebar TOC on year pages
+     * Scans .year-main for sections with id attributes and builds TOC links
+     */
+    function initYearAutoTOC() {
+        var tocList = document.querySelector('.year-toc__list');
+        if (!tocList || tocList.children.length > 0) return;
+
+        var yearMain = document.querySelector('.year-main');
+        if (!yearMain) return;
+
+        var sections = yearMain.querySelectorAll('section[id]');
+        sections.forEach(function(section) {
+            var h2 = section.querySelector('h2');
+            if (!h2) return;
+
+            var title = h2.textContent.trim();
+            var id = section.getAttribute('id');
+
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            a.href = '#' + id;
+            a.textContent = title;
+            li.appendChild(a);
+            tocList.appendChild(li);
+        });
+
+        // Hide sidebar if no TOC items were generated
+        if (tocList.children.length === 0) {
+            var sidebar = document.querySelector('.year-sidebar');
+            if (sidebar) sidebar.style.display = 'none';
+        }
     }
 
     /**

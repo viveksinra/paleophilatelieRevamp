@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Paleophilatelie, catalogue, catalog, country, chronology, stamps, paleontology, paleoanthropology">
+    <meta name="description" content="Paleophilatelie.eu Catalogue Navigator — browse by year and country with persistent sidebar navigation">
+    <meta name="author" content="Michael Kogan">
+
+    <title>Paleophilatelie.eu - Catalogue Navigator</title>
+
+    <link rel="shortcut icon" href="images/others/paleophilatelie.ico">
+
+    <!-- Google Fonts - Museum Editorial Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/pages/homepage.css">
+    <link rel="stylesheet" href="css/pages/catalogue-framed.css">
+    <link rel="stylesheet" href="components/header/header.css">
+    <link rel="stylesheet" href="components/footer/footer.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38036920-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-38036920-2');
+    </script>
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header Component (loaded dynamically) -->
+    <div id="header-placeholder"></div>
+
+    <main id="main-content">
+        <!-- Mobile Toggle Bar -->
+        <div class="catalogue-toggle-bar">
+            <button class="catalogue-toggle-btn" id="toggle-years" type="button">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 2h12v2H2zm0 5h8v2H2zm0 5h10v2H2z"/></svg>
+                Years
+            </button>
+            <button class="catalogue-toggle-btn" id="toggle-countries" type="button">
+                <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C5.2 0 3 2.2 3 5c0 4.2 5 11 5 11s5-6.8 5-11c0-2.8-2.2-5-5-5zm0 7.5C6.6 7.5 5.5 6.4 5.5 5S6.6 2.5 8 2.5 10.5 3.6 10.5 5 9.4 7.5 8 7.5z"/></svg>
+                Countries
+            </button>
+        </div>
+
+        <!-- 3-Panel Layout -->
+        <div class="catalogue-frame-layout">
+
+            <!-- LEFT SIDEBAR: Years -->
+            <aside class="catalogue-sidebar--years">
+                <button class="sidebar-close-btn" id="close-years" type="button" aria-label="Close years panel">&times;</button>
+                <div class="sidebar-header">
+                    <a href="phil_catalogue_main.html" target="main_frame">Chronology</a>
+                </div>
+                <ul class="year-list">
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2026.html" href="year/2026.html">2026</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2025.html" href="year/2025.html">2025</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2024.html" href="year/2024.html">2024</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2023.html" href="year/2023.html">2023</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2022.html" href="year/2022.html">2022</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2021.html" href="year/2021.html">2021</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2020.html" href="year/2020.html">2020</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2019.html" href="year/2019.html">2019</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2018.html" href="year/2018.html">2018</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2017.html" href="year/2017.html">2017</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2016.html" href="year/2016.html">2016</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2015.html" href="year/2015.html">2015</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2014.html" href="year/2014.html">2014</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2013.html" href="year/2013.html">2013</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2012.html" href="year/2012.html">2012</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2011.html" href="year/2011.html">2011</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2010.html" href="year/2010.html">2010</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2009.html" href="year/2009.html">2009</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2008.html" href="year/2008.html">2008</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2007.html" href="year/2007.html">2007</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2006.html" href="year/2006.html">2006</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2005.html" href="year/2005.html">2005</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2004.html" href="year/2004.html">2004</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2003.html" href="year/2003.html">2003</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2002.html" href="year/2002.html">2002</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2001.html" href="year/2001.html">2001</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/2000.html" href="year/2000.html">2000</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1999.html" href="year/1999.html">1999</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1998.html" href="year/1998.html">1998</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1997.html" href="year/1997.html">1997</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1996.html" href="year/1996.html">1996</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1995.html" href="year/1995.html">1995</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1994.html" href="year/1994.html">1994</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1993.html" href="year/1993.html">1993</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1992.html" href="year/1992.html">1992</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1991.html" href="year/1991.html">1991</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1990.html" href="year/1990.html">1990</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1989.html" href="year/1989.html">1989</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1988.html" href="year/1988.html">1988</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1987.html" href="year/1987.html">1987</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1986.html" href="year/1986.html">1986</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1985.html" href="year/1985.html">1985</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1984.html" href="year/1984.html">1984</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1983.html" href="year/1983.html">1983</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1982.html" href="year/1982.html">1982</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1981.html" href="year/1981.html">1981</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1980.html" href="year/1980.html">1980</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1979.html" href="year/1979.html">1979</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1978.html" href="year/1978.html">1978</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1977.html" href="year/1977.html">1977</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1976.html" href="year/1976.html">1976</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1975.html" href="year/1975.html">1975</a></li>
+                    <li class="year-list__divider"></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/1970-1974.html" href="year/1970-1974.html">1970-1974</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/196x.html" href="year/196x.html">1960-1969</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/195x.html" href="year/195x.html">1950-1959</a></li>
+                    <li class="year-list__item"><a class="year-list__link" data-href="year/194x-18xx.html" href="year/194x-18xx.html">1857-1949</a></li>
+                </ul>
+            </aside>
+
+            <!-- CENTER: Content iframe -->
+            <div class="catalogue-content-frame">
+                <iframe id="catalogue-iframe" name="main_frame" src="phil_catalogue_main.html" title="Catalogue content"></iframe>
+            </div>
+
+            <!-- RIGHT SIDEBAR: Countries -->
+            <aside class="catalogue-sidebar--countries">
+                <button class="sidebar-close-btn" id="close-countries" type="button" aria-label="Close countries panel">&times;</button>
+                <div class="sidebar-header">
+                    <a href="country/index.html" target="main_frame">Countries</a>
+                </div>
+
+                <!-- A-Z Letter Grid -->
+                <div class="az-letter-grid">
+                    <a class="az-letter-btn" data-letter="A" href="#">A</a>
+                    <a class="az-letter-btn" data-letter="B" href="#">B</a>
+                    <a class="az-letter-btn" data-letter="C" href="#">C</a>
+                    <a class="az-letter-btn" data-letter="D" href="#">D</a>
+                    <a class="az-letter-btn" data-letter="E" href="#">E</a>
+                    <a class="az-letter-btn" data-letter="F" href="#">F</a>
+                    <a class="az-letter-btn" data-letter="G" href="#">G</a>
+                    <a class="az-letter-btn" data-letter="H" href="#">H</a>
+                    <a class="az-letter-btn" data-letter="I" href="#">I</a>
+                    <a class="az-letter-btn" data-letter="J" href="#">J</a>
+                    <a class="az-letter-btn" data-letter="K" href="#">K</a>
+                    <a class="az-letter-btn" data-letter="L" href="#">L</a>
+                    <a class="az-letter-btn" data-letter="M" href="#">M</a>
+                    <a class="az-letter-btn" data-letter="N" href="#">N</a>
+                    <a class="az-letter-btn" data-letter="O" href="#">O</a>
+                    <a class="az-letter-btn" data-letter="P" href="#">P</a>
+                    <a class="az-letter-btn" data-letter="Q" href="#">Q</a>
+                    <a class="az-letter-btn" data-letter="R" href="#">R</a>
+                    <a class="az-letter-btn" data-letter="S" href="#">S</a>
+                    <a class="az-letter-btn" data-letter="T" href="#">T</a>
+                    <a class="az-letter-btn" data-letter="U" href="#">U</a>
+                    <a class="az-letter-btn" data-letter="V" href="#">V</a>
+                    <a class="az-letter-btn" data-letter="W" href="#">W</a>
+                    <a class="az-letter-btn" data-letter="Y" href="#">Y</a>
+                    <a class="az-letter-btn" data-letter="Z" href="#">Z</a>
+                </div>
+
+                <!-- Country list populated by JS -->
+                <div id="country-list">
+                    <div class="country-empty">Click a letter above to browse countries</div>
+                </div>
+            </aside>
+
+        </div>
+
+        <!-- Mobile Overlay Backdrop -->
+        <div class="catalogue-overlay" id="catalogue-overlay"></div>
+    </main>
+
+    <!-- Footer Component (loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="scripts/component-loader.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="components/header/header.js"></script>
+    <script src="components/footer/footer.js"></script>
+    <script src="scripts/catalogue-framed.js"></script>
+</body>
+</html>

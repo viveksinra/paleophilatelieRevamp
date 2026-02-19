@@ -1,0 +1,692 @@
+/**
+ * CONTENT PAGE STYLES
+ * Shared styles for all content pages (non-homepage)
+ * Handles layout overrides, tables, images, lists, deprecated elements, and content links
+ */
+
+/* ===== CRITICAL LAYOUT OVERRIDES =====
+ * homepage.css sets .intro-section .container to max-width:900px + text-align:center
+ * Content pages need wider containers and left-aligned text
+ */
+.intro-section .container.content-page {
+    max-width: 1200px;
+    text-align: left;
+    animation: none;
+}
+
+/* Remove the decorative yellow bar from content pages */
+.intro-section:has(.content-page)::before {
+    display: none;
+}
+
+/* Fallback for browsers without :has() — hide on all intro-sections that contain .content-page */
+/* Applied via a small JS snippet or just accept the bar on older browsers */
+
+/* ===== CONTENT PAGE WRAPPER ===== */
+.content-page {
+    font-size: clamp(0.9375rem, 1vw + 0.75rem, 1.0625rem);
+    line-height: 1.75;
+    color: var(--hp-text, #2a2a2a);
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.content-page h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    color: var(--hp-black);
+    line-height: var(--line-height-heading);
+    letter-spacing: -0.02em;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Clean up links inside page title — no yellow underline on country/year links */
+.content-page h1 a {
+    text-decoration: none;
+    color: var(--hp-black, #0a0a0a);
+    border-bottom: 2px solid var(--color-accent, #f4c542);
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.content-page h1 a:hover {
+    color: var(--color-accent-dark, #b8922a);
+    border-bottom-color: var(--color-accent-dark, #b8922a);
+}
+
+.content-page h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    color: var(--hp-black);
+    line-height: var(--line-height-heading);
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--hp-gray, #e5e4e1);
+}
+
+.content-page h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.375rem);
+    font-weight: 600;
+    color: var(--hp-black);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.content-page h4 {
+    font-family: var(--font-display);
+    font-size: clamp(1rem, 1.5vw, 1.1875rem);
+    font-weight: 600;
+    color: var(--hp-black);
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+/* ===== TABLES ===== */
+.content-page table {
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    width: auto; /* Reset base.css width:100% — respect legacy width attributes */
+}
+
+/* Only force full-width on bordered data tables */
+.content-page table[border="1"],
+.content-page table.bordered {
+    width: 100%;
+    border: 1px solid var(--hp-gray, #e5e4e1);
+}
+
+.content-page table[border="1"] td,
+.content-page table[border="1"] th,
+.content-page table.bordered td,
+.content-page table.bordered th {
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    padding: 0.625rem 0.75rem;
+    vertical-align: top;
+}
+
+.content-page th {
+    background: var(--hp-warm-white, #f7f6f3);
+    font-weight: 600;
+    color: var(--hp-black, #0a0a0a);
+    text-align: left;
+}
+
+.content-page td {
+    vertical-align: top;
+}
+
+/* Only add hover on bordered/data tables, not layout tables */
+.content-page table[border="1"] tr:hover,
+.content-page table.bordered tr:hover {
+    background: var(--hp-gray-light, #f0efec);
+}
+
+/* Technical details table — label column styling */
+.content-page table[border="1"] td:first-child {
+    font-weight: 500;
+    color: var(--hp-black, #0a0a0a);
+    white-space: nowrap;
+    background: var(--color-background-alt, #f5f5f5);
+    width: 35%;
+}
+
+/* Alternating rows for bordered tables */
+.content-page table[border="1"] tr:nth-child(even),
+.content-page table.bordered tr:nth-child(even) {
+    background: var(--color-off-white, #fdfcfb);
+}
+
+/* Boost readability — <small> inside bordered tables shouldn't shrink as much */
+.content-page table[border="1"] small {
+    font-size: 0.9375em;
+    color: var(--color-text-primary, #1c1917);
+}
+
+.content-page table[border="1"] td:first-child small {
+    font-weight: 500;
+}
+
+/* ===== IMAGES ===== */
+.content-page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: inline;  /* Override base.css display:block — many legacy images are inline */
+}
+
+/* Legacy float attributes support */
+.content-page img[align="right"] {
+    float: right;
+    margin: 0.5rem 0 1rem 1.5rem;
+    max-width: 50%;
+    display: block;
+}
+
+.content-page img[align="left"] {
+    float: left;
+    margin: 0.5rem 1.5rem 1rem 0;
+    max-width: 50%;
+    display: block;
+}
+
+.content-page img[align="center"] {
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Table-aligned images (legacy pattern: right-aligned table with image) */
+.content-page table[align="right"] {
+    float: right;
+    margin: 0.5rem 0 1rem 1.5rem;
+    width: auto;
+}
+
+.content-page table[align="left"] {
+    float: left;
+    margin: 0.5rem 1.5rem 1rem 0;
+    width: auto;
+}
+
+.content-page table[align="center"] {
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+/* Reset base.css td borders for floating image/caption tables */
+.content-page table[align="right"] td,
+.content-page table[align="left"] td {
+    border-bottom: none;
+    padding: 0.25rem;
+}
+
+/* ===== LISTS ===== */
+.content-page ul,
+.content-page ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.75rem;
+}
+
+.content-page li {
+    margin-bottom: 0.5rem;
+    line-height: 1.65;
+}
+
+.content-page li ul,
+.content-page li ol {
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+/* ===== PARAGRAPHS ===== */
+.content-page p {
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+
+/* ===== CONTENT LINKS ===== */
+.content-page a {
+    color: var(--hp-black, #0a0a0a);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow, #d4a72c);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.content-page a:hover {
+    color: var(--hp-yellow-dark, #b8922a);
+    text-decoration-color: var(--hp-yellow-dark, #b8922a);
+}
+
+.content-page a img {
+    border: none;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-page a:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove underline from image links */
+.content-page a:has(img) {
+    text-decoration: none;
+}
+
+/* ===== DEPRECATED ELEMENT FALLBACKS ===== */
+
+/* <center> → centered text */
+.content-page center {
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+/* Prevent double margin when <center> wraps a heading */
+.content-page center h1,
+.content-page center h2,
+.content-page center h3 {
+    margin-bottom: 0;
+}
+.content-page center:has(h1),
+.content-page center:has(h2) {
+    margin-bottom: 0;
+}
+
+/* <big> → slightly larger text */
+.content-page big {
+    font-size: 1.15em;
+    font-weight: 600;
+    font-family: var(--font-display, Georgia, serif);
+    color: var(--hp-black, #0a0a0a);
+}
+
+/* <font> → inherit styles but respect color/size attributes */
+.content-page font {
+    font-family: inherit;
+}
+
+/* <u> → underline with theme color */
+.content-page u {
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow, #d4a72c);
+    text-underline-offset: 2px;
+}
+
+/* <small> styling */
+.content-page small {
+    font-size: 0.875em;
+    color: var(--hp-text-light, #4a4a4a);
+}
+
+/* <em> within content */
+.content-page em {
+    font-style: italic;
+    color: var(--hp-text-light, #4a4a4a);
+}
+
+/* ===== IMAGE CAPTIONS IN LAYOUT TABLES ===== */
+/* Pattern: table[align] with an image in first row, caption <small> in second row */
+.content-page table[align="right"] small,
+.content-page table[align="left"] small {
+    display: block;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary, #57534e);
+    padding-top: 0.375rem;
+    border-top: 2px solid var(--color-accent, #f4c542);
+    margin-top: 0.25rem;
+}
+
+/* ===== PRODUCT GALLERY TABLES ===== */
+/* Full-width tables need explicit 100% to override auto default */
+.content-page table[width="100%"] {
+    width: 100%;
+}
+
+.content-page table[width="100%"] img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== BLOCKQUOTES ===== */
+.content-page blockquote {
+    border-left: 4px solid var(--hp-yellow, #d4a72c);
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: var(--hp-warm-white, #f7f6f3);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--hp-text-light, #4a4a4a);
+}
+
+/* ===== HORIZONTAL RULES ===== */
+.content-page hr {
+    border: none;
+    height: 2px;
+    background: var(--hp-gray, #e5e4e1);
+    margin: 2rem 0;
+}
+
+/* ===== BREADCRUMBS INSIDE CONTENT ===== */
+.content-page .breadcrumb {
+    margin-bottom: 1.5rem;
+}
+
+.content-page .breadcrumb .container {
+    max-width: none;
+    padding: 0;
+}
+
+/* ===== LEGACY <br> SPACING ===== */
+.content-page br + br {
+    display: block;
+    content: '';
+    margin-top: 0.5rem;
+}
+
+/* ===== CLEAR FLOATS ===== */
+.content-page .clearfix::after,
+.content-page::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .intro-section .container.content-page {
+        max-width: 100%;
+    }
+
+    .content-page {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .content-page img[align="right"],
+    .content-page img[align="left"] {
+        float: none;
+        display: block;
+        margin: 1rem auto;
+        max-width: 100%;
+    }
+
+    .content-page table[align="right"],
+    .content-page table[align="left"] {
+        float: none;
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+    .content-page table {
+        font-size: 0.875rem;
+    }
+
+    .content-page table[border="1"] td,
+    .content-page table[border="1"] th {
+        padding: 0.5rem;
+    }
+
+    .content-page table[border="1"] td:first-child {
+        white-space: normal;
+    }
+
+    .content-page h2 {
+        margin-top: 2rem;
+    }
+
+    /* Product gallery — stack images on mobile */
+    .content-page table[width="100%"] td {
+        display: block;
+        width: 100% !important;
+        text-align: center;
+    }
+
+    .content-page table[width="100%"] td img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    /* Image caption tables stack nicely */
+    .content-page table[align="right"] small,
+    .content-page table[align="left"] small {
+        text-align: center;
+    }
+}
+
+/* ===== TABLE OVERFLOW FOR MOBILE ===== */
+@media (max-width: 640px) {
+    .content-page table[border="1"],
+    .content-page table.bordered {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* ===== PRINT ===== */
+@media print {
+    .intro-section .container.content-page {
+        max-width: 100%;
+    }
+
+    .content-page a {
+        text-decoration: none;
+        color: var(--hp-black, #0a0a0a);
+    }
+
+    .content-page a::after {
+        content: ' (' attr(href) ')';
+        font-size: 0.8em;
+        color: var(--hp-gray-dark, #5a5a5a);
+    }
+
+    .content-page a:has(img)::after {
+        content: none;
+    }
+}
+
+/* ===== STAMP DESCRIPTION PAGE STYLES ===== */
+
+/* --- Navigation Bar (prev / back to index / next) --- */
+.content-page table.stamp-nav {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: none;
+    margin: 0.5rem 0 1.5rem;
+    padding: 0.75rem 0;
+    border-top: 1px solid var(--color-border, #e7e5e4);
+    border-bottom: 1px solid var(--color-border, #e7e5e4);
+}
+
+.content-page table.stamp-nav tr {
+    background: none !important;
+}
+
+.content-page table.stamp-nav td {
+    padding: 0;
+    border: none !important;
+    background: none !important;
+    white-space: nowrap;
+}
+
+.content-page table.stamp-nav a {
+    font-family: var(--font-family-base);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-text-secondary, #57534e);
+    padding: 0.375rem 1rem;
+    border: 1px solid var(--color-border, #e7e5e4);
+    border-radius: var(--border-radius-full, 9999px);
+    transition: all 0.2s ease;
+    display: inline-block;
+    background: var(--color-white, #fff);
+}
+
+.content-page table.stamp-nav a:hover {
+    color: var(--color-primary, #000);
+    border-color: var(--color-accent, #f4c542);
+    background: rgba(244, 197, 66, 0.06);
+}
+
+/* --- Stamp Details Card --- */
+.content-page table.stamp-details-card {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 46%;
+    float: right;
+    margin: 0 0 1.5rem 2rem;
+    border: 1px solid var(--color-border, #e7e5e4);
+    border-radius: var(--border-radius-lg, 8px);
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(28, 25, 23, 0.06), 0 6px 16px rgba(28, 25, 23, 0.04);
+    background: var(--color-white, #fff);
+}
+
+.content-page table.stamp-details-card tr {
+    background: transparent;
+}
+
+.content-page table.stamp-details-card tr:nth-child(even) {
+    background: var(--color-off-white, #fdfcfb);
+}
+
+.content-page table.stamp-details-card tr:hover {
+    background: rgba(244, 197, 66, 0.04);
+}
+
+.content-page table.stamp-details-card td {
+    padding: 0.5rem 0.875rem;
+    border: none;
+    border-bottom: 1px solid var(--color-border, #e7e5e4);
+    vertical-align: top;
+    font-size: 0.875rem;
+    line-height: 1.55;
+    color: var(--color-text-primary, #1c1917);
+}
+
+.content-page table.stamp-details-card tr:last-child td {
+    border-bottom: none;
+}
+
+.content-page table.stamp-details-card td:first-child {
+    font-weight: 600;
+    color: var(--color-text-primary, #1c1917);
+    background: rgba(244, 197, 66, 0.07);
+    white-space: nowrap;
+    width: 35%;
+    border-right: 1px solid var(--color-border, #e7e5e4);
+}
+
+.content-page table.stamp-details-card small {
+    font-size: 0.9em;
+    color: var(--color-text-primary, #1c1917);
+    /* Reset caption styles from table[align="right"] small */
+    display: inline;
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.content-page table.stamp-details-card td:first-child small {
+    font-weight: 600;
+}
+
+/* --- Products & Philatelic Items Gallery --- */
+.content-page table.products-gallery {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.75rem;
+    margin: 1rem 0 1.5rem;
+    border: none;
+}
+
+.content-page table.products-gallery tr {
+    background: none !important;
+}
+
+.content-page table.products-gallery td {
+    vertical-align: top;
+    text-align: center;
+    padding: 0.5rem;
+    border: none !important;
+    background: none !important;
+}
+
+.content-page table.products-gallery td[colspan] {
+    padding-top: 1.5rem;
+    padding-bottom: 0.625rem;
+    border-bottom: 2px solid var(--color-accent, #f4c542) !important;
+}
+
+.content-page table.products-gallery a:has(img) {
+    display: inline-block;
+    border-radius: var(--border-radius-sm, 4px);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.content-page table.products-gallery a:has(img):hover {
+    box-shadow: 0 4px 12px rgba(28, 25, 23, 0.12);
+    transform: translateY(-2px);
+}
+
+.content-page table.products-gallery img {
+    border-radius: var(--border-radius-sm, 4px);
+    max-width: 100%;
+    height: auto;
+}
+
+.content-page table.products-gallery small {
+    display: block;
+    margin-top: 0.375rem;
+}
+
+/* --- Inline Quotes --- */
+.content-page q {
+    display: block;
+    border-left: 4px solid var(--color-accent, #f4c542);
+    padding: 1.25rem 1.5rem;
+    margin: 1rem 0;
+    background: var(--color-off-white, #fdfcfb);
+    border-radius: 0 var(--border-radius-md, 6px) var(--border-radius-md, 6px) 0;
+    line-height: 1.75;
+    quotes: none;
+}
+
+/* --- Notes Aside --- */
+.content-page .notes {
+    background: var(--color-off-white, #fdfcfb);
+    border-left: 4px solid var(--color-accent, #f4c542);
+    padding: 1rem 1.25rem;
+    border-radius: 0 var(--border-radius-md, 6px) var(--border-radius-md, 6px) 0;
+    margin: 1rem 0;
+}
+
+/* --- Responsive iframe --- */
+.content-page iframe {
+    max-width: 100%;
+    border-radius: var(--border-radius-md, 6px);
+    box-shadow: 0 4px 6px rgba(28, 25, 23, 0.07), 0 2px 4px rgba(28, 25, 23, 0.06);
+}
+
+/* --- Stamp Page Responsive --- */
+@media (max-width: 768px) {
+    .content-page table.stamp-details-card {
+        float: none;
+        width: 100%;
+        margin: 0 0 1.5rem;
+    }
+
+    .content-page table.stamp-details-card td:first-child {
+        white-space: normal;
+    }
+
+    .content-page table.products-gallery {
+        border-spacing: 0.375rem;
+    }
+
+    .content-page table.products-gallery td {
+        display: block;
+        width: 100% !important;
+    }
+
+    .content-page table.stamp-nav a {
+        font-size: 0.75rem;
+        padding: 0.3125rem 0.75rem;
+    }
+}

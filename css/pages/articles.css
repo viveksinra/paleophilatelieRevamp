@@ -1,0 +1,170 @@
+/**
+ * ARTICLES PAGE STYLES
+ * Uses homepage components (article-card, section-title) with page-specific overrides
+ */
+
+/* ===== SECTION STYLING ===== */
+.articles-section {
+    padding: var(--section-padding) 0;
+    background: var(--hp-white);
+}
+
+.articles-section--alt {
+    background: var(--hp-warm-white);
+}
+
+/* Section titles */
+.articles-section .section-title {
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+
+/* ===== ARTICLE CARD IMAGE HEIGHT ===== */
+.articles-section .article-card__image {
+    height: 200px;
+}
+
+/* ===== 3-COLUMN GRID ===== */
+.article-cards--three {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .article-cards--three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .article-cards--three {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== 2-COLUMN GRID (CENTERED) ===== */
+.article-cards--two {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .article-cards--two {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .article-cards--two {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== "MORE" LINK ===== */
+.articles-more-link {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: var(--hp-text-light);
+}
+
+.articles-more-link a {
+    color: var(--hp-black);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.articles-more-link a:hover {
+    color: var(--hp-yellow-dark);
+    text-decoration-color: var(--hp-yellow-dark);
+}
+
+/* ===== INTRO TEXT FOR PDF SECTION ===== */
+.articles-intro-text {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--hp-text-light);
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+}
+
+.articles-intro-text a {
+    color: var(--hp-black);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.articles-intro-text a:hover {
+    color: var(--hp-yellow-dark);
+    text-decoration-color: var(--hp-yellow-dark);
+}
+
+/* ===== PDF COLUMNS LAYOUT ===== */
+.pdf-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    background: var(--hp-white);
+    padding: 2rem 2.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--hp-gray);
+}
+
+.pdf-columns ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+.pdf-columns li {
+    margin-bottom: 1rem;
+    line-height: 1.65;
+    font-size: 0.9375rem;
+    color: var(--hp-text);
+}
+
+.pdf-columns li:last-child {
+    margin-bottom: 0;
+}
+
+.pdf-columns a {
+    color: var(--hp-black);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.pdf-columns a:hover {
+    color: var(--hp-yellow-dark);
+    text-decoration-color: var(--hp-yellow-dark);
+}
+
+@media (max-width: 768px) {
+    .pdf-columns {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+}
+
+/* ===== RESPONSIVE SECTION PADDING ===== */
+@media (max-width: 768px) {
+    .articles-section {
+        padding: clamp(2rem, 6vw, 3.5rem) 0;
+    }
+
+    .articles-section .article-card__image {
+        height: 160px;
+    }
+}

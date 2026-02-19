@@ -11,6 +11,12 @@
     const headerHTML = `
 <!-- Header Component - Smithsonian Magazine Style (Black/White/Yellow) -->
 <header class="site-header" id="site-header" role="banner">
+    <!-- Slogan Strip -->
+    <div class="header-slogan">
+        <div class="container">
+            <span class="header-slogan__text">Paleophilatelie <span class="header-slogan__separator">&ndash;</span> the place where Paleontology and Paleoanthropology meet Philately</span>
+        </div>
+    </div>
     <!-- Top Black Bar with Logo and Navigation -->
     <div class="header-top">
         <div class="container">
@@ -56,11 +62,11 @@
                     <a href="{{BASE}}images/index.html" class="nav-link">Gallery</a>
                     <ul class="nav-dropdown">
                         <li><a href="{{BASE}}images/stamps.html" class="nav-dropdown__link">Stamps</a></li>
-                        <li><a href="{{BASE}}images/fdc.html" class="nav-dropdown__link">First Day Covers</a></li>
+                        <li><a href="{{BASE}}images/ps.html" class="nav-dropdown__link">Postal Stationeries</a></li>
+                        <li><a href="{{BASE}}images/fdc.html" class="nav-dropdown__link">FDC</a></li>
                         <li><a href="{{BASE}}images/pm.html" class="nav-dropdown__link">Postmarks</a></li>
-                        <li><a href="{{BASE}}images/ps.html" class="nav-dropdown__link">Postal Stationery</a></li>
-                        <li><a href="{{BASE}}images/checklist_stamps.html" class="nav-dropdown__link">Stamps Checklist</a></li>
-                        <li><a href="{{BASE}}images/checklist_pm.html" class="nav-dropdown__link">Postmarks Checklist</a></li>
+                        <li><a href="{{BASE}}images/stamps_used.html" class="nav-dropdown__link">Mailed Covers and Cards</a></li>
+                        <li><a href="{{BASE}}exhibitions/index.html" class="nav-dropdown__link">Exhibits</a></li>
                     </ul>
                 </li>
 
@@ -162,6 +168,16 @@
                         <a href="https://search.freefind.com/find.html?si=14323397&amp;pid=a" class="header-search-links__item">advanced search</a>
                     </div>
                 </div>
+
+                <!-- Sticky Toggle -->
+                <label class="toolbar-sticky-toggle" title="Pin toolbar to top">
+                    <input type="checkbox" id="toolbar-sticky-checkbox">
+                    <span class="toolbar-sticky-toggle__pin">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 3a1 1 0 0 1 .117 1.993L16 5h-.39l-1.45 4.36A3.5 3.5 0 0 1 16 12.5V14h-3v7l-1 1-1-1v-7H8v-1.5a3.5 3.5 0 0 1 1.84-3.14L8.39 5H8a1 1 0 0 1-.117-1.993L8 3h8z"/>
+                        </svg>
+                    </span>
+                </label>
             </div>
         </div>
     </div>
@@ -266,11 +282,11 @@
                     <h3 class="footer-col__title">Gallery</h3>
                     <ul class="footer-links">
                         <li><a href="{{BASE}}images/stamps.html">Stamps</a></li>
-                        <li><a href="{{BASE}}images/fdc.html">First Day Covers</a></li>
+                        <li><a href="{{BASE}}images/ps.html">Postal Stationeries</a></li>
+                        <li><a href="{{BASE}}images/fdc.html">FDC</a></li>
                         <li><a href="{{BASE}}images/pm.html">Postmarks</a></li>
-                        <li><a href="{{BASE}}images/ps.html">Postal Stationery</a></li>
-                        <li><a href="{{BASE}}images/checklist_stamps.html">Stamps Checklist</a></li>
-                        <li><a href="{{BASE}}images/checklist_pm.html">Postmarks Checklist</a></li>
+                        <li><a href="{{BASE}}images/stamps_used.html">Mailed Covers and Cards</a></li>
+                        <li><a href="{{BASE}}exhibitions/index.html">Exhibits</a></li>
                     </ul>
                 </div>
 
