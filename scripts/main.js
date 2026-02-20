@@ -63,8 +63,23 @@
                 document.documentElement.style.setProperty('--header-top-height', h + 'px');
             }
         }
+
+        // Update --az-nav-top so sticky A-Z nav sits below pinned toolbar
+        function updateAzNavTop(isSticky) {
+            var headerH = headerTop ? headerTop.offsetHeight : 64;
+            if (isSticky) {
+                var toolbarH = toolbar.offsetHeight;
+                document.documentElement.style.setProperty('--az-nav-top', (headerH + toolbarH) + 'px');
+            } else {
+                document.documentElement.style.setProperty('--az-nav-top', headerH + 'px');
+            }
+        }
+
         updateHeaderHeight();
-        window.addEventListener('resize', updateHeaderHeight, { passive: true });
+        window.addEventListener('resize', function() {
+            updateHeaderHeight();
+            updateAzNavTop(checkbox.checked);
+        }, { passive: true });
 
         // Apply saved preference
         var saved = false;
@@ -73,6 +88,7 @@
             toolbar.classList.add('header-toolbar--sticky');
             checkbox.checked = true;
         }
+        updateAzNavTop(saved);
 
         // Toggle handler
         checkbox.addEventListener('change', function() {
@@ -82,6 +98,7 @@
             } else {
                 toolbar.classList.remove('header-toolbar--sticky');
             }
+            updateAzNavTop(this.checked);
             try { localStorage.setItem('toolbarSticky', this.checked); } catch(e) {}
         });
     }
