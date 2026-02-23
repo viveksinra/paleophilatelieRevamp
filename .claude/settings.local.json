@@ -47,7 +47,13 @@
       "Bash(node:*)",
       "Bash(node convert-stamps.js:*)",
       "Bash(del \"D:\\\\Projects\\\\Paleophilatelie\\\\FinalOneToSubmit\\\\convert-stamps.js\")",
-      "WebFetch(domain:gibbonsstampmonthly.com)"
+      "WebFetch(domain:gibbonsstampmonthly.com)",
+      "Bash(powershell -Command:*)",
+      "Bash(curl:*)",
+      "Bash(copy /Y \"D:\\\\Projects\\\\Paleophilatelie\\\\FinalOneToSubmit\\\\images\\\\awards\\\\t_results_2025_live.jpg\" \"D:\\\\Projects\\\\Paleophilatelie\\\\FinalOneToSubmit\\\\images\\\\awards\\\\t_results_2025.jpg\")",
+      "Bash(while read f)",
+      "Bash(do grep -l \"header-placeholder\" \"$f\")",
+      "Bash(git checkout:*)"
     ]
   }
 }

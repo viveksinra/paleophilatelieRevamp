@@ -18,16 +18,24 @@ html, body {
 
 /* ===== SLOGAN STRIP ===== */
 .header-slogan {
-    background-color: #1a1a2e;
-    padding: 10px 0;
+    background-color: #ffffff;
+    padding: 18px 0;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+.header-slogan .container {
+    max-width: none;
+    padding: 0 20px;
 }
 
 .header-slogan__text {
-    color: rgba(255, 255, 255, 0.88);
-    font-size: 0.9rem;
-    font-weight: 400;
+    display: block;
+    width: 100%;
+    color: #333333;
+    font-size: 1.3rem;
+    font-weight: 700;
     font-style: italic;
     letter-spacing: 0.02em;
     font-family: var(--font-family-heading, Georgia, serif);
@@ -42,17 +50,17 @@ html, body {
 
 @media (max-width: 768px) {
     .header-slogan__text {
-        font-size: 0.8rem;
+        font-size: 1.05rem;
     }
 }
 
 @media (max-width: 576px) {
     .header-slogan {
-        padding: 8px 0;
+        padding: 12px 0;
     }
 
     .header-slogan__text {
-        font-size: 0.72rem;
+        font-size: 0.85rem;
         letter-spacing: 0.01em;
     }
 }

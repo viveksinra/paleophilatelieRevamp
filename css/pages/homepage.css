@@ -848,8 +848,15 @@ body {
     margin-top: 1.5rem;
 }
 
+.awards-image a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 .awards-image img {
-    max-width: 100px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     border-radius: 6px;
     transition: transform 0.3s ease;
