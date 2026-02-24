@@ -53,7 +53,8 @@
       "Bash(copy /Y \"D:\\\\Projects\\\\Paleophilatelie\\\\FinalOneToSubmit\\\\images\\\\awards\\\\t_results_2025_live.jpg\" \"D:\\\\Projects\\\\Paleophilatelie\\\\FinalOneToSubmit\\\\images\\\\awards\\\\t_results_2025.jpg\")",
       "Bash(while read f)",
       "Bash(do grep -l \"header-placeholder\" \"$f\")",
-      "Bash(git checkout:*)"
+      "Bash(git checkout:*)",
+      "Bash(powershell:*)"
     ]
   }
 }

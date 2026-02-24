@@ -259,6 +259,15 @@
                                  loading="lazy">
                         </a>
                     </div>
+                    <div class="footer-badges footer-badges--facebook">
+                        <a href="https://www.facebook.com/groups/889825297731726/" target="_blank" rel="noopener noreferrer">
+                            <img src="{{BASE}}images/others/facebook.jpg"
+                                 alt="PaleoPhilatelie.eu on Facebook - Welcome to join !"
+                                 title="PaleoPhilatelie.eu on Facebook - Welcome to join !"
+                                 class="footer-badges__img footer-badges__img--facebook"
+                                 loading="lazy">
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Catalogue Column -->

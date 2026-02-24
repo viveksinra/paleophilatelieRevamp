@@ -256,6 +256,11 @@
     transform: scale(1.05);
 }
 
+.footer-badges__img--facebook {
+    height: auto;
+    width: 170px;
+}
+
 @media (max-width: 576px) {
     .footer-badges {
         justify-content: center;
