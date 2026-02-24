@@ -11,6 +11,7 @@
     let galleryImages = [];
     let lightbox = null;
     let isOpen = false;
+    let eventsAttached = false;
 
     /**
      * Initialize gallery functionality
@@ -19,7 +20,6 @@
         initGalleryFilters();
         initViewToggle();
         initLightbox();
-        initKeyboardNavigation();
     }
 
     /**
@@ -92,6 +92,10 @@
         // Get all gallery links
         updateGalleryImages();
 
+        // Only attach event listeners once
+        if (eventsAttached) return;
+        eventsAttached = true;
+
         // Attach click handlers to gallery links
         document.addEventListener('click', (e) => {
             const link = e.target.closest('.gallery__link[data-lightbox]');
@@ -123,6 +127,9 @@
 
         // Touch/Swipe support
         initTouchSupport();
+
+        // Keyboard navigation
+        initKeyboardNavigation();
     }
 
     /**
@@ -255,8 +262,9 @@
         const imgEl = lightbox.querySelector('.lightbox__image');
         const captionEl = lightbox.querySelector('.lightbox__caption');
 
-        // Show loader
+        // Show loader and clear previous image so stale content never lingers
         lightbox.classList.add('lightbox--loading');
+        imgEl.src = '';
 
         // Create new image to preload
         const newImg = new Image();
@@ -266,6 +274,9 @@
             lightbox.classList.remove('lightbox--loading');
         };
         newImg.onerror = () => {
+            // Fallback to thumbnail if full-size image fails to load
+            imgEl.src = image.thumb || image.src;
+            imgEl.alt = image.alt || image.title;
             lightbox.classList.remove('lightbox--loading');
         };
         newImg.src = image.src;
@@ -418,7 +429,11 @@
         close: closeLightbox,
         next: () => navigate(1),
         prev: () => navigate(-1),
-        refresh: updateGalleryImages
+        refresh: updateGalleryImages,
+        openWith: function(images, startIndex) {
+            galleryImages = images;
+            openLightbox(startIndex || 0);
+        }
     };
 
     // Initialize when DOM is ready

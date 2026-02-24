@@ -792,6 +792,26 @@
     width: fit-content;
 }
 
+/* --- Inline Image with Caption (figure wrapping image + figcaption) --- */
+.content-page figure.inline-image-caption {
+    display: table;
+    margin: 1rem auto;
+    padding: 0;
+}
+
+.content-page figure.inline-image-caption img[align="center"] {
+    margin: 0;
+}
+
+.content-page figure.inline-image-caption figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    margin-top: 0.375rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary, #57534e);
+}
+
 /* --- Inline Quotes --- */
 .content-page q {
     display: block;
