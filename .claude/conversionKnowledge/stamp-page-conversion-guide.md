@@ -83,6 +83,18 @@
     <!-- Header Component (loaded dynamically) -->
     <div id="header-placeholder"></div>
 
+    <!-- Breadcrumb Navigation (OUTSIDE content-page to inherit base styles) -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="../../index.html" class="breadcrumb__link">Home</a></li>
+                <li class="breadcrumb__item"><a href="../../phil_catalogue_main.html" class="breadcrumb__link">Catalogue</a></li>
+                <li class="breadcrumb__item"><a href="../../country/COUNTRY.html" class="breadcrumb__link">COUNTRY_NAME</a></li>
+                <li class="breadcrumb__item"><span class="breadcrumb__current">COUNTRY_NAME YEAR</span></li>
+            </ol>
+        </div>
+    </nav>
+
     <main id="main-content" class="content-page">
         <div class="container">
 
@@ -107,6 +119,7 @@
 **Key changes:**
 - Remove ALL old header/footer HTML (everything before and after `<div id="container">`)
 - Replace with `#header-placeholder` and `#footer-placeholder` divs
+- Add breadcrumb nav between the header placeholder and `<main>` (see Section 12 for details)
 - Wrap content in `<main id="main-content" class="content-page"><div class="container">`
 - Add scripts at bottom: component-loader.js, main.js, header.js, footer.js, gallery.js, products-lightbox.js
 - Add skip link for accessibility
@@ -455,19 +468,112 @@ Pages in subdirectories (e.g., `description/stamps/others/`) use `../../../` pre
 
 ---
 
-## 11. Conversion Checklist
+## 11. Facebook Image — Removed from Stamp Pages
+
+The Facebook group image (`images/others/facebook.jpg`) was previously embedded in the References section of every stamp page as a right-aligned table. This has been:
+
+1. **Moved to the site footer** in `scripts/component-loader.js` — appears below the QR codes in a separate `footer-badges--facebook` div, visible on ALL pages automatically.
+2. **Removed from all stamp pages** (~590 files across `description/stamps/`, `description/stamps2/`, `description/letters/`, `description/pm/`, `description/covers/` and their subdirectories).
+
+**Do NOT add the Facebook image block back to any stamp page.** It is now handled globally by the footer.
+
+The old block that was removed looked like:
+```html
+<table align="right" width="200px" style="margin: 20px;">
+    <tr>
+        <td style="text-align: center;">
+            <a rel="nofollow" target="_blank" href="https://www.facebook.com/groups/889825297731726"><img width="200px"
+                alt="PaleoPhilatelie.eu on Facebook - Welcome to join !"
+                title="PaleoPhilatelie.eu on Facebook - Welcome to join !"
+                src="../../images/others/facebook.jpg"></a>
+        </td>
+    </tr>
+</table>
+```
+
+---
+
+## 12. Breadcrumb Navigation
+
+Every stamp description page must have a breadcrumb bar matching the style used on country pages (e.g., `country/india.html`).
+
+### Placement — CRITICAL
+
+The breadcrumb `<nav>` must be placed **OUTSIDE** `<main class="content-page">`, between the header placeholder and the `<main>` tag. This is essential because `.content-page a` styles override link colors to blue (`#0000EE`), which would break the breadcrumb's gray link styling.
+
+```html
+<div id="header-placeholder"></div>
+
+<!-- Breadcrumb sits OUTSIDE content-page -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <ol class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="../../index.html" class="breadcrumb__link">Home</a></li>
+            <li class="breadcrumb__item"><a href="../../phil_catalogue_main.html" class="breadcrumb__link">Catalogue</a></li>
+            <li class="breadcrumb__item"><a href="../../country/india.html" class="breadcrumb__link">India</a></li>
+            <li class="breadcrumb__item"><span class="breadcrumb__current">India 1997</span></li>
+        </ol>
+    </div>
+</nav>
+
+<main id="main-content" class="content-page">
+```
+
+### Breadcrumb path structure
+
+`Home > Catalogue > COUNTRY_NAME > COUNTRY_NAME YEAR`
+
+- **Home**: links to `../../index.html`
+- **Catalogue**: links to `../../phil_catalogue_main.html`
+- **Country**: links to `../../country/COUNTRY.html` (use the same country link from the page's `<h1>`)
+- **Current page**: plain text `<span class="breadcrumb__current">`, showing "Country Year" (e.g., "India 1997")
+
+### CSS
+
+All breadcrumb styles come from `main.css` (base styles defined there and in `country.css`). No additional CSS is needed on stamp pages — the styles are shared globally. The key reason it must be outside `.content-page` is to avoid the `.content-page a { color: #0000EE; text-decoration: underline; }` rule.
+
+### Sticky behavior
+
+The breadcrumb is `position: sticky` and sticks just below the navbar when scrolling. It is aware of the dynamic header layout:
+
+```css
+.breadcrumb {
+    position: sticky;
+    top: var(--az-nav-top, var(--header-top-height, 64px));
+    z-index: 998;
+}
+```
+
+**How it works:**
+- `--az-nav-top` is set dynamically by `scripts/main.js` → `initToolbarSticky()`. It equals the header-top height when the toolbar is unpinned, or header-top + toolbar height when the toolbar is pinned.
+- This means the breadcrumb always sits directly below whatever is sticky above it (navbar only, or navbar + pinned toolbar).
+- Fallback chain: `--az-nav-top` → `--header-top-height` → `64px` (hardcoded default).
+- Z-index 998 is below the header-top (1000) and toolbar (999), so the breadcrumb slides under them correctly.
+
+**This applies globally** — both country pages and stamp pages get sticky breadcrumbs with the same behavior.
+
+### For subdirectory pages
+
+Pages in `description/stamps/others/` or `description/stamps/personalized/` use `../../../` prefix instead of `../../` for all breadcrumb links.
+
+---
+
+## 13. Conversion Checklist
 
 - [ ] Replace `<!DOCTYPE>` and `<head>` section
 - [ ] Remove old header HTML, add `#header-placeholder`
 - [ ] Remove old footer HTML, add `#footer-placeholder`
+- [ ] Add breadcrumb `<nav>` between header placeholder and `<main>` (see Section 12)
 - [ ] Wrap content in `<main class="content-page"><div class="container">`
 - [ ] Add skip link
 - [ ] Add scripts at bottom (component-loader, main, header, footer, gallery, products-lightbox)
 - [ ] Add `class="stamp-nav"` to prev/next navigation tables (top and bottom)
 - [ ] Add `class="stamp-details-card"` to technical details table, change `border="1"` to `border="0"`
 - [ ] Add `class="products-gallery"` to products/philatelic items table
+- [ ] Remove Facebook image table from References section (now in footer globally)
 - [ ] Verify all image paths are UNCHANGED
 - [ ] Wrap standalone image+caption pairs in `<figure class="inline-image-caption">` (see 4.8)
 - [ ] Verify all text content is UNCHANGED
 - [ ] Test in browser — check float wrapping, image sizes, gallery layout
 - [ ] Test products gallery lightbox — click images, verify prev/next navigation, captions, and thumbnails
+- [ ] Test breadcrumb — matches country page appearance, links work correctly

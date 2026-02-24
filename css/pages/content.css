@@ -374,15 +374,10 @@
     margin: 2rem 0;
 }
 
-/* ===== BREADCRUMBS INSIDE CONTENT ===== */
-.content-page .breadcrumb {
-    margin-bottom: 1.5rem;
-}
-
-.content-page .breadcrumb .container {
-    max-width: none;
-    padding: 0;
-}
+/* ===== BREADCRUMBS ===== */
+/* Breadcrumb nav sits outside .content-page so it inherits
+   the base breadcrumb styles from main.css / country.css
+   without any content-page link or padding overrides. */
 
 /* ===== LEGACY <br> SPACING ===== */
 /* Consecutive <br> tags are used for paragraph spacing in legacy HTML.
