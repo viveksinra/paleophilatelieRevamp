@@ -325,6 +325,31 @@ The `.stamp-details-card` class needs explicit overrides to prevent `table[borde
 
 **When to use:** Any standalone image with a descriptive caption below it that isn't already inside a layout table. Look for the pattern: `<img>` followed by `<br>` then `<small><em>` caption text.
 
+### 4.9 Content Links — Golden Accent Theme
+
+**Problem:** Content page links were styled with browser-default blue (`#0000EE`) which clashed with the site's golden/amber design language.
+
+**Solution:** Links now use the site's accent color palette:
+```css
+.content-page a {
+    color: var(--color-accent-dark, #d4a72c);
+    text-decoration: underline;
+    text-decoration-color: rgba(212, 167, 44, 0.4);
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.content-page a:hover {
+    color: var(--color-accent-hover, #b8922a);
+    text-decoration-color: var(--color-accent-hover, #b8922a);
+}
+```
+
+**Key details:**
+- `--color-accent-dark` (`#d4a72c`) provides enough contrast on white for readability
+- Subtle underline at 40% opacity keeps text clean; full opacity on hover
+- This rule affects ALL links inside `.content-page`, which is why breadcrumbs must be placed outside it (see Section 12)
+
 ### 4.7 Hero Section — Image + Table Side by Side
 
 **Problem:** With 1200px container, the stamp image looks too small next to the 50% table.
@@ -499,7 +524,7 @@ Every stamp description page must have a breadcrumb bar matching the style used 
 
 ### Placement — CRITICAL
 
-The breadcrumb `<nav>` must be placed **OUTSIDE** `<main class="content-page">`, between the header placeholder and the `<main>` tag. This is essential because `.content-page a` styles override link colors to blue (`#0000EE`), which would break the breadcrumb's gray link styling.
+The breadcrumb `<nav>` must be placed **OUTSIDE** `<main class="content-page">`, between the header placeholder and the `<main>` tag. This is essential because `.content-page a` styles override link colors to golden (`--color-accent-dark`), which would break the breadcrumb's gray link styling.
 
 ```html
 <div id="header-placeholder"></div>
@@ -530,7 +555,17 @@ The breadcrumb `<nav>` must be placed **OUTSIDE** `<main class="content-page">`,
 
 ### CSS
 
-All breadcrumb styles come from `main.css` (base styles defined there and in `country.css`). No additional CSS is needed on stamp pages — the styles are shared globally. The key reason it must be outside `.content-page` is to avoid the `.content-page a { color: #0000EE; text-decoration: underline; }` rule.
+All breadcrumb styles come from `main.css` (base styles defined there and in `country.css`). No additional CSS is needed on stamp pages — the styles are shared globally. The key reason it must be outside `.content-page` is to avoid the `.content-page a { color: var(--color-accent-dark); }` rule overriding the breadcrumb's gray links.
+
+The current page item has a golden underline accent:
+```css
+.breadcrumb__current {
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-medium);
+    padding-bottom: var(--space-1);
+    border-bottom: 2px solid var(--color-accent, #f4c542);
+}
+```
 
 ### Sticky behavior
 

@@ -250,17 +250,16 @@
 
 /* ===== CONTENT LINKS ===== */
 .content-page a {
-    color: #0000EE;
+    color: var(--color-text-primary, #1c1917);
     text-decoration: underline;
-    text-decoration-color: auto;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
-    transition: color 0.2s ease;
+    text-decoration-color: rgba(0, 0, 0, 0.25);
+    text-underline-offset: 2px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
 .content-page a:hover {
-    color: #551A8B;
-    text-decoration-color: auto;
+    color: var(--color-accent-dark, #d4a72c);
+    text-decoration-color: var(--color-accent-dark, #d4a72c);
 }
 
 .content-page a img {

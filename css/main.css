@@ -101,6 +101,8 @@
 .breadcrumb__current {
     color: var(--color-text-primary);
     font-weight: var(--font-weight-medium);
+    padding-bottom: var(--space-1);
+    border-bottom: 2px solid var(--color-accent, #f4c542);
 }
 
 @media (max-width: 576px) {

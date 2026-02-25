@@ -179,7 +179,8 @@
     function init() {
         if (initialized) return;
 
-        var contentPage = document.querySelector('.content-page');
+        // Support both stamp pages (.content-page) and year pages (.year-main)
+        var contentPage = document.querySelector('.content-page') || document.querySelector('.year-main');
         if (!contentPage) return;
 
         initialized = true;
