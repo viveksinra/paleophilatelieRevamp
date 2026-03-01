@@ -325,6 +325,35 @@ The `.stamp-details-card` class needs explicit overrides to prevent `table[borde
 
 **When to use:** Any standalone image with a descriptive caption below it that isn't already inside a layout table. Look for the pattern: `<img>` followed by `<br>` then `<small><em>` caption text.
 
+### 4.10 Float Tables with HTML `width` Attribute — Do NOT Override `min-content`
+
+**Problem:** Tables like `<table align="right" width="300px">` containing an image (`width="300px"`) and a `<small><em>` caption should have the caption constrained to the image width (300px). Without the right CSS, the caption text expands the table beyond the image boundary.
+
+**Wrong approach — `width: auto` override for `[width]` tables:**
+```css
+/* BAD — DO NOT USE */
+.content-page table[align="right"][width] {
+    width: auto;
+    max-width: 45%;
+}
+```
+This overrides `width: min-content` for tables that have a `width` HTML attribute. With `width: auto`, the table expands to fit long caption text instead of constraining to the image width.
+
+**Correct approach — let `min-content` apply to ALL float tables:**
+The base rules from section 4.1 already handle this correctly:
+```css
+.content-page table[align="right"] { width: min-content; max-width: 50%; }
+.content-page table[align="right"] img { max-width: none; }
+```
+
+**How it works:**
+- `max-width: none` on images prevents them from shrinking during the `min-content` calculation, so the image stays at its HTML `width="300px"`
+- `width: min-content` on the table makes it shrink to the widest non-breakable element — the 300px image
+- Caption text (in `<small><em>`) wraps within that 300px boundary
+- The HTML `width="300px"` attribute on the table is irrelevant because CSS `width: min-content` takes precedence
+
+**Key difference from year pages:** Year pages (in `year.css`) do NOT use `width: min-content` for float tables because year pages have complex multi-row layouts (e.g., EUROPA notes with a 500px banner + two stamp images below) where `min-content` calculates differently than the intended HTML width. Stamp pages have simpler image+caption float tables where `min-content` works perfectly.
+
 ### 4.9 Content Links — Golden Accent Theme
 
 **Problem:** Content page links were styled with browser-default blue (`#0000EE`) which clashed with the site's golden/amber design language.

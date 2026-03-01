@@ -101,10 +101,10 @@
                     <a href="{{BASE}}articles/index.html" class="nav-link">Resources</a>
                     <ul class="nav-dropdown">
                         <li><a href="{{BASE}}articles/index.html" class="nav-dropdown__link">Articles</a></li>
-                        <li><a href="{{BASE}}links.html#paleo" class="nav-dropdown__link">Links - Paleontology</a></li>
-                        <li><a href="{{BASE}}links.html#topics" class="nav-dropdown__link">Links - Philately</a></li>
-                        <li><a href="{{BASE}}links.html#org" class="nav-dropdown__link">Links - Postal Resources</a></li>
-                        <li><a href="{{BASE}}links.html#clubs" class="nav-dropdown__link">Links - Forums</a></li>
+                        <li><a href="{{BASE}}links_paleo.html" class="nav-dropdown__link">Links - Paleontology</a></li>
+                        <li><a href="{{BASE}}links.html" class="nav-dropdown__link">Links - Philately</a></li>
+                        <li><a href="{{BASE}}links_postal_resources.html" class="nav-dropdown__link">Links - Postal Resources</a></li>
+                        <li><a href="{{BASE}}links_forums.html" class="nav-dropdown__link">Links - Forums</a></li>
                         <li><a href="{{BASE}}media/books.html" class="nav-dropdown__link">Books</a></li>
                         <li><a href="{{BASE}}media/paleoart.html" class="nav-dropdown__link">Paleoart</a></li>
                         <li><a href="{{BASE}}media/videos.html" class="nav-dropdown__link">Videos</a></li>
@@ -125,8 +125,8 @@
                     </ul>
                 </li>
 
-                <!-- Login -->
-                <li class="nav-item">
+                <!-- Login (homepage only) -->
+                <li class="nav-item nav-item--login">
                     <a href="{{BASE}}mk/index.html" class="nav-link">Login</a>
                 </li>
             </ul>
@@ -215,19 +215,14 @@
                         Explore the world's most comprehensive collection of prehistoric life on stamps.
                     </p>
                     <div class="footer-social">
-                        <a href="https://www.facebook.com/groups/889825297731726/" class="footer-social__link" target="_blank" rel="noopener noreferrer" aria-label="Facebook Group">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
                         <a href="mailto:admin@paleophilatelie.eu" class="footer-social__link" aria-label="Email">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                             </svg>
                         </a>
-                        <a href="{{BASE}}contact.html#follow" class="footer-social__link" aria-label="Follow Us">
+                        <a href="https://x.com/PaleoPhilatelis" class="footer-social__link" aria-label="Follow us on X" target="_blank" rel="noopener noreferrer">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                             </svg>
                         </a>
                     </div>
@@ -324,10 +319,10 @@
                     <h3 class="footer-col__title">Resources</h3>
                     <ul class="footer-links">
                         <li><a href="{{BASE}}articles/index.html">Articles</a></li>
-                        <li><a href="{{BASE}}links.html#paleo">Links - Paleontology</a></li>
-                        <li><a href="{{BASE}}links.html#topics">Links - Philately</a></li>
-                        <li><a href="{{BASE}}links.html#org">Links - Postal Resources</a></li>
-                        <li><a href="{{BASE}}links.html#clubs">Links - Forums</a></li>
+                        <li><a href="{{BASE}}links_paleo.html">Links - Paleontology</a></li>
+                        <li><a href="{{BASE}}links.html">Links - Philately</a></li>
+                        <li><a href="{{BASE}}links_postal_resources.html">Links - Postal Resources</a></li>
+                        <li><a href="{{BASE}}links_forums.html">Links - Forums</a></li>
                         <li><a href="{{BASE}}media/books.html">Books</a></li>
                         <li><a href="{{BASE}}media/paleoart.html">Paleoart</a></li>
                         <li><a href="{{BASE}}media/videos.html">Videos</a></li>
@@ -416,6 +411,14 @@
         if (!element) return;
 
         element.innerHTML = applyBasePath(headerHTML, basePath);
+
+        // Show login button only on the root homepage
+        const pageName = window.location.pathname.replace(/\\/g, '/').split('/').pop();
+        const isHomepage = (pageName === 'index.html' || pageName === 'index.htm' || pageName === '') && basePath === '';
+        const loginItem = element.querySelector('.nav-item--login');
+        if (loginItem && !isHomepage) {
+            loginItem.style.display = 'none';
+        }
     }
 
     // Load footer component

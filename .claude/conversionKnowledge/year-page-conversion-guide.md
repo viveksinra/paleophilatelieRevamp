@@ -110,7 +110,7 @@ At 768px and below, float tables unfloat and go full-width:
 | Pattern | Location in 2025.html | CSS Fix |
 |---|---|---|
 | `table align="right" width="500px"` with image | Announcements (awards), EUROPA notes | Float table fix (2.2) |
-| `table align="right" width="300px"` with Facebook img | References section | Float table fix (2.2) |
+| `table align="right" width="300px"` with Facebook img | References section | Removed — Facebook image now in global footer (see §9) |
 | `<center><img width="950px">` | Kyrgyzstan banner, France stamps | Centered image fix (2.3) |
 | `<table width="950px">` with book images | Books section | Base override `width: auto; max-width: 100%` |
 | Multiple `<br>` tags between paragraphs | Throughout notes text | br collapse (2.4) |
@@ -188,7 +188,43 @@ or stamps with inaccurate reconstruction of prehistoric animals.</strong><br>
 <a href="../legend.html#unrec">Undesired</a> at serious philatelic exhibits.</em></p>
 ```
 
-## 8. Key Difference from Stamp Page (content.css)
+## 8. Container Padding for Content Sections
+
+`.year-main .container` needs horizontal padding so text doesn't start flush against the white background edge. Do NOT create separate box wrappers (like `.ref-box`) — just add padding to the shared container.
+
+```css
+.year-main .container {
+    max-width: none;
+    padding: 0 1rem;
+    margin: 0;
+}
+```
+
+**Why not a separate box?** The white background already comes from `.year-content-section` alternating backgrounds. Adding another box (with its own background, border, border-radius) creates a box-inside-a-box effect. The padding belongs on the container itself so it applies consistently to all sections (References, Notes, etc.).
+
+## 9. Facebook Image — Remove from Year Pages
+
+The Facebook image (`images/others/facebook.jpg`) that used to float right in the References section should be **removed** from year pages. It's now in the global footer via `component-loader.js`.
+
+Previously it was in a `<table align="right" width="300px">` inside the References section. Just delete the entire table — keep only the `<strong>References:</strong>` heading and `<ul>` list.
+
+## 10. Lightbox for Year Page Images
+
+Year pages need the same lightbox as stamp pages. Add these two scripts:
+
+```html
+<script src="../components/gallery/gallery.js"></script>
+<script src="../scripts/products-lightbox.js"></script>
+```
+
+The `products-lightbox.js` was updated to also look for `.year-main` (not just `.content-page`):
+```js
+var contentPage = document.querySelector('.content-page') || document.querySelector('.year-main');
+```
+
+Gallery CSS is already loaded via `main.css` (`@import '../components/gallery/gallery.css'`), so no CSS changes needed. All `<a><img>` links inside `.year-main` automatically get lightbox behavior — no special classes or data attributes required.
+
+## 11. Key Difference from Stamp Page (content.css)
 
 - Stamp pages use `<main class="content-page">` → content.css applies
 - Year pages use `<main id="main-content">` (no `.content-page`) → need separate rules in year.css

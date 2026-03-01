@@ -719,3 +719,50 @@
 .sitemap-page-wrap .sitemap-subdirs li {
     margin-bottom: 0;
 }
+
+/* ===== SITEMAP RIGHT-ALIGNED IMAGE TABLE FIX ===== */
+/* On sitemap.html, the legacy right-aligned table has images without
+   explicit width attributes. Override content.css max-width:none to
+   constrain images to 300px (original design intent). */
+.content-page table[align="right"] {
+    width: 310px;
+    max-width: 40%;
+}
+
+.content-page table[align="right"] img {
+    max-width: 300px;
+    width: 300px;
+    height: auto;
+}
+
+.content-page table[align="right"] td {
+    border-bottom: none;
+    padding: 0.5rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--color-text-secondary, #57534e);
+}
+
+.content-page table[align="right"] small {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted, #78716c);
+}
+
+.content-page table[align="right"] img {
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .content-page table[align="right"] {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+        margin: 1.5rem 0;
+    }
+
+    .content-page table[align="right"] img {
+        max-width: 100%;
+        width: 100%;
+    }
+}

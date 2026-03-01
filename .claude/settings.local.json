@@ -54,7 +54,8 @@
       "Bash(while read f)",
       "Bash(do grep -l \"header-placeholder\" \"$f\")",
       "Bash(git checkout:*)",
-      "Bash(powershell:*)"
+      "Bash(powershell:*)",
+      "Bash(python -c:*)"
     ]
   }
 }

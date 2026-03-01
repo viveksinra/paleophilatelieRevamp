@@ -189,18 +189,23 @@
 }
 
 /* Table-aligned images (legacy pattern: right-aligned table with image)
-   Use min-content so the table shrinks to match image width and
-   caption text wraps — preserving original float/wrap behavior */
+   Float the table and use min-content so the table shrinks to image width.
+   For tables WITH an explicit HTML width attribute, we need the images to
+   stay at their HTML width (max-width:none) so they correctly define
+   the min-content, making the table match the image width exactly.
+   Captions then wrap within that boundary. */
 .content-page table[align="right"] {
     float: right;
     margin: 0.5rem 0 1rem 1.5rem;
     width: min-content;
+    max-width: 50%;
 }
 
 .content-page table[align="left"] {
     float: left;
     margin: 0.5rem 1.5rem 1rem 0;
     width: min-content;
+    max-width: 50%;
 }
 
 .content-page table[align="center"] {
@@ -218,7 +223,9 @@
 
 /* Images inside floated tables must keep their HTML width attribute size.
    Without this, base.css max-width:100% lets images shrink during
-   min-content calculation, collapsing the table to near-zero width. */
+   min-content calculation, collapsing the table to near-zero width.
+   This ensures the table's min-content width matches the image width,
+   so captions wrap within the image boundary. */
 .content-page table[align="right"] img,
 .content-page table[align="left"] img {
     max-width: none;
@@ -396,6 +403,16 @@
     content: '';
     display: table;
     clear: both;
+}
+
+/* ===== LEGEND TABLE (legend.html) ===== */
+.content-page > table[align="center"] {
+    table-layout: fixed;
+}
+
+.content-page > table[align="center"] td:first-child {
+    width: 3.5rem;
+    text-align: center;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -652,13 +669,6 @@
     width: 50%;
     flex-shrink: 0;
     margin: 0 !important;
-}
-
-/* --- Right-Floated Image/Caption Tables --- */
-/* Ensure inline width attributes are respected alongside float */
-.content-page table[align="right"][width] {
-    float: right;
-    max-width: 45%;
 }
 
 /* --- Products & Philatelic Items Gallery --- */
