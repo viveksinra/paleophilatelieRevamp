@@ -339,6 +339,13 @@ body {
     .postal-resources-section table[cellpadding="10"] {
         font-size: 0.875rem;
     }
+
+    .postal-resources-section table[align="right"][width="200px"] {
+        float: none;
+        width: 100%;
+        margin: 1rem 0;
+        text-align: center;
+    }
 }
 
 /* ===== SELECTION STYLES ===== */

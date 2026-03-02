@@ -840,4 +840,47 @@
     .year-main table[align="left"] small {
         text-align: center;
     }
+
+    /* Plain stamp grid tables: horizontal scroll on small screens */
+    .year-main > table:not([align]),
+    .year-main table[width] {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .year-main > table:not([align]) tbody,
+    .year-main table[width] tbody {
+        display: table;
+        width: 100%;
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .year-book-card img {
+        height: 200px;
+    }
+
+    .year-hero h1 {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+    .year-hero,
+    .stamps-section,
+    .ack-section,
+    .year-content-section,
+    .year-books-section {
+        padding: var(--space-4) 0;
+    }
+
+    .year-toc__box,
+    .year-announcement__box,
+    .ack-box {
+        padding: 1rem;
+    }
+
+    .year-fb-promo__box {
+        gap: 1rem;
+    }
 }

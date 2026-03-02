@@ -867,3 +867,27 @@
         padding: 0;
     }
 }
+
+@media (max-width: 480px) {
+    .content-page {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .content-page h2 {
+        font-size: 1.125rem;
+        line-height: 1.3;
+    }
+
+    /* Stack stamp-nav vertically on very small screens */
+    .content-page table.stamp-nav td {
+        display: block;
+        width: 100% !important;
+        text-align: center !important;
+        padding: 0.25rem 0;
+    }
+
+    .content-page table.stamp-nav {
+        border-spacing: 0;
+    }
+}

@@ -1220,6 +1220,39 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .column-box {
+        padding: 1rem;
+    }
+
+    .column-box::before {
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .gallery-item img {
+        height: 100px;
+    }
+
+    .article-card__image {
+        height: 120px;
+    }
+
+    .article-cards--large .article-card__image {
+        height: 150px;
+    }
+
+    .catalogue-nav {
+        padding: 0.75rem 1rem;
+    }
+
+    .az-nav__link {
+        width: 1.75rem;
+        height: 1.75rem;
+        font-size: 0.8125rem;
+    }
+}
+
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
     *,
