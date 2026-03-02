@@ -1,0 +1,517 @@
+/**
+ * MEDIA PAGE STYLES — Books, Videos, Paleoart
+ * Museum Editorial Design matching homepage
+ * Scoped under .media-page class (added to content-page wrapper)
+ */
+
+/* ===== PAGE TITLE ===== */
+.content-page.media-page h1 {
+    position: relative;
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.content-page.media-page h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--hp-yellow, #d4a72c);
+    border-radius: 2px;
+}
+
+/* ===== SECTION HEADINGS ===== */
+.content-page.media-page h2 {
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    border-bottom: none;
+}
+
+.content-page.media-page h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--hp-yellow, #d4a72c);
+    border-radius: 2px;
+}
+
+/* Centered h2 (inside <center>) — center the accent bar too */
+.content-page.media-page center + h2::after,
+.content-page.media-page center h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ===== TABLE OF CONTENTS ===== */
+/* TOC is either a standalone <ul> or inside a table cell */
+.content-page.media-page > table:first-of-type {
+    background: var(--hp-white, #fff);
+    border-radius: 10px;
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    border-left: 4px solid var(--hp-yellow, #d4a72c);
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+}
+
+.content-page.media-page > table:first-of-type td {
+    border-bottom: none;
+    padding: 1.25rem 1.5rem;
+    vertical-align: top;
+}
+
+.content-page.media-page > table:first-of-type ul {
+    margin-bottom: 0;
+}
+
+.content-page.media-page > table:first-of-type li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Standalone TOC (videos page) */
+.content-page.media-page > big + ul,
+.content-page.media-page > center + big + ul {
+    background: var(--hp-white, #fff);
+    padding: 1.25rem 1.5rem 1.25rem 2.75rem;
+    border-radius: 10px;
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    border-left: 4px solid var(--hp-yellow, #d4a72c);
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* "Contents:" label */
+.content-page.media-page > big:first-of-type {
+    display: block;
+    font-family: var(--font-body, 'DM Sans', sans-serif);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--hp-gray-dark, #5a5a5a);
+    margin-bottom: 0.75rem;
+    margin-top: 1rem;
+}
+
+/* ===== INTRO TEXT ===== */
+/* The <big> intro paragraph (paleoart, books) */
+.content-page.media-page > center + big,
+.content-page.media-page h1 + big,
+.content-page.media-page center + big {
+    display: block;
+    font-family: var(--font-display, 'Crimson Pro', Georgia, serif);
+    font-size: clamp(1.05rem, 1.5vw, 1.2rem);
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--hp-text-light, #4a4a4a);
+    max-width: 72ch;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+/* ===== RESPONSIVE IFRAMES ===== */
+.content-page.media-page iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    max-width: 100%;
+    border: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.content-page.media-page iframe:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Full-width single videos in <center> */
+.content-page.media-page center iframe,
+.content-page.media-page center video {
+    width: 100% !important;
+    max-width: 950px;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+}
+
+.content-page.media-page video {
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    max-width: 100%;
+}
+
+/* ===== VIDEO GRID TABLES ===== */
+/* Tables with 2-col iframe layouts (paleoart, videos pages) */
+.content-page.media-page table[cellpadding="5"],
+.content-page.media-page table[style*="text-align: center"] {
+    width: 100% !important;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 1rem;
+}
+
+.content-page.media-page table[cellpadding="5"] td,
+.content-page.media-page table[style*="text-align: center"] td {
+    vertical-align: top;
+    padding: 0.5rem;
+    border-bottom: none;
+    width: 50%;
+}
+
+.content-page.media-page table[cellpadding="5"] iframe,
+.content-page.media-page table[style*="text-align: center"] iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+}
+
+/* ===== BOOK GRID TABLES ===== */
+/* Book image/description tables (books.html) */
+.content-page.media-page table[cellpadding="10px"],
+.content-page.media-page table[cellpadding="10"] {
+    width: 100% !important;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0.5rem;
+}
+
+.content-page.media-page table[cellpadding="10px"] > tbody > tr:first-child,
+.content-page.media-page table[cellpadding="10"] > tbody > tr:first-child,
+.content-page.media-page table[cellpadding="10px"] > tr:first-child,
+.content-page.media-page table[cellpadding="10"] > tr:first-child {
+    /* Image row */
+}
+
+.content-page.media-page table[cellpadding="10px"] td,
+.content-page.media-page table[cellpadding="10"] td {
+    vertical-align: top;
+    padding: 0.75rem;
+    border-bottom: none;
+}
+
+/* Image cells: center images and add nice styling */
+.content-page.media-page table[cellpadding="10px"] tr[style*="text-align: center"] td,
+.content-page.media-page table[cellpadding="10px"] > tbody > tr:first-child td,
+.content-page.media-page table[cellpadding="10px"] > tr:first-child td {
+    text-align: center;
+}
+
+/* Book cover images */
+.content-page.media-page table[cellpadding="10px"] img,
+.content-page.media-page table[cellpadding="10"] img {
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 280px;
+    object-fit: contain;
+    display: inline-block;
+}
+
+.content-page.media-page table[cellpadding="10px"] a:hover img,
+.content-page.media-page table[cellpadding="10"] a:hover img {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+/* Book description text */
+.content-page.media-page table[cellpadding="10px"] small,
+.content-page.media-page table[cellpadding="10"] small {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--hp-text-light, #4a4a4a);
+    margin-top: 0.25rem;
+}
+
+/* ===== PALEOART BOOK SHOWCASE ===== */
+/* Featured books with large video (paleoart page) — table width="950px" no cellpadding */
+.content-page.media-page > table[width="950px"]:not([cellpadding]) {
+    width: 100% !important;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.content-page.media-page > table[width="950px"]:not([cellpadding]) td {
+    vertical-align: top;
+    padding: 0.75rem;
+    border-bottom: none;
+}
+
+.content-page.media-page > table[width="950px"]:not([cellpadding]) img {
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto !important;
+}
+
+.content-page.media-page > table[width="950px"]:not([cellpadding]) a:hover img {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.content-page.media-page > table[width="950px"]:not([cellpadding]) iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+}
+
+/* Spacer rows */
+.content-page.media-page > table[width="950px"] td[style*="height: 40px"],
+.content-page.media-page > table[width="950px"] td[style*="height:40px"] {
+    height: 1.5rem !important;
+}
+
+/* ===== VIDEO TABLE (1000px width) ===== */
+.content-page.media-page table[width="1000px"] {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+.content-page.media-page table[width="1000px"] td {
+    vertical-align: top;
+    padding: 0.5rem;
+    border-bottom: none;
+    width: 50%;
+}
+
+.content-page.media-page table[width="1000px"] iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9;
+}
+
+/* ===== REFERENCES SECTION ===== */
+.content-page.media-page big + ul[style*="margin-top: 0"],
+.content-page.media-page a[name="ref"] ~ big + ul {
+    background: var(--hp-gray-light, #f0efec);
+    padding: 1.25rem 1.5rem 1.25rem 2.75rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--hp-gray-medium, #9a9a9a);
+}
+
+/* ===== SECTION DIVIDERS ===== */
+/* Replace excessive <br> spacing with clean section dividers */
+.content-page.media-page h2 {
+    border-top: 1px solid var(--hp-gray, #e5e4e1);
+    padding-top: 2.5rem;
+}
+
+/* First h2 doesn't need top border */
+.content-page.media-page > center + h2:first-of-type,
+.content-page.media-page > table:first-of-type + br + br + br + h2 {
+    border-top: none;
+    padding-top: 0;
+}
+
+/* ===== LINK STYLING ===== */
+.content-page.media-page a {
+    color: var(--hp-black, #0a0a0a);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow, #d4a72c);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+
+.content-page.media-page a:hover {
+    color: var(--hp-yellow-dark, #b8922a);
+    text-decoration-color: var(--hp-yellow-dark, #b8922a);
+}
+
+/* Image links — no underline */
+.content-page.media-page a:has(img) {
+    text-decoration: none;
+}
+
+/* Amazon links styling */
+.content-page.media-page small a,
+.content-page.media-page em a {
+    font-weight: 500;
+}
+
+/* YouTube red text links */
+.content-page.media-page font[color="red"] {
+    color: #cc0000 !important;
+}
+
+/* ===== ARTIST NAME LABELS ===== */
+/* Standalone text before video tables (e.g., "Andrej Atuchin", "Dr. Julius Csotonyi") */
+/* These are just text nodes — style them via general text styling */
+
+/* ===== INTRO DESCRIPTION TEXT ===== */
+/* Text between heading and content sections */
+.content-page.media-page > p,
+.content-page.media-page > br + p {
+    font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+    line-height: 1.75;
+    color: var(--hp-text, #2a2a2a);
+    max-width: 72ch;
+}
+
+/* ===== SECTION LABELS ===== */
+/* Subheading-like big text (e.g., "Some older books...") */
+.content-page.media-page > big {
+    display: block;
+    font-family: var(--font-display, 'Crimson Pro', Georgia, serif);
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--hp-text, #2a2a2a);
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* ===== CONSECUTIVE BR COLLAPSE ===== */
+/* Tighten the excessive <br> gaps in media pages */
+.content-page.media-page br + br + br {
+    display: none;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    /* Video tables stack to single column */
+    .content-page.media-page table[cellpadding="5"],
+    .content-page.media-page table[width="1000px"],
+    .content-page.media-page table[style*="text-align: center"] {
+        display: block;
+    }
+
+    .content-page.media-page table[cellpadding="5"] tbody,
+    .content-page.media-page table[cellpadding="5"] tr,
+    .content-page.media-page table[width="1000px"] tbody,
+    .content-page.media-page table[width="1000px"] tr,
+    .content-page.media-page table[style*="text-align: center"] tbody,
+    .content-page.media-page table[style*="text-align: center"] tr {
+        display: block;
+    }
+
+    .content-page.media-page table[cellpadding="5"] td,
+    .content-page.media-page table[width="1000px"] td,
+    .content-page.media-page table[style*="text-align: center"] td {
+        display: block;
+        width: 100% !important;
+        padding: 0.5rem 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .content-page.media-page h1 {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+    }
+
+    .content-page.media-page h2 {
+        font-size: clamp(1.1rem, 4vw, 1.5rem);
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+
+    /* Book tables — 2 columns on mobile */
+    .content-page.media-page table[cellpadding="10px"],
+    .content-page.media-page table[cellpadding="10"] {
+        display: block;
+    }
+
+    .content-page.media-page table[cellpadding="10px"] tbody,
+    .content-page.media-page table[cellpadding="10"] tbody {
+        display: block;
+    }
+
+    .content-page.media-page table[cellpadding="10px"] tr,
+    .content-page.media-page table[cellpadding="10"] tr {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .content-page.media-page table[cellpadding="10px"] td,
+    .content-page.media-page table[cellpadding="10"] td {
+        flex: 1 1 calc(50% - 0.75rem);
+        min-width: 130px;
+        width: auto !important;
+        padding: 0.5rem;
+    }
+
+    .content-page.media-page table[cellpadding="10px"] img,
+    .content-page.media-page table[cellpadding="10"] img {
+        max-height: 200px;
+    }
+
+    /* Featured book tables (paleoart) */
+    .content-page.media-page > table[width="950px"]:not([cellpadding]) {
+        display: block;
+    }
+
+    .content-page.media-page > table[width="950px"]:not([cellpadding]) tbody,
+    .content-page.media-page > table[width="950px"]:not([cellpadding]) tr {
+        display: block;
+    }
+
+    .content-page.media-page > table[width="950px"]:not([cellpadding]) td {
+        display: block;
+        width: 100% !important;
+        padding: 0.5rem 0;
+    }
+
+    /* TOC table */
+    .content-page.media-page > table:first-of-type {
+        display: block;
+    }
+
+    .content-page.media-page > table:first-of-type tbody,
+    .content-page.media-page > table:first-of-type tr {
+        display: block;
+    }
+
+    .content-page.media-page > table:first-of-type td {
+        display: block;
+        width: 100% !important;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .content-page.media-page table[cellpadding="10px"] td,
+    .content-page.media-page table[cellpadding="10"] td {
+        flex: 1 1 100%;
+    }
+}
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+    .content-page.media-page iframe,
+    .content-page.media-page img,
+    .content-page.media-page video {
+        transition: none !important;
+    }
+
+    .content-page.media-page a:hover img {
+        transform: none !important;
+    }
+}
+
+/* ===== PRINT ===== */
+@media print {
+    .content-page.media-page iframe,
+    .content-page.media-page video {
+        display: none;
+    }
+
+    .content-page.media-page table[cellpadding="10px"] img,
+    .content-page.media-page table[cellpadding="10"] img {
+        box-shadow: none;
+        border: 1px solid #ccc;
+    }
+}

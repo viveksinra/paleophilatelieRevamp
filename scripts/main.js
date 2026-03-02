@@ -81,9 +81,12 @@
             updateAzNavTop(checkbox.checked);
         }, { passive: true });
 
-        // Apply saved preference
-        var saved = false;
-        try { saved = localStorage.getItem('toolbarSticky') === 'true'; } catch(e) {}
+        // Apply saved preference (default: pinned)
+        var saved = true;
+        try {
+            var stored = localStorage.getItem('toolbarSticky');
+            if (stored !== null) saved = stored === 'true';
+        } catch(e) {}
         if (saved) {
             toolbar.classList.add('header-toolbar--sticky');
             checkbox.checked = true;

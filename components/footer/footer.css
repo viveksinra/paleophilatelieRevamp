@@ -242,6 +242,12 @@
     background-color: #f4c542;
 }
 
+.footer-col__subtitle a.footer-link--active {
+    color: #f4c542;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 /* ===== FOOTER BADGES ===== */
 .footer-badges {
     display: flex;

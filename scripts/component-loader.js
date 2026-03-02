@@ -146,10 +146,13 @@
     <div class="header-toolbar">
         <div class="container">
             <div class="header-toolbar__content">
-                <!-- Google Translate -->
-                <div id="google_translate_element"></div>
+                <!-- Left column: Translate + Breadcrumb -->
+                <div class="header-toolbar__left">
+                    <div id="google_translate_element"></div>
+                    <div id="header-breadcrumb-slot"></div>
+                </div>
 
-                <!-- Search Form -->
+                <!-- Right column: Search Form -->
                 <div class="header-search-wrapper">
                     <form action="https://search.freefind.com/find.html" method="get" accept-charset="UTF-8" class="header-search-form">
                         <input type="hidden" name="si" value="14323397">
@@ -378,6 +381,114 @@
 </footer>
 `;
 
+    // ===== Centralized Navigation Highlighting Config =====
+    // Each rule maps a page (by exact path or prefix) to the nav hrefs that should be highlighted.
+    // nav array: [top-level href, dropdown href, subdropdown href] — only include what applies.
+    // Exact paths are checked before prefixes (order matters within each type).
+    window.NAV_HIGHLIGHT_RULES = [
+        // HOME
+        { path: "index.html", nav: ["index.html"] },
+
+        // CATALOGUE (top-level href: phil_catalogue_main.html)
+        { path: "phil_catalogue_main.html", nav: ["phil_catalogue_main.html"] },
+        { path: "images/checklist_stamps.html", nav: ["phil_catalogue_main.html", "images/checklist_stamps.html"] },
+        { path: "phil_catalogue_species.html", nav: ["phil_catalogue_main.html", "phil_catalogue_species.html"] },
+        { path: "legend.html", nav: ["phil_catalogue_main.html", "legend.html"] },
+        { path: "phil_glossary.html", nav: ["phil_catalogue_main.html", "phil_glossary.html"] },
+        { prefix: "country/", nav: ["phil_catalogue_main.html", "country/index.html"] },
+        { prefix: "year/", nav: ["phil_catalogue_main.html", "year/index.html"] },
+        { prefix: "description/stamps/", nav: ["phil_catalogue_main.html", "description/stamps/index.html"] },
+        { prefix: "description/letters/", nav: ["phil_catalogue_main.html", "description/letters/index.html"] },
+
+        // GALLERY (top-level href: images/index.html)
+        { path: "images/index.html", nav: ["images/index.html"] },
+        { path: "images/stamps.html", nav: ["images/index.html", "images/stamps.html"] },
+        { path: "images/stamps_others.html", nav: ["images/index.html", "images/stamps.html"] },
+        { path: "images/ps.html", nav: ["images/index.html", "images/ps.html"] },
+        { path: "images/fdc.html", nav: ["images/index.html", "images/fdc.html"] },
+        { path: "images/pm.html", nav: ["images/index.html", "images/pm.html"] },
+        { path: "images/stamps_used.html", nav: ["images/index.html", "images/stamps_used.html"] },
+        { prefix: "exhibitions/", nav: ["images/index.html", "exhibitions/index.html"] },
+
+        // TOPICS > PALEONTOLOGY
+        { path: "topics/index.html", nav: ["topics/index.html"] },
+        { path: "topics/paleo/index.html", nav: ["topics/index.html", "topics/paleo/index.html"] },
+        { path: "topics/paleo/paleontologist.html", nav: ["topics/index.html", "topics/paleo/index.html", "topics/paleo/paleontologist.html"] },
+        { path: "topics/paleo/contributors.html", nav: ["topics/index.html", "topics/paleo/index.html", "topics/paleo/contributors.html"] },
+        { path: "topics/paleo/museums.html", nav: ["topics/index.html", "topics/paleo/index.html", "topics/paleo/museums.html"] },
+        { path: "topics/paleo/sites.html", nav: ["topics/index.html", "topics/paleo/index.html", "topics/paleo/sites.html"] },
+        { prefix: "topics/paleo/vertebrate/", nav: ["topics/index.html", "topics/paleo/index.html", "topics/paleo/vertebrate/index.html"] },
+        { prefix: "topics/paleo/", nav: ["topics/index.html", "topics/paleo/index.html"] },
+
+        // TOPICS > PALEOANTHROPOLOGY
+        { path: "topics/anthro/index.html", nav: ["topics/index.html", "topics/anthro/index.html"] },
+        { path: "topics/anthro/antropologist.html", nav: ["topics/index.html", "topics/anthro/index.html", "topics/anthro/antropologist.html"] },
+        { path: "topics/anthro/contributors.html", nav: ["topics/index.html", "topics/anthro/index.html", "topics/anthro/contributors.html"] },
+        { path: "topics/anthro/museums.html", nav: ["topics/index.html", "topics/anthro/index.html", "topics/anthro/museums.html"] },
+        { path: "topics/anthro/sites.html", nav: ["topics/index.html", "topics/anthro/index.html", "topics/anthro/sites.html"] },
+        { prefix: "topics/anthro/", nav: ["topics/index.html", "topics/anthro/index.html"] },
+
+        // RESOURCES (top-level href: articles/index.html)
+        { prefix: "articles/", nav: ["articles/index.html"] },
+        { path: "links_paleo.html", nav: ["articles/index.html", "links_paleo.html"] },
+        { path: "links.html", nav: ["articles/index.html", "links.html"] },
+        { path: "links_postal_resources.html", nav: ["articles/index.html", "links_postal_resources.html"] },
+        { path: "links_forums.html", nav: ["articles/index.html", "links_forums.html"] },
+        { path: "media/books.html", nav: ["articles/index.html", "media/books.html"] },
+        { path: "media/paleoart.html", nav: ["articles/index.html", "media/paleoart.html"] },
+        { path: "media/videos.html", nav: ["articles/index.html", "media/videos.html"] },
+        { prefix: "media/", nav: ["articles/index.html"] },
+
+        // ABOUT (top-level href: about_website.html)
+        { path: "about_website.html", nav: ["about_website.html"] },
+        { path: "about.html", nav: ["about_website.html", "about.html"] },
+        { path: "news.html", nav: ["about_website.html", "news.html"] },
+        { path: "awards.html", nav: ["about_website.html", "awards.html"] },
+        { path: "contact.html", nav: ["about_website.html", "contact.html"] },
+        { path: "sitemap.html", nav: ["about_website.html", "sitemap.html"] },
+        { path: "paleophilatelie_site_map.html", nav: ["about_website.html", "sitemap.html"] },
+        { path: "about_how-to-help.html", nav: ["about_website.html"] },
+
+        // LOGIN
+        { prefix: "mk/", nav: ["mk/index.html"] },
+    ];
+
+    // Get the site-root-relative path of the current page
+    window.getSiteRelativePath = function() {
+        var pathname = window.location.pathname.replace(/\\/g, '/');
+        // Known site subfolders — used to find the site root in the URL
+        var folders = ['country', 'year', 'topics', 'images', 'description', 'exhibitions', 'articles', 'media', 'mk'];
+        for (var i = 0; i < folders.length; i++) {
+            var marker = '/' + folders[i] + '/';
+            var idx = pathname.indexOf(marker);
+            if (idx !== -1) {
+                return pathname.substring(idx + 1); // e.g. "country/afghanistan.html"
+            }
+        }
+        // Root-level page — return just the filename
+        var parts = pathname.split('/');
+        return parts[parts.length - 1] || 'index.html';
+    };
+
+    // Find the matching highlight rule for the current page
+    window.getNavHighlightRule = function() {
+        var pagePath = window.getSiteRelativePath().toLowerCase();
+        var rules = window.NAV_HIGHLIGHT_RULES;
+        // Exact path matches first
+        for (var i = 0; i < rules.length; i++) {
+            if (rules[i].path && pagePath === rules[i].path.toLowerCase()) {
+                return rules[i];
+            }
+        }
+        // Prefix matches second
+        for (var i = 0; i < rules.length; i++) {
+            if (rules[i].prefix && pagePath.indexOf(rules[i].prefix.toLowerCase()) === 0) {
+                return rules[i];
+            }
+        }
+        return null;
+    };
+
     // Determine the base path based on current page location
     function getBasePath() {
         const path = window.location.pathname;
@@ -418,6 +529,23 @@
         const loginItem = element.querySelector('.nav-item--login');
         if (loginItem && !isHomepage) {
             loginItem.style.display = 'none';
+        }
+
+        // Build breadcrumb from data attribute
+        var breadcrumbData = element.getAttribute('data-breadcrumb');
+        var slot = element.querySelector('#header-breadcrumb-slot');
+        if (breadcrumbData && slot) {
+            var items = breadcrumbData.split('|');
+            var lis = items.map(function(item) {
+                var parts = item.split('::');
+                var label = parts[0];
+                var url = parts[1];
+                if (url) {
+                    return '<li class="breadcrumb__item"><a href="' + url + '" class="breadcrumb__link">' + label + '</a></li>';
+                }
+                return '<li class="breadcrumb__item"><span class="breadcrumb__current">' + label + '</span></li>';
+            }).join('');
+            slot.innerHTML = '<nav class="breadcrumb" aria-label="Breadcrumb"><ol class="breadcrumb__list">' + lis + '</ol></nav>';
         }
     }
 

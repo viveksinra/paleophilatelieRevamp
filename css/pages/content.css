@@ -678,44 +678,40 @@
     border-spacing: 0;
     margin: 1rem 0 1.5rem;
     border: none;
+    background: #fff;
 }
 
 .content-page table.products-gallery tr {
-    background: none !important;
+    background: #fff !important;
 }
 
 .content-page table.products-gallery td {
-    vertical-align: bottom !important;
+    vertical-align: middle !important;
     text-align: center;
-    padding: 2px;
+    padding: 3px;
     border: none !important;
-    background: none !important;
+    background: #fff !important;
 }
 
-/* Image cells: black background, bottom-aligned content.
-   Horizontal padding + content-box clipping creates visible gap
-   between columns while keeping border-collapse:collapse for
-   zero vertical gap. */
-.content-page table.products-gallery td:has(a > img) {
-    background: #000 !important;
-    background-clip: content-box !important;
-    padding: 0 0.5rem !important;
-    border-radius: 0.5rem;
+/* Caption-only rows: respect inline text-align from HTML */
+.content-page table.products-gallery tr[style*="text-align"] td {
+    text-align: inherit;
 }
 
 .content-page table.products-gallery td[colspan] {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    vertical-align: middle !important;
+    padding-top: 0.5rem;
+    padding-bottom: 0.25rem;
 }
 
-/* The <a> wrapping the image must stay inline-level so
-   vertical-align: bottom on the td can push it down */
+/* Spacer rows between product groups — reduce inline height:20px */
+.content-page table.products-gallery td[style*="height"] {
+    height: 0.25rem !important;
+}
+
+/* Image links */
 .content-page table.products-gallery a:has(img) {
     display: inline;
     line-height: 0;
-    border-radius: 0;
-    overflow: hidden;
     transition: none;
 }
 
@@ -724,45 +720,38 @@
     transform: none;
 }
 
-/* Images: inline-block + vertical-align:bottom removes the
-   descender gap while allowing td vertical-align to work */
+/* Images: natural size, capped at cell width */
 .content-page table.products-gallery img {
     border-radius: 0;
     max-width: 100%;
     height: auto;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
 }
 
-/* Caption text — tight to the image above */
+/* Caption text — left-aligned for readability */
 .content-page table.products-gallery small {
     display: block;
     margin-top: 2px;
+    text-align: left;
 }
 
-/* Google Ads: pull completely out of flow so they never stretch rows */
+/* Google Ads: hide ads and collapse their cells */
 .content-page table.products-gallery ins,
 .content-page table.products-gallery .adsbygoogle,
-.content-page table.products-gallery amp-ad,
-.content-page table.products-gallery ins[style] {
+.content-page table.products-gallery amp-ad {
     display: none !important;
-    position: absolute !important;
-    height: 0 !important;
-    width: 0 !important;
-    max-height: 0 !important;
-    overflow: hidden !important;
-    visibility: hidden !important;
 }
 
-/* Collapse the ads column (3rd td) entirely */
-.content-page table.products-gallery td:nth-child(3) {
+/* Collapse only the td that contains ads (not all 3rd columns) */
+.content-page table.products-gallery td:has(amp-ad),
+.content-page table.products-gallery td:has(.adsbygoogle) {
     width: 0 !important;
     max-width: 0 !important;
     padding: 0 !important;
+    overflow: hidden;
     font-size: 0;
     line-height: 0;
-    overflow: hidden;
-    background: none !important;
 }
 
 /* --- References & Acknowledgements Sections --- */

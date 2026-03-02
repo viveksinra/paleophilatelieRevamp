@@ -20,7 +20,7 @@
 
         buildHero(contentPage);
         buildQuickNav(contentPage);
-        buildTwoColumnLayout(contentPage);
+        buildDirectoryLayout(contentPage);
     }
 
     /* ===== HERO ===== */
@@ -104,8 +104,8 @@
         else container.insertBefore(nav, container.firstChild);
     }
 
-    /* ===== TWO-COLUMN LAYOUT: LEFT = DIRECTORY, RIGHT = SIDEBAR IMAGES ===== */
-    function buildTwoColumnLayout(container) {
+    /* ===== DIRECTORY LAYOUT: SEARCH + NAV AT TOP, FULL INDEX AT BOTTOM ===== */
+    function buildDirectoryLayout(container) {
         var sidebarTable = container.querySelector('table[align="right"]');
         var ol = container.querySelector('ol');
         if (!ol) return;
@@ -157,19 +157,11 @@
             }
         });
 
-        // Build directory HTML (left column content)
-        var dirHTML = '';
-
-        // Subdirectories pills
-        if (subdirUL) {
-            dirHTML += '<div class="sitemap-subdirs">' +
-                '<div class="sitemap-subdirs__label">Main Sections</div>' +
-                subdirUL.outerHTML +
-            '</div>';
-        }
+        // === TOP SECTION: Search bar ===
+        var topHTML = '';
 
         // Search
-        dirHTML += '<div class="sitemap-search" id="sitemap-search">' +
+        topHTML += '<div class="sitemap-search" id="sitemap-search">' +
             '<div class="sitemap-search__wrap">' +
                 '<div class="sitemap-search__input-wrap">' +
                     '<svg class="sitemap-search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>' +
@@ -182,6 +174,17 @@
                 '</div>' +
             '</div>' +
         '</div>';
+
+        // Create search section (placed between quicknav and directory)
+        var searchSection = document.createElement('div');
+        searchSection.className = 'sitemap-toolbar';
+        searchSection.innerHTML = topHTML;
+
+        // === BOTTOM SECTION: Full directory index ===
+        var dirHTML = '';
+
+        // Section label
+        dirHTML += '<div class="sitemap-directory__label">Complete Page Index</div>';
 
         // Sections
         groupConfig.forEach(function (cfg) {
@@ -209,30 +212,17 @@
             '<div class="sitemap-no-results__text">No pages match your search.</div>' +
         '</div>';
 
-        // Create the two-column layout
-        var layout = document.createElement('div');
-        layout.className = 'sitemap-layout';
-
-        // Left column — directory
-        var mainCol = document.createElement('div');
-        mainCol.className = 'sitemap-main';
-        mainCol.innerHTML = dirHTML;
-
-        // Right column — sidebar with images
-        var sidebarCol = document.createElement('div');
-        sidebarCol.className = 'sitemap-sidebar';
-        if (sidebarTable) {
-            sidebarTable.removeAttribute('width');
-            sidebarCol.appendChild(sidebarTable);
-        }
-
-        layout.appendChild(mainCol);
-        layout.appendChild(sidebarCol);
+        // Create directory section (full-width, at the bottom)
+        var directorySection = document.createElement('div');
+        directorySection.className = 'sitemap-directory';
+        directorySection.innerHTML = dirHTML;
 
         // Remove old directory content (text, UL, BIG, OL)
         removeOldDirectoryContent(container, subdirUL, ol);
 
-        container.appendChild(layout);
+        // Append in order: search toolbar, then directory at the bottom
+        container.appendChild(searchSection);
+        container.appendChild(directorySection);
         setupInteractivity();
     }
 
@@ -265,7 +255,8 @@
                 if (child.nodeType === 1 && (
                     child.classList.contains('sitemap-hero') ||
                     child.classList.contains('sitemap-quicknav') ||
-                    child.classList.contains('sitemap-layout')
+                    child.classList.contains('sitemap-toolbar') ||
+                    child.classList.contains('sitemap-directory')
                 )) continue;
 
                 container.removeChild(child);

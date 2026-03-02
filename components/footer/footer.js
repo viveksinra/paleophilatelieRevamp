@@ -81,34 +81,31 @@
     }
 
     /**
-     * Highlight current page link in footer
+     * Highlight current page link in footer using centralized config
      */
     function highlightActiveLink() {
-        const footerLinks = document.querySelectorAll('.footer-links a');
-        if (!footerLinks.length) return;
+        var rule = window.getNavHighlightRule ? window.getNavHighlightRule() : null;
+        if (!rule) return;
 
-        const currentPath = window.location.pathname.replace(/\\/g, '/').toLowerCase();
-        const currentHash = window.location.hash.toLowerCase();
-        const currentHref = currentPath + currentHash;
+        // Build target set from the rule's nav array (lowercased, no hash)
+        var targets = {};
+        for (var i = 0; i < rule.nav.length; i++) {
+            targets[rule.nav[i].toLowerCase().split('#')[0]] = true;
+        }
 
-        // Extract just the filename or relative path portion
-        const pathParts = currentPath.split('/');
-        const currentFile = pathParts[pathParts.length - 1] || 'index.html';
+        // Helper: normalize a link's href to site-root-relative form
+        function normalizeHref(href) {
+            if (!href) return '';
+            return href.replace(/\.\.\//g, '').split('#')[0].toLowerCase();
+        }
 
-        footerLinks.forEach(link => {
-            const href = link.getAttribute('href');
+        // Scan footer-links a AND subtitle links
+        var footerLinks = document.querySelectorAll('.footer-links a, .footer-col__subtitle a');
+        footerLinks.forEach(function(link) {
+            var href = link.getAttribute('href');
             if (!href || href === '#') return;
-
-            // Normalize the href for comparison
-            const normalizedHref = href.replace(/\.\.\//g, '').toLowerCase();
-            const hrefParts = normalizedHref.split('/');
-            const hrefFile = hrefParts[hrefParts.length - 1] || 'index.html';
-
-            // Check if paths match (comparing end of current path with the link href)
-            const match = currentPath.endsWith(normalizedHref.split('#')[0]) ||
-                          (currentFile === hrefFile && currentPath.includes(normalizedHref.split('#')[0].split('/').slice(0, -1).join('/')));
-
-            if (match) {
+            var norm = normalizeHref(href);
+            if (targets[norm]) {
                 link.classList.add('footer-link--active');
             }
         });

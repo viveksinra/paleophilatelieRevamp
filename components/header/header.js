@@ -206,59 +206,51 @@
     }
 
     /**
-     * Highlight active navigation link based on current page
+     * Highlight active navigation link based on centralized config
      */
     function highlightActiveNavLink() {
-        const currentPath = window.location.pathname.replace(/\\/g, '/').toLowerCase();
-        const pathParts = currentPath.split('/');
-        const currentFile = pathParts[pathParts.length - 1] || 'index.html';
+        var rule = window.getNavHighlightRule ? window.getNavHighlightRule() : null;
+        if (!rule) return;
 
-        // Check dropdown links first
-        const dropdownLinks = document.querySelectorAll('.nav-dropdown__link');
-        let matchedParent = null;
+        // Build a set of target hrefs (lowercased, no hash)
+        var targets = {};
+        for (var i = 0; i < rule.nav.length; i++) {
+            targets[rule.nav[i].toLowerCase().split('#')[0]] = true;
+        }
 
-        dropdownLinks.forEach(link => {
-            const href = link.getAttribute('href');
+        // Helper: normalize a link's href to site-root-relative form
+        function normalizeHref(href) {
+            if (!href) return '';
+            return href.replace(/\.\.\//g, '').split('#')[0].toLowerCase();
+        }
+
+        // Scan all nav links at every level
+        var allLinks = document.querySelectorAll('.nav-link, .nav-dropdown__link, .nav-subdropdown__link');
+        allLinks.forEach(function(link) {
+            var href = link.getAttribute('href');
             if (!href || href === '#') return;
+            var norm = normalizeHref(href);
+            if (!targets[norm]) return;
 
-            const normalizedHref = href.replace(/\{\{BASE\}\}/g, '').replace(/\.\.\//g, '').toLowerCase();
-
-            if (currentPath.endsWith(normalizedHref)) {
-                link.classList.add('nav-dropdown__link--active');
-                // Also highlight the parent top-level nav link
-                const parentNavItem = link.closest('.nav-item.has-dropdown');
-                if (parentNavItem) {
-                    const parentLink = parentNavItem.querySelector(':scope > .nav-link');
+            // Determine link type and apply the correct active class
+            if (link.classList.contains('nav-subdropdown__link')) {
+                link.classList.add('nav-subdropdown__link--active');
+            } else if (link.classList.contains('nav-dropdown__link')) {
+                // Only activate if the parent top-level nav's href is also in the target set
+                var parentItem = link.closest('.nav-item.has-dropdown');
+                if (parentItem) {
+                    var parentLink = parentItem.querySelector(':scope > .nav-link');
                     if (parentLink) {
-                        parentLink.classList.add('nav-link--active');
-                        matchedParent = parentLink;
+                        var parentNorm = normalizeHref(parentLink.getAttribute('href'));
+                        if (targets[parentNorm]) {
+                            link.classList.add('nav-dropdown__link--active');
+                        }
                     }
                 }
+            } else if (link.classList.contains('nav-link')) {
+                link.classList.add('nav-link--active');
             }
         });
-
-        // Check top-level nav links only if no dropdown match found
-        if (!matchedParent) {
-            const navLinks = document.querySelectorAll('.nav-link');
-            let bestMatch = null;
-            let bestMatchLength = 0;
-
-            navLinks.forEach(link => {
-                const href = link.getAttribute('href');
-                if (!href || href === '#') return;
-
-                const normalizedHref = href.replace(/\{\{BASE\}\}/g, '').replace(/\.\.\//g, '').toLowerCase();
-
-                if (currentPath.endsWith(normalizedHref) && normalizedHref.length > bestMatchLength) {
-                    bestMatch = link;
-                    bestMatchLength = normalizedHref.length;
-                }
-            });
-
-            if (bestMatch) {
-                bestMatch.classList.add('nav-link--active');
-            }
-        }
     }
 
     /**
