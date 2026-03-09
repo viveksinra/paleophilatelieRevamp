@@ -142,7 +142,7 @@
     --transition-slow: 350ms ease;
 
     /* ===== LAYOUT ===== */
-    --container-max-width: 1200px;
+    --container-max-width: 1000px;
     --header-height: 72px;
     --header-height-scrolled: 64px;
 

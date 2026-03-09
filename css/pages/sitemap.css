@@ -118,7 +118,7 @@
 }
 
 .sitemap-quicknav__inner {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
@@ -209,14 +209,14 @@
 
 /* ===== SEARCH TOOLBAR (between quick nav and directory) ===== */
 .sitemap-toolbar {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1.5rem 1.5rem 0;
 }
 
 /* ===== FULL DIRECTORY (at the bottom) ===== */
 .sitemap-directory {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5rem 4rem;
 }

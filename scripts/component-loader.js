@@ -45,7 +45,7 @@
                 <li class="nav-item has-dropdown">
                     <a href="{{BASE}}phil_catalogue_main.html" class="nav-link">Catalogue</a>
                     <ul class="nav-dropdown">
-                        <li><a href="{{BASE}}phil_catalogue_main.html#milestones" class="nav-dropdown__link">Milestones</a></li>
+                        <li><a href="{{BASE}}milestones.html" class="nav-dropdown__link">Milestones</a></li>
                         <li><a href="{{BASE}}country/index.html" class="nav-dropdown__link">Country</a></li>
                         <li><a href="{{BASE}}year/index.html" class="nav-dropdown__link">Year</a></li>
                         <li><a href="{{BASE}}description/stamps/index.html" class="nav-dropdown__link">Descriptions</a></li>
@@ -272,7 +272,7 @@
                 <div class="footer-col">
                     <h3 class="footer-col__title">Catalogue</h3>
                     <ul class="footer-links">
-                        <li><a href="{{BASE}}phil_catalogue_main.html#milestones">Milestones</a></li>
+                        <li><a href="{{BASE}}milestones.html">Milestones</a></li>
                         <li><a href="{{BASE}}country/index.html">Country</a></li>
                         <li><a href="{{BASE}}year/index.html">Year</a></li>
                         <li><a href="{{BASE}}description/stamps/index.html">Descriptions</a></li>
@@ -391,6 +391,7 @@
 
         // CATALOGUE (top-level href: phil_catalogue_main.html)
         { path: "phil_catalogue_main.html", nav: ["phil_catalogue_main.html"] },
+        { path: "milestones.html", nav: ["phil_catalogue_main.html", "milestones.html"] },
         { path: "images/checklist_stamps.html", nav: ["phil_catalogue_main.html", "images/checklist_stamps.html"] },
         { path: "phil_catalogue_species.html", nav: ["phil_catalogue_main.html", "phil_catalogue_species.html"] },
         { path: "legend.html", nav: ["phil_catalogue_main.html", "legend.html"] },

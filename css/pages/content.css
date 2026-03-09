@@ -9,7 +9,7 @@
  * Content pages need wider containers and left-aligned text
  */
 .intro-section .container.content-page {
-    max-width: 1200px;
+    max-width: 1000px;
     text-align: left;
     animation: none;
 }
@@ -31,9 +31,9 @@
     padding-bottom: 3rem;
 }
 
-/* Match the navbar's 1200px max-width with comfortable side padding */
+/* Match the navbar's 1000px max-width with comfortable side padding */
 .content-page .container {
-    max-width: 1200px;
+    max-width: 1000px;
     padding-left: 2rem;
     padding-right: 2rem;
 }

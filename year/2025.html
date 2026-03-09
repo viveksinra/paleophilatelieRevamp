@@ -757,5 +757,75 @@ Paleoanthropology, issued this year which is not mentioned below, please inform
     <script src="../components/footer/footer.js"></script>
     <script src="../components/gallery/gallery.js"></script>
     <script src="../scripts/products-lightbox.js"></script>
+
+    <!-- Floating TOC Button + Popup -->
+    <button class="year-toc-fab" id="tocFab" aria-label="Table of Contents" title="Table of Contents">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+    <div class="year-toc-popup-overlay" id="tocOverlay"></div>
+    <div class="year-toc-popup" id="tocPopup">
+        <div class="year-toc-popup__title">Contents:</div>
+        <ul class="year-toc-popup__list">
+            <li><a href="#ann">Announcements</a></li>
+            <li><a href="#official">Official stamps</a></li>
+            <li><a href="#pers">Personalized stamps</a></li>
+            <li><a href="#stamps_others">Other stamps to consider</a></li>
+            <li><a href="#pm">Commemorative postmarks</a></li>
+            <li><a href="#pm_others">Other postmarks to consider</a></li>
+        </ul>
+    </div>
+    <script>
+    (function() {
+        var fab = document.getElementById('tocFab');
+        var popup = document.getElementById('tocPopup');
+        var overlay = document.getElementById('tocOverlay');
+        var sidebar = document.querySelector('.year-sidebar');
+        var container = document.querySelector('.year-content-layout > .year-sidebar');
+        var parentContainer = sidebar ? sidebar.closest('.container') : null;
+
+        function positionFab() {
+            if (!parentContainer) return;
+            var rect = parentContainer.getBoundingClientRect();
+            document.documentElement.style.setProperty('--toc-fab-left', rect.left + 12 + 'px');
+        }
+
+        function updateFab() {
+            if (!sidebar) return;
+            var rect = sidebar.getBoundingClientRect();
+            if (rect.bottom < 0) {
+                fab.classList.add('visible');
+            } else {
+                fab.classList.remove('visible');
+                closeToc();
+            }
+            positionFab();
+        }
+
+        function closeToc() {
+            popup.classList.remove('open');
+            overlay.classList.remove('open');
+        }
+
+        fab.addEventListener('click', function() {
+            var isOpen = popup.classList.contains('open');
+            if (isOpen) {
+                closeToc();
+            } else {
+                popup.classList.add('open');
+                overlay.classList.add('open');
+            }
+        });
+
+        overlay.addEventListener('click', closeToc);
+
+        popup.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') closeToc();
+        });
+
+        window.addEventListener('scroll', updateFab, { passive: true });
+        window.addEventListener('resize', positionFab);
+        updateFab();
+    })();
+    </script>
 </body>
 </html>
