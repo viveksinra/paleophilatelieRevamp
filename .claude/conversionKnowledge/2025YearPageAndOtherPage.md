@@ -100,6 +100,40 @@ Reusable CSS was extracted from the monolithic `year.css` into shared component 
 | Announcement images | `max-width: 400px; height: auto` |
 | Awards banner images | `max-width: 120px; height: auto` |
 
+## Card-Style Image Grid Tables (Shared Pattern)
+
+Image grid tables on stamp detail pages and country pages use a consistent "card box" pattern where each image cell becomes a card with hover effects. This avoids touching HTML — pure CSS via `:has()` selectors.
+
+### How It Works
+1. **Table**: `border-collapse: separate; border-spacing: 0.5rem` — enables border-radius on cells, adds breathing room
+2. **Image cells** (`td:has(> a > img)`): cream background, 1px border, 8px radius, hover lift + shadow + yellow border
+3. **Section headers** (`td[colspan]`): warm-white bg, 3px yellow bottom border, centered bold text
+4. **img inside card cells**: border/bg/padding removed (card styling is on the td now)
+5. **Fallback**: base `img` rule keeps card styling for browsers without `:has()` support
+
+### Where Applied
+| Page Type | CSS File | Selector Scope | Notes |
+|---|---|---|---|
+| Stamp detail pages | `content.css` | `.content-page table.products-gallery` | `td:has(> a > img)` for card cells |
+| Country pages | `country.css` | `.country-main > table:not([align])` | `td:has(> a > img.slist)` for card cells |
+
+### Section Header Variants
+- **Colspan cells** (`td[colspan]`): full-width section divider with yellow accent bar
+- **Inline text-align override**: `tr[style*="text-align"] small { text-align: inherit }` — lets long captions opt into left-align via HTML inline style
+
+### Ad Cell Collapse
+Both page types hide Google Ads cells with the same pattern:
+```css
+td:has(amp-ad), td:has(.adsbygoogle) {
+    width: 0 !important; max-width: 0 !important;
+    padding: 0 !important; overflow: hidden;
+}
+```
+
+### Mobile Behavior
+- **Stamp detail pages** (`≤768px`): cells become `display: block; width: 100%`, card cells get `max-width: 320px; margin: 0 auto`
+- **Country pages** (`≤768px`): table becomes horizontally scrollable (`overflow-x: auto`)
+
 ## Quick Reference: Applying to Other Year Pages
 
 ### HTML Structure Required

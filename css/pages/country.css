@@ -211,18 +211,15 @@
 
 /* ===== COUNTRY CONTENT LAYOUT ===== */
 .country-content {
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    gap: var(--space-6);
+    display: block;
     padding: var(--space-6) 0;
 }
 
 .country-sidebar {
-    position: sticky;
-    top: calc(var(--header-height, 70px) + 60px + var(--space-4));
-    height: fit-content;
-    max-height: calc(100vh - var(--header-height, 70px) - 60px - var(--space-8));
-    overflow-y: auto;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
 }
 
 .country-main {
@@ -231,53 +228,61 @@
 
 /* ===== TABLE OF CONTENTS ===== */
 .toc {
-    background: var(--color-white);
-    border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-md);
-    padding: var(--space-4);
+    flex: 0 1 40%;
+    min-width: 0;
+    background: var(--hp-warm-white, #faf9f6);
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid var(--hp-gray, #d6d3ce);
+    border-left: 4px solid var(--hp-yellow, #d4a72c);
 }
 
 .toc__title {
-    font-size: var(--font-size-lg);
-    font-weight: var(--font-weight-semibold);
-    margin: 0 0 var(--space-3);
-    padding-bottom: var(--space-3);
-    border-bottom: 2px solid var(--color-primary);
-    color: var(--color-text-primary);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hp-black, #0a0a0a);
+    margin: 0 0 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--hp-yellow, #d4a72c);
 }
 
 .toc__list {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .toc__item {
-    margin-bottom: var(--space-1);
+    margin-bottom: 0;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    line-height: 1.3;
+    color: var(--hp-text-light, #57534e);
+    padding: 0.15rem 0.5rem;
+    border-left: 3px solid transparent;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s ease;
+}
+
+.toc__item:hover {
+    background: var(--hp-gray-light, #f0efec);
+    border-left-color: var(--hp-yellow, #d4a72c);
 }
 
 .toc__link {
     display: block;
-    padding: var(--space-2) var(--space-3);
-    color: var(--color-text-secondary);
+    color: var(--hp-text-light, #57534e);
     text-decoration: none;
-    font-size: var(--font-size-sm);
-    border-radius: var(--border-radius-sm);
-    transition: all var(--transition-fast);
-    border-left: 3px solid transparent;
+    transition: color 0.15s ease;
 }
 
 .toc__link:hover {
-    background: var(--color-background-alt);
-    color: var(--color-primary);
+    color: var(--hp-black, #0a0a0a);
     text-decoration: none;
-}
-
-.toc__link--active {
-    background: var(--color-background-alt);
-    color: var(--color-primary);
-    border-left-color: var(--color-primary);
-    font-weight: var(--font-weight-medium);
 }
 
 .toc__sublist {
@@ -293,7 +298,7 @@
 
 /* ===== SIDEBAR VIDEO ===== */
 .sidebar-video {
-    margin-top: var(--space-4);
+    flex: 0 0 60%;
     border-radius: var(--border-radius-md);
     overflow: hidden;
     aspect-ratio: 475 / 300;
@@ -756,6 +761,19 @@
     font-size: var(--font-size-xl);
 }
 
+/* ===== H2 HEADINGS (Year-Page Style) ===== */
+.country-main h2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+    font-weight: 600;
+    color: var(--hp-black, #0a0a0a);
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--hp-yellow, #d4a72c);
+    line-height: 1.3;
+}
+
 /* ===== FLOAT TABLE FIXES (Legacy Image + Caption Pattern) ===== */
 /* Float tables: table shrinks to match image width via min-content.
    Captions in <small><em> then wrap within the image boundary.
@@ -817,20 +835,150 @@
     clear: both;
 }
 
-/* ===== STAMP PREVIEW GRID TABLES (Year/2025 Style) =====
- * Tighten spacing in legacy stamp/cover/postmark grid tables
- * and add consistent link styling matching Year/2025 layout.
- * Preview images (.slist) sized by css/components/stamp-cards.css. */
+/* ===== STAMP PREVIEW GRID TABLES (Year/2025 Stamp-Entry Card Style) =====
+ * Legacy grid tables styled to match .stamp-entry cards from year pages.
+ * Title row + image row form a connected card (header + body).
+ * Zero vertical border-spacing so header/body cells connect seamlessly. */
 
-/* Reduce cell spacing in stamp preview grids */
+/* Grid table base — no vertical gap so title+image cells connect */
+.country-main > table:not([align]) {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0.75rem 0;
+}
+
+/* Default TD styling */
 .country-main > table:not([align]) td {
     padding: 0.25rem 0.375rem;
     vertical-align: top;
+    background: transparent;
+    font-size: 0.8125rem;
+    line-height: 1.35;
+    color: var(--hp-text-light, #57534e);
 }
 
-/* Reduce spacer row heights between groups */
+/* Spacer rows — create gap between card groups */
 .country-main > table:not([align]) td[style*="height"] {
     height: 0.5rem !important;
+}
+
+/* Section headers — colspan cells as full-width section dividers */
+.country-main > table:not([align]) td[colspan] {
+    padding: 0.625rem 0.75rem;
+    background: var(--hp-warm-white, #faf8f5);
+    border-bottom: 3px solid var(--hp-yellow, #d4a72c);
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--hp-black, #1a1a1a);
+    text-align: center;
+}
+
+/* ---- CARD HEADER: title cells in rows immediately before image rows ---- */
+.country-main > table:not([align]) tr:has(+ tr > td > a > img.slist) > td:not([colspan]) {
+    background: var(--hp-warm-white, #faf8f5);
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    border-bottom: 3px solid var(--hp-yellow, #d4a72c);
+    border-radius: 8px 8px 0 0;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--hp-black, #0a0a0a);
+    text-align: left;
+}
+
+/* ---- CARD BODY: image cells — connects to header above ---- */
+.country-main > table:not([align]) td:has(> a > img.slist) {
+    background: var(--hp-cream, #f8f6f0);
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+    padding: 0.375rem;
+    transition: all 0.25s ease;
+}
+
+.country-main > table:not([align]) td:has(> a > img.slist):hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    border-color: var(--hp-yellow, #d4a72c);
+}
+
+/* Remove redundant card styling from img.slist inside card body */
+.country-main > table:not([align]) td:has(> a > img.slist) img.slist {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+/* Google Ads: hide ads and collapse their cells */
+.country-main > table:not([align]) ins,
+.country-main > table:not([align]) .adsbygoogle,
+.country-main > table:not([align]) amp-ad {
+    display: none !important;
+}
+
+.country-main > table:not([align]) td:has(amp-ad),
+.country-main > table:not([align]) td:has(.adsbygoogle) {
+    width: 0 !important;
+    max-width: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+
+/* ===== STAMP + AD ROWS: No card template, reserve ad space ===== */
+/* When an image row has a colspan cell with ads, skip card styling
+   so the stamp sits naturally on the left with ad space on the right. */
+
+/* Header row before stamp+ad row — plain styling, no card borders */
+.country-main > table:not([align]) tr:has(+ tr > td[colspan] .adsbygoogle) > td:not([colspan]) {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-radius: 0 !important;
+    font-weight: normal;
+    color: var(--hp-text-light, #57534e);
+    font-size: 0.8125rem;
+}
+
+/* Image cell in stamp+ad row — no card body styling */
+.country-main > table:not([align]) tr:has(> td[colspan] .adsbygoogle) > td:has(> a > img.slist),
+.country-main > table:not([align]) tr:has(> td[colspan] .adsbygoogle) > td:has(> a > img.slist):hover {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Restore img.slist own styling in stamp+ad rows
+   (the card-body rule strips it, so re-add here) */
+.country-main > table:not([align]) tr:has(> td[colspan] .adsbygoogle) td img.slist {
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    background: var(--hp-cream, #f8f6f0);
+    padding: 0.375rem;
+}
+
+/* Colspan ad cells — show ads, don't collapse, no section-header styling */
+.country-main > table:not([align]) td[colspan]:has(.adsbygoogle) {
+    width: auto !important;
+    max-width: none !important;
+    padding: 0.25rem !important;
+    overflow: visible !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-radius: 0 !important;
+}
+
+/* Show ad elements inside colspan cells */
+.country-main > table:not([align]) td[colspan]:has(.adsbygoogle) ins,
+.country-main > table:not([align]) td[colspan]:has(.adsbygoogle) .adsbygoogle,
+.country-main > table:not([align]) td[colspan]:has(.adsbygoogle) amp-ad {
+    display: inline-block !important;
 }
 
 /* Yellow underline on text links, matching Year/2025 */
@@ -867,6 +1015,129 @@
     padding-bottom: 0.5rem;
 }
 
+/* ===== FLOATING TOC BUTTON (Country Pages) ===== */
+.country-toc-fab {
+    position: fixed;
+    bottom: 2rem;
+    left: var(--toc-fab-left, 2rem);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: var(--hp-black, #0a0a0a);
+    color: var(--hp-white, #ffffff);
+    border: 3px solid var(--hp-yellow, #d4a72c);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.8);
+}
+
+.country-toc-fab.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.country-toc-fab:hover {
+    background: var(--hp-yellow, #d4a72c);
+    color: var(--hp-black, #0a0a0a);
+    transform: scale(1.1);
+    box-shadow: 0 6px 24px rgba(212, 167, 44, 0.4);
+}
+
+.country-toc-fab svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+/* ===== FLOATING TOC POPUP (Country Pages) ===== */
+.country-toc-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1001;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.country-toc-popup-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.country-toc-popup {
+    position: fixed;
+    bottom: 6rem;
+    left: var(--toc-fab-left, 2rem);
+    width: 320px;
+    max-width: calc(100vw - 2rem);
+    background: var(--hp-white, #ffffff);
+    border-radius: 12px;
+    border: 1px solid var(--hp-gray, #d6d3ce);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
+    z-index: 1002;
+    padding: 1.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px) scale(0.95);
+    transition: all 0.25s ease;
+}
+
+.country-toc-popup.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+.country-toc-popup__title {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--hp-black, #0a0a0a);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--hp-yellow, #d4a72c);
+}
+
+.country-toc-popup__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.country-toc-popup__list li {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--hp-text-light, #57534e);
+    padding: 0.5rem 0.75rem;
+    border-left: 3px solid transparent;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.15s ease;
+}
+
+.country-toc-popup__list li:hover {
+    background: var(--hp-gray-light, #f0efec);
+    border-left-color: var(--hp-yellow, #d4a72c);
+}
+
+.country-toc-popup__list a {
+    color: var(--hp-text-light, #57534e);
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+.country-toc-popup__list a:hover {
+    color: var(--hp-black, #0a0a0a);
+}
+
 /* ===== AD CONTAINER ===== */
 .ad-container {
     margin: var(--space-6) 0;
@@ -876,35 +1147,15 @@
 
 /* ===== RESPONSIVE STYLES ===== */
 @media (max-width: 1024px) {
-    .country-content {
-        grid-template-columns: 1fr;
-    }
-
+    /* Stack sidebar TOC + video vertically on tablets */
     .country-sidebar {
-        position: relative;
-        top: 0;
-        max-height: none;
-    }
-
-    .toc {
-        display: none;
+        flex-direction: column;
     }
 
     .sidebar-video {
-        margin-top: 0;
-    }
-
-    .toc--mobile-open {
-        display: block;
-        position: fixed;
-        top: var(--header-height, 70px);
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: var(--color-white);
-        z-index: 999;
-        border-radius: 0;
-        overflow-y: auto;
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 475px;
     }
 
     .country-hero__content {
@@ -1047,6 +1298,26 @@
     .breadcrumb__list {
         font-size: var(--font-size-xs);
     }
+
+    /* FAB smaller on phones */
+    .country-toc-fab {
+        width: 46px;
+        height: 46px;
+        bottom: 1.25rem;
+        left: 1.25rem;
+    }
+
+    .country-toc-fab svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .country-toc-popup {
+        left: 1rem;
+        right: 1rem;
+        width: auto;
+        bottom: 5rem;
+    }
 }
 
 /* ===== PRINT STYLES ===== */
@@ -1054,12 +1325,11 @@
     .country-sidebar,
     .country-nav,
     .back-to-top,
-    .stamp-item__zoom {
+    .stamp-item__zoom,
+    .country-toc-fab,
+    .country-toc-popup-overlay,
+    .country-toc-popup {
         display: none !important;
-    }
-
-    .country-content {
-        grid-template-columns: 1fr;
     }
 
     .country-hero {

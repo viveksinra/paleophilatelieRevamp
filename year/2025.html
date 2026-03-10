@@ -1,3 +1,21 @@
+<!--
+    CONVERTED PAGE: Year Page (Reference Implementation)
+    Page type: Year/chronology page
+    CSS scope: .year-main (via css/pages/year.css)
+    Conversion guide: .claude/conversionKnowledge/year-page-conversion-guide.md
+    See also: Handover/CONVERSION-GUIDE.md Section 4
+
+    Changes from original:
+    - Complete layout restructure: hero, sidebar TOC, content sections
+    - Sidebar: year-toc__box with section links
+    - Content sections wrapped in .year-content-section with .container
+    - Stamp entries in .stamps-grid > .stamp-entry cards
+    - Book entries in .year-books-grid > .year-book-card cards
+    - Prev/next navigation: .year-prev-next (top) + .bottom-nav (bottom)
+    - Floating TOC button for mobile (JS at bottom of page)
+    - Facebook image table: removed (now in global footer)
+    - Year pages require MANUAL conversion (content section restructuring)
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +26,11 @@
     <meta name="author" content="Michael Kogan">
     <title>Dinosaurs, prehistoric animals, fossils, paleontologists, palaeontologists on stamps and postmarks of 2025</title>
     <link rel="shortcut icon" href="../images/others/paleophilatelie.ico">
+    <!-- Google Fonts: Crimson Pro (serif headings) + DM Sans (sans-serif body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- CSS: main.css + content.css (base overrides) + homepage.css (shared vars) + year.css (layout) -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/pages/content.css">
     <link rel="stylesheet" href="../css/pages/homepage.css">

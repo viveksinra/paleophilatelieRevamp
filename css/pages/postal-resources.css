@@ -1,51 +1,83 @@
 /**
  * POSTAL RESOURCES PAGE STYLES
- * Museum Editorial Design - matching Homepage style
+ * Matches Country Index page aesthetic — hero, sticky A-Z nav, clean table
  */
 
-/* ===== GOOGLE FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-
-/* ===== CUSTOM PROPERTIES ===== */
-:root {
-    --hp-black: #0a0a0a;
-    --hp-black-soft: #1a1a1a;
-    --hp-white: #ffffff;
-    --hp-cream: #faf9f7;
-    --hp-warm-white: #f7f6f3;
-    --hp-gray-light: #f0efec;
-    --hp-gray: #e5e4e1;
-    --hp-gray-medium: #9a9a9a;
-    --hp-gray-dark: #5a5a5a;
-    --hp-yellow: #d4a72c;
-    --hp-yellow-light: #e8c45a;
-    --hp-yellow-dark: #b8922a;
-    --hp-yellow-glow: rgba(212, 167, 44, 0.15);
-    --hp-text: #2a2a2a;
-    --hp-text-light: #4a4a4a;
-    --font-display: 'Crimson Pro', Georgia, 'Times New Roman', serif;
-    --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --line-height-heading: 1.2;
-    --line-height-body: 1.75;
-    --section-padding: clamp(3rem, 8vw, 5rem);
-    --content-gap: clamp(1.5rem, 4vw, 2.5rem);
+/* ===== HERO SECTION ===== */
+.postal-hero {
+    position: relative;
+    padding: var(--space-7) 0 var(--space-5);
+    background: linear-gradient(135deg, var(--color-gray-900) 0%, #1a1a1a 50%, var(--color-gray-900) 100%);
+    color: var(--color-white);
+    text-align: center;
 }
 
-/* ===== BASE BODY ===== */
-body {
-    font-family: var(--font-body);
-    background: var(--hp-cream);
-    color: var(--hp-text);
-    font-size: clamp(1rem, 1vw + 0.75rem, 1.125rem);
-    line-height: var(--line-height-body);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.postal-hero h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 700;
+    font-family: var(--font-family-heading);
+    line-height: 1.2;
+    margin-bottom: var(--space-3);
+    color: var(--color-white);
+    letter-spacing: -0.02em;
+}
+
+.postal-hero__subtitle {
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    opacity: 0.85;
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--color-white);
+}
+
+/* ===== A-Z NAVIGATION (matches country-index.css) ===== */
+.postal-resources-page .az-navigation {
+    background: var(--color-white);
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--color-border);
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--az-nav-top, var(--header-top-height, 64px));
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: top 0.3s ease;
+}
+
+.postal-resources-page .az-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-1);
+}
+
+.postal-resources-page .az-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-white);
+    transition: all var(--transition-fast);
+}
+
+.postal-resources-page .az-nav__link:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 /* ===== PAGE SECTION ===== */
 .postal-resources-section {
-    padding: var(--section-padding) 0;
-    background: var(--hp-white);
+    padding: var(--space-6) 0;
+    background: var(--color-background);
 }
 
 .postal-resources-section .container {
@@ -53,115 +85,79 @@ body {
 }
 
 /* ===== TYPOGRAPHY ===== */
-.postal-resources-section h1 {
-    font-family: var(--font-display);
-    font-size: clamp(1.75rem, 4vw, 2.75rem);
-    font-weight: 600;
-    color: var(--hp-black);
-    margin-bottom: var(--content-gap);
-    line-height: var(--line-height-heading);
-    letter-spacing: -0.02em;
-    text-align: center;
-    position: relative;
-    padding-bottom: 1.25rem;
-}
-
-.postal-resources-section h1::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: var(--hp-yellow);
-}
-
-.postal-resources-section h2 {
-    font-family: var(--font-body);
-    font-size: clamp(0.9375rem, 1.5vw, 1.0625rem);
-    font-weight: 400;
-    color: var(--hp-text-light);
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-    text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .postal-resources-section h3 {
-    font-family: var(--font-display);
-    font-size: 1.375rem;
-    font-weight: 600;
-    color: var(--hp-black);
-    margin-bottom: 1rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 3px solid var(--hp-yellow);
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-3);
+    border-bottom: 3px solid var(--color-accent);
     display: inline-block;
 }
 
 /* ===== LINKS ===== */
 .postal-resources-section a {
-    color: var(--hp-black);
+    color: var(--color-text-primary);
     text-decoration: underline;
-    text-decoration-color: var(--hp-yellow);
+    text-decoration-color: var(--color-accent);
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
-    transition: all 0.2s ease;
+    transition: all var(--transition-fast);
 }
 
 .postal-resources-section a:hover {
-    color: var(--hp-yellow-dark);
-    text-decoration-color: var(--hp-yellow-dark);
+    color: var(--color-accent-dark);
+    text-decoration-color: var(--color-accent-dark);
 }
 
 /* ===== LEGEND TABLE ===== */
 .postal-resources-section table[cellpadding="10"] {
     width: auto;
-    margin: 1.5rem auto 2rem;
-    background: var(--hp-warm-white);
-    border-radius: 12px;
-    border: 1px solid var(--hp-gray);
+    margin: var(--space-5) auto var(--space-6);
+    background: var(--color-gray-100);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--color-border);
     overflow: hidden;
 }
 
 .postal-resources-section table[cellpadding="10"] td {
-    padding: 0.75rem 1rem;
+    padding: var(--space-3) var(--space-4);
     vertical-align: middle;
-    line-height: 1.6;
-    font-size: 0.9375rem;
-    border-bottom: 1px solid var(--hp-gray);
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-sm);
+    border-bottom: 1px solid var(--color-border);
 }
 
 .postal-resources-section table[cellpadding="10"] tr:last-child td {
     border-bottom: none;
 }
 
+/* Legend icons — enlarged to 40px */
 .postal-resources-section table[cellpadding="10"] img {
     display: inline-block;
-    max-height: 32px;
+    max-height: 40px;
     width: auto;
 }
 
 /* ===== MAIN DATA TABLE ===== */
 .postal-resources-section table[border="1"] {
     width: 100%;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     border-collapse: separate;
     border-spacing: 0;
+    background: var(--color-white);
 }
 
 .postal-resources-section table[border="1"] td {
     border: none;
-    border-bottom: 1px solid var(--hp-gray);
-    border-right: 1px solid var(--hp-gray-light);
-    padding: 0.625rem 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-gray-100);
+    padding: var(--space-3) var(--space-3);
     vertical-align: middle;
-    font-size: 0.9375rem;
+    font-size: var(--font-size-sm);
 }
 
 .postal-resources-section table[border="1"] td:last-child {
@@ -172,104 +168,125 @@ body {
     border-bottom: none;
 }
 
-/* Header row */
+/* Anchor scroll offset for sticky nav */
+.postal-resources-section table[border="1"] td a[name] {
+    scroll-margin-top: 140px;
+}
+
+/* Header row — light gray matching country-table th */
 .postal-resources-section table[border="1"] tr[style*="font-weight: bold"] td {
-    background: var(--hp-black);
-    color: var(--hp-white);
-    font-family: var(--font-body);
-    font-size: 0.8125rem;
-    font-weight: 600;
+    background: var(--color-gray-100);
+    color: var(--color-text-primary);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 1rem 0.75rem;
-    border-bottom: 3px solid var(--hp-yellow);
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--space-3) var(--space-3);
+    border-bottom: 2px solid var(--color-border);
+    border-right: 1px solid var(--color-gray-200);
 }
 
 .postal-resources-section table[border="1"] tr[style*="font-weight: bold"] td:last-child {
     border-right: none;
 }
 
-/* Countries index row */
+/* Countries index row inside table — HIDDEN (replaced by sticky nav) */
 .postal-resources-section table[border="1"] td[colspan="12"] {
-    padding: 1.25rem 1.5rem;
-    background: var(--hp-warm-white);
-    border-left: 4px solid var(--hp-yellow);
-    border-bottom: 2px solid var(--hp-gray);
+    display: none;
 }
 
-.postal-resources-section table[border="1"] td[colspan="12"] a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.15s ease;
-    margin: 0.125rem;
-}
-
-.postal-resources-section table[border="1"] td[colspan="12"] a:hover {
-    background: var(--hp-yellow);
-    color: var(--hp-black);
-    transform: translateY(-2px);
+.postal-resources-section table[border="1"] tr:has(> td[colspan="12"]) {
+    display: none;
 }
 
 /* Data rows hover */
 .postal-resources-section table[border="1"] tr:hover td {
-    background: var(--hp-yellow-glow);
+    background: var(--color-background-alt);
 }
 
 .postal-resources-section table[border="1"] tr[style*="font-weight: bold"]:hover td {
-    background: var(--hp-black);
+    background: var(--color-gray-100);
 }
 
-/* Images in data table */
+/* ===== ICONS — Enlarged to 40px uniform ===== */
 .postal-resources-section table[border="1"] img {
     display: inline-block;
-    max-height: 28px;
+    max-height: 40px;
     width: auto;
     transition: transform 0.2s ease;
 }
 
 .postal-resources-section table[border="1"] img:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
 }
 
-/* Flag images */
+/* Flag images — 32px */
 .postal-resources-section table[border="1"] img[src*="flags"] {
-    max-height: 22px;
+    max-height: 32px;
     border-radius: 2px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--color-border);
+}
+
+/* Info icons — force consistent 40px height (natural size may be smaller) */
+.postal-resources-section table[border="1"] img[src*="info.jpg"] {
+    height: 40px;
+}
+
+/* Inline flag next to country name (inserted by JS) */
+.postal-resources-section .country-flag-inline {
+    height: 16px;
+    width: auto;
+    max-height: 16px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--color-border);
+    vertical-align: middle;
+    margin-right: 6px;
+    display: inline-block;
+}
+
+/* ===== STICKY TABLE HEADER ===== */
+.postal-resources-section table[border="1"] tr[style*="font-weight: bold"]:not(:has(> td[colspan="12"])) td {
+    position: sticky;
+    top: calc(var(--az-nav-top, 64px) + 56px);
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== LETTER SECTION HEADERS ===== */
+/* First country of each letter — style the big letter */
+.postal-resources-section table[border="1"] td big {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-accent-dark);
 }
 
 /* ===== BACK TO INDEX BUTTON ===== */
 .postal-resources-section .button {
     display: inline-block;
-    padding: 5px 14px;
-    font-size: 0.6875rem;
-    font-family: var(--font-body);
-    font-weight: 600;
+    padding: 4px 12px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
     cursor: pointer;
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: var(--hp-white);
-    background-color: var(--hp-black-soft);
+    color: var(--color-white);
+    background-color: var(--color-primary);
     border: none;
-    border-radius: 20px;
-    transition: all 0.2s ease;
+    border-radius: var(--border-radius-full);
+    transition: all var(--transition-fast);
     letter-spacing: 0.02em;
     text-transform: uppercase;
 }
 
 .postal-resources-section .button:hover {
-    background-color: var(--hp-yellow);
-    color: var(--hp-black);
+    background-color: var(--color-accent);
+    color: var(--color-primary);
     transform: translateY(-1px);
-    box-shadow: 0 3px 8px rgba(212, 167, 44, 0.3);
+    box-shadow: var(--shadow-md);
 }
 
 .postal-resources-section .button:active {
@@ -278,21 +295,21 @@ body {
 
 /* ===== REFERENCES SECTION ===== */
 .postal-resources-section ol {
-    padding-left: 1.5rem;
+    padding-left: var(--space-5);
     line-height: 1.8;
-    margin: 1rem 0 2rem;
+    margin: var(--space-4) 0 var(--space-6);
 }
 
 .postal-resources-section ol li {
-    margin-bottom: 0.5rem;
-    font-size: 0.9375rem;
+    margin-bottom: var(--space-2);
+    font-size: var(--font-size-sm);
 }
 
 /* ===== FACEBOOK PROMO TABLE ===== */
 .postal-resources-section table[align="right"][width="200px"] {
     float: right;
     width: 200px;
-    margin: 0 0 1.5rem 1.5rem;
+    margin: 0 0 var(--space-5) var(--space-5);
     border: none;
 }
 
@@ -304,8 +321,8 @@ body {
 .postal-resources-section table[align="right"][width="200px"] img {
     max-height: none;
     width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
     transition: transform 0.3s ease;
 }
 
@@ -315,7 +332,7 @@ body {
 
 /* ===== GOOGLE ADS CONTAINERS ===== */
 .postal-resources-section .adsbygoogle {
-    margin: 1.5rem 0;
+    margin: var(--space-5) 0;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -325,36 +342,76 @@ body {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
+
+    /* Disable sticky header when table scrolls horizontally */
+    .postal-resources-section table[border="1"] tr[style*="font-weight: bold"] td {
+        position: static;
+    }
 }
 
 @media (max-width: 768px) {
-    .postal-resources-section {
-        padding: clamp(2rem, 6vw, 3.5rem) 0;
+    .postal-hero {
+        padding: var(--space-5) 0 var(--space-4);
     }
 
-    .postal-resources-section h1 {
-        font-size: clamp(1.5rem, 5vw, 2rem);
+    .postal-hero h1 {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+    }
+
+    .postal-resources-page .az-nav__link {
+        width: 28px;
+        height: 28px;
+        font-size: var(--font-size-xs);
+    }
+
+    .postal-resources-section {
+        padding: var(--space-5) 0;
     }
 
     .postal-resources-section table[cellpadding="10"] {
-        font-size: 0.875rem;
+        font-size: var(--font-size-xs);
     }
 
     .postal-resources-section table[align="right"][width="200px"] {
         float: none;
         width: 100%;
-        margin: 1rem 0;
+        margin: var(--space-4) 0;
         text-align: center;
     }
 }
 
-/* ===== SELECTION STYLES ===== */
-::selection {
-    background: var(--hp-yellow-glow);
-    color: var(--hp-black);
+@media (max-width: 576px) {
+    .postal-resources-page .az-nav {
+        gap: 2px;
+    }
+
+    .postal-resources-page .az-nav__link {
+        width: 28px;
+        height: 28px;
+    }
 }
 
-::-moz-selection {
-    background: var(--hp-yellow-glow);
-    color: var(--hp-black);
+/* ===== PRINT ===== */
+@media print {
+    .postal-resources-page .az-navigation {
+        display: none !important;
+    }
+
+    .postal-hero {
+        background: var(--color-white) !important;
+        color: var(--color-primary) !important;
+        padding: var(--space-4) 0;
+    }
+
+    .postal-hero h1 {
+        color: var(--color-primary) !important;
+    }
+
+    .postal-resources-section table[border="1"] {
+        page-break-inside: auto;
+    }
+
+    .postal-resources-section table[border="1"] tr {
+        page-break-inside: avoid;
+    }
 }

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pages/homepage.css">
     <link rel="stylesheet" href="css/pages/content.css">
+    <link rel="stylesheet" href="css/pages/contact.css">
     <link rel="stylesheet" href="components/header/header.css">
     <link rel="stylesheet" href="components/footer/footer.css">
 
@@ -37,7 +38,7 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header Component (loaded dynamically) -->
-    <div id="header-placeholder"></div>
+    <div id="header-placeholder" data-breadcrumb="Home::index.html|About::about_website.html|Contact"></div>
 
     <main id="main-content">
         <section class="intro-section">
@@ -46,6 +47,9 @@
 <center>
 <h1>Contact details of the Author and Admin of Paleophilatelie.eu website</h1>
 </center>
+
+<div class="contact-columns">
+<div class="contact-info">
 
  The Author and the Admin of PaleoPhilatelie.eu website is <a href="about.html">Mr. Michael Kogan</a>
  also known on some Internet sites under his nickname: "Paleophilatelist".  <br>
@@ -78,6 +82,42 @@ Mr. Michael Kogan is member of the following philatelic clubs and societies:
 	(short presentation of the club is <a href="exhibitions/ArGe_Bergbau.html">here</a>)</li>
 </ul>
 
+</div><!-- /.contact-info -->
+
+<div class="contact-form-card">
+    <h2 class="contact-form-card__title">Send a Message</h2>
+    <p class="contact-form-card__subtitle">Have a question or feedback? Fill out the form below.</p>
+
+    <form id="contact-form" action="https://formspree.io/f/{FORM_ID}" method="POST">
+        <input type="hidden" name="_subject" value="New message from Paleophilatelie.eu">
+
+        <div class="contact-form__group">
+            <label class="contact-form__label" for="contact-name">Name <span class="required">*</span></label>
+            <input class="contact-form__input" type="text" id="contact-name" name="name" required placeholder="Your name">
+        </div>
+
+        <div class="contact-form__group">
+            <label class="contact-form__label" for="contact-email">Email <span class="required">*</span></label>
+            <input class="contact-form__input" type="email" id="contact-email" name="email" required placeholder="your.email@example.com">
+        </div>
+
+        <div class="contact-form__group">
+            <label class="contact-form__label" for="contact-message">Message</label>
+            <textarea class="contact-form__textarea" id="contact-message" name="message" rows="6" placeholder="Your message..."></textarea>
+        </div>
+
+        <!-- Honeypot for spam protection -->
+        <div class="contact-form__hp" aria-hidden="true">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="submit" class="contact-form__submit">Send Message</button>
+        <div class="contact-form__status"></div>
+    </form>
+</div><!-- /.contact-form-card -->
+
+</div><!-- /.contact-columns -->
+
             </div>
         </section>
     </main>
@@ -90,5 +130,6 @@ Mr. Michael Kogan is member of the following philatelic clubs and societies:
     <script src="scripts/main.js"></script>
     <script src="components/header/header.js"></script>
     <script src="components/footer/footer.js"></script>
+    <script src="scripts/contact-form.js"></script>
 </body>
 </html>

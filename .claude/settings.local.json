@@ -105,7 +105,12 @@
       "Bash(pwd:*)",
       "Bash(cd:*)",
       "WebFetch(*)",
-      "Bash(do grep -l \"id=\"\"header-placeholder\"\"\" \"$file\")"
+      "Bash(do grep -l \"id=\"\"header-placeholder\"\"\" \"$file\")",
+      "Bash(while read file)",
+      "Bash(do if ! grep -q 'data-breadcrumb' \"$file\")",
+      "Bash(then echo \"$file\" fi done)",
+      "Bash({)",
+      "Bash(})"
     ]
   }
 }

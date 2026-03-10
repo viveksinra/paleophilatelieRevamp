@@ -1,3 +1,18 @@
+<!--
+    CONVERTED PAGE: Country Page (Reference Implementation)
+    Page type: Country page
+    CSS scope: .country-main (via css/pages/country.css) + body.country-page
+    Conversion guide: Handover/CONVERSION-GUIDE.md Section 3
+
+    Changes from original:
+    - Complete layout restructure: hero section, sidebar TOC, prev/next nav
+    - body class="country-page" for page-type scoping
+    - Sidebar: table of contents (.toc) + optional YouTube embed
+    - Main content: original page body inside .country-main wrapper
+    - Floating TOC button for mobile (JS at bottom of page)
+    - Facebook image table: removed (now in global footer)
+    - Country pages require MANUAL conversion (complex layout restructuring)
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +23,11 @@
     <meta name="author" content="Michael Kogan">
     <title>Paleophilatelie.eu - paleontology stamps of India</title>
     <link rel="shortcut icon" href="../images/others/paleophilatelie.ico">
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Crimson Pro (serif headings) + DM Sans (sans-serif body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <!-- CSS: main.css + homepage.css (shared vars) + content.css (base overrides) + country.css (layout) -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/pages/homepage.css">
     <link rel="stylesheet" href="../css/pages/content.css">
@@ -863,6 +878,76 @@ The following short description provided on the
             </div>
         </nav>
     </main>
+    <!-- Floating TOC Button -->
+    <button class="country-toc-fab" id="countryTocFab" aria-label="Table of contents">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/></svg>
+    </button>
+    <div class="country-toc-popup-overlay" id="countryTocOverlay"></div>
+    <div class="country-toc-popup" id="countryTocPopup">
+        <div class="country-toc-popup__title">Contents</div>
+        <ul class="country-toc-popup__list">
+            <li><a href="#country">Country overview</a></li>
+            <li><a href="#philately">Philately of India</a></li>
+            <li><a href="#stamps">Official stamps of India related to Paleontology</a></li>
+            <li><a href="#stamps_others">Some stamps of India to consider</a></li>
+            <li><a href="#cov">Special covers of India related to Paleontology</a></li>
+            <li><a href="#pm">Commemorative postmarks of India related to Paleontology</a></li>
+            <li><a href="#ref">References</a></li>
+            <li><a href="#ack">Acknowledgements</a></li>
+        </ul>
+    </div>
+    <script>
+    (function() {
+        var fab = document.getElementById('countryTocFab');
+        var popup = document.getElementById('countryTocPopup');
+        var overlay = document.getElementById('countryTocOverlay');
+        var sidebar = document.querySelector('.country-sidebar');
+        var parentContainer = sidebar ? sidebar.closest('.container') : null;
+
+        function positionFab() {
+            if (!parentContainer) return;
+            var rect = parentContainer.getBoundingClientRect();
+            document.documentElement.style.setProperty('--toc-fab-left', rect.left + 12 + 'px');
+        }
+
+        function updateFab() {
+            if (!sidebar) return;
+            var rect = sidebar.getBoundingClientRect();
+            if (rect.bottom < 0) {
+                fab.classList.add('visible');
+            } else {
+                fab.classList.remove('visible');
+                closeToc();
+            }
+            positionFab();
+        }
+
+        function closeToc() {
+            popup.classList.remove('open');
+            overlay.classList.remove('open');
+        }
+
+        fab.addEventListener('click', function() {
+            var isOpen = popup.classList.contains('open');
+            if (isOpen) {
+                closeToc();
+            } else {
+                popup.classList.add('open');
+                overlay.classList.add('open');
+            }
+        });
+
+        overlay.addEventListener('click', closeToc);
+
+        popup.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') closeToc();
+        });
+
+        window.addEventListener('scroll', updateFab, { passive: true });
+        window.addEventListener('resize', positionFab);
+        updateFab();
+    })();
+    </script>
     <div id="footer-placeholder"></div>
     <script src="../scripts/component-loader.js"></script>
     <script src="../scripts/main.js"></script>

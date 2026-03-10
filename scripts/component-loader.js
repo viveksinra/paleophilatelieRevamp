@@ -1,7 +1,24 @@
 /**
- * Component Loader
- * Embeds header and footer components into pages
- * Adjusts paths based on page location (root vs subfolders)
+ * Component Loader — CRITICAL FILE
+ *
+ * This is the SINGLE SOURCE OF TRUTH for the site header and footer HTML.
+ * The files components/header/header.html and components/footer/footer.html
+ * are reference copies ONLY — this file contains the live HTML that gets
+ * injected at runtime into every page.
+ *
+ * What this file does:
+ * 1. Injects header HTML into #header-placeholder
+ * 2. Injects footer HTML into #footer-placeholder
+ * 3. Replaces {{BASE}} placeholders with correct relative paths
+ * 4. Builds breadcrumb navigation from data-breadcrumb attribute
+ * 5. Loads Google Translate widget
+ * 6. Manages login button visibility (homepage only)
+ * 7. Shows correct footer badges (homepage vs other pages)
+ * 8. Provides NAV_HIGHLIGHT_RULES for active nav link highlighting
+ * 9. Dispatches 'componentsLoaded' event when done
+ *
+ * To modify header/footer: Edit the headerHTML/footerHTML template strings below.
+ * To add breadcrumbs to a page: Add data-breadcrumb="Label::URL|..." to #header-placeholder.
  */
 
 (function() {

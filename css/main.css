@@ -75,7 +75,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xs);
 }
 
 .breadcrumb__item {
@@ -108,7 +108,7 @@
 
 @media (max-width: 576px) {
     .breadcrumb__list {
-        font-size: var(--font-size-xs);
+        font-size: 0.6875rem;
     }
 }
 

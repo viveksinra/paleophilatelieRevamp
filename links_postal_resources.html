@@ -11,11 +11,6 @@
 
     <link rel="shortcut icon" href="images/others/paleophilatelie.ico">
 
-    <!-- Google Fonts - Museum Editorial Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/pages/postal-resources.css">
@@ -33,29 +28,64 @@
 
     <!-- Back to Index function used by buttons in the table -->
     <script>
-        function myFunction() { window.location = "#index"; }
+        function myFunction() { window.location = "#az-nav"; }
     </script>
 </head>
-<body>
+<body class="postal-resources-page">
     <!-- Skip Link for Accessibility -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- Header Component (loaded dynamically) -->
-    <div id="header-placeholder"></div>
+    <div id="header-placeholder" data-breadcrumb="Home::index.html|Resources::articles/index.html|Postal Resources"></div>
 
     <main id="main-content">
+        <!-- Hero Section -->
+        <section class="postal-hero">
+            <div class="container">
+                <a name="top"></a>
+                <h1>Worldwide Philatelic Resources: philatelic bureaus, stamp issue plans/programs and catalogs</h1>
+                <p class="postal-hero__subtitle">
+                    This page contains links to websites of Postal
+                    Administrations around the world, official or country specialized
+                    philatelic bureaus, country specific stamp catalogs, stamp issue plans.
+                </p>
+            </div>
+        </section>
+
+        <!-- A-Z Navigation -->
+        <nav class="az-navigation" id="az-nav">
+            <div class="container">
+                <div class="az-nav">
+                    <a href="#A" class="az-nav__link">A</a>
+                    <a href="#B" class="az-nav__link">B</a>
+                    <a href="#C" class="az-nav__link">C</a>
+                    <a href="#D" class="az-nav__link">D</a>
+                    <a href="#E" class="az-nav__link">E</a>
+                    <a href="#F" class="az-nav__link">F</a>
+                    <a href="#G" class="az-nav__link">G</a>
+                    <a href="#H" class="az-nav__link">H</a>
+                    <a href="#I" class="az-nav__link">I</a>
+                    <a href="#J" class="az-nav__link">J</a>
+                    <a href="#K" class="az-nav__link">K</a>
+                    <a href="#L" class="az-nav__link">L</a>
+                    <a href="#M" class="az-nav__link">M</a>
+                    <a href="#N" class="az-nav__link">N</a>
+                    <a href="#O" class="az-nav__link">O</a>
+                    <a href="#P" class="az-nav__link">P</a>
+                    <a href="#R" class="az-nav__link">R</a>
+                    <a href="#S" class="az-nav__link">S</a>
+                    <a href="#T" class="az-nav__link">T</a>
+                    <a href="#U" class="az-nav__link">U</a>
+                    <a href="#V" class="az-nav__link">V</a>
+                    <a href="#W" class="az-nav__link">W</a>
+                    <a href="#Z" class="az-nav__link">Z</a>
+                </div>
+            </div>
+        </nav>
+
         <section class="postal-resources-section">
             <div class="container">
-<a name="top"></a>
-<h1>Worldwide Philatelic Resources: philatelic bureaus, stamp issue plans/programs and catalogs</h1>
 
-<h2>
-This page contains links to websites of Postal
-Administrations around the world, official or country specialized
-philatelic bureaus, country specific stamp catalogs, stamp issue plans.
-</h2>
-
-<br>
 There are many administrations who have Philatelic Bureaus that will sell the country’s most 
 recent stamps at face value to collectors.  
 These bureaus may also have older stamps from past issues available at special prices. 
@@ -3708,5 +3738,27 @@ The icons in the table are defined here: <br>
     <script src="scripts/main.js"></script>
     <script src="components/header/header.js"></script>
     <script src="components/footer/footer.js"></script>
+    <script>
+    /* Move flag from column 2 inline with country name in column 1 */
+    (function() {
+        var table = document.querySelector('.postal-resources-section table[border="1"]');
+        if (!table) return;
+        var rows = table.querySelectorAll('tr:not([style*="font-weight"])');
+        rows.forEach(function(row) {
+            var cells = row.children;
+            if (cells.length < 2) return;
+            var nameCell = cells[0];
+            var flagCell = cells[1];
+            var flagImg = flagCell.querySelector('img[src*="flags"]');
+            if (!flagImg) return;
+            var flag = document.createElement('img');
+            flag.src = flagImg.src;
+            flag.alt = '';
+            flag.className = 'country-flag-inline';
+            flag.loading = 'lazy';
+            nameCell.insertBefore(flag, nameCell.firstChild);
+        });
+    })();
+    </script>
 </body>
 </html>

@@ -1,3 +1,21 @@
+<!--
+    CONVERTED PAGE: Stamp Description (Reference Implementation)
+    Page type: Stamp description page
+    CSS scope: .content-page (via css/pages/content.css)
+    Conversion guide: .claude/conversionKnowledge/stamp-page-conversion-guide.md
+    Conversion script: Handover/scripts/convert-stamp-page.js
+
+    Changes from original:
+    - DOCTYPE: HTML 4.01 Transitional -> HTML5
+    - CSS: old main.css/colorscheme.css/style.css -> new modular CSS (main.css + content.css)
+    - Header/Footer: old inline HTML -> dynamic component-loader.js
+    - Breadcrumb: added via data-breadcrumb attribute on #header-placeholder
+    - Content wrapper: <main class="content-page"><div class="container">
+    - Table classes added: .stamp-nav (nav tables), .stamp-details-card (specs), .products-gallery (images)
+    - Facebook image table: removed (now in global footer)
+    - Scripts: component-loader.js, main.js, header.js, footer.js, gallery.js, products-lightbox.js
+    - Accessibility: skip link, aria-labels
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +29,12 @@ Centeray, Geological Survey ">
     <title>Paleophilatelie.eu - India 1951 - Centeray of Geological Survey of India, postage stamp</title>
     <link rel="shortcut icon" href="../../images/others/paleophilatelie.ico">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Crimson Pro (serif headings) + DM Sans (sans-serif body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- CSS: main.css loads base + variables + shared components; content.css has stamp page overrides -->
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/pages/content.css">
     <link rel="stylesheet" href="../../components/header/header.css">

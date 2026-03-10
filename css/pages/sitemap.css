@@ -639,8 +639,7 @@
    explicit width attributes. Override content.css max-width:none to
    constrain images to 300px (original design intent). */
 .content-page table[align="right"] {
-    width: 310px;
-    max-width: 40%;
+    display: none;
 }
 
 .content-page table[align="right"] img {
