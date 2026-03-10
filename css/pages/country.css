@@ -817,6 +817,56 @@
     clear: both;
 }
 
+/* ===== STAMP PREVIEW GRID TABLES (Year/2025 Style) =====
+ * Tighten spacing in legacy stamp/cover/postmark grid tables
+ * and add consistent link styling matching Year/2025 layout.
+ * Preview images (.slist) sized by css/components/stamp-cards.css. */
+
+/* Reduce cell spacing in stamp preview grids */
+.country-main > table:not([align]) td {
+    padding: 0.25rem 0.375rem;
+    vertical-align: top;
+}
+
+/* Reduce spacer row heights between groups */
+.country-main > table:not([align]) td[style*="height"] {
+    height: 0.5rem !important;
+}
+
+/* Yellow underline on text links, matching Year/2025 */
+.country-main a {
+    color: var(--hp-black, #0a0a0a);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow, #d4a72c);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+
+.country-main a:hover {
+    color: var(--hp-yellow-dark, #b8922a);
+}
+
+/* Remove underline from image links */
+.country-main a:has(img) {
+    text-decoration: none;
+}
+
+/* Float table images — consistent with Year/2025 */
+.country-main table[align="right"] td img[height],
+.country-main table[align="left"] td img[height] {
+    height: 280px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Image captions in float tables — tight above, breathing room below */
+.country-main table[align="right"] small,
+.country-main table[align="left"] small {
+    padding-top: 0;
+    padding-bottom: 0.5rem;
+}
+
 /* ===== AD CONTAINER ===== */
 .ad-container {
     margin: var(--space-6) 0;

@@ -2,6 +2,13 @@
  * YEAR PAGE STYLES
  * Shared styles for all year pages (1840-2026)
  * Extends the Museum Editorial Design system
+ *
+ * Component styles extracted to css/components/:
+ *   - stamp-cards.css    → .stamps-grid, .stamp-entry, .stamp-entry__header/image
+ *   - books-grid.css     → .year-books-grid, .year-book-card, .year-book-card__info
+ *   - prev-next-nav.css  → .year-prev-next, .bottom-nav, .bottom-nav__center
+ *   - callout-box.css    → .ack-section, .ack-box, .year-announcement, .year-announcement__box
+ *   - content-section.css → .year-content-section, __title, __subtitle
  */
 
 /* ===== YEAR HERO SECTION ===== */
@@ -74,210 +81,13 @@
 }
 
 /* ===== YEAR NAVIGATION SECTION ===== */
+/* Nav container — prev/next links extracted to css/components/prev-next-nav.css */
 .year-nav-section {
     padding: 1.5rem;
     background: var(--hp-warm-white);
     border-radius: 12px;
     border: 1px solid var(--hp-gray);
     margin-bottom: 1.5rem;
-}
-
-.year-prev-next {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1.5rem;
-}
-
-.year-prev-next a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.625rem 1.25rem;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--hp-black);
-    background: var(--hp-white);
-    border: 2px solid var(--hp-gray);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.year-prev-next a:hover {
-    background: var(--hp-yellow);
-    border-color: var(--hp-yellow);
-    text-decoration: none;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(212, 167, 44, 0.3);
-}
-
-/* ===== STAMPS GRID SECTION ===== */
-.stamps-section {
-    padding: var(--space-6) 0;
-    background: var(--hp-white);
-}
-
-.stamps-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-}
-
-@media (max-width: 1024px) {
-    .stamps-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .stamps-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.stamp-entry {
-    background: var(--hp-white);
-    border: 1px solid var(--hp-gray);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.25s ease;
-    display: flex;
-    flex-direction: column;
-}
-
-.stamp-entry:hover {
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-    border-color: var(--hp-yellow);
-}
-
-.stamp-entry__header {
-    padding: 1rem 1.25rem;
-    background: var(--hp-warm-white);
-    border-bottom: 3px solid var(--hp-yellow);
-    text-align: left;
-    font-family: var(--font-body);
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: var(--hp-black);
-}
-
-.stamp-entry__header a {
-    color: var(--hp-black);
-    text-decoration: underline;
-    text-decoration-color: var(--hp-yellow);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    transition: all 0.2s ease;
-}
-
-.stamp-entry__header a:hover {
-    color: var(--hp-yellow-dark);
-}
-
-.stamp-entry__image {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    background: var(--hp-cream);
-}
-
-.stamp-entry__image a {
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.stamp-entry__image a:hover {
-    transform: scale(1.03);
-}
-
-.stamp-entry__image img {
-    max-width: 100%;
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-    border-radius: 6px;
-}
-
-/* ===== ACKNOWLEDGEMENTS SECTION ===== */
-.ack-section {
-    padding: var(--space-6) 0;
-    background: var(--hp-warm-white);
-}
-
-.ack-box {
-    background: var(--hp-white);
-    padding: 2rem 2.25rem;
-    border-radius: 12px;
-    border: 1px solid var(--hp-gray);
-    border-left: 4px solid var(--hp-yellow);
-    max-width: 800px;
-}
-
-.ack-box strong {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--hp-black);
-}
-
-.ack-box p {
-    margin-top: 0.75rem;
-    line-height: 1.75;
-    color: var(--hp-text-light);
-}
-
-/* ===== BOTTOM PREV/NEXT NAVIGATION ===== */
-.bottom-nav-section {
-    padding: 2rem 0;
-    background: var(--hp-white);
-    border-top: 1px solid var(--hp-gray);
-}
-
-.bottom-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bottom-nav a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.625rem 1.25rem;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--hp-black);
-    background: var(--hp-white);
-    border: 2px solid var(--hp-gray);
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-}
-
-.bottom-nav a:hover {
-    background: var(--hp-yellow);
-    border-color: var(--hp-yellow);
-    text-decoration: none;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(212, 167, 44, 0.3);
-}
-
-.bottom-nav__center a {
-    background: var(--hp-black);
-    color: var(--hp-white);
-    border-color: var(--hp-black);
-}
-
-.bottom-nav__center a:hover {
-    background: var(--hp-yellow);
-    border-color: var(--hp-yellow);
-    color: var(--hp-black);
 }
 
 /* ===== YEAR CONTENT LAYOUT (TOC on top, full-width main) ===== */
@@ -303,6 +113,11 @@
     max-width: none;
     padding: 0 1rem;
     margin: 0;
+}
+
+/* Consistent bottom spacing on paragraphs in year-main */
+.year-main .container p {
+    margin-bottom: 0.5rem;
 }
 
 /* ===== TABLE OF CONTENTS (Top bar) ===== */
@@ -481,118 +296,6 @@
     color: var(--hp-black);
 }
 
-/* ===== CONTENT SECTIONS (Official, Personalized, Postmarks, etc.) ===== */
-.year-content-section {
-    padding: var(--space-6) 0;
-    background: var(--hp-white);
-}
-
-.year-content-section--compact {
-    padding: 1.5rem 0;
-}
-
-.year-content-section:nth-child(even) {
-    background: var(--hp-warm-white);
-}
-
-.year-content-section__title {
-    font-family: var(--font-display);
-    font-size: clamp(1.25rem, 2.5vw, 1.75rem);
-    font-weight: 600;
-    color: var(--hp-black);
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.75rem;
-    border-bottom: 3px solid var(--hp-yellow);
-    line-height: 1.3;
-}
-
-.year-content-section__subtitle {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--hp-text-light);
-    font-style: italic;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-}
-
-.year-content-section__subtitle a {
-    color: var(--hp-black);
-    text-decoration: underline;
-    text-decoration-color: var(--hp-yellow);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    transition: all 0.2s ease;
-}
-
-.year-content-section__subtitle a:hover {
-    color: var(--hp-yellow-dark);
-}
-
-/* ===== ANNOUNCEMENTS ===== */
-.year-announcement {
-    padding: 2rem 0;
-    background: var(--hp-white);
-}
-
-.year-announcement__box {
-    background: #fdf8e8;
-    border-radius: 12px;
-    padding: 2rem 2.25rem;
-    border: 1px solid #e8d89c;
-    border-left: 4px solid var(--hp-yellow);
-}
-
-.year-announcement__title {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--hp-black);
-    margin-bottom: 1rem;
-}
-
-.year-announcement__box ul {
-    margin: 0.75rem 0;
-    padding-left: 1.5rem;
-}
-
-.year-announcement__box li {
-    margin-bottom: 0.625rem;
-    line-height: 1.65;
-    color: var(--hp-text);
-}
-
-.year-announcement__box a {
-    color: var(--hp-black);
-    text-decoration: underline;
-    text-decoration-color: var(--hp-yellow);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    transition: all 0.2s ease;
-}
-
-.year-announcement__box a:hover {
-    color: var(--hp-yellow-dark);
-}
-
-.year-announcement__images {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.year-announcement__images img {
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.year-announcement__images img:hover {
-    transform: scale(1.02);
-}
-
 /* ===== NOTES / FOOTNOTES ===== */
 .year-notes {
     padding: 2rem 0;
@@ -728,74 +431,6 @@
     transform: scale(1.05);
 }
 
-/* ===== BOOKS GRID ===== */
-.year-books-section {
-    padding: var(--space-6) 0;
-    background: var(--hp-warm-white);
-}
-
-.year-books-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-}
-
-@media (max-width: 1024px) {
-    .year-books-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .year-books-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.year-book-card {
-    background: var(--hp-white);
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid var(--hp-gray);
-    transition: all 0.25s ease;
-    text-align: center;
-}
-
-.year-book-card:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    transform: translateY(-4px);
-    border-color: var(--hp-yellow);
-}
-
-.year-book-card img {
-    width: 100%;
-    height: 280px;
-    object-fit: contain;
-    padding: 1rem;
-    background: var(--hp-cream);
-}
-
-.year-book-card__info {
-    padding: 1rem 1.25rem;
-    font-size: 0.875rem;
-    line-height: 1.5;
-    color: var(--hp-text-light);
-    border-top: 3px solid var(--hp-yellow);
-}
-
-.year-book-card__info a {
-    color: var(--hp-black);
-    text-decoration: underline;
-    text-decoration-color: var(--hp-yellow);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    transition: all 0.2s ease;
-}
-
-.year-book-card__info a:hover {
-    color: var(--hp-yellow-dark);
-}
-
 /* ===== INLINE CONTENT IMAGE HANDLING =====
  * Year page sections contain legacy HTML patterns (table align, center, etc.)
  * that need the same CSS treatment as content.css provides for .content-page.
@@ -808,6 +443,20 @@
 .year-main table {
     width: auto;
     max-width: 100%;
+    margin-bottom: 0;
+}
+
+/* Collapse spacing in float tables so image rows sit tight against caption rows */
+.year-main table[align="right"],
+.year-main table[align="left"] {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Override any inline height on spacer cells */
+.year-main table[align="right"] td[style*="height"],
+.year-main table[align="left"] td[style*="height"] {
+    height: 4px !important;
 }
 
 /* Override base.css display:block on images — legacy images are inline */
@@ -859,21 +508,39 @@
     border-bottom: none;
 }
 
-/* Images in float tables respect their HTML width/height attributes */
+/* Images in float tables — let width scale, keep consistent height */
 .year-main table[align="right"] img,
 .year-main table[align="left"] img {
     max-width: 100%;
     height: auto;
+    display: block;
+    vertical-align: bottom;
 }
 
-/* Image captions in float tables */
+/* Paired images with explicit height: use fixed height + object-fit for equal sizing */
+.year-main table[align="right"] td img[height],
+.year-main table[align="left"] td img[height] {
+    height: 280px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Full-width banner images (colspan) should remain auto height */
+.year-main table[align="right"] td[colspan] img,
+.year-main table[align="left"] td[colspan] img {
+    height: auto;
+    width: 100%;
+}
+
+/* Image captions in float tables — tight above, breathing room below */
 .year-main table[align="right"] small,
 .year-main table[align="left"] small {
     display: block;
     font-size: 0.8125rem;
-    line-height: 1.5;
+    line-height: 1.3;
     color: var(--color-text-secondary, #57534e);
-    padding-top: 0.25rem;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
 }
 
 /* --- Centered Large Images --- */
@@ -881,14 +548,20 @@
 .year-main center {
     text-align: center;
     display: block;
-    margin-top: 1rem;
-    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .year-main center img {
     display: inline-block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 0.125rem;
+}
+
+/* Reduce br gap right after images in center blocks */
+.year-main center img + br {
+    line-height: 0.25;
 }
 
 /* --- Consecutive <br> Spacing Collapse --- */
@@ -918,22 +591,11 @@
 
 @media (max-width: 768px) {
     .year-hero,
-    .stamps-section,
-    .ack-section,
-    .year-content-section,
-    .year-books-section {
+    .stamps-section {
         padding: var(--space-5) 0;
     }
 
-    .ack-box {
-        padding: 1.5rem;
-    }
-
     .year-toc__box {
-        padding: 1.5rem;
-    }
-
-    .year-announcement__box {
         padding: 1.5rem;
     }
 
@@ -973,25 +635,16 @@
 }
 
 @media (max-width: 480px) {
-    .year-book-card img {
-        height: 200px;
-    }
-
     .year-hero h1 {
         font-size: clamp(1.5rem, 5vw, 2rem);
     }
 
     .year-hero,
-    .stamps-section,
-    .ack-section,
-    .year-content-section,
-    .year-books-section {
+    .stamps-section {
         padding: var(--space-4) 0;
     }
 
-    .year-toc__box,
-    .year-announcement__box,
-    .ack-box {
+    .year-toc__box {
         padding: 1rem;
     }
 

@@ -99,9 +99,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    font-size: var(--font-size-sm);
+    width: 32px;
+    height: 32px;
+    font-size: var(--font-size-xs);
     font-weight: var(--font-weight-bold);
     color: var(--color-text-primary);
     text-decoration: none;
@@ -346,8 +346,8 @@
     }
 
     .az-nav__link {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
         font-size: var(--font-size-xs);
     }
 

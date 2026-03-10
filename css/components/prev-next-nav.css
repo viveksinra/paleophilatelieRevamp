@@ -1,0 +1,89 @@
+/**
+ * PREV/NEXT NAVIGATION COMPONENT
+ * Top and bottom navigation bars with prev/next links.
+ * Used on: year pages, any multi-page sequential content.
+ *
+ * Classes: .year-prev-next, .bottom-nav-section, .bottom-nav,
+ *          .bottom-nav a, .bottom-nav__center
+ */
+
+/* ===== TOP PREV/NEXT NAV ===== */
+.year-prev-next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.year-prev-next a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hp-black);
+    background: var(--hp-white);
+    border: 2px solid var(--hp-gray);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.year-prev-next a:hover {
+    background: var(--hp-yellow);
+    border-color: var(--hp-yellow);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 167, 44, 0.3);
+}
+
+/* ===== BOTTOM PREV/NEXT NAV ===== */
+.bottom-nav-section {
+    padding: 2rem 0;
+    background: var(--hp-white);
+    border-top: 1px solid var(--hp-gray);
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--hp-black);
+    background: var(--hp-white);
+    border: 2px solid var(--hp-gray);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.bottom-nav a:hover {
+    background: var(--hp-yellow);
+    border-color: var(--hp-yellow);
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 167, 44, 0.3);
+}
+
+.bottom-nav__center a {
+    background: var(--hp-black);
+    color: var(--hp-white);
+    border-color: var(--hp-black);
+}
+
+.bottom-nav__center a:hover {
+    background: var(--hp-yellow);
+    border-color: var(--hp-yellow);
+    color: var(--hp-black);
+}

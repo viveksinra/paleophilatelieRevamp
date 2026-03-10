@@ -356,9 +356,16 @@
     width: 100%;
 }
 
+/* Inline comparison images — consistent height with Year/2025 */
 .content-page table[width="100%"] img {
     max-width: 100%;
     height: auto;
+}
+
+.content-page table[width="100%"] img[height] {
+    height: 280px;
+    width: auto;
+    object-fit: contain;
 }
 
 /* ===== BLOCKQUOTES ===== */
@@ -720,13 +727,23 @@
     transform: none;
 }
 
-/* Images: natural size, capped at cell width */
+/* Images: consistent sizing matching Year/2025 stamp cards */
 .content-page table.products-gallery img {
-    border-radius: 0;
+    width: 300px;
     max-width: 100%;
-    height: auto;
+    height: 300px;
+    object-fit: contain;
     display: inline-block;
     vertical-align: middle;
+    background: var(--hp-cream, #f8f6f0);
+    padding: 0.375rem;
+    border: 1px solid var(--hp-gray, #e5e4e1);
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.content-page table.products-gallery a:hover img {
+    transform: scale(1.03);
 }
 
 /* Caption text — left-aligned for readability */

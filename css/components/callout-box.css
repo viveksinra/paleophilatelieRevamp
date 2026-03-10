@@ -1,0 +1,119 @@
+/**
+ * CALLOUT BOX COMPONENT
+ * Styled callout/info boxes with left accent border.
+ * Used on: year pages (acknowledgements, announcements), any page needing callouts.
+ *
+ * Classes: .ack-section, .ack-box, .year-announcement, .year-announcement__box,
+ *          .year-announcement__title, .year-announcement__images
+ */
+
+/* ===== ACKNOWLEDGEMENT BOX ===== */
+.ack-section {
+    padding: var(--space-6) 0;
+    background: var(--hp-warm-white);
+}
+
+.ack-box {
+    background: var(--hp-white);
+    padding: 2rem 2.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--hp-gray);
+    border-left: 4px solid var(--hp-yellow);
+    max-width: 800px;
+}
+
+.ack-box strong {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--hp-black);
+}
+
+.ack-box p {
+    margin-top: 0.75rem;
+    line-height: 1.75;
+    color: var(--hp-text-light);
+}
+
+/* ===== ANNOUNCEMENT BOX ===== */
+.year-announcement {
+    padding: 2rem 0;
+    background: var(--hp-white);
+}
+
+.year-announcement__box {
+    background: #fdf8e8;
+    border-radius: 12px;
+    padding: 2rem 2.25rem;
+    border: 1px solid #e8d89c;
+    border-left: 4px solid var(--hp-yellow);
+}
+
+.year-announcement__title {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--hp-black);
+    margin-bottom: 1rem;
+}
+
+.year-announcement__box ul {
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+
+.year-announcement__box li {
+    margin-bottom: 0.625rem;
+    line-height: 1.65;
+    color: var(--hp-text);
+}
+
+.year-announcement__box a {
+    color: var(--hp-black);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+
+.year-announcement__box a:hover {
+    color: var(--hp-yellow-dark);
+}
+
+.year-announcement__images {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.year-announcement__images img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.year-announcement__images img:hover {
+    transform: scale(1.02);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .ack-box {
+        padding: 1.5rem;
+    }
+
+    .year-announcement__box {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .year-announcement__box,
+    .ack-box {
+        padding: 1rem;
+    }
+}

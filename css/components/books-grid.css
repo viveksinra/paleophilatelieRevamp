@@ -1,0 +1,86 @@
+/**
+ * BOOKS GRID COMPONENT
+ * Grid layout for book/publication cards.
+ * Used on: year pages (books sections).
+ *
+ * Classes: .year-books-section, .year-books-grid, .year-book-card,
+ *          .year-book-card img, .year-book-card__info
+ */
+
+/* ===== BOOKS SECTION ===== */
+.year-books-section {
+    padding: var(--space-6) 0;
+    background: var(--hp-warm-white);
+}
+
+/* ===== BOOKS GRID ===== */
+.year-books-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+@media (max-width: 1024px) {
+    .year-books-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .year-books-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== BOOK CARD ===== */
+.year-book-card {
+    background: var(--hp-white);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--hp-gray);
+    transition: all 0.25s ease;
+    text-align: center;
+}
+
+.year-book-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+    border-color: var(--hp-yellow);
+}
+
+.year-book-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    padding: 0.25rem;
+    background: var(--hp-cream);
+}
+
+.year-book-card__info {
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--hp-text-light);
+    border-top: 3px solid var(--hp-yellow);
+}
+
+.year-book-card__info a {
+    color: var(--hp-black);
+    text-decoration: underline;
+    text-decoration-color: var(--hp-yellow);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+}
+
+.year-book-card__info a:hover {
+    color: var(--hp-yellow-dark);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .year-book-card img {
+        height: 200px;
+    }
+}
